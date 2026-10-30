@@ -76,8 +76,9 @@ URL pública que lee Gemini: `https://raw.githubusercontent.com/cdevidts/NLPAGE/
    `PENDIENTES.md`. Commit, push y espejo en Drive otra vez.
 4. **Claude usa** la respuesta en su trabajo y anota en `registro.csv`/journal qué sirvió.
 
-Quién recoge: el hilo que pidió (al despertar) y, de respaldo, el turno mañana de operación
-(punto "bandeja Gemini" en `memoria/prompts-turnos.md` del proyecto).
+Quién recoge: el hilo que pidió (al despertar), el turno diario de este hilo (12:07 Chile: recoge,
+reparte a los dueños, rellena la cola, pide la automejora los lunes) y, de respaldo, el turno mañana
+de operación (punto 5b en `memoria/prompts-turnos.md` del proyecto).
 
 ## Formato de una tarea (`inbox/G-NNN-<slug>.md`)
 
@@ -109,11 +110,23 @@ Frontmatter con `id`, `titulo`, `pedido`, `recibido`, `estado`, `hilo`, `doc` (l
 Doc) y debajo el texto tal como lo entregó Gemini. Los archivos de Entregas no se copian al
 repo (pesan); se enlazan desde la respuesta y, si un hilo los necesita, los baja con el conector.
 
+## Reglas de Cris para este canal (2026-10-30 17:53 UTC)
+- La tarea corre **cada hora** y "es prácticamente ilimitada": usarla bastante. La cola nunca se deja
+  vacía: mínimo 3 tareas útiles pendientes (`bandeja.py estado` avisa). Cada hilo pide lo suyo.
+- Siempre un modelo fuerte (Gemini 4 Argon / Pro / Deep Think): el encabezado de PENDIENTES.md lo
+  exige y cada respuesta trae `modelo:` en la línea 3; `recibir` lo guarda en `registro.csv`. Si
+  responde un modelo flojo, se vuelve a pedir diciéndolo.
+- Gemini conversa con Claude, no con Cris: las respuestas van dirigidas a Claude y Claude no le
+  pide a Cris que transmita nada. Nada de este canal se le reporta a Cris salvo lo que cambie el negocio.
+- Claude hace que Gemini mejore: tarea de automejora cada semana (G-011 fue la primera; la pide el
+  turno diario de este hilo los lunes), bitácora `gemini/CAPACIDADES.md` y sondas de capacidades nuevas.
+- Explotar lo que Gemini hace mejor que el contenedor: leer YouTube (listados, vistas, transcripciones;
+  el contenedor está bloqueado por "no soy un bot"), Etsy y Pinterest sin API, Sheets, imágenes.
+
 ## Privacidad y límites
 - Nunca van a Gemini: claves, tokens, datos de compradores, soluciones de los juegos.
 - Google puede usar lo que la app recibe para mejorar sus productos (cuenta personal).
-- La tarea programada corre cada 6 horas (la activó Cris el 2026-10-30 ~16:30 UTC); una tarea nueva tarda hasta
-  eso en responderse. Deep Research tiene cupo diario en AI Pro: no pedir más de 2-3 por día.
+- La tarea programada corre cada hora (Cris la activó el 2026-10-30 ~16:30 UTC y la pasó a cada hora a las 17:53 UTC); una tarea nueva se responde en menos de 1 h. Deep Research tiene cupo diario en AI Pro: no pedir más de 2-3 por día.
 - Si una tarea lleva más de 2 días pendiente, `bandeja.py estado` lo avisa: probablemente la
   tarea programada de Gemini se pausó (Google las apaga por inactividad) y hay que decírselo a Cris.
 

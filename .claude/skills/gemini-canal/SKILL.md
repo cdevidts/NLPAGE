@@ -21,7 +21,7 @@ de NotebookLM. No: Veo, Audio Overview, Canvas, y NO lee la URL raw de GitHub: e
   páginas que el contenedor no puede leer (YouTube, Etsy sin API).
 - No: texto corto o voz (eso es `scripts/gemini/gemini.py`, gratis y al instante), nada con
   datos de compradores, claves ni soluciones de los juegos, nada urgente (la tarea programada
-  corre cada 6 horas).
+  corre cada hora: la respuesta llega en menos de 60 min).
 
 ## Pedir
 1. Escribe la tarea en un archivo del scratchpad con tres secciones: `## Contexto`,
@@ -53,8 +53,23 @@ de NotebookLM. No: Veo, Audio Overview, Canvas, y NO lee la URL raw de GitHub: e
 5. Si una tarea lleva más de 2 días sin respuesta, dile a Cris en una línea que revise que la
    tarea programada de Gemini siga activa (Google las pausa por inactividad). Nada más que eso.
 
+## Cola permanente (regla de Cris, 2026-10-30: "úsalo bastante, es prácticamente ilimitado")
+Gemini corre cada hora. Nunca dejes la cola con menos de 3 tareas útiles. Fuentes de tareas que
+siempre sirven: YouTube (Shorts más vistos de un nicho con ganchos transcritos, métricas de nuestro
+canal, crítica de un Short), Etsy (verificar competidores en página, títulos y precios de un nicho,
+reseñas de un producto), Pinterest (pines que ganan por búsqueda), Sheets con datos tabulados,
+imágenes de fondo (Nano Banana), traducciones revisadas, resúmenes de fuentes largas. Cada hilo pide
+lo suyo con `pedir`; el turno diario de este canal (12:07 Chile) rellena la cola si nadie lo hizo.
+Cada lunes se pide una tarea de automejora (modelo G-011: autocrítica de sus respuestas, inventario
+de herramientas, mejoras al protocolo) y lo útil se aplica en `gemini/README.md` y aquí.
+
 ## Reglas
 - Lo que Gemini afirme se verifica antes de actuar sobre dinero o listings (es investigación,
-  no verdad); cita siempre "según Gemini (G-NNN)".
-- Máximo 2-3 Deep Research por día (cupo de AI Pro). Una tarea, un resultado.
+  no verdad); cita siempre "según Gemini (G-NNN)". Pide la verificación al propio Gemini
+  ("abre la página y anota lo que VES", como G-008) antes de tocar precios o títulos.
+- Cada respuesta debe traer `modelo:` (línea 3). Si falta o es Flash/Lite, vuelve a pedir la tarea
+  indicando que use el modelo más capaz (Gemini 4 Argon / Pro / Deep Think).
+- Gemini le habla a Claude, no a Cris: nunca le pidas a Cris que le transmita algo a Gemini; lo que
+  Gemini deba saber va en la tarea o en el encabezado de PENDIENTES.md (`bandeja.py`).
+- Una tarea, un resultado. Sin tope de tareas (no usa la API), pero cada una con un uso concreto.
 - Fechas absolutas; español o inglés según lo que vaya a usar el resultado.

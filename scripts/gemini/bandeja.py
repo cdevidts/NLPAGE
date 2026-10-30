@@ -31,7 +31,7 @@ DRIVE_GEMINI = '1-mAs2etmZt8fH7-YIlH9aEDJRfbBB73-'       # Drive > Side Husle Cl
 HERRAMIENTAS = ['texto', 'deep-research', 'navegar', 'nano-banana', 'veo', 'notebooklm', 'canvas', 'sheets']
 ENTREGAS = ['doc', 'pdf', 'sheet', 'imagen', 'video', 'audio', 'slides']
 ESTADOS_RESP = ['hecho', 'parcial', 'no-puedo']
-COLS = ['id', 'pedido', 'hilo', 'herramienta', 'entrega', 'titulo', 'estado', 'respondido', 'doc']
+COLS = ['id', 'pedido', 'hilo', 'herramienta', 'entrega', 'titulo', 'estado', 'respondido', 'doc', 'modelo']
 MAX_KB = 24   # una tarea no debería pasar de esto: Gemini la lee entera en PENDIENTES.md
 
 
@@ -107,10 +107,14 @@ def regenerar_pendientes():
         f'Generado por `scripts/gemini/bandeja.py` el {datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")}. '
         'Este archivo es la ÚNICA lista que Gemini tiene que leer. Cada tarea está completa aquí abajo.',
         '',
+        '## Quién te habla',
+        'Estas tareas las escribe Claude, el agente que opera la tienda SheetSmithChile. Tú y Claude son colegas: respóndele a Claude, no al dueño de la cuenta. '
+        'Escribe como a un colega técnico: directo, con datos, sin resúmenes para humanos ni avisos de "se completó la tarea". Si ves una forma mejor de hacer algo, dilo en una sección final `## Sugerencias para Claude`.',
+        '',
         '## Cómo entregar (resumen del protocolo, detalle en gemini/README.md)',
-        '1. Haz cada tarea de la lista, en orden. Si una tarea no se puede hacer con tus herramientas, igual entrégala con `estado: no-puedo` y el motivo.',
+        '1. Usa el modelo más capaz que tengas (Gemini 4 Argon, Pro o Deep Think; nunca Flash o Lite para investigar). Haz cada tarea de la lista, en orden. Si una tarea no se puede hacer con tus herramientas, igual entrégala con `estado: no-puedo` y el motivo exacto (nombre de la herramienta que falta, mensaje de error).',
         '2. Por cada tarea crea UN Google Doc en Drive > Side Husle Claude > Gemini > Respuestas, titulado exactamente `<ID> RESPUESTA` (por ejemplo `G-001 RESPUESTA`).',
-        '3. Primera línea del Doc: `estado: hecho` | `estado: parcial` | `estado: no-puedo`. Segunda línea: `fecha: <AAAA-MM-DD HH:MM>`. Después, la respuesta en el formato que pide la tarea, con fuentes (URL) cuando investigues.',
+        '3. Primera línea del Doc: `estado: hecho` | `estado: parcial` | `estado: no-puedo`. Segunda: `fecha: <AAAA-MM-DD HH:MM>`. Tercera: `modelo: <nombre y versión exactos del modelo que respondió>`. Después, la respuesta en el formato que pide la tarea, con fuentes (URL) cuando investigues y marcando `(sin verificar)` lo que no comprobaste.',
         '4. Archivos que no sean texto (PDF, MP4, PNG, MP3, Sheets) van a la carpeta Entregas con el nombre `<ID> <nombre>`; en el Doc pon el nombre y el link de cada archivo.',
         '5. No repitas una tarea que ya tiene su Doc `<ID> RESPUESTA` en Respuestas ni una de la lista "Ya respondidas". Si la lista de abajo está vacía, no hagas nada.',
         '6. Nunca incluyas contraseñas, claves ni datos de compradores. Responde en el idioma en que está escrita la tarea.',
@@ -199,18 +203,24 @@ def cmd_recibir(args):
     m = re.match(r'^\s*estado\s*:\s*(hecho|parcial|no-puedo)', texto, re.I)
     if not estado:
         estado = m.group(1).lower() if m else 'hecho'
+    mm = re.search(r'^\s*modelo\s*:\s*(.+)$', texto, re.I | re.M)
+    modelo = args.modelo or (mm.group(1).strip() if mm else '')
+    if not modelo:
+        print('AVISO: la respuesta no dice qué modelo la escribió; pide `modelo:` en la línea 3 (regla de Cris: siempre un modelo fuerte).')
     os.makedirs(OUTBOX, exist_ok=True); os.makedirs(DONE, exist_ok=True)
     salida = os.path.join(OUTBOX, f'{args.id}.md')
     meta = [f'id: {args.id}', f'titulo: {fila["titulo"]}', f'pedido: {fila["pedido"]}', f'recibido: {hoy()}',
             f'estado: {estado}', f'hilo: {fila["hilo"]}']
     if args.doc:
         meta.append(f'doc: {args.doc}')
+    if modelo:
+        meta.append(f'modelo: {modelo}')
     with open(salida, 'w', encoding='utf-8') as f:
         f.write('---\n' + '\n'.join(meta) + '\n---\n' + texto + '\n')
     origen = archivo_de(args.id, INBOX)
     if origen:
         shutil.move(origen, os.path.join(DONE, os.path.basename(origen)))
-    fila.update({'estado': estado, 'respondido': hoy(), 'doc': args.doc or ''})
+    fila.update({'estado': estado, 'respondido': hoy(), 'doc': args.doc or '', 'modelo': modelo})
     escribir_registro(filas)
     n = regenerar_pendientes()
     print(f'{args.id} recibida ({estado}): {os.path.relpath(salida, RAIZ)}; tarea movida a gemini/done/. {n} abiertas.')
@@ -254,6 +264,8 @@ def cmd_estado(args):
         dias = (datetime.date.today() - datetime.date.fromisoformat(r['pedido'])).days
         aviso = '  <- lleva más de 2 días: ¿corrió la tarea programada de Gemini?' if dias > 2 else ''
         print(f'  {r["id"]} pendiente desde {r["pedido"]} ({dias} d): {r["titulo"]}{aviso}')
+    if len(pend) < 3:
+        print('  AVISO: menos de 3 tareas en cola. Gemini corre cada hora: deja siempre trabajo útil (skill gemini-canal, "Cola permanente").')
     if pend:
         ids = ' or '.join(f"title contains '{r['id']}'" for r in pend)
         print('\nPara recoger respuestas, con el conector de Google Drive:')
@@ -272,7 +284,7 @@ def main():
     a.add_argument('--archivo'); a.add_argument('--texto'); a.set_defaults(f=cmd_pedir)
     a = sub.add_parser('pendientes'); a.add_argument('--md', action='store_true'); a.set_defaults(f=cmd_pendientes)
     a = sub.add_parser('recibir'); a.add_argument('id'); a.add_argument('--archivo'); a.add_argument('--texto')
-    a.add_argument('--doc'); a.add_argument('--estado', choices=ESTADOS_RESP); a.set_defaults(f=cmd_recibir)
+    a.add_argument('--doc'); a.add_argument('--estado', choices=ESTADOS_RESP); a.add_argument('--modelo'); a.set_defaults(f=cmd_recibir)
     a = sub.add_parser('cerrar'); a.add_argument('id'); a.add_argument('--motivo', required=True); a.set_defaults(f=cmd_cerrar)
     a = sub.add_parser('mostrar'); a.add_argument('id'); a.set_defaults(f=cmd_mostrar)
     a = sub.add_parser('estado'); a.set_defaults(f=cmd_estado)

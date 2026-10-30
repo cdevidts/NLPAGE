@@ -1,6 +1,12 @@
-id,pedido,hilo,herramienta,entrega,titulo,estado,respondido,doc
-G-001,2026-10-30,Conversar con Gemini a través del repo,texto,doc,Prueba del canal: qué herramientas tienes en una tarea programada,hecho,2026-10-30,https://docs.google.com/document/d/1oQOcgPKujyWEtaUJBQ_AZuVvfb7-VwQIUJAbWhyy89Y/edit
-G-002,2026-10-30,Conversar con Gemini a través del repo,deep-research,doc,Tiendas de Etsy que venden misterios imprimibles hoy,parcial,2026-10-30,https://docs.google.com/document/d/1zu4JCWZPrw9dPZhicQGeGWZfI9lmSZetCMQVn9lDX_s/edit
-G-003,2026-10-30,Conversar con Gemini a través del repo,deep-research,doc,Canales de Shorts de true crime que crecen rápido,parcial,2026-10-30,https://docs.google.com/document/d/17YJQfYQhXNEEShDmk2W2Vp9dOQAXrgL9OM77sqpcwDI/edit
-G-004,2026-10-30,Conversar con Gemini a través del repo,veo,video,Prueba de Veo: B-roll de cabaña de esquí 1987,no-puedo,2026-10-30,https://docs.google.com/document/d/1qAmShHZEMGDaIhnKScFf3eZylTqsiIsSiM26GCNH6TM/edit
-G-005,2026-10-30,Conversar con Gemini a través del repo,notebooklm,audio,Prueba de NotebookLM: cuaderno y Audio Overview,no-puedo,2026-10-30,https://docs.google.com/document/d/1zup_umUKqYCLLibuaFxELWMekTrnQtKbFT9pque5s3k/edit
+id,pedido,hilo,herramienta,entrega,titulo,estado,respondido,doc,modelo
+G-001,2026-10-30,Conversar con Gemini a través del repo,texto,doc,Prueba del canal: qué herramientas tienes en una tarea programada,hecho,2026-10-30,https://docs.google.com/document/d/1oQOcgPKujyWEtaUJBQ_AZuVvfb7-VwQIUJAbWhyy89Y/edit,Gemini 2.5 Pro (autodeclarado)
+G-002,2026-10-30,Conversar con Gemini a través del repo,deep-research,doc,Tiendas de Etsy que venden misterios imprimibles hoy,parcial,2026-10-30,https://docs.google.com/document/d/1zu4JCWZPrw9dPZhicQGeGWZfI9lmSZetCMQVn9lDX_s/edit,Gemini 2.5 Pro (autodeclarado en G-001)
+G-003,2026-10-30,Conversar con Gemini a través del repo,deep-research,doc,Canales de Shorts de true crime que crecen rápido,parcial,2026-10-30,https://docs.google.com/document/d/17YJQfYQhXNEEShDmk2W2Vp9dOQAXrgL9OM77sqpcwDI/edit,Gemini 2.5 Pro (autodeclarado en G-001)
+G-004,2026-10-30,Conversar con Gemini a través del repo,veo,video,Prueba de Veo: B-roll de cabaña de esquí 1987,no-puedo,2026-10-30,https://docs.google.com/document/d/1qAmShHZEMGDaIhnKScFf3eZylTqsiIsSiM26GCNH6TM/edit,Gemini 2.5 Pro (autodeclarado en G-001)
+G-005,2026-10-30,Conversar con Gemini a través del repo,notebooklm,audio,Prueba de NotebookLM: cuaderno y Audio Overview,no-puedo,2026-10-30,https://docs.google.com/document/d/1zup_umUKqYCLLibuaFxELWMekTrnQtKbFT9pque5s3k/edit,Gemini 2.5 Pro (autodeclarado en G-001)
+G-006,2026-10-30,Conversar con Gemini a través del repo,navegar,sheet,"Prueba de YouTube: los Shorts más vistos de 2 canales de true crime, con ganchos",pendiente,,,
+G-007,2026-10-30,Conversar con Gemini a través del repo,navegar,doc,Mira nuestro canal: métricas de los Shorts y crítica del último como editor,pendiente,,,
+G-008,2026-10-30,Conversar con Gemini a través del repo,navegar,sheet,Verificar en Etsy los 8 competidores de G-002,pendiente,,,
+G-009,2026-10-30,Conversar con Gemini a través del repo,navegar,doc,Pines que ganan en Pinterest para nuestras 4 búsquedas,pendiente,,,
+G-010,2026-10-30,Conversar con Gemini a través del repo,nano-banana,imagen,Prueba de imágenes: fondo flat-lay de expediente para la foto principal,pendiente,,,
+G-011,2026-10-30,Conversar con Gemini a través del repo,texto,doc,"Automejora semanal 1: autocrítica, inventario de herramientas y mejoras al protocolo",pendiente,,,

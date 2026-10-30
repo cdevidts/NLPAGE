@@ -100,3 +100,19 @@
 - G-003 (Shorts true crime): primera palabra antes de 0,5 s, 50-58 s y 130-145 palabras,
   estética de expediente sin rostro, CTA como continuación del juego. Pasa al loop viral.
 - Descartado: pedirle video o audio a la app de Gemini. Espera a una persona: nada.
+
+## 2026-10-30 · Gemini cada hora y reglas de Cris para el canal
+- Cris (17:53 UTC) puso la tarea de Gemini cada hora y pidió: usarla bastante (sin la API es casi
+  ilimitada), exigir siempre un modelo fuerte (Gemini 4 Argon), que Gemini converse con Claude y no
+  le reporte a Cris, que Claude haga que Gemini mejore y siga probando capacidades, y explotar su
+  lectura de YouTube.
+- Hecho: encabezado de PENDIENTES.md con "quién te habla", modelo más capaz, `modelo:` en la línea 3
+  y sección "Sugerencias para Claude"; `recibir` guarda el modelo en registro.csv; aviso si la cola
+  baja de 3; `gemini/CAPACIDADES.md`; reglas en README y skill; 6 tareas nuevas en cola: G-006
+  YouTube (Shorts más vistos de MrBallen Shorts y Cold Case Detective, ganchos, Sheet), G-007 nuestro
+  canal y crítica del Short, G-008 verificar en página los 8 competidores de G-002, G-009 Pinterest,
+  G-010 imágenes flat-lay (Nano Banana), G-011 automejora semanal.
+- Turno diario del canal (12:07 Chile) en el hilo "Conversar con Gemini a través del repo": recoger,
+  repartir, rellenar la cola, automejora los lunes.
+- Descartado: pedirle a Cris que vuelva a pegar la tarea (las reglas van en PENDIENTES.md).
+- Espera a una persona: nada.
