@@ -35,7 +35,7 @@ SEG_VIDEO = 10  # la doc no fija la duración; se cobra el peor caso al tope
 
 
 def config():
-    c = {'texto': 'gemini-3.8-flash', 'voz': 'gemini-3.8-flash-tts', 'imagen': 'gemini-3.1-flash-lite-image',
+    c = {'texto': 'gemini-3.6-flash', 'texto_respaldo': [], 'voz': 'gemini-3.8-flash-tts', 'imagen': 'gemini-3.1-flash-lite-image',
          'video': 'gemini-omni-1.1-flash', 'tope_mes_usd': 0}
     if os.path.exists(CONFIG):
         c.update(json.load(open(CONFIG, encoding='utf8')))
@@ -48,6 +48,10 @@ def clave():
         sys.exit('Falta GEMINI_API_KEY en el entorno. Cris la crea en https://aistudio.google.com/apikey '
                  'y la agrega en la configuración del entorno (ver docs/gemini/README.md).')
     return k
+
+
+class Ocupado(Exception):
+    """503/429 o sin respuesta: el modelo está saturado; se prueba el siguiente."""
 
 
 def llamar(metodo, ruta, cuerpo=None, timeout=300):
@@ -64,7 +68,11 @@ def llamar(metodo, ruta, cuerpo=None, timeout=300):
             msg = json.loads(cuerpo_err)['error']['message']
         except Exception:
             msg = cuerpo_err[:500]
+        if e.code in (429, 503):
+            raise Ocupado(f'Gemini {e.code}: {msg}')
         raise SystemExit(f'Gemini {e.code} en {ruta}: {msg}')
+    except TimeoutError:
+        raise Ocupado(f'Gemini no respondió en {timeout} s')
 
 
 def bloques(resp):
@@ -91,6 +99,19 @@ def interaccion(modelo, entrada, formato=None, extra=None):
         cuerpo['response_format'] = formato
     cuerpo.update(extra or {})
     return llamar('POST', 'interactions', cuerpo)
+
+
+def texto(prompt, modelo=None):
+    """Texto con respaldo: si un modelo está saturado (pasó con 3.8 Flash el 30-oct), el siguiente."""
+    c = config()
+    modelos = [modelo] if modelo else [c['texto'], *c.get('texto_respaldo', [])]
+    for m in modelos:
+        try:
+            r = llamar('POST', 'interactions', {'model': m, 'input': prompt, 'store': False}, timeout=90)
+            return ''.join(b.get('text', '') for b in bloques(r) if b.get('type') == 'text').strip()
+        except Ocupado as e:
+            print(f'{m}: {e}', file=sys.stderr)
+    sys.exit('Todos los modelos de texto están saturados; reintentar más tarde.')
 
 
 def binario(resp, tipo):
@@ -165,8 +186,7 @@ def cmd_estado(args):
     print(f'Clave OK: {len(modelos)} modelos visibles.')
     for uso in ('texto', 'voz', 'imagen', 'video'):
         print(f'  {uso:6} {c[uso]:32} {"disponible" if c[uso] in modelos else "NO aparece en la lista"}')
-    r = interaccion(c['texto'], 'Responde solo: ok')
-    print('  prueba de texto:', ''.join(b.get('text', '') for b in bloques(r)).strip()[:40])
+    print('  prueba de texto:', texto('Responde solo: ok')[:40])
     print(f'Gasto pagado este mes: US${gastado_mes():.2f} de un tope de US${float(c["tope_mes_usd"]):.2f}')
 
 
@@ -174,8 +194,7 @@ def cmd_texto(args):
     prompt = sys.stdin.read() if args.prompt == '-' else args.prompt
     if args.sistema:
         prompt = f'{args.sistema}\n\n{prompt}'
-    r = interaccion(args.modelo or config()['texto'], prompt)
-    print(''.join(b.get('text', '') for b in bloques(r) if b.get('type') == 'text').strip())
+    print(texto(prompt, args.modelo))
 
 
 def cmd_voz(args):
@@ -252,7 +271,10 @@ def main():
     vi.add_argument('--aspecto', default='9:16'); vi.add_argument('--resolucion', default='720p'); vi.add_argument('--imagen')
     vi.add_argument('--modelo'); vi.add_argument('--pago', action='store_true')
     a = p.parse_args()
-    globals()[f'cmd_{a.cmd}'](a)
+    try:
+        globals()[f'cmd_{a.cmd}'](a)
+    except Ocupado as e:
+        sys.exit(f'{e}. Reintentar más tarde.')
 
 
 if __name__ == '__main__':
