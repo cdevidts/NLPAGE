@@ -9,7 +9,9 @@ La memoria del proyecto vive fuera del repo: lee `/mnt/project-files/CLAUDE.md`,
 la skill de cierre `ai-side-hustle-cierre-de-tarea` (repo cdevidts/etsy-bridge).
 
 El oficio (cómo se arma un Short que funciona, cómo se revisa) está en la skill
-`.claude/skills/shorts-sheetsmith`. Léela antes de tocar un plan.
+`.claude/skills/shorts-sheetsmith`. Léela antes de tocar un plan, y antes de cada plan
+nuevo pasa por `.claude/skills/shorts-viral-loop` (hipótesis, bloque `experimento`,
+medición; bitácora en `docs/viral/BITACORA.md`).
 
 ## "Haz el Short de <producto>"
 

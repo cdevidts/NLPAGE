@@ -13,8 +13,8 @@
   "notas": "Formato historia (Cris 2026-10-30): se cuenta el caso como true crime y solo al final se dice que es ficción y que se puede resolver. Hechos del Doc 01 (carta de Ferrer), Doc 02, Doc 03 y Doc 31; nada de la solución. Se evita la foto del teléfono (Doc 09) para no regalar el patrón. Números en letras para Piper.",
   "escenas": [
     {
-      "dice": "El dueño de un teatro aparece muerto en la última función de su propia obra.",
-      "texto": "*Muerto* en la última función",
+      "dice": "El dueño de un teatro, muerto en la última función.",
+      "texto": "*Muerto*",
       "visual": {
         "tipo": "pagina",
         "src": "pag:es:34",
@@ -22,13 +22,12 @@
           "x": 0.8,
           "y": 0.2,
           "zoom": 2.6
-        },
-        "etiqueta": "SEPTIEMBRE 2013"
+        }
       }
     },
     {
       "dice": "Desmond Ashcombe, sesenta y cuatro años. Al pie de su escalera de biblioteca. Seis libros en el suelo. Sus lentes, rotos.",
-      "texto": "*Seis* libros en el suelo",
+      "texto": "*Seis* libros",
       "visual": {
         "tipo": "pagina",
         "src": "pag:es:9",
@@ -36,13 +35,12 @@
           "x": 0.3,
           "y": 0.3,
           "zoom": 1.9
-        },
-        "etiqueta": "ESCENA DEL CRIMEN"
+        }
       }
     },
     {
       "dice": "Parecía una caída. La médica forense dijo que no.",
-      "texto": "No fue una *caída*",
+      "texto": "¿Una *caída*?",
       "visual": {
         "tipo": "pagina",
         "src": "pag:es:6",
@@ -63,13 +61,12 @@
           "x": 0.3,
           "y": 0.82,
           "zoom": 2.2
-        },
-        "etiqueta": "OSCAR PENROSE"
+        }
       }
     },
     {
       "dice": "Trece años después, unos obreros que remodelan el teatro vacío encuentran su libreta perdida,",
-      "texto": "*Trece* años después",
+      "texto": "*13* años después",
       "visual": {
         "tipo": "pagina",
         "src": "pag:es:40",
@@ -95,7 +92,7 @@
     },
     {
       "dice": "Su teléfono sigue bloqueado. Cinco personas tenían motivos para matarlo.",
-      "texto": "*Cinco* sospechosos",
+      "texto": "*5* sospechosos",
       "visual": {
         "tipo": "pagina",
         "src": "pag:es:5",
@@ -108,7 +105,7 @@
     },
     {
       "dice": "Una de ellas lo hizo.",
-      "texto": "*Una* de ellas lo hizo",
+      "texto": "*Una* lo hizo",
       "visual": {
         "tipo": "pagina",
         "src": "pag:es:1",
@@ -121,11 +118,11 @@
     }
   ],
   "cierre": {
-    "dice": "Este caso es ficción. Pero lo puedes resolver tú. Todas las pistas están en el expediente, el enlace va en la descripción.",
+    "dice": "Este caso es ficción. Pero lo puedes resolver tú. Lo encuentras en nuestra tienda de Etsy.",
     "titulo": "¿Lo resuelves?",
     "sub": "Caso Archivado N.º 01 · El Último Telón",
-    "linea": "Enlace en la descripción",
-    "src": "foto:01"
+    "linea": "SheetSmithChile en Etsy",
+    "src": "pag:es:1"
   },
   "youtube": {
     "titulo": "Caso archivado: ¿quién mató al dueño del teatro en la última función?",
@@ -142,5 +139,15 @@
       "noche de juegos",
       "cold case file"
     ]
+  },
+  "experimento": {
+    "hipotesis": "V0",
+    "variable": "formato",
+    "variante": "caso contado como true crime; ficción revelada en el cierre (ES)",
+    "control": "linea-base",
+    "formato": "historia",
+    "gancho_tipo": "in-medias-res",
+    "espera": "línea base para las próximas pruebas",
+    "listing_id": 4604988351
   }
 }

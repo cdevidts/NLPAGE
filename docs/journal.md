@@ -46,3 +46,16 @@
   bot" desde el contenedor; no se esquiva), YouTube Analytics API (OAuth de Cris),
   y las cifras sin fuente de skills ajenas como reglas.
 - Espera a una persona: nada. El hilo de videos registra cada Short con `experimento.py alta`.
+
+## 2026-10-30 · Los Shorts pasan a ser historias (pedido de Cris)
+- Cris: los Shorts eran anuncios; sirven para Etsy, no para viralizar. Rehechos los tres
+  como historia: el Cold Case 01 contado como true crime (EN y ES), con "este caso es
+  ficción, pero lo puedes resolver tú" solo en el cierre; el de piano cuenta que Jingle
+  Bells fue la primera canción tocada en el espacio (Gemini 6A, 1965) y que no se
+  escribió para Navidad, con fotos de NASA (dominio público).
+- Los anuncios quedaron en renders/ como referencia; no se publican.
+- Cierre sin "link in the description" (en Shorts no es clicable): "Find it on Etsy,
+  at SheetSmithChile".
+- Titulares de 1 línea y sin rótulos encima: los de 2 líneas chocaban con la etiqueta.
+- El cierre ES usa la portada en español (antes salía la foto en inglés).
+- Entra el loop viral del hilo de viralidad (skill shorts-viral-loop); estos tres son V0.

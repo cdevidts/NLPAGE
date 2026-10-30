@@ -13,8 +13,8 @@
   "notas": "Formato historia (Cris 2026-10-30): se cuenta el caso como true crime y solo al final se dice que es ficción y que se puede resolver. Hechos del Doc 01 (carta de Ferrer), Doc 02, Doc 03 y Doc 31; nada de la solución. Se evita la foto del teléfono (Doc 09) para no regalar el patrón.",
   "escenas": [
     {
-      "dice": "A theater owner is found dead on the closing night of his own play.",
-      "texto": "Found *dead* on closing night",
+      "dice": "A theater owner, found dead on closing night.",
+      "texto": "Found *dead*",
       "visual": {
         "tipo": "pagina",
         "src": "pag:en:34",
@@ -22,13 +22,12 @@
           "x": 0.8,
           "y": 0.2,
           "zoom": 2.6
-        },
-        "etiqueta": "SEPTEMBER 2013"
+        }
       }
     },
     {
-      "dice": "Desmond Ashcombe, sixty-four. At the foot of his library ladder. Six books on the floor. His glasses, broken.",
-      "texto": "*Six* books on the floor",
+      "dice": "Desmond Ashcombe, sixty-four. At the foot of his library ladder. Six books on the floor. His glasses were broken.",
+      "texto": "*Six* books",
       "visual": {
         "tipo": "pagina",
         "src": "pag:en:9",
@@ -36,8 +35,7 @@
           "x": 0.3,
           "y": 0.3,
           "zoom": 1.9
-        },
-        "etiqueta": "CRIME SCENE"
+        }
       }
     },
     {
@@ -55,7 +53,7 @@
     },
     {
       "dice": "Police arrested the playwright. Two days later, they let him go. The case went cold.",
-      "texto": "The case went *cold*",
+      "texto": "*Cold* case",
       "visual": {
         "tipo": "pagina",
         "src": "pag:en:5",
@@ -63,8 +61,7 @@
           "x": 0.3,
           "y": 0.82,
           "zoom": 2.2
-        },
-        "etiqueta": "OSCAR PENROSE"
+        }
       }
     },
     {
@@ -121,10 +118,10 @@
     }
   ],
   "cierre": {
-    "dice": "This case is fiction. But you can solve it yourself. Every clue is in the file, link in the description.",
+    "dice": "This case is fiction. But you can solve it yourself. Find it on Etsy, at Sheet Smith Chile.",
     "titulo": "Can you solve it?",
     "sub": "Cold Case File No. 01 · The Final Curtain",
-    "linea": "Link in the description",
+    "linea": "SheetSmithChile on Etsy",
     "src": "foto:01"
   },
   "youtube": {
@@ -142,5 +139,15 @@
       "printable murder mystery",
       "game night"
     ]
+  },
+  "experimento": {
+    "hipotesis": "V0",
+    "variable": "formato",
+    "variante": "caso contado como true crime; ficción revelada en el cierre",
+    "control": "linea-base",
+    "formato": "historia",
+    "gancho_tipo": "in-medias-res",
+    "espera": "línea base para las próximas pruebas",
+    "listing_id": 4604988351
   }
 }

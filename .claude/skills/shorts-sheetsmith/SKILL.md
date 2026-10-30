@@ -57,8 +57,12 @@ los rechazó: sirven para la portada de Etsy, no para que se compartan. Desde ah
   de búsqueda dentro ("Cold case file: who killed the theater owner on closing
   night?"). La frase principal de `plan/seo/mapa.json` va en la primera línea de la
   descripción y en los tags. 3-4 hashtags al final (#shorts incluido).
-- Cuando exista la skill de viralidad (hilo "Crear sistema de viralidad para
-  Shorts"), cada Short pasa por ella y su resultado se anota ahí.
+- **Antes de cada plan, la skill `shorts-viral-loop`**: qué hipótesis prueba el Short,
+  el bloque `experimento` del plan, `scripts/viral/experimento.py check` sin ERROR y
+  `alta` al programarlo. Lo medido y aprendido vive en `docs/viral/BITACORA.md`.
+- En Shorts el link de la descripción no es clicable: el cierre dice dónde buscar
+  ("Find it on Etsy, at Sheet Smith Chile"; en la voz, el nombre separado), no
+  "link in the description".
 
 ## Qué hace que un Short funcione
 

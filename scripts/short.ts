@@ -43,7 +43,9 @@ const compuerta = (p: Plan) => {
   if (!fs.existsSync(path.join('public', ruta(p, p.cierre.src)))) errores.push(`cierre: no existe ${ruta(p, p.cierre.src)}`);
   const palabrasTot = p.escenas.reduce((s, e) => s + e.dice.split(/\s+/).length, 0) + (p.cierre.dice?.split(/\s+/).length ?? 0);
   const estimado = palabrasTot / 2.6 + p.escenas.length * 0.5 + 2.5;
-  if (estimado > 58) errores.push(`dura ~${estimado.toFixed(0)} s: un Short pasa de 60 s y YouTube lo trata como video normal`);
+  // Desde oct-2024 un Short puede durar hasta 3 min; sobre 60 s es una prueba (V4 de la bitácora).
+  if (estimado > 175) errores.push(`dura ~${estimado.toFixed(0)} s: un Short no puede pasar de 3 min`);
+  else if (estimado > 60) avisos.push(`dura ~${estimado.toFixed(0)} s: más de 60 s solo si el plan prueba la duración (V4)`);
   if (estimado < 12) avisos.push(`dura ~${estimado.toFixed(0)} s: muy corto para contar el producto`);
   const primera = p.escenas[0]?.dice.split(/\s+/).length ?? 0;
   if (primera > 12) avisos.push(`el gancho (escena 1) tiene ${primera} palabras: a 2,6 palabras/s no cabe en los primeros 3 s`);

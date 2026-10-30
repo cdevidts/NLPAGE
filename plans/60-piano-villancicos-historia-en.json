@@ -27,7 +27,7 @@
     },
     {
       "dice": "They report a strange object, and a pilot in a red suit.",
-      "texto": "A pilot in a *red suit*",
+      "texto": "A *red suit*",
       "visual": {
         "tipo": "imagen",
         "src": "assets/media/nasa/S65-63189.jpg",
@@ -66,7 +66,7 @@
     },
     {
       "dice": "And it wasn't even written for Christmas. It came out in eighteen fifty-seven, as The One Horse Open Sleigh.",
-      "texto": "Not a *Christmas* song",
+      "texto": "Not for *Christmas*",
       "visual": {
         "tipo": "pagina",
         "src": "pag:1:4",
@@ -92,10 +92,10 @@
     }
   ],
   "cierre": {
-    "dice": "Jingle Bells and nineteen more carols, easy piano with letter notes. Link in the description.",
+    "dice": "Jingle Bells and nineteen more carols, easy piano with letter notes. Find it on Etsy, at Sheet Smith Chile.",
     "titulo": "Play it tonight",
     "sub": "20 easy carols · letter notes · MP3",
-    "linea": "Link in the description",
+    "linea": "SheetSmithChile on Etsy",
     "src": "foto:01"
   },
   "youtube": {
@@ -113,5 +113,15 @@
       "gemini 6",
       "piano for beginners"
     ]
+  },
+  "experimento": {
+    "hipotesis": "V0",
+    "variable": "formato",
+    "variante": "historia real del villancico (primera canción en el espacio)",
+    "control": "linea-base",
+    "formato": "historia",
+    "gancho_tipo": "dato-imposible",
+    "espera": "línea base para las próximas pruebas",
+    "listing_id": 4605991888
   }
 }
