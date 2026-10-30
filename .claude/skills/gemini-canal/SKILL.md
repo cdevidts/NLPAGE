@@ -9,10 +9,16 @@ Protocolo completo: `gemini/README.md`. Herramienta: `python3 -I scripts/gemini/
 La app de Gemini NO escribe en GitHub: lee las tareas en `gemini/PENDIENTES.md` (main) y deja
 las respuestas como Google Docs en Drive > Side Husle Claude > Gemini > Respuestas.
 
+## Qué puede y qué no (probado el 2026-10-30, tabla completa en gemini/README.md)
+Sí: búsqueda y navegación web con fuentes (no es la herramienta "Deep Research", pero investiga
+bien: G-002, G-003), imágenes Nano Banana, Google Docs/Sheets/PDF/Slides en Drive, crear cuadernos
+de NotebookLM. No: Veo, Audio Overview, Canvas, y NO lee la URL raw de GitHub: el espejo
+`GEMINI-PENDIENTES` en Drive es el camino real, actualízalo siempre.
+
 ## Cuándo usarlo (y cuándo no)
-- Sí: Deep Research con fuentes (competencia, tendencias, patrones de creadores), video Veo,
-  imagen Nano Banana, Audio Overview de NotebookLM, documentos largos con Canvas, navegar
-  páginas que el contenedor no puede leer.
+- Sí: investigación web con fuentes (competencia, tendencias, patrones de creadores), imagen
+  Nano Banana, hojas de cálculo o PDF armados por Gemini, cuadernos de NotebookLM, navegar
+  páginas que el contenedor no puede leer (YouTube, Etsy sin API).
 - No: texto corto o voz (eso es `scripts/gemini/gemini.py`, gratis y al instante), nada con
   datos de compradores, claves ni soluciones de los juegos, nada urgente (la tarea programada
   corre cada 6 horas).
