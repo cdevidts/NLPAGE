@@ -9,6 +9,7 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 
 ## Reglas puestas por Cris (no se prueban)
 - 2026-10-30: los Shorts no son anuncios. Historia primero; el producto y el CTA solo al final.
+- 2026-10-30: el canal tiene enlaces a la tienda de Etsy y a Gumroad en su cabecera (Cris los puso en YouTube Studio > Personalización). En Shorts el link de la descripción no es clicable, así que el CTA hablado puede decir "el link está en el canal" / "link on the channel". Probarlo contra "búscalo en Etsy" es una variable `cta`.
 
 ## Descartado
 - (nada todavía)

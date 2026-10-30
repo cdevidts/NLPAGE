@@ -62,7 +62,8 @@ los rechazó: sirven para la portada de Etsy, no para que se compartan. Desde ah
   `alta` al programarlo. Lo medido y aprendido vive en `docs/viral/BITACORA.md`.
 - En Shorts el link de la descripción no es clicable: el cierre dice dónde buscar
   ("Find it on Etsy, at Sheet Smith Chile"; en la voz, el nombre separado), no
-  "link in the description".
+  "link in the description". Desde el 30-oct el canal tiene en su cabecera los
+  enlaces a Etsy y Gumroad: también vale "link on the channel" / "el link está en el canal".
 
 ## Qué hace que un Short funcione
 
