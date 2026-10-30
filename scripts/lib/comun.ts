@@ -54,7 +54,10 @@ export type Plan = {
   producto: string;
   idioma: 'en' | 'es';
   tema: TemaId;
+  /** Kokoro (EN), Piper (ES) o "gemini:<Voz>" (Gemini TTS, p. ej. "gemini:Charon"). */
   voz?: string;
+  /** Solo voces gemini: cómo se dice, p. ej. "narrador de true crime, grave, pausado". */
+  vozEstilo?: string;
   velocidad?: number;
   /** `incompetech`: título del catálogo de Kevin MacLeod. `archivo`: audio propio
    * (p. ej. la pista de práctica del producto), ruta en public/. */

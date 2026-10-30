@@ -15,6 +15,7 @@
     "musica": "tsx scripts/musica.ts",
     "sfx-catalog": "tsx scripts/sfxCatalog.ts",
     "status": "tsx scripts/status.ts",
+    "gemini": "python3 -I scripts/gemini/gemini.py",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

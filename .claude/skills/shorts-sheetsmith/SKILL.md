@@ -104,6 +104,9 @@ barras de progreso, sin chips numerados, sin disolvencias largas.
 
 ### Sonido
 - Voz: Kokoro `af_heart` (EN, la de mejor nota) y Piper `es_MX-claude-high` (ES).
+  Opción Gemini TTS (gratis, pide `GEMINI_API_KEY`): `"voz": "gemini:Charon"` y
+  `"vozEstilo": "narrador de true crime, grave"` en el plan. Probarla como variable de un
+  experimento del loop viral, no de golpe en todos. Detalle en `docs/gemini/README.md`.
   Velocidad 1,05-1,08. **Números y años en letras** en `dice`.
 - Música: cama que baja al 30 % cuando hay voz (automático). Para piano, la pista de
   práctica del propio producto (`musica.archivo`): el video suena a lo que se compra.

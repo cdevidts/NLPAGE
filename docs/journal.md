@@ -59,3 +59,12 @@
 - Titulares de 1 línea y sin rótulos encima: los de 2 líneas chocaban con la etiqueta.
 - El cierre ES usa la portada en español (antes salía la foto en inglés).
 - Entra el loop viral del hilo de viralidad (skill shorts-viral-loop); estos tres son V0.
+
+## 2026-10-30 · Gemini desde el contenedor (cuenta Google AI Pro de Cris)
+- El plan AI Pro no trae API: sus cuotas valen en las apps y en AI Studio web. Lo que sí
+  llega a la API son US$10/mes de créditos de Google Cloud (hay que activarlos).
+- Adoptado: API key de AI Studio + `scripts/gemini/gemini.py` (texto, voz, diálogo gratis;
+  imagen y video con `--pago` y tope mensual). Voz `gemini:<Voz>` opcional en los planes.
+- Descartado: notebooklm-py (cookies de la cuenta que entrega las planillas) y Veo 3.1
+  preview (apagado el 22-oct; lo reemplaza Gemini Omni Flash).
+- Espera a una persona: Cris crea la clave y la deja como GEMINI_API_KEY en el entorno.
