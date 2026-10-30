@@ -1,0 +1,6 @@
+id,pedido,hilo,herramienta,entrega,titulo,estado,respondido,doc
+G-001,2026-10-30,Conversar con Gemini a través del repo,texto,doc,Prueba del canal: qué herramientas tienes en una tarea programada,pendiente,,
+G-002,2026-10-30,Conversar con Gemini a través del repo,deep-research,doc,Tiendas de Etsy que venden misterios imprimibles hoy,pendiente,,
+G-003,2026-10-30,Conversar con Gemini a través del repo,deep-research,doc,Canales de Shorts de true crime que crecen rápido,pendiente,,
+G-004,2026-10-30,Conversar con Gemini a través del repo,veo,video,Prueba de Veo: B-roll de cabaña de esquí 1987,pendiente,,
+G-005,2026-10-30,Conversar con Gemini a través del repo,notebooklm,audio,Prueba de NotebookLM: cuaderno y Audio Overview,pendiente,,

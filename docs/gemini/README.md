@@ -54,6 +54,12 @@ la clave y subir `tope_mes_usd` en `config.json` (máximo 9, para no salir de lo
   producto real.
 - Los modelos cambian rápido: si un id deja de existir, `estado` lo dice; corregir `config.json`.
 
+## La app de Gemini (Deep Research, Veo, NotebookLM): canal por el repo
+
+Lo que la API no da se pide a la app de Gemini por `gemini/` (protocolo en `gemini/README.md`,
+skill `gemini-canal`): Claude escribe tareas, una tarea programada de la app las lee en
+`gemini/PENDIENTES.md` y responde con Google Docs en Drive. Decidido el 2026-10-30.
+
 ## Usos previstos
 
 - Voz ES de mejor calidad que Piper para los Shorts de historia (A/B con el loop viral:
