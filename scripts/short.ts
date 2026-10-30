@@ -72,7 +72,7 @@ for (const [i, texto] of lineas.entries()) {
     voces.push({seg: 0, palabras: []});
     continue;
   }
-  const wav = await voz(texto, plan.idioma, plan.voz, plan.velocidad ?? 1);
+  const wav = await voz(texto, plan.idioma, plan.voz, plan.velocidad ?? 1, plan.vozEstilo);
   const destino = path.join(dirVoz, `${String(i + 1).padStart(2, '0')}.wav`);
   fs.copyFileSync(wav, destino);
   const pal = palabras(wav, plan.idioma, texto);

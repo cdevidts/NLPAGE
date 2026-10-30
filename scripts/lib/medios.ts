@@ -2,6 +2,8 @@
  * Voz, música, efectos e íconos. Todo gratis y sin cuenta:
  *   - Voz EN: Kokoro-82M (Apache 2.0) vía kokoro-js, modelo desde Hugging Face.
  *   - Voz ES: Piper es_MX-claude-high (dataset Apache 2.0), local.
+ *   - Voz opcional "gemini:<Voz>" (ES/EN): Gemini TTS, free tier de la API; pide GEMINI_API_KEY
+ *     (docs/gemini/README.md). El estilo va en plan.vozEstilo.
  *   - Tiempos de palabra: faster-whisper (MIT), local.
  *   - Música: Kevin MacLeod / incompetech.com, CC BY 4.0 (crédito en la descripción).
  *   - Efectos: catálogo medido de Mixkit (licencia Mixkit, sin atribución), heredado de Videos-Next-Layer.
@@ -21,12 +23,17 @@ let kokoro: unknown = null;
 export const VOZ_DEFAULT = {en: 'af_heart', es: 'es_MX-claude-high'} as const;
 
 /** Genera (o reusa) la voz de una línea. Devuelve el wav en .cache/voz/. */
-export const voz = async (texto: string, idioma: 'en' | 'es', nombre?: string, velocidad = 1) => {
+export const voz = async (texto: string, idioma: 'en' | 'es', nombre?: string, velocidad = 1, estilo?: string) => {
   const v = nombre ?? VOZ_DEFAULT[idioma];
-  const destino = path.join(CACHE, 'voz', `${hash(`${v}|${velocidad}|${texto}`)}.wav`);
+  const destino = path.join(CACHE, 'voz', `${hash(`${v}|${velocidad}|${estilo ? `${estilo}|` : ''}${texto}`)}.wav`);
   if (fs.existsSync(destino)) return destino;
   fs.mkdirSync(path.dirname(destino), {recursive: true});
-  if (idioma === 'en') {
+  if (v.startsWith('gemini:')) {
+    // Gemini no tiene parámetro de velocidad: se ajusta después con atempo.
+    const crudo = destino.replace(/\.wav$/, '.gemini.wav');
+    sh('python3', ['-I', 'scripts/gemini/gemini.py', 'voz', '--voz', v.slice(7), '--texto', texto, '--salida', crudo, ...(estilo ? ['--estilo', estilo] : [])], {silencio: true});
+    sh('ffmpeg', ['-y', '-v', 'error', '-i', crudo, '-filter:a', `atempo=${velocidad}`, destino], {silencio: true});
+  } else if (idioma === 'en') {
     const {KokoroTTS} = await import('kokoro-js');
     kokoro ??= await KokoroTTS.from_pretrained('onnx-community/Kokoro-82M-v1.0-ONNX', {dtype: 'q8', device: 'cpu'});
     const audio = await (kokoro as InstanceType<typeof KokoroTTS>).generate(texto, {voice: v as 'af_heart', speed: velocidad});

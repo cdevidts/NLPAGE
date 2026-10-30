@@ -34,3 +34,10 @@ Chrome. Todo lo adoptado corre en el contenedor sin cuenta.
 - Imágenes IA en Spaces de Hugging Face (FLUX.1-schnell por gradio_client, cuota anónima chica) si un video pide una imagen que el producto no tiene.
 - Lottie animados (LottieFiles GraphQL y Noto Emoji animado), ya implementado en Videos-Next-Layer: sumar como `sticker` cuando un video lo pida.
 - Publicar en YouTube: conector Metricool (falta que Cris conecte el canal). Alternativa sin Metricool: YouTube Data API, que pide un proyecto de Google Cloud y OAuth de Cris.
+
+## Agregada 2026-10-30: Gemini API (cuenta Google AI Pro de Cris)
+
+`scripts/gemini/gemini.py`: texto y voz gratis (free tier), imagen y video pagados con tope
+mensual en `docs/gemini/config.json` (parte en 0). Necesita `GEMINI_API_KEY` en el entorno.
+Probado contra un servidor falso con las formas de respuesta de la documentación; falta la
+prueba real cuando esté la clave. Detalle y decisiones en `docs/gemini/README.md`.

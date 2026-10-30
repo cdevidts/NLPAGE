@@ -1,0 +1,8 @@
+{
+  "texto": "gemini-3.8-flash",
+  "voz": "gemini-3.8-flash-tts",
+  "imagen": "gemini-3.1-flash-lite-image",
+  "video": "gemini-omni-1.1-flash",
+  "tope_mes_usd": 0,
+  "nota": "tope_mes_usd = gasto pagado máximo del mes (imagen y video). 0 = solo lo gratis. Subirlo requiere el OK de Cris y los créditos de Google AI Pro activos."
+}
