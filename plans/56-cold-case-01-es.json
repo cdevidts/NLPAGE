@@ -1,0 +1,127 @@
+{
+  "slug": "56-cold-case-01-es",
+  "producto": "56-cold-case-01",
+  "idioma": "es",
+  "tema": "coldcase",
+  "voz": "es_MX-claude-high",
+  "velocidad": 1.08,
+  "musica": {
+    "incompetech": "Constance",
+    "volumen": 0.24,
+    "desde": 0
+  },
+  "notas": "Versión en español del Short 56 (voz Piper es_MX-claude-high). Mismas páginas, del PDF en español. Años y números en letras: Piper leyó \"2013\" como algo que whisper oyó \"2003\". Piper pronuncia mal \"anfitrión\" (whisper oye \"anfitrirón\"/\"aficirón\"): evitar la palabra en la voz.",
+  "escenas": [
+    {
+      "dice": "¿Quién mató a Desmond Ashcombe en la última función?",
+      "texto": "¿Quién lo *mató?*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:1",
+        "foco": {
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.25
+        }
+      }
+    },
+    {
+      "dice": "En dos mil trece la policía detuvo al hombre equivocado y el caso quedó archivado.",
+      "texto": "El hombre *equivocado*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:6",
+        "foco": {
+          "x": 0.3,
+          "y": 0.86,
+          "zoom": 2.2
+        },
+        "etiqueta": "INFORME POLICIAL"
+      }
+    },
+    {
+      "dice": "Ahora el caso es tuyo. Treinta y nueve documentos de evidencia.",
+      "texto": "*39* documentos",
+      "visual": {
+        "tipo": "abanico",
+        "srcs": [
+          "pag:es:11",
+          "pag:es:9",
+          "pag:es:33",
+          "pag:es:23",
+          "pag:es:42"
+        ]
+      }
+    },
+    {
+      "dice": "Entrevistas, recibos, el registro de una cámara de seguridad y una libreta cifrada.",
+      "icono": "ph:magnifying-glass-bold",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:40",
+        "foco": {
+          "x": 0.72,
+          "y": 0.3,
+          "zoom": 2.0
+        },
+        "etiqueta": "LIBRETA CIFRADA"
+      }
+    },
+    {
+      "dice": "Cruza cada declaración. ¿Todo calza?",
+      "texto": "¿Todo *calza?*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:35",
+        "foco": {
+          "x": 0.5,
+          "y": 0.8,
+          "zoom": 1.9
+        }
+      }
+    },
+    {
+      "dice": "Nadie tiene que actuar. De uno a seis jugadores, de dos a tres horas.",
+      "visual": {
+        "tipo": "numero",
+        "valor": "1-6",
+        "sub": "jugadores · 2-3 horas"
+      }
+    },
+    {
+      "dice": "El caso completo viene en español y en inglés.",
+      "visual": {
+        "tipo": "imagen",
+        "src": "foto:05",
+        "foco": {
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.15
+        }
+      }
+    }
+  ],
+  "cierre": {
+    "dice": "Caso archivado número uno. Está en Etsy, el link va en la descripción.",
+    "titulo": "El Último Telón",
+    "sub": "Caso Archivado N.º 01",
+    "linea": "SheetSmithChile en Etsy",
+    "src": "foto:01"
+  },
+  "youtube": {
+    "titulo": "Juego de misterio imprimible: El Último Telón, caso archivado por dentro",
+    "descripcion": "Juego de misterio imprimible, en español: https://www.etsy.com/listing/4604988351\n\nÚltima función, 2013. El dueño del teatro aparece muerto en su oficina, la policía detiene al hombre equivocado y el caso queda archivado. El expediente trae 39 documentos de evidencia: entrevistas, recibos, el registro de una cámara de seguridad, un plano de la ciudad y una libreta con un mensaje cifrado. Crúzalos y demuestra quién lo mató, cómo y por qué.\n\nDe 1 a 6 jugadores, unas 2 a 3 horas, sin anfitrión. Incluye la versión en español y en inglés. Descarga inmediata en PDF, SheetSmithChile en Etsy.",
+    "tags": [
+      "juego de misterio imprimible",
+      "juego de misterio para imprimir",
+      "juego de misterio",
+      "caso archivado",
+      "juego de detectives",
+      "misterio y asesinato",
+      "juego de misterio para parejas",
+      "noche de juegos",
+      "juego para adultos",
+      "cold case file"
+    ]
+  }
+}

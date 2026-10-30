@@ -1,0 +1,63 @@
+{
+  "slug": "56-cold-case-01-en",
+  "producto": "56-cold-case-01",
+  "idioma": "en",
+  "tema": "coldcase",
+  "voz": "af_heart",
+  "velocidad": 1.05,
+  "musica": {"incompetech": "Constance", "volumen": 0.24, "desde": 0},
+  "notas": "Primer Short del pipeline. Gancho = la pregunta de la portada del expediente. Páginas elegidas mirando out/productos/56-cold-case-01/HOJA-en.jpg; nunca el PDF de solución.",
+  "escenas": [
+    {
+      "dice": "Who killed Desmond Ashcombe on closing night?",
+      "texto": "Who *killed* him?",
+      "visual": {"tipo": "pagina", "src": "pag:en:1", "foco": {"x": 0.5, "y": 0.5, "zoom": 1.25}}
+    },
+    {
+      "dice": "In 2013 the police arrested the wrong man, and the case went cold.",
+      "texto": "The *wrong* man",
+      "visual": {"tipo": "pagina", "src": "pag:en:6", "foco": {"x": 0.3, "y": 0.86, "zoom": 2.2}, "etiqueta": "INCIDENT REPORT"}
+    },
+    {
+      "dice": "Now it's your case. Thirty-nine evidence documents.",
+      "texto": "*39* documents",
+      "visual": {"tipo": "abanico", "srcs": ["pag:en:11", "pag:en:9", "pag:en:33", "pag:en:23", "pag:en:42"]}
+    },
+    {
+      "dice": "Interviews, receipts, a security camera log and a coded notebook.",
+      "icono": "ph:magnifying-glass-bold",
+      "visual": {"tipo": "pagina", "src": "pag:en:40", "foco": {"x": 0.72, "y": 0.3, "zoom": 2.0}, "etiqueta": "CODED NOTEBOOK"}
+    },
+    {
+      "dice": "Cross-check every story. Does it add up?",
+      "texto": "Does it *add up?*",
+      "visual": {"tipo": "pagina", "src": "pag:en:35", "foco": {"x": 0.5, "y": 0.8, "zoom": 1.9}}
+    },
+    {
+      "dice": "No host, no acting. One to six players, two to three hours.",
+      "visual": {"tipo": "numero", "valor": "1-6", "sub": "players · 2-3 hours"}
+    },
+    {
+      "dice": "The full case comes in English and Spanish.",
+      "visual": {"tipo": "imagen", "src": "foto:05", "foco": {"x": 0.5, "y": 0.5, "zoom": 1.15}}
+    }
+  ],
+  "cierre": {
+    "dice": "Cold Case File number one. It's on Etsy, link in the description.",
+    "titulo": "The Final Curtain",
+    "sub": "Cold Case File No. 01",
+    "linea": "SheetSmithChile on Etsy",
+    "src": "foto:01"
+  },
+  "youtube": {
+    "titulo": "Cold Case File Murder Mystery Game: The Final Curtain flip-through",
+    "descripcion": "Cold case file murder mystery game you print at home: https://www.etsy.com/listing/4604988351\n\nClosing night, 2013. The owner of the Ashcombe Playhouse is found dead in his office, the police arrest the wrong man and the case goes cold. The file has 39 evidence documents: interviews, receipts, a security camera log, a town map and a coded notebook. Cross-check them and name who did it, how and why.\n\n1-6 players, about 2-3 hours, no host. English and Spanish versions included. Instant PDF download from SheetSmithChile on Etsy.",
+    "tags": ["cold case file", "murder mystery game", "printable murder mystery", "detective game", "unsolved case", "game night", "date night game", "whodunit", "true crime game", "cold case game"]
+  },
+  "loop": {
+    "paginas": ["pag:en:1", "pag:en:6", "pag:en:11", "pag:en:40", "pag:en:33"],
+    "titulo": "The Final Curtain",
+    "sub": "Cold Case File No. 01 · printable murder mystery",
+    "frases": ["39 evidence documents", "1-6 players · no host", "English + Spanish"]
+  }
+}
