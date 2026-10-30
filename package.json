@@ -16,6 +16,7 @@
     "sfx-catalog": "tsx scripts/sfxCatalog.ts",
     "status": "tsx scripts/status.ts",
     "gemini": "python3 -I scripts/gemini/gemini.py",
+    "bandeja": "python3 -I scripts/gemini/bandeja.py",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

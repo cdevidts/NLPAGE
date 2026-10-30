@@ -68,3 +68,19 @@
 - Descartado: notebooklm-py (cookies de la cuenta que entrega las planillas) y Veo 3.1
   preview (apagado el 22-oct; lo reemplaza Gemini Omni Flash).
 - Espera a una persona: Cris crea la clave y la deja como GEMINI_API_KEY en el entorno.
+
+## 2026-10-30 · Canal con la app de Gemini a través del repo (pedido de Cris)
+- Cris quiere darle a Gemini una tarea programada que revise el repo y hacer "una carpeta con
+  prompts" para usar su poder (Deep Research, Veo, NotebookLM) desde Claude.
+- Verificado en la ayuda oficial de Google: la app de Gemini lee repos de GitHub pero NO escribe
+  en ellos; sí crea Google Docs y archivos en Drive desde una Tarea programada (AI Pro). Por eso
+  el canal es mixto: `gemini/inbox` + `PENDIENTES.md` en main (lo que lee Gemini) y respuestas
+  como Docs en Drive > Side Husle Claude > Gemini > Respuestas, que Claude copia a `gemini/outbox`.
+- Hecho: `scripts/gemini/bandeja.py` (pedir, pendientes, recibir, cerrar, mostrar, estado), skill
+  `gemini-canal`, protocolo en `gemini/README.md`, prompt de la tarea para Cris en
+  `gemini/PROMPT-TAREA-GEMINI.md`, 5 tareas iniciales (G-001 sonda de capacidades, G-002 y G-003
+  Deep Research de competencia Etsy y de canales de Shorts, G-004 Veo, G-005 NotebookLM).
+- Descartado: pedirle a Gemini que haga commits o issues (no puede); schedules clásicos de chat
+  (solo dejan texto en el chat); Gmail (Gemini no envía correos).
+- Espera a una persona: Cris pega el texto de `gemini/PROMPT-TAREA-GEMINI.md` en una Tarea de
+  Gemini (una vez). La primera respuesta (G-001) dirá qué herramientas funcionan de verdad.

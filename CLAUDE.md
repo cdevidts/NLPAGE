@@ -44,6 +44,13 @@ npm run loop  -- --plan plans/<slug>.json      # video 4:3 mudo para el listing 
 9. Publicar: YouTube vía el conector Metricool (canal conectado el 30-oct; receta en la skill).
    El video de Etsy se sube por el puente de etsy-bridge (op `multipart`, campo `video`).
 
+## Canal con la app de Gemini (cuenta Google AI Pro de Cris)
+
+Para Deep Research, Veo, Nano Banana o NotebookLM, que la API gratis no da: skill
+`.claude/skills/gemini-canal` y `gemini/README.md`. Claude deja tareas con
+`scripts/gemini/bandeja.py pedir` (van a **main**), Gemini las responde en Google Docs de
+Drive y Claude las recoge con `bandeja.py recibir`. Texto y voz siguen por `scripts/gemini/gemini.py`.
+
 ## Entorno
 
 Nada que pagar ni cuentas: Chromium en `/opt/pw-browsers` (nunca `playwright install`),
