@@ -110,6 +110,12 @@ Ver `docs/viral/BITACORA.md`. Si se acaban: correr `competencia.py`, mirar los o
   cada canal): títulos, vistas, suscriptores, miniatura. La página de cada video pide
   "confirma que no eres un bot" desde el contenedor: **no se esquiva** (sin cookies ni
   proxies), así que no hay subtítulos ni duración de Shorts ajenos.
+- Lo que el contenedor no puede ver (subtítulos y ganchos de Shorts ajenos, crítica de nuestros
+  Shorts, Deep Research) se le pide a la app de Gemini por el canal del repo:
+  `scripts/gemini/bandeja.py pedir` (skill `gemini-canal`, respuesta en ~1 h en Drive). Ya
+  pedidos: G-006 (15 Shorts más vistos de MrBallen y Cold Case Detective con ganchos
+  transcritos) y G-007 (crítica de nuestro canal). Todo lo de Gemini entra como hipótesis
+  "según Gemini, sin verificar", nunca como regla.
 - Métricas propias: solo Metricool. YouTube Analytics API pediría OAuth de Cris: no hace falta.
 - Skills ajenas revisadas (2026-10-30): `viral-video-master` (josiahsiegel/claude-plugin-marketplace)
   trae cifras sin fuente (p. ej. "55 s da 3x vistas"); se tomaron solo las ideas
