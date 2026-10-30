@@ -1,0 +1,23 @@
+{
+  "slug": "57-cold-case-02-etsy",
+  "producto": "57-cold-case-02",
+  "idioma": "en",
+  "tema": "coldcase",
+  "notas": "Solo video de listing (npm run loop). Nunca páginas de solución, pistas ni respuestas.",
+  "loop": {
+    "paginas": [
+      "pag:en:1",
+      "pag:en:9",
+      "pag:en:12",
+      "pag:en:30",
+      "pag:en:29"
+    ],
+    "titulo": "The Snow Remembers",
+    "sub": "Cold Case File No. 02 · printable murder mystery",
+    "frases": [
+      "38 evidence documents",
+      "1-6 players",
+      "English + Spanish"
+    ]
+  }
+}

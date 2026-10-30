@@ -1,0 +1,23 @@
+{
+  "slug": "55-navidad-escape-room-etsy",
+  "producto": "55-navidad-escape-room",
+  "idioma": "en",
+  "tema": "navidad",
+  "notas": "Solo video de listing (npm run loop). Nunca páginas de solución, pistas ni respuestas.",
+  "loop": {
+    "paginas": [
+      "pag:1:1",
+      "pag:1:3",
+      "pag:1:6",
+      "pag:1:2",
+      "pag:1:9"
+    ],
+    "titulo": "Christmas Escape Room",
+    "sub": "printable escape game for kids & family",
+    "frases": [
+      "6 puzzles · 1 secret code",
+      "Ages 8+ · 2-8 players",
+      "Spanish version included"
+    ]
+  }
+}

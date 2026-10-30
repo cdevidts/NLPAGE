@@ -1,0 +1,153 @@
+{
+  "slug": "56-cold-case-01-historia-es",
+  "producto": "56-cold-case-01",
+  "idioma": "es",
+  "tema": "coldcase",
+  "voz": "es_MX-claude-high",
+  "velocidad": 1.08,
+  "musica": {
+    "incompetech": "Constance",
+    "volumen": 0.24,
+    "desde": 0
+  },
+  "notas": "Formato historia (Cris 2026-10-30): se cuenta el caso como true crime y solo al final se dice que es ficción y que se puede resolver. Hechos del Doc 01 (carta de Ferrer), Doc 02, Doc 03 y Doc 31; nada de la solución. Se evita la foto del teléfono (Doc 09) para no regalar el patrón. Números en letras para Piper.",
+  "escenas": [
+    {
+      "dice": "El dueño de un teatro, muerto en la última función.",
+      "texto": "*Muerto*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:34",
+        "foco": {
+          "x": 0.8,
+          "y": 0.2,
+          "zoom": 2.6
+        }
+      }
+    },
+    {
+      "dice": "Desmond Ashcombe, sesenta y cuatro años. Al pie de su escalera de biblioteca. Seis libros en el suelo. Sus lentes, rotos.",
+      "texto": "*Seis* libros",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:9",
+        "foco": {
+          "x": 0.3,
+          "y": 0.3,
+          "zoom": 1.9
+        }
+      }
+    },
+    {
+      "dice": "Parecía una caída. La médica forense dijo que no.",
+      "texto": "¿Una *caída*?",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:6",
+        "foco": {
+          "x": 0.3,
+          "y": 0.86,
+          "zoom": 2.4
+        }
+      }
+    },
+    {
+      "dice": "La policía detuvo al dramaturgo. Dos días después lo soltó. El caso quedó archivado.",
+      "texto": "Caso *archivado*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:5",
+        "foco": {
+          "x": 0.3,
+          "y": 0.82,
+          "zoom": 2.2
+        }
+      }
+    },
+    {
+      "dice": "Trece años después, unos obreros que remodelan el teatro vacío encuentran su libreta perdida,",
+      "texto": "*13* años después",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:40",
+        "foco": {
+          "x": 0.5,
+          "y": 0.4,
+          "zoom": 1.5
+        }
+      }
+    },
+    {
+      "dice": "y dos hojas a medio quemar, escondidas detrás de un panel suelto.",
+      "texto": "Hojas *quemadas*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:41",
+        "foco": {
+          "x": 0.5,
+          "y": 0.35,
+          "zoom": 1.7
+        }
+      }
+    },
+    {
+      "dice": "Su teléfono sigue bloqueado. Cinco personas tenían motivos para matarlo.",
+      "texto": "*5* sospechosos",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:5",
+        "foco": {
+          "x": 0.5,
+          "y": 0.45,
+          "zoom": 1.25
+        }
+      }
+    },
+    {
+      "dice": "Una de ellas lo hizo.",
+      "texto": "*Una* lo hizo",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:1",
+        "foco": {
+          "x": 0.5,
+          "y": 0.45,
+          "zoom": 1.35
+        }
+      }
+    }
+  ],
+  "cierre": {
+    "dice": "Este caso es ficción. Pero lo puedes resolver tú. Lo encuentras en nuestra tienda de Etsy.",
+    "titulo": "¿Lo resuelves?",
+    "sub": "Caso Archivado N.º 01 · El Último Telón",
+    "linea": "SheetSmithChile en Etsy",
+    "src": "pag:es:1"
+  },
+  "youtube": {
+    "titulo": "Caso archivado: ¿quién mató al dueño del teatro en la última función?",
+    "descripcion": "Juego de misterio imprimible, en español: https://www.etsy.com/listing/4604988351\n\nEl dueño de un teatro aparece muerto en la última función de su propia obra. La policía detiene al dramaturgo, lo suelta dos días después y el caso queda archivado. Trece años más tarde, unos obreros encuentran su libreta perdida y dos hojas a medio quemar detrás de un panel suelto.\n\nEl caso es ficción: es el Caso Archivado N.º 01, un juego para imprimir. Tienes el expediente completo (39 documentos de evidencia) y descubres quién lo mató, cómo y por qué. De 1 a 6 jugadores, unas 2 a 3 horas, sin anfitrión. Incluye la versión en español y en inglés. SheetSmithChile en Etsy.\n\n#casoarchivado #truecrime #misterio #shorts",
+    "tags": [
+      "juego de misterio imprimible",
+      "caso archivado",
+      "caso sin resolver",
+      "true crime",
+      "misterio",
+      "juego de detectives",
+      "juego de misterio",
+      "resuelve el caso",
+      "noche de juegos",
+      "cold case file"
+    ]
+  },
+  "experimento": {
+    "hipotesis": "V0",
+    "variable": "formato",
+    "variante": "caso contado como true crime; ficción revelada en el cierre (ES)",
+    "control": "linea-base",
+    "formato": "historia",
+    "gancho_tipo": "in-medias-res",
+    "espera": "línea base para las próximas pruebas",
+    "listing_id": 4604988351
+  }
+}

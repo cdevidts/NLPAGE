@@ -1,0 +1,23 @@
+{
+  "slug": "62-piano-clasicos-principiantes-etsy",
+  "producto": "62-piano-clasicos-principiantes",
+  "idioma": "en",
+  "tema": "clasicos",
+  "notas": "Solo video de listing (npm run loop). Nunca páginas de solución, pistas ni respuestas.",
+  "loop": {
+    "paginas": [
+      "pag:1:1",
+      "pag:1:4",
+      "pag:1:2",
+      "pag:1:18",
+      "pag:1:22"
+    ],
+    "titulo": "Easy Piano for Beginners",
+    "sub": "24 classical & folk songs · letter notes",
+    "frases": [
+      "24 songs + MP3",
+      "Letter inside every note",
+      "English + Spanish"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "sheetsmith-social",
+  "version": "0.1.0",
+  "description": "Shorts de YouTube y loops para Etsy de SheetSmithChile, hechos con Remotion y herramientas gratis.",
+  "private": true,
+  "type": "module",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "remotion studio",
+    "setup": "tsx scripts/setup.ts",
+    "producto": "tsx scripts/producto.ts",
+    "short": "tsx scripts/short.ts",
+    "loop": "tsx scripts/loop.ts",
+    "watch": "tsx scripts/watch.ts",
+    "musica": "tsx scripts/musica.ts",
+    "sfx-catalog": "tsx scripts/sfxCatalog.ts",
+    "status": "tsx scripts/status.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.539",
+    "@remotion/lottie": "4.0.539",
+    "@remotion/renderer": "4.0.539",
+    "@remotion/transitions": "4.0.539",
+    "kokoro-js": "^1.2.1",
+    "lottie-web": "5.13.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "remotion": "4.0.539"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}

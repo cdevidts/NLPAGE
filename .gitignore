@@ -1,0 +1,9 @@
+node_modules/
+out/
+.cache/
+.env
+public/assets/sfx/*.mp3
+public/assets/music/*.mp3
+public/voz/
+__pycache__/
+public/productos/

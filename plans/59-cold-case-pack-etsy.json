@@ -1,0 +1,23 @@
+{
+  "slug": "59-cold-case-pack-etsy",
+  "producto": "59-cold-case-pack",
+  "idioma": "en",
+  "tema": "coldcase",
+  "notas": "Solo video de listing (npm run loop). Nunca páginas de solución, pistas ni respuestas.",
+  "loop": {
+    "paginas": [
+      "productos/56-cold-case-01/paginas-en/01.jpg",
+      "productos/57-cold-case-02/paginas-en/01.jpg",
+      "productos/58-cold-case-03/paginas-en/01.jpg",
+      "productos/57-cold-case-02/paginas-en/30.jpg",
+      "productos/58-cold-case-03/paginas-en/08.jpg"
+    ],
+    "titulo": "Cold Case File Bundle",
+    "sub": "3 printable murder mystery games",
+    "frases": [
+      "3 complete cases",
+      "Theater · ski lodge · ocean liner",
+      "1-6 players · EN + ES"
+    ]
+  }
+}

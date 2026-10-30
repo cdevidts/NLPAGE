@@ -1,0 +1,127 @@
+{
+  "slug": "60-piano-villancicos-historia-en",
+  "producto": "60-piano-villancicos",
+  "idioma": "en",
+  "tema": "piano",
+  "voz": "af_heart",
+  "velocidad": 1.05,
+  "musica": {
+    "archivo": "assets/music/propia/60-jingle-bells.mp3",
+    "volumen": 0.32,
+    "desde": 0
+  },
+  "notas": "Formato historia: Jingle Bells, primera canción tocada en el espacio (Gemini 6A, 16-dic-1965; Guinness World Records 'First song played in space'; Smithsonian guarda la armónica). Publicada en 1857 como 'The One Horse Open Sleigh' por James Lord Pierpont, no escrita para Navidad (Wikipedia, Mental Floss). Fotos NASA de dominio público en public/assets/media/nasa/.",
+  "escenas": [
+    {
+      "dice": "December, nineteen sixty-five. Two astronauts in orbit radio Mission Control.",
+      "texto": "*1965*, in orbit",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/nasa/S65-63220.jpg",
+        "foco": {
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.15
+        }
+      }
+    },
+    {
+      "dice": "They report a strange object, and a pilot in a red suit.",
+      "texto": "A *red suit*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/nasa/S65-63189.jpg",
+        "foco": {
+          "x": 0.5,
+          "y": 0.45,
+          "zoom": 1.3
+        }
+      }
+    },
+    {
+      "dice": "Then they pull out a tiny harmonica and some bells, and play Jingle Bells.",
+      "texto": "Then they *played*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/nasa/s65-19406.jpg",
+        "foco": {
+          "x": 0.62,
+          "y": 0.4,
+          "zoom": 1.25
+        }
+      }
+    },
+    {
+      "dice": "It's the first song ever played in space.",
+      "texto": "First song in *space*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/nasa/S65-63171.jpg",
+        "foco": {
+          "x": 0.55,
+          "y": 0.5,
+          "zoom": 1.3
+        }
+      }
+    },
+    {
+      "dice": "And it wasn't even written for Christmas. It came out in eighteen fifty-seven, as The One Horse Open Sleigh.",
+      "texto": "Not for *Christmas*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:1:4",
+        "foco": {
+          "x": 0.5,
+          "y": 0.1,
+          "zoom": 2.6
+        }
+      }
+    },
+    {
+      "dice": "Want to play it tonight? Every note has its letter printed inside, so you just find the key.",
+      "texto": "The *letter* is inside",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:1:4",
+        "foco": {
+          "x": 0.35,
+          "y": 0.3,
+          "zoom": 2.6
+        }
+      }
+    }
+  ],
+  "cierre": {
+    "dice": "Jingle Bells and nineteen more carols, easy piano with letter notes. Find it on Etsy, at Sheet Smith Chile.",
+    "titulo": "Play it tonight",
+    "sub": "20 easy carols · letter notes · MP3",
+    "linea": "SheetSmithChile on Etsy",
+    "src": "foto:01"
+  },
+  "youtube": {
+    "titulo": "Jingle Bells was the first song played in space | easy Christmas piano sheet music",
+    "descripcion": "Easy Christmas piano sheet music with letter notes: https://www.etsy.com/listing/4605991888\n\nDecember 16, 1965. Gemini 6A astronauts Wally Schirra and Tom Stafford report a strange object in orbit, with a pilot in a red suit. Then Schirra plays a small harmonica, Stafford shakes a set of bells, and Jingle Bells becomes the first song played in space (Guinness World Records). The harmonica and bells are now at the Smithsonian. The song itself was published in 1857 by James Lord Pierpont as \"The One Horse Open Sleigh\", and it wasn't written as a Christmas song.\n\nOur book has Jingle Bells and 19 more carols with the note name printed inside every note, plus an MP3 practice track for each song. The music in this video is that Jingle Bells track. Printable PDF, US Letter or A4. SheetSmithChile on Etsy.\n\nPhotos: NASA (public domain).\n\n#jinglebells #christmas #piano #shorts",
+    "tags": [
+      "easy christmas piano sheet music",
+      "jingle bells piano easy",
+      "jingle bells",
+      "first song in space",
+      "christmas piano sheet music",
+      "piano sheet music with letters",
+      "beginner piano",
+      "christmas history",
+      "gemini 6",
+      "piano for beginners"
+    ]
+  },
+  "experimento": {
+    "hipotesis": "V0",
+    "variable": "formato",
+    "variante": "historia real del villancico (primera canción en el espacio)",
+    "control": "linea-base",
+    "formato": "historia",
+    "gancho_tipo": "dato-imposible",
+    "espera": "línea base para las próximas pruebas",
+    "listing_id": 4605991888
+  }
+}
