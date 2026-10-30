@@ -84,3 +84,19 @@
   (solo dejan texto en el chat); Gmail (Gemini no envía correos).
 - Espera a una persona: Cris pega el texto de `gemini/PROMPT-TAREA-GEMINI.md` en una Tarea de
   Gemini (una vez). La primera respuesta (G-001) dirá qué herramientas funcionan de verdad.
+
+## 2026-10-30 · Gemini respondió las 5 tareas: qué puede y qué no
+- Cris activó la Tarea ~16:30 UTC; Gemini corrió a las 17:37-17:43 UTC y dejó los 5 Docs en
+  Respuestas. Recogidos con `bandeja.py recibir` a `gemini/outbox/`.
+- Aprendido (G-001): NO lee la URL raw de GitHub (usó el espejo de Drive: ahora es obligatorio);
+  sí navega y busca en la web, crea Docs/Sheets/PDF en Drive, genera imágenes (Nano Banana) y
+  cuadernos de NotebookLM. NO tiene Veo (G-004), Audio Overview (G-005) ni Canvas; "Deep
+  Research" como herramienta no existe en la tarea, pero investiga con búsqueda (G-002, G-003
+  salieron como `parcial` y son útiles).
+- G-002 (competencia Etsy en misterios): los líderes venden a US$4.50-6 con oferta permanente
+  del 40-55%, títulos que abren con "Printable Murder Mystery Game" / "Printable Cold Case File",
+  foto 1 flat-lay con badges, tags "date night" y "solo", micro-casos a US$3. Pasa a OPS como
+  hipótesis (sin verificar).
+- G-003 (Shorts true crime): primera palabra antes de 0,5 s, 50-58 s y 130-145 palabras,
+  estética de expediente sin rostro, CTA como continuación del juego. Pasa al loop viral.
+- Descartado: pedirle video o audio a la app de Gemini. Espera a una persona: nada.

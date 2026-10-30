@@ -16,6 +16,23 @@ Pro de Cris (Deep Research, Veo, Nano Banana, NotebookLM, Canvas, navegación), 
 | Crear archivos (Docs, Sheets, PDF, presentaciones) y guardarlos en Drive | Sí en Tareas ("Deep dive on topics & create files"; Spark crea y edita Google Docs y archivos de Drive) | answer/17094507, 9to5google 2026-07-23 |
 | Los "Schedules" clásicos de un chat | Solo entregan texto dentro del chat de Gemini: no sirven para que Claude lea la respuesta | answer/16316416 |
 
+## Lo que Gemini puede hacer DE VERDAD en una tarea programada (G-001, 2026-10-30 14:37 Chile)
+
+| Herramienta | ¿En tarea programada? | Qué pedir entonces |
+|---|---|---|
+| Leer la URL raw de GitHub | **No** ("restricciones de acceso del sandbox"); leyó el espejo `GEMINI-PENDIENTES` de Drive | El espejo en Drive es OBLIGATORIO tras cada cambio de PENDIENTES.md |
+| Búsqueda y navegación web (Google Search, Browse, navegador autónomo) | Sí | `herramienta: navegar` o `deep-research` (lo hace con búsqueda estructurada; marca `parcial`) |
+| Deep Research (la herramienta con ese nombre) | No | Pedir "investiga con búsqueda web y cita fuentes"; G-002 y G-003 salieron así en ~3 min |
+| Imágenes (Nano Banana / Imagen, 1:1, 16:9, 9:16) | Sí (declarado, sin probar aún) | `herramienta: nano-banana`, `entrega: imagen` en Entregas |
+| Video (Veo) | **No** (G-004) | No pedir video; para B-roll usar `gemini.py video --pago` (API) o fotos |
+| Google Docs, Sheets, PDF, presentaciones en Drive | Sí (G-001 creó Docs; dice que Sheets, Slides y PDF también) | `entrega: doc`, `sheet`, `pdf`, `slides` |
+| NotebookLM: crear cuaderno y añadir fuentes | Sí (G-005 creó el cuaderno) | Cuadernos como memoria consultable; preguntas textuales |
+| NotebookLM: Audio Overview | **No** (G-005) | Audio a 2 voces: `gemini.py dialogo` (API) |
+| Canvas | No (es interfaz de la web) | — |
+| Archivos .txt en Entregas | Los convierte a Google Doc (y G-001 lo creó dos veces) | Pedir siempre Google Doc; tolerar duplicados |
+
+Gemini se autodeclaró "Gemini 2.5 Pro" en modo agente; su sandbox no tiene salida a internet (sólo Search y Browse). Las 5 tareas se respondieron en una sola corrida de ~6 min (17:37-17:43 UTC), 1 h 14 min después de que Cris activara la tarea.
+
 Conclusión: el repo es la memoria y el buzón de **Claude**; la mano de **Gemini** es Google
 Drive. Gemini lee las tareas en una URL pública del repo (o en su espejo en Drive) y deja sus
 respuestas como Google Docs en una carpeta de Drive que Claude lee con el conector. Claude
@@ -95,7 +112,7 @@ repo (pesan); se enlazan desde la respuesta y, si un hilo los necesita, los baja
 ## Privacidad y límites
 - Nunca van a Gemini: claves, tokens, datos de compradores, soluciones de los juegos.
 - Google puede usar lo que la app recibe para mejorar sus productos (cuenta personal).
-- La tarea programada corre cada 6 horas (lo fijó Cris en la app); una tarea nueva tarda hasta
+- La tarea programada corre cada 6 horas (la activó Cris el 2026-10-30 ~16:30 UTC); una tarea nueva tarda hasta
   eso en responderse. Deep Research tiene cupo diario en AI Pro: no pedir más de 2-3 por día.
 - Si una tarea lleva más de 2 días pendiente, `bandeja.py estado` lo avisa: probablemente la
   tarea programada de Gemini se pausó (Google las apaga por inactividad) y hay que decírselo a Cris.
