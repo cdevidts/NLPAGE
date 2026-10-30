@@ -13,3 +13,15 @@
 - Primeros videos: Short de Cold Case 01 en inglés y español, Short de partituras de
   piano (EN), y videos de listing 4:3 + GIF de #56 y #60.
 - Espera a una persona: que Cris conecte el canal de YouTube en Metricool.
+
+## 2026-10-30 · Videos de listing para el resto del catálogo de juegos y piano
+- Pedido del hilo de operación: loops de Etsy para #57, #58, #59, #61, #62 y #55, en ese
+  orden. Hechos y dejados en /mnt/project-files/videos/2026-10-30/ (operación los sube).
+- Temas nuevos: `clasicos` (azul marino y dorado) para #62 y `navidad` (rojo y dorado,
+  el mismo del piano) para #55. El pack #59 mezcla páginas de los tres casos.
+- Arreglo: `producto` tomaba el sobre sellado "-EN-ES.pdf" como versión en español y
+  pisaba sus páginas; ahora queda con alias `enes`.
+- #55: solo páginas de juego; las de pistas y respuestas quedan fuera (regla 1).
+- Descartado por ahora: Shorts de estos seis. Primero ver si los de #56 y #60 traen
+  vistas cuando el canal esté conectado.
+- Espera a una persona: que Cris conecte el canal de YouTube en Metricool.

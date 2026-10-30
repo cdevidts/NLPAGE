@@ -1,6 +1,6 @@
 /** Lo que comparten los scripts (que arman los props) y las composiciones. */
 
-export type TemaId = 'coldcase' | 'piano' | 'sheets' | 'fiesta';
+export type TemaId = 'coldcase' | 'piano' | 'navidad' | 'clasicos' | 'sheets' | 'fiesta';
 
 /** Un efecto medido del catálogo: su pico es lo que se alinea con el evento. */
 export type SfxRef = {id?: string; src: string; picoSeg: number; gananciaDb: number};

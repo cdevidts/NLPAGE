@@ -1,0 +1,23 @@
+{
+  "slug": "58-cold-case-03-etsy",
+  "producto": "58-cold-case-03",
+  "idioma": "en",
+  "tema": "coldcase",
+  "notas": "Solo video de listing (npm run loop). Nunca páginas de solución, pistas ni respuestas.",
+  "loop": {
+    "paginas": [
+      "pag:en:1",
+      "pag:en:6",
+      "pag:en:8",
+      "pag:en:35",
+      "pag:en:37"
+    ],
+    "titulo": "Seven Bells",
+    "sub": "Cold Case File No. 03 · printable murder mystery",
+    "frases": [
+      "38 evidence documents",
+      "1-6 players",
+      "English + Spanish"
+    ]
+  }
+}

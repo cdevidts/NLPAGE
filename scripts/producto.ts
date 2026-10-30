@@ -51,8 +51,9 @@ const pdfs = fs
   .sort();
 const indice: Record<string, {pdf: string; paginas: number}> = {};
 pdfs.forEach((pdf, i) => {
-  const m = /-(EN|ES)\.pdf$/i.exec(pdf);
-  const alias = m ? m[1].toLowerCase() : String(i + 1);
+  // "-EN-ES.pdf" (sobres sellados bilingües) no puede pisar las páginas de "-ES.pdf".
+  const m = /-(EN-ES|EN|ES)\.pdf$/i.exec(pdf);
+  const alias = m ? m[1].toLowerCase().replace('-', '') : String(i + 1);
   const dir = path.join(destino, `paginas-${alias}`);
   const info = sh('pdfinfo', [path.join(origen, pdf)], {silencio: true});
   const n = Number(/Pages:\s+(\d+)/.exec(info)?.[1] ?? 0);

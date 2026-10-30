@@ -27,6 +27,19 @@ export type Tema = {
 
 const INTER = 'Inter, "Helvetica Neue", Arial, sans-serif';
 
+const NAVIDAD: Tema = {
+  fondo: 'radial-gradient(120% 90% at 50% 30%, #9b2226 0%, #6e1519 60%, #3d0b0e 100%)',
+  tinta: '#fbf6ec',
+  acento: '#e2b84a',
+  sobreAcento: '#3d0b0e',
+  papel: '#fffdf8',
+  display: '"Playfair Display", Georgia, serif',
+  mayus: false,
+  etiqueta: INTER,
+  vineta: 0.35,
+  grano: 0.04,
+};
+
 export const TEMAS: Record<TemaId, Tema> = {
   coldcase: {
     fondo: 'radial-gradient(120% 90% at 50% 35%, #3a2a1d 0%, #1c140e 55%, #0b0806 100%)',
@@ -40,11 +53,14 @@ export const TEMAS: Record<TemaId, Tema> = {
     vineta: 0.55,
     grano: 0.07,
   },
-  piano: {
-    fondo: 'radial-gradient(120% 90% at 50% 30%, #9b2226 0%, #6e1519 60%, #3d0b0e 100%)',
+  piano: NAVIDAD,
+  // Juegos de Navidad (escape room): el mismo mundo rojo y dorado del piano navideño.
+  navidad: NAVIDAD,
+  clasicos: {
+    fondo: 'radial-gradient(120% 90% at 50% 30%, #2b4a78 0%, #1b3156 60%, #0d1a30 100%)',
     tinta: '#fbf6ec',
     acento: '#e2b84a',
-    sobreAcento: '#3d0b0e',
+    sobreAcento: '#0d1a30',
     papel: '#fffdf8',
     display: '"Playfair Display", Georgia, serif',
     mayus: false,

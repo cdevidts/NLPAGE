@@ -1,0 +1,23 @@
+{
+  "slug": "61-piano-villancicos-ninos-etsy",
+  "producto": "61-piano-villancicos-ninos",
+  "idioma": "en",
+  "tema": "piano",
+  "notas": "Solo video de listing (npm run loop). Nunca páginas de solución, pistas ni respuestas.",
+  "loop": {
+    "paginas": [
+      "pag:1:1",
+      "pag:1:4",
+      "pag:1:2",
+      "pag:1:6",
+      "pag:1:11"
+    ],
+    "titulo": "Christmas Piano for Kids",
+    "sub": "15 carols · color notes with letters",
+    "frases": [
+      "15 carols + MP3",
+      "Big color notes",
+      "English + Spanish"
+    ]
+  }
+}
