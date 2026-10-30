@@ -36,7 +36,7 @@ npm run loop  -- --plan plans/<slug>.json      # video 4:3 mudo para el listing 
 6. Los renders van a `renders/` con su ficha `<slug>.youtube.md`. Se commitean.
 7. Antes de entregar: `GUION.md` leído de corrido (lo que se ESCUCHA en cada segundo),
    loudness -14 LUFS y pico bajo -1 dBTP, `npx tsc --noEmit` limpio.
-8. Publicar: YouTube vía el conector Metricool (pendiente que Cris conecte el canal).
+8. Publicar: YouTube vía el conector Metricool (canal conectado el 30-oct; receta en la skill).
    El video de Etsy se sube por el puente de etsy-bridge (op `multipart`, campo `video`).
 
 ## Entorno

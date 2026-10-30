@@ -87,8 +87,12 @@ Arriba ~120 px (buscar, menú), abajo ~380 px (título, canal, música) y a la d
 ~140 px (botones). Titular en y 200-420, visual 420-1320, subtítulo 1385-1560.
 
 ## Publicar
-- YouTube: conector Metricool (`createScheduledPost` con el MP4 en una URL pública).
-  Falta que Cris conecte el canal en Metricool: pedirlo una vez, con los videos listos.
-- Etsy: el `-etsy.mp4` va al listing por el puente de etsy-bridge (copiar a
-  `assets/<carpeta>/` de main y op request multipart con `video`). Editar un listing
-  activo es gratis.
+- YouTube: conector Metricool, marca cdevidts2 (blogId 6078519), canal conectado el
+  30-oct. `createScheduledPost` con `providers [{network: youtube}]`, `youtubeData`
+  {title, type "short", privacy "public", tags, category, madeForKids false,
+  isAiGeneratedContent true (la voz es IA)} y el texto de la ficha sin la línea de tags.
+  El MP4 va como URL de raw.githubusercontent de este repo (es público) fijada a un
+  commit ya empujado; Metricool la copia a su CDN. Hora: 16:00 Chile (la mejor según
+  Metricool), un Short por día. Nunca la red Instagram de esa marca (es de Next Layer).
+- Etsy: el `-etsy.mp4` se sube con `python3 /mnt/project-files/plan/metricas/swap_video.py
+  <listing_id>=<mp4>` (reemplaza el video anterior). Editar un listing activo es gratis.

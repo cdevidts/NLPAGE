@@ -25,3 +25,11 @@
 - Descartado por ahora: Shorts de estos seis. Primero ver si los de #56 y #60 traen
   vistas cuando el canal esté conectado.
 - Espera a una persona: que Cris conecte el canal de YouTube en Metricool.
+
+## 2026-10-30 · YouTube conectado; primeros Shorts programados
+- Cris conectó su canal (Cristobal De Vidts) en Metricool. Programados por el conector,
+  16:00 hora Chile: #56 EN hoy, #60 EN el 31-oct y #56 ES el 1-nov.
+- El MP4 se pasa como URL de raw.githubusercontent fijada a un commit: Metricool la
+  aceptó y la copió a su CDN. No hizo falta hosting aparte.
+- Declarado como contenido sintético (voz IA) en los tres.
+- Espera: ver vistas de los tres antes de hacer Shorts de los otros productos.
