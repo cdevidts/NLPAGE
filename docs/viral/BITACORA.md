@@ -63,6 +63,18 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
   salientes del pin de video del mismo Short. Se lee en cada Short; con tráfico chico,
   se suma por mes.
 
+### V9. Cold case: cierre "el expediente sigue abierto" gana a "puedes resolverlo tú"
+- Evidencia: Gemini G-003 (2026-10-30, sin verificar; canales MrBallen Shorts, Explore With Us, Cold Case Detective): el CTA que sigue la historia ("The file remains open... can you solve what detectives missed?") en vez de vender. Detalle en plan/investigacion/2026-10-30-gemini-G-003-shorts-true-crime.md.
+- Prueba: misma historia, solo cambia la última frase (sigue el aviso de ficción). Métrica: comentarios/1.000 y vistas del listing en Etsy.
+
+### V10. Gancho de contradicción gana a la pregunta "¿quién lo mató?"
+- Evidencia: Gemini G-003 clasifica 10 ganchos; contradicción y "tú eres el detective" arriba. Sin verificar.
+- Prueba: primera frase "Everyone had an alibi. One of them was lying." vs la pregunta del V0. Métrica: retención y vistas 48 h.
+
+### V11. Cambio de plano cada 2-3 s gana a escenas de 4-6 s
+- Evidencia: Gemini G-003 (ritmo de los canales de expediente). Hoy el pipeline cambia por frase (~4 s).
+- Prueba: partir cada escena en 2 planos del mismo documento (foco distinto). Métrica: retención.
+
 ## Registro de lecturas
 | Fecha | Short | Lectura | Vistas | Retención | Coment./1k | Shares/1k | Veredicto | Nota |
 |---|---|---|---|---|---|---|---|---|
