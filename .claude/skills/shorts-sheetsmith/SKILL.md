@@ -64,6 +64,9 @@ los rechazó: sirven para la portada de Etsy, no para que se compartan. Desde ah
   ("Find it on Etsy, at Sheet Smith Chile"; en la voz, el nombre separado), no
   "link in the description". Desde el 30-oct el canal tiene en su cabecera los
   enlaces a Etsy y Gumroad: también vale "link on the channel" / "el link está en el canal".
+  La descripción lleva, bajo el link de Etsy de la primera línea: "Shop links (Etsy and
+  Gumroad) are on the channel page: tap the channel name." (ES: "Los links de la tienda
+  (Etsy y Gumroad) están en el canal: toca el nombre del canal.").
 
 ## Qué hace que un Short funcione
 
