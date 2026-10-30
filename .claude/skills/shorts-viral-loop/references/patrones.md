@@ -52,6 +52,13 @@ se marca así.
 - "always all at once 😭 #emergencyfund" (54x, Lunch Money): dolor que todos conocen.
 - Hipótesis V6: confesión/POV > tutorial para planillas.
 
+## 2026-10-30 · Gemini G-003 (investigación web de Gemini, SIN VERIFICAR)
+Texto completo en `gemini/outbox/G-003.md`; resumen en /mnt/project-files/plan/investigacion/2026-10-30-gemini-G-003-shorts-true-crime.md.
+- Primera palabra antes de 0,5 s, sin intro. Shorts de 50-58 s y 130-145 palabras.
+- Estructura: 0-3 gancho · 3-15 víctima, lugar, hora · 15-35 sospechosos con coartadas que chocan y un objeto clave · 35-48 quiebre y pregunta central · 48-60 el cierre le pasa la investigación al que mira.
+- Estética de expediente sin rostro (corcho, polaroids, informes a máquina, sello rojo), plano nuevo cada 2-3 s, subtítulos palabra a palabra amarillo sobre negro. Música baja (-18 a -22 dB) y efectos de papel y obturador.
+- Pasó a hipótesis V4 (duración), V9 (cierre), V10 (gancho) y V11 (ritmo). Más pedidos a Gemini: `scripts/gemini/bandeja.py pedir` (corre cada 6 h).
+
 ## Lo que dicen las guías (sin medir por nosotros: tratarlo como hipótesis)
 - Shorts pueden durar hasta 3 minutos desde el 15-oct-2024; la compuerta de 58 s de
   `short` es por costumbre, no por regla de YouTube.
