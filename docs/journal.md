@@ -33,3 +33,16 @@
   aceptó y la copió a su CDN. No hizo falta hosting aparte.
 - Declarado como contenido sintético (voz IA) en los tres.
 - Espera: ver vistas de los tres antes de hacer Shorts de los otros productos.
+
+## 2026-10-30 · Loop viral de Shorts (hilo "Crear sistema de viralidad para Shorts")
+- Pedido de Cris: buscar lo que ayude a la viralidad, anotar lo probado y armar una
+  skill del loop de prueba y retroalimentación. Nace `.claude/skills/shorts-viral-loop`,
+  `docs/viral/` (BITACORA.md y shorts.csv) y `scripts/viral/` (competencia.py y experimento.py).
+- Investigación con `competencia.py` (yt-dlp sobre listados públicos, sin cuenta): en
+  piano ganan los tutoriales con letras de notas; en cold case, el documento del
+  expediente como gancho; en planillas, confesión y POV (Tiller 600x). Detalle en
+  `references/patrones.md`.
+- Descartado: bajar la página de cada video o sus subtítulos (YouTube pide "no soy un
+  bot" desde el contenedor; no se esquiva), YouTube Analytics API (OAuth de Cris),
+  y las cifras sin fuente de skills ajenas como reglas.
+- Espera a una persona: nada. El hilo de videos registra cada Short con `experimento.py alta`.
