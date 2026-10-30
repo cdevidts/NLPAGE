@@ -33,6 +33,13 @@ PASO 5. Entrega cada tarea así:
 REGLAS: nunca escribas contraseñas, claves ni datos personales de compradores. No modifiques ni borres documentos que ya existan. No hagas nada fuera de lo que piden las tareas. Responde en el idioma en que está escrita cada tarea. Al final, dime en una sola frase cuántas tareas hiciste y cuáles quedaron en "no-puedo".
 ```
 
+## Estado
+Cris pegó el texto el 2026-10-30 (~16:30 UTC) y a las 17:53 UTC cambió la frecuencia a **cada hora**.
+Las reglas nuevas (modelo fuerte, hablarle a Claude, `modelo:` en la línea 3, sección "Sugerencias
+para Claude") viven en el encabezado de `PENDIENTES.md`, que Gemini lee en cada corrida: no hace
+falta volver a pegar nada. Si algún día se recrea la tarea, agregar al texto: "Usa siempre el modelo
+más capaz disponible (Gemini 4 Argon, Pro o Deep Think)".
+
 ## Por qué así
 - Gemini NO puede escribir en GitHub (ayuda oficial de Google, 2026-10-30), por eso la respuesta
   va a Drive y Claude la copia al repo.
