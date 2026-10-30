@@ -25,18 +25,21 @@ npm run loop  -- --plan plans/<slug>.json      # video 4:3 mudo para el listing 
 ## Reglas
 
 1. **Nunca se muestra el PDF de solución** de un juego (`producto` ni lo convierte).
-2. **No se inventa nada**: cada dato del guion sale del listing (`LISTING.txt` o
-   `listing_data.py` del producto). Números y años en letras en `dice` (la voz lee mal "2013").
-3. Todo copy de YouTube (título, descripción, tags) sigue la skill `ai-side-hustle-seo-copy`
-   (frase principal de `plan/seo/mapa.json`; título = frase + "flip-through") y la prosa
+2. **Un Short es una historia, no un anuncio** (Cris, 30-oct): el caso contado como true
+   crime o la historia real de la pieza, y el producto solo en el cierre. Detalle en la skill.
+3. **No se inventa nada**: los hechos salen del expediente (nunca de la solución), del
+   listing o de una fuente verificada anotada en el plan. Un caso de ficción se dice
+   ficción en el cierre. Números y años en letras en `dice` (la voz lee mal "2013").
+4. Todo copy de YouTube (título, descripción, tags) sigue la skill `ai-side-hustle-seo-copy`
+   (frase principal de `plan/seo/mapa.json` en descripción y tags; título = gancho con la frase dentro) y la prosa
    pasa por `no-ai-slop`. Ambas viven en el repo etsy-bridge.
-4. **Plata**: solo herramientas gratis. Nada que cobre sin el OK de Cris.
-5. Música con licencia clara: Kevin MacLeod (incompetech, CC BY 4.0, el crédito lo pone
+5. **Plata**: solo herramientas gratis. Nada que cobre sin el OK de Cris.
+6. Música con licencia clara: Kevin MacLeod (incompetech, CC BY 4.0, el crédito lo pone
    `short` en la ficha) o audio propio del producto. Nada comercial (Content ID).
-6. Los renders van a `renders/` con su ficha `<slug>.youtube.md`. Se commitean.
-7. Antes de entregar: `GUION.md` leído de corrido (lo que se ESCUCHA en cada segundo),
+7. Los renders van a `renders/` con su ficha `<slug>.youtube.md`. Se commitean.
+8. Antes de entregar: `GUION.md` leído de corrido (lo que se ESCUCHA en cada segundo),
    loudness -14 LUFS y pico bajo -1 dBTP, `npx tsc --noEmit` limpio.
-8. Publicar: YouTube vía el conector Metricool (canal conectado el 30-oct; receta en la skill).
+9. Publicar: YouTube vía el conector Metricool (canal conectado el 30-oct; receta en la skill).
    El video de Etsy se sube por el puente de etsy-bridge (op `multipart`, campo `video`).
 
 ## Entorno

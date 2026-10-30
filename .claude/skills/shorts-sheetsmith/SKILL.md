@@ -18,8 +18,9 @@ identidad.
 
 1. **`npm run producto -- <carpeta>`** y abre **cada** `out/productos/<p>/HOJA-*.jpg`.
    Elige páginas mirando. En juegos, nunca la solución (el script no la convierte).
-2. **Lee el listing** (`/mnt/project-files/etsy/<p>/LISTING.txt` o `listing_data.py`).
-   Todo dato del guion sale de ahí: cuántas páginas, jugadores, horas, idiomas.
+2. **Lee el listing** (`/mnt/project-files/etsy/<p>/LISTING.txt` o `listing_data.py`)
+   y, en juegos, los primeros documentos del expediente (carta, sospechosos, informe):
+   de ahí sale la historia. Datos del producto (jugadores, horas, idiomas) del listing.
 3. **Escribe el plan** copiando uno de `plans/`. Una escena = una frase dicha + una
    cosa que se ve. El copy de YouTube sigue `ai-side-hustle-seo-copy` y `no-ai-slop`.
 4. **`npm run short -- --plan ... --solo-check`** (2 s) y después sin la bandera.
@@ -32,18 +33,45 @@ identidad.
 7. Commit, entrada en `docs/journal.md`, y la ficha `renders/<slug>.youtube.md` lista
    para publicar.
 
-## Qué hace que un Short de producto funcione
+## Regla de fondo: un Short es una historia, no un anuncio (Cris, 2026-10-30)
+
+Los primeros Shorts eran anuncios ("39 documents, 1-6 players, it's on Etsy") y Cris
+los rechazó: sirven para la portada de Etsy, no para que se compartan. Desde ahora:
+
+- **Se cuenta una historia que engancha por sí sola** y el producto aparece recién
+  en el cierre. Si sacas el cierre, el video tiene que seguir valiendo la pena.
+- **Juegos de misterio (cold case, escape room, fiesta):** se narra el caso como
+  true crime, como si fuera real: gancho (el muerto, el lugar, la noche), los hechos
+  raros, el error de la policía, el giro (lo que apareció después), y la pregunta
+  abierta ("One of them did it."). En el cierre, y solo ahí: "Este caso es ficción,
+  pero lo puedes resolver tú. Enlace en la descripción." Decir que es ficción es
+  obligatorio (honestidad y normas de YouTube) y va al final para no matar el gancho.
+  Los hechos salen de los documentos del expediente, nunca de la solución, y nunca
+  se muestra un acertijo resuelto (patrón del teléfono, cifrados).
+- **Partituras y otros productos:** la historia real detrás de la pieza (Jingle
+  Bells fue la primera canción tocada en el espacio y no se escribió para Navidad).
+  Dato histórico = dato verificado con fuente, anotada en `notas` del plan y en la
+  descripción. Las fotos de apoyo, de dominio público (NASA, Wikimedia PD) en
+  `public/assets/media/<fuente>/` con su `CREDITOS.md`.
+- **Título de YouTube:** el gancho como pregunta o dato sorprendente, con la frase
+  de búsqueda dentro ("Cold case file: who killed the theater owner on closing
+  night?"). La frase principal de `plan/seo/mapa.json` va en la primera línea de la
+  descripción y en los tags. 3-4 hashtags al final (#shorts incluido).
+- Cuando exista la skill de viralidad (hilo "Crear sistema de viralidad para
+  Shorts"), cada Short pasa por ella y su resultado se anota ahí.
+
+## Qué hace que un Short funcione
 
 ### Gancho en 1,5 s
-La primera escena es una pregunta o una promesa concreta del producto, no el nombre
-de la tienda: "Who killed Desmond Ashcombe on closing night?", "Can't read music?
-You can still play Jingle Bells tonight." El titular de arriba la resume en 2-4
-palabras con UNA palabra resaltada (`*así*`).
+La primera frase es el hecho más fuerte de la historia, no el nombre de la tienda
+ni del producto: "A theater owner is found dead on the closing night of his own
+play." / "December, 1965. Two astronauts in orbit radio Mission Control." El titular
+de arriba lo resume en 2-4 palabras con UNA palabra resaltada (`*así*`).
 
 ### Estructura (30-45 s)
-`Gancho → el problema o la historia → qué trae (con páginas reales) → cómo se usa →
-para quién (jugadores, nivel, idiomas) → cierre con dónde se compra`. Una idea por
-escena, 6-14 palabras por escena. A 2,6 palabras/s, 45 s son ~110 palabras.
+`Gancho → hechos raros (2-3 escenas) → giro → pregunta abierta o remate → cierre
+con el producto y dónde está`. Una idea por escena, 6-16 palabras por escena,
+frases cortas. A 2,6 palabras/s, 45 s son ~110 palabras.
 
 ### Visuales (tipos en `src/lib/types.ts`)
 | tipo | cuándo |
