@@ -7,7 +7,7 @@ Google AI Pro desde Claude.
 
 | Herramienta | ¿Desde Claude? | Cómo | Costo |
 |---|---|---|---|
-| Gemini texto (3.8 Flash, 3.6 Flash, 3.5 Flash-Lite, 2.5 Pro) | Sí | API key de AI Studio, `gemini.py texto` | Gratis (free tier, con límite diario por proyecto) |
+| Gemini texto (3.6 Flash por defecto; respaldo 3.8 Flash y 3.5 Flash-Lite) | Sí | API key de AI Studio, `gemini.py texto` | Gratis (free tier, con límite diario por proyecto) |
 | Gemini TTS (3.8 Flash TTS, 130+ idiomas, 30 voces, estilo por turno, 2 voces) | Sí | `gemini.py voz` / `dialogo`, o `"voz": "gemini:Charon"` en un plan | Gratis (free tier) |
 | Imágenes (Nano Banana 2 Lite, 2.1, Pro) | Sí | `gemini.py imagen --pago` | Pagado: ~US$0,034 por imagen 1K |
 | Video (Gemini Omni Flash; Veo 3.1 preview se apagó el 22-oct-2026) | Sí | `gemini.py video --pago` | Pagado: ~US$0,10 por segundo 720p |
@@ -31,6 +31,17 @@ la única parte que llega a la API.
 Opcional y con OK de Cris (regla de plata): activar los créditos en
 https://developers.google.com/program/my-benefits, activar la facturación del proyecto de
 la clave y subir `tope_mes_usd` en `config.json` (máximo 9, para no salir de los US$10).
+
+## Prueba real (2026-10-30, clave de Cris)
+
+- `estado`: 60 modelos visibles; texto, voz, imagen y video del config aparecen.
+- Texto: 3.6 Flash y 3.5 Flash-Lite responden en 2-4 s. 3.8 Flash colgó 60 s y luego dio
+  503 "high demand": por eso va de respaldo y no de principal. Los 2.5 ya no se abren a
+  cuentas nuevas (404).
+- Voz: 3.8 Flash TTS, voz Charon con estilo, 6,3 s de audio en ~4 s; faster-whisper la
+  transcribió 11/11 palabras (similitud 1,0). Diálogo Kore + Charon: OK.
+- Whisper escribe los años en cifras ("1987") aunque la voz los diga bien: baja la
+  similitud de la compuerta de `short`; no es un error de la voz.
 
 ## Reglas
 

@@ -1,5 +1,6 @@
 {
-  "texto": "gemini-3.8-flash",
+  "texto": "gemini-3.6-flash",
+  "texto_respaldo": ["gemini-3.8-flash", "gemini-3.5-flash-lite"],
   "voz": "gemini-3.8-flash-tts",
   "imagen": "gemini-3.1-flash-lite-image",
   "video": "gemini-omni-1.1-flash",
