@@ -116,3 +116,19 @@
   repartir, rellenar la cola, automejora los lunes.
 - Descartado: pedirle a Cris que vuelva a pegar la tarea (las reglas van en PENDIENTES.md).
 - Espera a una persona: nada.
+
+## 2026-10-31 · Turno diario del canal Gemini: 6 respuestas, protocolo con cupo de búsqueda
+- Llegaron las 6 (G-006..G-011) en la ejecución de las 18:08-18:30 UTC del 30-oct, todas con `modelo:`
+  ("Gemini 2.5 Pro, entorno programado"; dice que no puede elegir Argon/Deep Think desde dentro).
+  Recogidas a `gemini/outbox/`, resúmenes en plan/investigacion/2026-10-31-gemini-G-006-G-007-* y
+  G-008-*; G-009 quedó `no-puedo` (Pinterest pide sesión + se agotó el cupo de búsqueda).
+- Aprendido: ~10-12 llamadas a google:search/browse por ejecución (THROTTLED_ROLE_LIMIT); YouTube por
+  URL/video_id da vistas, likes, transcripción y fotogramas; Etsy y Pinterest bloquean browse; Nano Banana
+  sí (2 PNG 4:3 en Entregas); Python sin red con Pillow/reportlab/openpyxl; puede subir binarios.
+- Hecho: regla 1b en PENDIENTES.md (máx. 2 tareas de búsqueda web por hora, marca `Búsqueda web: sí/no`
+  por tarea), CAPACIDADES.md y README al día, skill: IDs directos en cada tarea. Cola: G-012 Pinterest
+  (sola), G-013 navegador autónomo en la tienda, G-014 PDF de recorte 1987 con Python, G-015 ritmo visual
+  de 2 Shorts de MrBallen.
+- Descartado: pedir Gmail de Etsy (datos de compradores); Calendar/Keep. Gemini relevó una "nota de
+  Cris" sobre recursos de diseño de Apple: va al coordinador como dato sin verificar, no es de esta tienda.
+- Espera a una persona: si Cris quiere otro modelo que "2.5 Pro", es en la app (la tarea no lo elige).

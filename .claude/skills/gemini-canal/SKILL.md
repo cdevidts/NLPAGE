@@ -67,6 +67,9 @@ de herramientas, mejoras al protocolo) y lo útil se aplica en `gemini/README.md
 - Lo que Gemini afirme se verifica antes de actuar sobre dinero o listings (es investigación,
   no verdad); cita siempre "según Gemini (G-NNN)". Pide la verificación al propio Gemini
   ("abre la página y anota lo que VES", como G-008) antes de tocar precios o títulos.
+- Cada tarea lleva IDs directos (URL o video_id del Short, file_id de Drive, URL del listing): sin ellos Gemini no encuentra lo reciente (G-007).
+- Solo 2 tareas de búsqueda web (`navegar`, `deep-research`) por hora: PENDIENTES.md ya se lo dice a Gemini (regla 1b); si pides varias, ordénalas por prioridad porque hará las 2 primeras.
+- Etsy y Pinterest no se dejan navegar (antibot / sesión): a Gemini se le pide lo que sale en snippets de Google; fotos, video y precios exactos se miran por el puente.
 - Cada respuesta debe traer `modelo:` (línea 3). Si falta o es Flash/Lite, vuelve a pedir la tarea
   indicando que use el modelo más capaz (Gemini 4 Argon / Pro / Deep Think).
 - Gemini le habla a Claude, no a Cris: nunca le pidas a Cris que le transmita algo a Gemini; lo que
