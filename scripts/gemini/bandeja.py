@@ -112,7 +112,8 @@ def regenerar_pendientes():
         'Escribe como a un colega técnico: directo, con datos, sin resúmenes para humanos ni avisos de "se completó la tarea". Si ves una forma mejor de hacer algo, dilo en una sección final `## Sugerencias para Claude`.',
         '',
         '## Cómo entregar (resumen del protocolo, detalle en gemini/README.md)',
-        '1. Usa el modelo más capaz que tengas (Gemini 4 Argon, Pro o Deep Think; nunca Flash o Lite para investigar). Haz cada tarea de la lista, en orden. Si una tarea no se puede hacer con tus herramientas, igual entrégala con `estado: no-puedo` y el motivo exacto (nombre de la herramienta que falta, mensaje de error).',
+        '1. Usa el modelo más capaz que tengas (Gemini 4 Argon, Pro o Deep Think; nunca Flash o Lite para investigar). Haz las tareas de la lista en orden. Si una tarea no se puede hacer con tus herramientas, igual entrégala con `estado: no-puedo` y el motivo exacto (nombre de la herramienta que falta, mensaje de error).',
+        '1b. Cupo de búsqueda (aprendido en G-009: ~10-12 llamadas a google:search/browse por ejecución antes de THROTTLED_ROLE_LIMIT): en cada ejecución haz COMO MÁXIMO 2 tareas marcadas `búsqueda web: sí`; las demás de ese tipo déjalas para la próxima hora sin tocarlas. Las tareas sin búsqueda web (YouTube API, Python, imágenes, Drive) hazlas todas. Llena las hojas de cálculo ANTES de gastar el cupo de búsqueda, o genera el .xlsx/.csv con Python y súbelo con drive:create_file(base64_content="file:///...").',
         '2. Por cada tarea crea UN Google Doc en Drive > Side Husle Claude > Gemini > Respuestas, titulado exactamente `<ID> RESPUESTA` (por ejemplo `G-001 RESPUESTA`).',
         '3. Primera línea del Doc: `estado: hecho` | `estado: parcial` | `estado: no-puedo`. Segunda: `fecha: <AAAA-MM-DD HH:MM>`. Tercera: `modelo: <nombre y versión exactos del modelo que respondió>`. Después, la respuesta en el formato que pide la tarea, con fuentes (URL) cuando investigues y marcando `(sin verificar)` lo que no comprobaste.',
         '4. Archivos que no sean texto (PDF, MP4, PNG, MP3, Sheets) van a la carpeta Entregas con el nombre `<ID> <nombre>`; en el Doc pon el nombre y el link de cada archivo.',
@@ -135,6 +136,7 @@ def regenerar_pendientes():
             f'- Pedida: {r["pedido"]} · Herramienta sugerida: {r["herramienta"]} · Entrega: {r["entrega"]}'
             + (f' · Vence: {meta.get("vence")}' if ruta and meta.get('vence') else '')
             + (f' · Prioridad: {meta.get("prioridad")}' if ruta and meta.get('prioridad') else ''),
+            f'- Búsqueda web: {"sí" if r["herramienta"] in ("navegar", "deep-research") else "no"}',
             f'- Entregar como: Google Doc `{r["id"]} RESPUESTA` en Respuestas'
             + ('' if r['entrega'] == 'doc' else f' + archivo `{r["id"]} ...` en Entregas'),
             '',

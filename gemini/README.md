@@ -23,9 +23,15 @@ Pro de Cris (Deep Research, Veo, Nano Banana, NotebookLM, Canvas, navegación), 
 | Leer la URL raw de GitHub | **No** ("restricciones de acceso del sandbox"); leyó el espejo `GEMINI-PENDIENTES` de Drive | El espejo en Drive es OBLIGATORIO tras cada cambio de PENDIENTES.md |
 | Búsqueda y navegación web (Google Search, Browse, navegador autónomo) | Sí | `herramienta: navegar` o `deep-research` (lo hace con búsqueda estructurada; marca `parcial`) |
 | Deep Research (la herramienta con ese nombre) | No | Pedir "investiga con búsqueda web y cita fuentes"; G-002 y G-003 salieron así en ~3 min |
-| Imágenes (Nano Banana / Imagen, 1:1, 16:9, 9:16) | Sí (declarado, sin probar aún) | `herramienta: nano-banana`, `entrega: imagen` en Entregas |
+| Imágenes (Nano Banana / Imagen 3; 1:1, 4:3, 3:4, 16:9, 9:16) | **Sí** (G-010: 2 PNG 1200x896 en Entregas, con SynthID) | `herramienta: nano-banana`, `entrega: imagen` en Entregas |
 | Video (Veo) | **No** (G-004) | No pedir video; para B-roll usar `gemini.py video --pago` (API) o fotos |
-| Google Docs, Sheets, PDF, presentaciones en Drive | Sí (G-001 creó Docs; dice que Sheets, Slides y PDF también) | `entrega: doc`, `sheet`, `pdf`, `slides` |
+| Google Docs, Sheets, PDF, presentaciones en Drive | Sí (Docs G-001; Sheets G-006 y G-008; Slides y PDF declarados) | `entrega: doc`, `sheet`, `pdf`, `slides` |
+| YouTube: datos y transcripción de un video por URL/video_id (`youtube:get_video_information`) | **Sí** (G-006): vistas, likes, fecha, duración, transcripción, fotogramas por segundo | Pasar SIEMPRE la URL o el video_id; sin él no encuentra Shorts recientes (G-007) |
+| YouTube: listar los Shorts de un canal, comentarios | Parcial / No (G-006) | Búsqueda site:youtube.com/shorts + video_ids; no pedir comentarios |
+| Etsy en página (fotos, video, "On Etsy since") | **No** (DataDome bloquea browse, G-008); precios y títulos sí desde snippets | Lo que no esté en un snippet se mira por el puente |
+| Pinterest | **No** (sesión + JS, G-009) | Solo google:search site:pinterest.com, 1 tarea sola en su hora (G-012) |
+| Cupo de búsqueda web | ~10-12 llamadas a google:search/browse por ejecución (G-009) | Máximo 2 tareas `navegar`/`deep-research` por hora; PENDIENTES.md lo dice en la regla 1b |
+| Elegir el modelo | **No** desde dentro (G-011); se autodeclara "Gemini 2.5 Pro" | Solo Cris, en la app, si la Tarea tiene selector |
 | NotebookLM: crear cuaderno y añadir fuentes | Sí (G-005 creó el cuaderno) | Cuadernos como memoria consultable; preguntas textuales |
 | NotebookLM: Audio Overview | **No** (G-005) | Audio a 2 voces: `gemini.py dialogo` (API) |
 | Canvas | No (es interfaz de la web) | — |
