@@ -190,6 +190,7 @@ def medir(archivo, hoy):
     por_id = {r["video_id"]: r for r in filas if r["video_id"]}
     por_titulo = {r["titulo"].strip().lower(): r for r in filas}
     lecturas = []
+    sin_datos = False
     for row in rows:
         m = dict(zip(METRICAS, row))
         vid, tit = str(m.get("YTVP04") or ""), str(m.get("YTVP17") or "").strip().lower()
@@ -197,6 +198,11 @@ def medir(archivo, hoy):
         if not r:
             continue
         r["video_id"] = r["video_id"] or vid
+        if m.get("YTVP06") is None:
+            # Metricool tarda ~1 día en traer números: null no es cero. Se reintenta mañana.
+            print(f"{r['slug']}: Metricool aún sin métricas (null); queda pendiente")
+            sin_datos = True
+            continue
         dur = num(r["duracion_s"]) or 1
         vistas = num(m.get("YTVP06"))
         base = {"v": int(vistas), "ret": f"{num(m.get('YTVP08')) / dur * 100:.0f}", "likes": int(num(m.get("YTVP09"))),
@@ -214,6 +220,10 @@ def medir(archivo, hoy):
                     r["veredicto"] = veredicto(r, filas)
                 lecturas.append((r, k, base))
     guardar(filas)
+    if not lecturas and sin_datos:
+        guardar(filas)
+        print("✓ video_id anotado; las lecturas quedan para cuando Metricool traiga números.")
+        return
     if not lecturas:
         print("Ninguna lectura vencida coincidió con las filas de Metricool (¿el título cambió? pon video_id a mano).")
         return

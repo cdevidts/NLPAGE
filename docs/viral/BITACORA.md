@@ -43,6 +43,7 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 - Métrica: vistas de la parte 2 / parte 1 y suscriptores ganados esos 2 días.
 
 ### V4. Duración: 45-75 s gana a 25-35 s en historias
+- Evidencia nueva 2026-10-31 (Gemini G-006, cifras de la API de YouTube): los 15 Shorts más vistos de @mrballenshorts (231 mil a 6,36 M) duran TODOS 152-180 s. Siguiente escalón a probar si 45-75 s gana: 120-170 s.
 - Evidencia: Shorts pueden durar hasta 3 min; el tiempo total visto suma. Sin dato propio.
 - Prueba: misma estructura con más hechos. Métrica: duración media vista (s) y vistas.
 - Requiere subir la compuerta de 58 s de `short` (avisar al hilo de videos).
@@ -74,6 +75,10 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 ### V11. Cambio de plano cada 2-3 s gana a escenas de 4-6 s
 - Evidencia: Gemini G-003 (ritmo de los canales de expediente). Hoy el pipeline cambia por frase (~4 s).
 - Prueba: partir cada escena en 2 planos del mismo documento (foco distinto). Métrica: retención.
+
+### V12. Gancho "fecha + edad + nombre + lugar" gana a la pregunta
+- Evidencia: Gemini G-006 (2026-10-31): el 85 % de los 15 Shorts más vistos de MrBallen abre así ("On July 28th, 1984, 25-year-old Brigitta Fredenhagen arrived at Yellowstone..."), casi nunca con pregunta. Ganchos literales en el Sheet "G-006 shorts" (Drive > Side Husle Claude > Gemini > Entregas).
+- Prueba: misma historia, primera frase con fecha (en letras en `dice`), edad, nombre y lugar del expediente vs. la pregunta del V0. Métrica: retención y vistas 48 h. Compite con V10 (contradicción): probar V12 primero, tiene más evidencia.
 
 ## Registro de lecturas
 | Fecha | Short | Lectura | Vistas | Retención | Coment./1k | Shares/1k | Veredicto | Nota |

@@ -59,6 +59,13 @@ Texto completo en `gemini/outbox/G-003.md`; resumen en /mnt/project-files/plan/i
 - Estética de expediente sin rostro (corcho, polaroids, informes a máquina, sello rojo), plano nuevo cada 2-3 s, subtítulos palabra a palabra amarillo sobre negro. Música baja (-18 a -22 dB) y efectos de papel y obturador.
 - Pasó a hipótesis V4 (duración), V9 (cierre), V10 (gancho) y V11 (ritmo). Más pedidos a Gemini: `scripts/gemini/bandeja.py pedir` (corre cada 6 h).
 
+## 2026-10-31 · Gemini G-006 y G-007
+Resumen en /mnt/project-files/plan/investigacion/2026-10-31-gemini-G-006-G-007-shorts-youtube.md; texto en `gemini/outbox/G-006.md` y `G-007.md`.
+- Dato (API de YouTube): los 15 Shorts más vistos de @mrballenshorts duran 152-180 s. Los ganchos abren con fecha + edad + nombre + lugar (85 %), no con pregunta → V4 y V12.
+- @coldcasedetective NO tiene Shorts (G-003 se equivocó): fuera como referencia de formato.
+- Crítica de editor a nuestra estructura (sin verificar): nada de carátula en 0:00-0:02, primera palabra en el fotograma 1; plano o punch-in cada 2,5-3,5 s (V11); subtítulos ~25 % más arriba del borde, 2-3 palabras; voz -6 dB y cama -20 dB; cerrar con reto + bucle (V5, V9), no con "buy it on Etsy". 5 títulos propuestos en el resumen: pasan por `ai-side-hustle-seo-copy` antes de usarse.
+- Para auditar un Short nuestro, la tarea a Gemini lleva su URL (`https://www.youtube.com/shorts/<video_id>` de `docs/viral/shorts.csv`): con ella da vistas, likes, transcripción y fotogramas aunque YouTube aún no lo indexe.
+
 ## Lo que dicen las guías (sin medir por nosotros: tratarlo como hipótesis)
 - Shorts pueden durar hasta 3 minutos desde el 15-oct-2024; la compuerta de 58 s de
   `short` es por costumbre, no por regla de YouTube.

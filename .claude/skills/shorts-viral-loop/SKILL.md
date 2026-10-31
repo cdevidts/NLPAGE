@@ -35,6 +35,11 @@ Archivos del loop (todos en este repo):
    `experimento.py alta --plan plans/<slug>.json --post <id de Metricool> --fecha <AAAA-MM-DD>`.
 5. **Commit** de plan, csv y bitácora.
 
+`medir` anota solo el `video_id` de cada Short apenas Metricool lo ve (un null de
+Metricool es "todavía no", no cero: la lectura queda pendiente). Con ese id, la URL
+`https://www.youtube.com/shorts/<video_id>` va en las tareas a Gemini cuando haga falta
+una auditoría del Short (transcripción, fotogramas, crítica).
+
 Cada domingo, antes de la retro de operación: `experimento.py resumen` (qué ganó la
 semana), una corrida de `competencia.py --nicho <el de la semana>` y copiar a
 `references/patrones.md` lo nuevo que valga. De ahí salen hipótesis nuevas.
