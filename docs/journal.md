@@ -144,3 +144,11 @@
   Google para H2.
 - Resúmenes: plan/investigacion/2026-11-01-gemini-G-012-* y G-013-G-014-G-015-*. CAPACIDADES.md y README al día.
 - Descartado: pedir Pinterest o navegador a Gemini. Espera a una persona: nada. Mañana (lunes): automejora 2.
+
+## 2026-11-01 · Turno diario: primera lectura y Short V12
+
+- Lectura 48 h: Metricool sigue en null para YouTube (pendiente). Conteo público: Cold Case 01 EN 0 vistas a 48 h, Jingle Bells 40 a ~22 h. Anotado en V0 de la bitácora.
+- Short del 2-nov: caso 02 "The Snow Remembers" (EN), prueba V12 (gancho fecha + edad + nombre + lugar). Misma voz, música y cierre que el control; el confusor es el caso. 54,6 s, -14 LUFS, pico -1,4 dBTP. Metricool post 413095557, 2-nov 16:00 Chile.
+- Arreglado: la compuerta de voz castigaba "nineteen eighty-nine" porque whisper escribe "1989"; ahora compara números y años en inglés en letras. setup instala yt-dlp (la corrida de competencia de los domingos fallaba sin él).
+- Descartado: repetir el caso 01 con otro gancho (subir dos veces casi el mismo video arriesga "contenido reutilizado").
+- Espera a una persona: nada.
