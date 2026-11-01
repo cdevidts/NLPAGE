@@ -20,6 +20,7 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 - Los 3 primeros Shorts en formato historia (hilo de videos, 30-oct): 56 Cold Case 01 EN
   (30-oct), 60 piano EN (31-oct), 56 Cold Case 01 ES (1-nov). Sin control: fijan la línea base.
 - Lectura: 48 h y 7 días de cada uno. Primer resumen 2026-11-08.
+- 2026-11-01, lectura 48 h: Metricool todavía da null en todas las métricas de YouTube (quedan pendientes). Conteo público de la página de YouTube: Cold Case 01 EN (uFgGEGATfA0) **0 vistas a 48 h**; piano Jingle Bells (zrc6EDVDS0A) **40 vistas a ~22 h**. Los dos son públicos, aptos para todo público y reproducibles: el de cold case no recibió reparto inicial. Hipótesis por revisar (sin probar): YouTube reparte menos el true crime a un canal nuevo, o el conteo público de Shorts va atrasado.
 
 ### V1. Cold case: el reto interactivo gana a la historia narrada
 - Evidencia: outliers de participación ("If you laugh you lose", "Guess the Animal",

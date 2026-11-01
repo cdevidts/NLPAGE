@@ -50,9 +50,10 @@ const fuentes = async () => {
 
 const python = () => {
   const ok = (mod: string) => spawnSync('python3', ['-c', `import ${mod}`]).status === 0;
-  const faltan = [ok('piper') ? null : 'piper-tts', ok('faster_whisper') ? null : 'faster-whisper'].filter(Boolean) as string[];
+  // yt-dlp lo usa scripts/viral/competencia.py (corrida de los domingos).
+  const faltan = [ok('piper') ? null : 'piper-tts', ok('faster_whisper') ? null : 'faster-whisper', ok('yt_dlp') ? null : 'yt-dlp'].filter(Boolean) as string[];
   if (!faltan.length) {
-    console.log('✓ piper-tts y faster-whisper');
+    console.log('✓ piper-tts, faster-whisper y yt-dlp');
     return;
   }
   console.log(`… pip install ${faltan.join(' ')}`);

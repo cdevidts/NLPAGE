@@ -24,7 +24,7 @@ METRICAS = ["YTVP01", "YTVP04", "YTVP06", "YTVP08", "YTVP09", "YTVP11", "YTVP12"
 VARIABLES = {"formato", "gancho", "duracion", "final", "titulo", "serie", "idioma", "cta", "voz", "musica", "hora", "tema"}
 FORMATOS = {"historia", "reto", "tutorial", "pov", "confesion", "lista", "antes-despues"}
 GANCHOS = {"pregunta", "dato-imposible", "in-medias-res", "contradiccion", "reto", "confesion", "pov",
-           "superlativo", "injusticia"}
+           "superlativo", "injusticia", "fecha-edad-nombre"}
 CAMPOS = ["slug", "producto", "idioma", "fecha", "hora", "metricool_post", "video_id", "listing_id",
           "hipotesis", "variable", "variante", "control", "formato", "gancho_tipo", "duracion_s", "titulo",
           "v48", "ret48", "likes48", "com48", "shares48",

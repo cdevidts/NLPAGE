@@ -66,6 +66,12 @@ Resumen en /mnt/project-files/plan/investigacion/2026-10-31-gemini-G-006-G-007-s
 - Crítica de editor a nuestra estructura (sin verificar): nada de carátula en 0:00-0:02, primera palabra en el fotograma 1; plano o punch-in cada 2,5-3,5 s (V11); subtítulos ~25 % más arriba del borde, 2-3 palabras; voz -6 dB y cama -20 dB; cerrar con reto + bucle (V5, V9), no con "buy it on Etsy". 5 títulos propuestos en el resumen: pasan por `ai-side-hustle-seo-copy` antes de usarse.
 - Para auditar un Short nuestro, la tarea a Gemini lleva su URL (`https://www.youtube.com/shorts/<video_id>` de `docs/viral/shorts.csv`): con ella da vistas, likes, transcripción y fotogramas aunque YouTube aún no lo indexe.
 
+## 2026-11-01 · Corrida semanal cold case (competencia.py, 40 canales)
+Reporte en `out/competencia/2026-11-01-coldcase/REPORTE.md` (no se commitea).
+- Outliers reales del nicho: "The Tragic Disappearance of Michael Vaughan" (Criminal Core, 17x su mediana) y "Two Kids Afraid of the Dark Vanished From an Alaska Cabin — and Were Never Found" (Scary Mysteries, 5x). Confirma el título nombre/quiénes + lugar + "never found/came back" de la primera corrida; el Short del caso 02 (V12) ya lo usa.
+- La búsqueda "murder mystery game shorts" trae Roblox Murder Mystery 2 (3 de 5 outliers): ruido. Se cambió por "printable murder mystery game" en `competencia.py`.
+- Medianas: canales de true crime de 240 k-1 M subs rondan 2-12 mil vistas por Short; un canal chico de casos sin resolver (Unsolved Case Files, 7,9 k subs) tiene mediana 87. Nuestra vara realista los primeros meses: decenas a cientos.
+
 ## 2026-11-01 · Gemini G-015: ritmo segundo a segundo de MrBallen (SIN VERIFICAR)
 Resumen en /mnt/project-files/plan/investigacion/2026-11-01-gemini-G-013-G-014-G-015-sondas.md; texto en `gemini/outbox/G-015.md`. 180 fotogramas de "The Signal" (5,66 M) y "Why You NEVER Camp Alone" (3,12 M).
 - Gancho (V12): fecha + edad + nombre, y la primera prueba visual con rótulo entre 0:02 y 0:08.
