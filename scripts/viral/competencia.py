@@ -29,7 +29,7 @@ FILTROS = {
 }
 NICHOS = {
     "coldcase": ["cold case unsolved mystery shorts", "true crime story shorts", "unsolved murder shorts",
-                 "murder mystery game shorts", "caso sin resolver shorts"],
+                 "printable murder mystery game", "caso sin resolver shorts"],
     "piano": ["easy piano tutorial shorts", "christmas song history shorts", "piano letter notes shorts",
               "jingle bells piano shorts"],
     "juegos": ["escape room at home shorts", "christmas party games shorts", "game night ideas shorts"],

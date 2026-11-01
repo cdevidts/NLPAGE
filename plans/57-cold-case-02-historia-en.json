@@ -1,0 +1,166 @@
+{
+  "slug": "57-cold-case-02-historia-en",
+  "producto": "57-cold-case-02",
+  "idioma": "en",
+  "tema": "coldcase",
+  "voz": "af_heart",
+  "velocidad": 1.05,
+  "musica": {
+    "incompetech": "Constance",
+    "volumen": 0.24,
+    "desde": 0
+  },
+  "notas": "Prueba V12: el gancho abre con fecha + edad + nombre + lugar (estilo MrBallen, G-006/G-015) en vez del in-medias-res/pregunta de V0. Misma voz, música, velocidad, formato historia y cierre que 56-cold-case-01-historia-en. Hechos del Doc 01 (carta de Navarro), Doc 02, Doc 07 y Doc 32; nada de la solución ni del sobre A. No se muestran el Doc 39 ni la combinación.",
+  "escenas": [
+    {
+      "dice": "Nineteen eighty-nine, Greyhorn Mountain. Elsa Brandvold, fifty-four, walks into a snowstorm.",
+      "texto": "Greyhorn, *1989*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:en:1",
+        "foco": {
+          "x": 0.5,
+          "y": 0.62,
+          "zoom": 1.9
+        }
+      }
+    },
+    {
+      "dice": "It's the night of the Winter Carnival gala at her own ski lodge. She never comes back.",
+      "texto": "*Never* came back",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:en:29",
+        "foco": {
+          "x": 0.3,
+          "y": 0.2,
+          "zoom": 2.0
+        }
+      }
+    },
+    {
+      "dice": "Next morning, they find her at the bottom of Hollow Gully, nine meters below the footbridge to her chalet.",
+      "texto": "*9* meters down",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:en:9",
+        "foco": {
+          "x": 0.45,
+          "y": 0.6,
+          "zoom": 1.8
+        }
+      }
+    },
+    {
+      "dice": "The sheriff calls it an accident. An icy bridge, house slippers, one glass of wine too many.",
+      "texto": "An *accident*?",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:en:7",
+        "foco": {
+          "x": 0.3,
+          "y": 0.9,
+          "zoom": 2.4
+        }
+      }
+    },
+    {
+      "dice": "Thirty-seven years later, the mountain gives back three things. A roll of film nobody ever developed.",
+      "texto": "*Undeveloped* film",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:en:40",
+        "foco": {
+          "x": 0.5,
+          "y": 0.3,
+          "zoom": 1.6
+        }
+      }
+    },
+    {
+      "dice": "Her green notebook, melting out of the snow.",
+      "texto": "The *notebook*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:en:35",
+        "foco": {
+          "x": 0.75,
+          "y": 0.82,
+          "zoom": 2.4
+        }
+      }
+    },
+    {
+      "dice": "And her strongbox. Nobody has ever opened it.",
+      "texto": "*Locked* box",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:en:47",
+        "foco": {
+          "x": 0.5,
+          "y": 0.3,
+          "zoom": 1.7
+        }
+      }
+    },
+    {
+      "dice": "Five people at the lodge had a reason to want her gone.",
+      "texto": "*5* suspects",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:en:5",
+        "foco": {
+          "x": 0.5,
+          "y": 0.45,
+          "zoom": 1.25
+        }
+      }
+    },
+    {
+      "dice": "One of them did it.",
+      "texto": "*One* of them did it",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:en:1",
+        "foco": {
+          "x": 0.5,
+          "y": 0.45,
+          "zoom": 1.35
+        }
+      }
+    }
+  ],
+  "cierre": {
+    "dice": "This case is fiction. But you can solve it yourself. Find it on Etsy, at Sheet Smith Chile.",
+    "titulo": "Can you solve it?",
+    "sub": "Cold Case File No. 02 · The Snow Remembers",
+    "linea": "SheetSmithChile on Etsy",
+    "src": "foto:01"
+  },
+  "youtube": {
+    "titulo": "Ski lodge murder mystery: she walked into the storm and never came back",
+    "descripcion": "Ski lodge murder mystery game: https://www.etsy.com/listing/4605211787\nShop links (Etsy and Gumroad) are on the channel page: tap the channel name.\n\nJanuary 28, 1989. Elsa Brandvold, 54, owner of Greyhorn Lodge, walks out into a snowstorm on the night of the Winter Carnival gala. Next morning she is found at the bottom of Hollow Gully, 9 meters below the footbridge to her chalet. The sheriff rules it an accident. Thirty-seven years later, the mountain gives back an undeveloped roll of film, her green notebook and a strongbox nobody can open.\n\nThe case is fiction: it's Cold Case File No. 02, The Snow Remembers, a printable murder mystery game. You get the whole file (38 evidence documents plus a sealed envelope) and work out who did it, how and why. 1-6 players, about 2-3 hours, no host. English and Spanish versions included. SheetSmithChile on Etsy.\n\n#coldcase #truecrime #mystery #shorts",
+    "tags": [
+      "ski lodge murder mystery",
+      "cold case",
+      "unsolved case",
+      "true crime",
+      "murder mystery game",
+      "detective game",
+      "cold case file",
+      "whodunit",
+      "printable murder mystery",
+      "winter murder mystery"
+    ]
+  },
+  "experimento": {
+    "hipotesis": "V12",
+    "variable": "gancho",
+    "variante": "abre con fecha + edad + nombre + lugar (estilo MrBallen)",
+    "control": "56-cold-case-01-historia-en",
+    "formato": "historia",
+    "gancho_tipo": "fecha-edad-nombre",
+    "espera": "más vistas y retención a 48 h que el control (que tuvo 0 vistas públicas a 48 h); confusor: otro caso",
+    "listing_id": 4605211787
+  }
+}

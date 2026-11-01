@@ -26,8 +26,29 @@ NUM = {
     'en': 'zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty'.split(),
     'es': 'cero uno dos tres cuatro cinco seis siete ocho nueve diez once doce trece catorce quince dieciséis diecisiete dieciocho diecinueve veinte'.split(),
 }[idioma]
-# Whisper escribe "1 a 6" donde el guion dice "uno a seis": se comparan en letras.
-norm = lambda s: (lambda w: NUM[int(w)] if w.isdigit() and int(w) <= 20 else w)(re.sub(r'[^\w]', '', s.lower()))
+DECENAS = 'twenty thirty forty fifty sixty seventy eighty ninety'.split()
+
+
+def en_letras(n):
+    """Inglés sin espacios ni guiones, como queda el guion tras norm: 54 -> fiftyfour, 1989 -> nineteeneightynine."""
+    if n <= 20:
+        return NUM[n]
+    if n < 100:
+        return DECENAS[n // 10 - 2] + (NUM[n % 10] if n % 10 else '')
+    if 1100 <= n <= 2099 and n % 100:  # años: "nineteen eighty-nine", "twenty twenty-six"
+        return en_letras(n // 100) + ('oh' + NUM[n % 100] if n % 100 < 10 else en_letras(n % 100))
+    return str(n)
+
+
+# Whisper escribe "1 a 6" o "1989" donde el guion dice "uno a seis" o "nineteen eighty-nine": se comparan en letras.
+def norm(s):
+    w = re.sub(r'[^\w]', '', s.lower())
+    if not w.isdigit():
+        return w
+    n = int(w)
+    return en_letras(n) if idioma == 'en' else (NUM[n] if n <= 20 else w)
+
+
 guion = texto.split()
 a = [norm(w) for w in guion]
 b = [norm(w[0]) for w in oidas]
