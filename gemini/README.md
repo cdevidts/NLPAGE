@@ -89,6 +89,16 @@ Quién recoge: el hilo que pidió (al despertar), el turno diario de este hilo (
 reparte a los dueños, rellena la cola, pide la automejora los lunes) y, de respaldo, el turno mañana
 de operación (punto 5b en `memoria/prompts-turnos.md` del proyecto).
 
+Destinatarios al repartir (actualizado 2026-11-01; el coordinador avisa si cambia):
+
+| Tema | Hilo dueño | Cómo |
+|---|---|---|
+| YouTube, Shorts, loop viral (ganchos, ritmo, auditorías de nuestros Shorts) | "Montar videos con Remotion para Shorts y Etsy" (cmsg_01RaWNwjKKK77Y5ZAm7XgnqUX3dSuCyy8ApoZxM83pMo1r); el hilo "Crear sistema de viralidad para Shorts" está CERRADO | `message_thread` |
+| Etsy: competencia, títulos, precios, miniaturas, visibilidad | Operación autónoma de la tienda (OPS) | `message_coordinator` |
+| Pinterest, Gumroad, pines | Canales de venta y marketing | `message_coordinator` |
+| Utilería y expedientes de los juegos de misterio | Crear juegos de misterio imprimibles | `message_coordinator` |
+| Capacidades del canal, protocolo, automejora | Este hilo | — |
+
 ## Formato de una tarea (`inbox/G-NNN-<slug>.md`)
 
 ```

@@ -38,6 +38,11 @@ de NotebookLM. No: Veo, Audio Overview, Canvas, y NO lee la URL raw de GitHub: e
    `GEMINI-PENDIENTES` anterior (búscalo con `search_files title = 'GEMINI-PENDIENTES'`).
 5. Anota en tu journal/ESTADO que esperas `G-NNN`, y qué harás con la respuesta.
 
+## A quién va cada respuesta
+Tabla "Destinatarios al repartir" en `gemini/README.md`. Shorts y loop viral → hilo "Montar videos con
+Remotion para Shorts y Etsy" (el hilo de viralidad está cerrado desde 2026-11-01); Etsy → OPS vía
+coordinador; Pinterest/Gumroad → Canales vía coordinador; utilería de misterio → hilo de misterio vía coordinador.
+
 ## Recoger (al despertar, y siempre antes de volver a pedir lo mismo)
 1. `python3 -I scripts/gemini/bandeja.py estado` lista lo pendiente y la consulta exacta de Drive.
 2. Drive `search_files`: `parentId = '1WqcooCtde-MUKygT4aLB5Uhdk7Vf3-ax' and title contains 'G-NNN'`.
