@@ -66,6 +66,14 @@ Resumen en /mnt/project-files/plan/investigacion/2026-10-31-gemini-G-006-G-007-s
 - Crítica de editor a nuestra estructura (sin verificar): nada de carátula en 0:00-0:02, primera palabra en el fotograma 1; plano o punch-in cada 2,5-3,5 s (V11); subtítulos ~25 % más arriba del borde, 2-3 palabras; voz -6 dB y cama -20 dB; cerrar con reto + bucle (V5, V9), no con "buy it on Etsy". 5 títulos propuestos en el resumen: pasan por `ai-side-hustle-seo-copy` antes de usarse.
 - Para auditar un Short nuestro, la tarea a Gemini lleva su URL (`https://www.youtube.com/shorts/<video_id>` de `docs/viral/shorts.csv`): con ella da vistas, likes, transcripción y fotogramas aunque YouTube aún no lo indexe.
 
+## 2026-11-01 · Gemini G-015: ritmo segundo a segundo de MrBallen (SIN VERIFICAR)
+Resumen en /mnt/project-files/plan/investigacion/2026-11-01-gemini-G-013-G-014-G-015-sondas.md; texto en `gemini/outbox/G-015.md`. 180 fotogramas de "The Signal" (5,66 M) y "Why You NEVER Camp Alone" (3,12 M).
+- Gancho (V12): fecha + edad + nombre, y la primera prueba visual con rótulo entre 0:02 y 0:08.
+- Voz: ~172 palabras/min, 188-196 en el gancho, sin silencios de más de 0,25 s (nuestra cola entre escenas es 0,3 s + whoosh: revisar si se prueba V11).
+- Subtítulos: 1-4 palabras al 52 % de la altura, MAYÚSCULAS, blanco con borde negro; ámbar solo para nombres, fechas y peligro. Nunca abajo.
+- Ritmo (V11): corte o punch-in cada 4,5-4,8 s de promedio, máximo 7-12 s sin corte, planos de 2-6 s en el último tercio. Choca con G-007 (2,5-3,5 s): medir, no elegir.
+- Final (V5): corte en seco en la última sílaba, sin CTA ni pantalla final. Choca con nuestra regla de decir "ficción" y dónde encontrarlo: **no quitar el cierre** hasta que llegue G-016 (auditoría de uFgGEGATfA0 y cómo decir "juego imprimible" sin sonar a anuncio).
+
 ## Lo que dicen las guías (sin medir por nosotros: tratarlo como hipótesis)
 - Shorts pueden durar hasta 3 minutos desde el 15-oct-2024; la compuerta de 58 s de
   `short` es por costumbre, no por regla de YouTube.

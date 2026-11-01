@@ -51,6 +51,7 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 ### V5. Final en bucle gana a final cerrado
 - Prueba: la última frase empalma con la primera ("...and that's why nobody believed
   her when she said:" → "Who killed Desmond Ashcombe?"). Métrica: retención > 100 %.
+- Variante G-015 (Gemini, 2026-11-01, sin verificar): corte en seco en la última sílaba, sin pantalla final. Choca con decir "ficción" y dónde está el juego: no se quita el cierre hasta la respuesta de G-016.
 
 ### V6. Planillas: confesión o POV gana a tutorial
 - Evidencia: Tiller "I've started 47 budgets..." 602x y "POV: you don't use Tiller" 556x.
@@ -75,10 +76,12 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 ### V11. Cambio de plano cada 2-3 s gana a escenas de 4-6 s
 - Evidencia: Gemini G-003 (ritmo de los canales de expediente). Hoy el pipeline cambia por frase (~4 s).
 - Prueba: partir cada escena en 2 planos del mismo documento (foco distinto). Métrica: retención.
+- G-015 (Gemini, 2026-11-01, sin verificar) mide otra cosa en MrBallen: corte cada 4,5-4,8 s de promedio, máximo 7-12 s sin corte, 2-6 s en el último tercio, y voz a ~172 palabras/min sin silencios de más de 0,25 s. Si V11 gana a 2-3 s, probar después 4,5 s con subtítulos al 52 % de la altura.
 
 ### V12. Gancho "fecha + edad + nombre + lugar" gana a la pregunta
 - Evidencia: Gemini G-006 (2026-10-31): el 85 % de los 15 Shorts más vistos de MrBallen abre así ("On July 28th, 1984, 25-year-old Brigitta Fredenhagen arrived at Yellowstone..."), casi nunca con pregunta. Ganchos literales en el Sheet "G-006 shorts" (Drive > Side Husle Claude > Gemini > Entregas).
 - Prueba: misma historia, primera frase con fecha (en letras en `dice`), edad, nombre y lugar del expediente vs. la pregunta del V0. Métrica: retención y vistas 48 h. Compite con V10 (contradicción): probar V12 primero, tiene más evidencia.
+- G-015 (Gemini, 2026-11-01, sin verificar) suma: la primera prueba visual con rótulo entre 0:02 y 0:08, y el gancho más rápido (188-196 palabras/min).
 
 ## Registro de lecturas
 | Fecha | Short | Lectura | Vistas | Retención | Coment./1k | Shares/1k | Veredicto | Nota |
