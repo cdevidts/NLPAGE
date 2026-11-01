@@ -29,7 +29,10 @@ Pro de Cris (Deep Research, Veo, Nano Banana, NotebookLM, Canvas, navegación), 
 | YouTube: datos y transcripción de un video por URL/video_id (`youtube:get_video_information`) | **Sí** (G-006): vistas, likes, fecha, duración, transcripción, fotogramas por segundo | Pasar SIEMPRE la URL o el video_id; sin él no encuentra Shorts recientes (G-007) |
 | YouTube: listar los Shorts de un canal, comentarios | Parcial / No (G-006) | Búsqueda site:youtube.com/shorts + video_ids; no pedir comentarios |
 | Etsy en página (fotos, video, "On Etsy since") | **No** (DataDome bloquea browse, G-008); precios y títulos sí desde snippets | Lo que no esté en un snippet se mira por el puente |
-| Pinterest | **No** (sesión + JS, G-009) | Solo google:search site:pinterest.com, 1 tarea sola en su hora (G-012) |
+| Pinterest | **No** (G-009, G-012: el índice de google:search excluye pinterest.com y browse lo bloquea) | Auditar pines desde nuestro entorno; a Gemini pedirle páginas de destino |
+| Navegador autónomo (`web_browser_agent`) | **No** en tareas programadas (G-013: timeout `<empty>`) | No pedirlo |
+| Python en sandbox → PDF/PNG/xlsx/pptx subidos como binario | **Sí** (G-014: Pillow, pypdf, Chromium headless, openpyxl, python-pptx; sin reportlab ni internet) | `entrega: pdf`/`imagen`, texto exacto en la tarea; utilería de juegos en serie |
+| YouTube fotograma a fotograma | **Sí** (G-015: 180 frames + transcripción) | Auditorías de ritmo por URL |
 | Cupo de búsqueda web | ~10-12 llamadas a google:search/browse por ejecución (G-009) | Máximo 2 tareas `navegar`/`deep-research` por hora; PENDIENTES.md lo dice en la regla 1b |
 | Elegir el modelo | **No** desde dentro (G-011); se autodeclara "Gemini 2.5 Pro" | Solo Cris, en la app, si la Tarea tiene selector |
 | NotebookLM: crear cuaderno y añadir fuentes | Sí (G-005 creó el cuaderno) | Cuadernos como memoria consultable; preguntas textuales |

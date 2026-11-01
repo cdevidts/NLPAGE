@@ -132,3 +132,15 @@
 - Descartado: pedir Gmail de Etsy (datos de compradores); Calendar/Keep. Gemini relevó una "nota de
   Cris" sobre recursos de diseño de Apple: va al coordinador como dato sin verificar, no es de esta tienda.
 - Espera a una persona: si Cris quiere otro modelo que "2.5 Pro", es en la app (la tarea no lo elige).
+
+## 2026-11-01 · Canal Gemini: 4 respuestas en 45 min; Pinterest y navegador descartados, Python y fotogramas confirmados
+- G-012: el índice de google:search excluye pinterest.com (no era cuota): Pinterest queda fuera de Gemini;
+  trajo 24 páginas de destino y 3 reglas de pines (a Canales). G-013: navegador autónomo devuelve `<empty>`
+  en tareas programadas; solo 4 de 40 listings indexados en Google. G-014: Python en sandbox + subida
+  binaria funcionan (recorte 1987 en PDF/PNG verificado); sin reportlab. G-015: 180 fotogramas por Short,
+  5 reglas de edición de MrBallen (al loop viral).
+- Cola: G-016 auditoría de nuestro Short uFgGEGATfA0, G-017 sonda de miniaturas desde i.etsystatic.com,
+  G-018 tres props genéricos (telegrama, ficha de hotel, informe forense), G-019 títulos de Año Nuevo en
+  Google para H2.
+- Resúmenes: plan/investigacion/2026-11-01-gemini-G-012-* y G-013-G-014-G-015-*. CAPACIDADES.md y README al día.
+- Descartado: pedir Pinterest o navegador a Gemini. Espera a una persona: nada. Mañana (lunes): automejora 2.
