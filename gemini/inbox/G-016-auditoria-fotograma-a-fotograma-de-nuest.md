@@ -2,7 +2,7 @@
 id: G-016
 titulo: Auditoría fotograma a fotograma de nuestro primer Short (Cold Case 01) con las reglas de G-015
 pedido: 2026-11-01
-hilo: Crear sistema de viralidad para Shorts
+hilo: Montar videos con Remotion para Shorts y Etsy
 herramienta: texto
 entrega: doc
 estado: pendiente
