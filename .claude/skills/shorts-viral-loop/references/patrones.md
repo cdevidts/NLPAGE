@@ -80,6 +80,12 @@ Resumen en /mnt/project-files/plan/investigacion/2026-11-01-gemini-G-013-G-014-G
 - Ritmo (V11): corte o punch-in cada 4,5-4,8 s de promedio, máximo 7-12 s sin corte, planos de 2-6 s en el último tercio. Choca con G-007 (2,5-3,5 s): medir, no elegir.
 - Final (V5): corte en seco en la última sílaba, sin CTA ni pantalla final. Choca con nuestra regla de decir "ficción" y dónde encontrarlo: **no quitar el cierre** hasta que llegue G-016 (auditoría de uFgGEGATfA0 y cómo decir "juego imprimible" sin sonar a anuncio).
 
+## 2026-11-02 · Gemini G-016: auditoría de nuestro Short Cold Case 01 (uFgGEGATfA0)
+Resumen en /mnt/project-files/plan/investigacion/2026-11-02-gemini-G-016-auditoria-short-cold-case-01.md; texto en `gemini/outbox/G-016.md`.
+- Notas contra G-015: gancho 7/10, cadencia 6/10 (147 palabras/min por seis silencios de ~1 s, **verificado**: V13), subtítulos 5/10 (al 79 % de la altura y el rótulo de arriba repite lo que dice), último tercio 4/10 (Doc 02 repetido y tarjeta de producto muda de 7,5 s), final 4/10.
+- Propone: sacar el rótulo superior, documento +35 % y subtítulos al 55-62 % de la altura; cortar silencios (46,6 → 39,5 s); cerrar en el expediente con sello de ficción y corte en seco (V14); en el último tercio, cinco primeros planos de sospechosos de 0,5 s.
+- Pendiente: G-021 compara con el Short de piano (40 vistas contra 0).
+
 ## Lo que dicen las guías (sin medir por nosotros: tratarlo como hipótesis)
 - Shorts pueden durar hasta 3 minutos desde el 15-oct-2024; la compuerta de 58 s de
   `short` es por costumbre, no por regla de YouTube.
