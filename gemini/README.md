@@ -28,7 +28,8 @@ Pro de Cris (Deep Research, Veo, Nano Banana, NotebookLM, Canvas, navegación), 
 | Google Docs, Sheets, PDF, presentaciones en Drive | Sí (Docs G-001; Sheets G-006 y G-008; Slides y PDF declarados) | `entrega: doc`, `sheet`, `pdf`, `slides` |
 | YouTube: datos y transcripción de un video por URL/video_id (`youtube:get_video_information`) | **Sí** (G-006): vistas, likes, fecha, duración, transcripción, fotogramas por segundo | Pasar SIEMPRE la URL o el video_id; sin él no encuentra Shorts recientes (G-007) |
 | YouTube: listar los Shorts de un canal, comentarios | Parcial / No (G-006) | Búsqueda site:youtube.com/shorts + video_ids; no pedir comentarios |
-| Etsy en página (fotos, video, "On Etsy since") | **No** (DataDome bloquea browse, G-008); precios y títulos sí desde snippets | Lo que no esté en un snippet se mira por el puente |
+| Etsy en página (fotos, video, "On Etsy since") | **No** (DataDome bloquea browse, G-008); precios y títulos sí desde snippets (G-019: 20 títulos por frase+año) | Lo que no esté en un snippet se mira por el puente |
+| Imágenes del CDN i.etsystatic.com | **No** (G-017: browse solo texto, sandbox sin internet) | Subirlas a Drive > Gemini > Miniaturas (1QmAr8xSz_3eJ3sXQVpHWNUt8hhHZIQtR) con Zapier "Google Drive: Upload File" desde la URL pública (full-res; no pegar base64 por chat: se corrompe) y pedir `drive:download_file_content` + `view_file` (G-022) |
 | Pinterest | **No** (G-009, G-012: el índice de google:search excluye pinterest.com y browse lo bloquea) | Auditar pines desde nuestro entorno; a Gemini pedirle páginas de destino |
 | Navegador autónomo (`web_browser_agent`) | **No** en tareas programadas (G-013: timeout `<empty>`) | No pedirlo |
 | Python en sandbox → PDF/PNG/xlsx/pptx subidos como binario | **Sí** (G-014: Pillow, pypdf, Chromium headless, openpyxl, python-pptx; sin reportlab ni internet) | `entrega: pdf`/`imagen`, texto exacto en la tarea; utilería de juegos en serie |

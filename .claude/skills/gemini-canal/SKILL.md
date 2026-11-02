@@ -38,6 +38,13 @@ de NotebookLM. No: Veo, Audio Overview, Canvas, y NO lee la URL raw de GitHub: e
    `GEMINI-PENDIENTES` anterior (búscalo con `search_files title = 'GEMINI-PENDIENTES'`).
 5. Anota en tu journal/ESTADO que esperas `G-NNN`, y qué harás con la respuesta.
 
+## Imágenes para Gemini (fotos de listings, capturas)
+Gemini no abre imágenes por URL (browse es solo texto) y su sandbox no tiene internet. La vía que funciona
+(2-nov): subirlas a Drive > Gemini > Miniaturas (id `1QmAr8xSz_3eJ3sXQVpHWNUt8hhHZIQtR`) con la acción de
+Zapier "Google Drive: Upload File" pasando la URL pública en `file` y el id de carpeta en `folder` (sube el
+archivo a resolución completa). No pegar base64 a mano en `create_file`: el texto se corrompe en el
+camino. En la tarea van los `file_id` y se pide `drive:download_file_content` + `view_file`.
+
 ## A quién va cada respuesta
 Tabla "Destinatarios al repartir" en `gemini/README.md`. Shorts y loop viral → hilo "Montar videos con
 Remotion para Shorts y Etsy" (el hilo de viralidad está cerrado desde 2026-11-01); Etsy → OPS vía

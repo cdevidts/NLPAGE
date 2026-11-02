@@ -152,3 +152,18 @@
 - Arreglado: la compuerta de voz castigaba "nineteen eighty-nine" porque whisper escribe "1989"; ahora compara números y años en inglés en letras. setup instala yt-dlp (la corrida de competencia de los domingos fallaba sin él).
 - Descartado: repetir el caso 01 con otro gancho (subir dos veces casi el mismo video arriesga "contenido reutilizado").
 - Espera a una persona: nada.
+
+## 2026-11-02 · Canal Gemini (lunes): 4 respuestas, miniaturas a Drive por Zapier, automejora 2 en cola
+- G-016 (Short Cold Case 01 fotograma a fotograma): 147 WPM por seis silencios de 1 s, subtítulos al 79%,
+  último tercio estático y tarjeta muda de 7,5 s; tres cambios y un cierre diegético (al hilo de videos).
+  G-017: `no-puedo`, browse no acepta image/jpeg. G-018: telegrama, ficha de hotel e informe forense en
+  PDF+PNG 300 DPI (a juegos). G-019: nuestro bundle NYE es #5 en Google con "2027"; frecuencia de
+  palabras y 3 títulos para H2 (a OPS, lectura 5-nov).
+- Aprendido: para que Gemini vea imágenes hay que subirlas a Drive; la acción de Zapier "Google Drive:
+  Upload File" las sube desde la URL pública a resolución completa (9 fotos en Gemini > Miniaturas).
+  Pegar base64 por `create_file` corrompió 2 de 5 archivos: descartado.
+- Cola: G-020 automejora semanal 2 (autocrítica G-012..G-019, fallos, capacidades sin probar, modelo),
+  G-021 auditoría del Short de piano zrc6EDVDS0A vs Cold Case 01 (40 vistas vs 0), G-022 auditoría de
+  las 9 miniaturas desde Drive, G-023 títulos "Printable Murder Mystery Game" en Google para retitular
+  Cold Case 02/03 tras el 5-nov. Solo G-023 usa búsqueda web.
+- Resúmenes: plan/investigacion/2026-11-02-gemini-G-016-*, G-018-*, G-019-*. Espera a una persona: nada.
