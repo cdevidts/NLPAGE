@@ -32,9 +32,13 @@ cada hora y es "prácticamente ilimitada" (no usa la API).
 | 2026-10-31 | G-014 | Python en sandbox + subida binaria | SÍ al 100%: Pillow 11, pypdf, pypdfium2, pdfplumber, Chromium headless+Selenium (HTML→PDF), matplotlib, openpyxl, python-docx/pptx; NO reportlab; fuentes Noto/Liberation/DejaVu/Inter; PDF 812 KB + PNG 4,3 MB subidos sin conversión | Utilería imprimible en serie sin API (G-018); xlsx/csv/pptx también |
 | 2026-10-31 | G-015 | YouTube `fetch_audio_video_tokens=True` | SÍ: 180 fotogramas (1/s) + transcripción; tablas segundo a segundo con posición y palabras de subtítulos | Auditoría de nuestros Shorts por URL (G-016) |
 | 2026-10-30 | G-011 | `schedules:update_time_based` | SÍ: Gemini puede cambiar el cron de su propia tarea (lo usó para ponerla cada hora) | No pedírselo: la cadencia la decide Cris |
+| 2026-11-01 | G-016 | Auditoría fotograma a fotograma de NUESTRO Short (uFgGEGATfA0) | SÍ: plantilla, documentos por segundo, silencios, WPM y notas por regla; vistas/likes exactos | Cada Short nuevo se audita por video_id antes del siguiente |
+| 2026-11-01 | G-017 | Leer imágenes de i.etsystatic.com con browse | NO: browse solo acepta texto; sandbox sin internet | Las miniaturas se suben a Drive > Gemini > Miniaturas (G-022) |
+| 2026-11-01 | G-018 | Tres piezas de utilería en serie con Python (telegrama, ficha de hotel, informe forense) | SÍ: 3 PDF + 3 PNG carta 300 DPI en Entregas en 4,2 s; código reutilizable en el Doc | Utilería genérica se pide por lotes de 3 con texto exacto |
+| 2026-11-01 | G-019 | Snippets de Google de listings de Etsy por frase + año (3 búsquedas) | SÍ: 20 títulos en Sheet, frecuencia de palabras, precios de snippet; nuestro bundle #5 | Investigación de títulos por frase exacta: 1 tarea `navegar` por frase |
 
 ## Pendiente de probar
-Leer imágenes del CDN i.etsystatic.com con browse (G-017); edición de imagen con `image_references` (portada existente);
+Leer imágenes JPG subidas a Drive > Miniaturas (G-022, tras el NO de G-017 al CDN); edición de imagen con `image_references` (portada existente);
 Slides; lectura de PDFs de Drive (nuestros expedientes, nunca las soluciones); traducción de listings
 DE/FR/IT/NL/PT con revisión de SEO; Gmail SOLO para correos de Pinterest/Metricool con métricas (los de
 Etsy traen datos de compradores: no); Calendar y Keep no hacen falta.
