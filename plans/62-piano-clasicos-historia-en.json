@@ -1,0 +1,85 @@
+{
+  "slug": "62-piano-clasicos-historia-en",
+  "producto": "62-piano-clasicos-principiantes",
+  "idioma": "en",
+  "tema": "piano",
+  "voz": "af_heart",
+  "velocidad": 1.05,
+  "ritmo": "continuo",
+  "musica": {
+    "archivo": "assets/music/propia/62-ode-to-joy.mp3",
+    "volumen": 0.32,
+    "desde": 0
+  },
+  "notas": "Prueba V13 (ritmo continuo) contra el control 60-piano-villancicos-historia-en (mismo formato historia, misma voz, velocidad, volumen de música propia y tipo de cierre). Hechos de Wikipedia 'Symphony No. 9 (Beethoven)' (2-nov-2026): estreno en Viena el 7-may-1824; Beethoven casi completamente sordo; Umlauf pidió a músicos y cantantes ignorarlo; marcaba el tempo para una orquesta que no podía oír; al final (los testimonios difieren) seguía dirigiendo y la contralto Caroline Unger lo dio vuelta para ver al público aplaudiendo; el coro final (Oda a la alegría) es el Himno de Europa (Consejo de Europa 1972, Comunidades Europeas 1985). Imagen: grabado de Carl Offterdinger, dominio público (public/assets/media/wikimedia/CREDITOS.md).",
+  "escenas": [
+    {
+      "dice": "Vienna, eighteen twenty-four. A composer who can't hear premieres his last symphony.",
+      "texto": "Vienna, *1824*",
+      "visual": {"tipo": "imagen", "src": "assets/media/wikimedia/The_Premiere_of_Symphony_No._9.jpg", "foco": {"x": 0.52, "y": 0.45, "zoom": 1.3}}
+    },
+    {
+      "dice": "Ludwig van Beethoven is almost completely deaf. He stands by the stage anyway, beating time for an orchestra he can't hear.",
+      "texto": "He *can't hear*",
+      "visual": {"tipo": "imagen", "src": "assets/media/wikimedia/The_Premiere_of_Symphony_No._9.jpg", "foco": {"x": 0.53, "y": 0.42, "zoom": 2.3}}
+    },
+    {
+      "dice": "The players were told to ignore him and follow the other conductor.",
+      "texto": "*Ignore* him",
+      "visual": {"tipo": "imagen", "src": "assets/media/wikimedia/The_Premiere_of_Symphony_No._9.jpg", "foco": {"x": 0.82, "y": 0.42, "zoom": 2.2}}
+    },
+    {
+      "dice": "At the end, the story goes, he's still conducting. A singer has to turn him around,",
+      "texto": "Still *conducting*",
+      "visual": {"tipo": "imagen", "src": "assets/media/wikimedia/The_Premiere_of_Symphony_No._9.jpg", "foco": {"x": 0.55, "y": 0.5, "zoom": 1.7}}
+    },
+    {
+      "dice": "and only then does he see the audience applauding.",
+      "texto": "The *applause*",
+      "visual": {"tipo": "imagen", "src": "assets/media/wikimedia/The_Premiere_of_Symphony_No._9.jpg", "foco": {"x": 0.5, "y": 0.15, "zoom": 2.0}}
+    },
+    {
+      "dice": "The finale of that symphony is Ode to Joy. Today it's the anthem of Europe.",
+      "texto": "Anthem of *Europe*",
+      "visual": {"tipo": "pagina", "src": "pag:1:4", "foco": {"x": 0.5, "y": 0.1, "zoom": 2.6}}
+    },
+    {
+      "dice": "Want to play it this week? Every note has its letter printed inside, so you just find the key.",
+      "texto": "The *letter* is inside",
+      "visual": {"tipo": "pagina", "src": "pag:1:4", "foco": {"x": 0.35, "y": 0.3, "zoom": 2.6}}
+    }
+  ],
+  "cierre": {
+    "dice": "Ode to Joy and twenty-three more easy songs, with letter notes. Find it on Etsy, at Sheet Smith Chile.",
+    "titulo": "Play it this week",
+    "sub": "24 easy songs · letter notes · MP3",
+    "linea": "SheetSmithChile on Etsy",
+    "src": "foto:01"
+  },
+  "youtube": {
+    "titulo": "Beethoven couldn't hear the applause | easy piano sheet music for beginners with letters",
+    "descripcion": "Easy piano sheet music for beginners with letters: https://www.etsy.com/listing/4605998382\nShop links (Etsy and Gumroad) are on the channel page: tap the channel name.\n\nVienna, May 7, 1824. Ludwig van Beethoven, almost completely deaf, stands by the stage at the premiere of his Ninth Symphony, beating time for an orchestra he can't hear. The players had been told to follow the other conductor. At the end (accounts differ on the exact moment) he is still conducting, and the contralto Caroline Unger turns him around to see the audience applauding. The symphony's finale, Ode to Joy, was adopted as the Anthem of Europe in 1972.\n\nOur book has Ode to Joy and 23 more classical and folk songs with the note name printed inside every note, plus an MP3 practice track for each song. The music in this video is that Ode to Joy track. Printable PDF, US Letter or A4. SheetSmithChile on Etsy.\n\nImage: The Premiere of Symphony No. 9, engraving by Carl Offterdinger (public domain, Wikimedia Commons).\n\n#beethoven #odetojoy #piano #shorts",
+    "tags": [
+      "easy piano sheet music for beginners with letters",
+      "ode to joy piano easy",
+      "ode to joy",
+      "beethoven",
+      "letter notes piano sheet music",
+      "easy piano sheets for beginners",
+      "letter notes piano",
+      "music history",
+      "beethoven ninth symphony",
+      "piano for beginners"
+    ]
+  },
+  "experimento": {
+    "hipotesis": "V13",
+    "variable": "voz",
+    "variante": "ritmo continuo: voz recortada, ~0,2 s entre escenas (antes ~1,1 s)",
+    "control": "60-piano-villancicos-historia-en",
+    "formato": "historia",
+    "gancho_tipo": "dato-imposible",
+    "espera": "más retención y vistas a 48 h que el control (41 vistas públicas a 48 h); confusor: otra pieza",
+    "listing_id": 4605998382
+  }
+}
