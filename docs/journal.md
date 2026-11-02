@@ -167,3 +167,11 @@
   las 9 miniaturas desde Drive, G-023 títulos "Printable Murder Mystery Game" en Google para retitular
   Cold Case 02/03 tras el 5-nov. Solo G-023 usa búsqueda web.
 - Resúmenes: plan/investigacion/2026-11-02-gemini-G-016-*, G-018-*, G-019-*. Espera a una persona: nada.
+
+## 2026-11-02 · Turno diario: G-016, V13 y Short de Beethoven
+
+- G-016 (auditoría de Gemini del Short cold case 01) verificada en lo medible: entre escenas había ~1,1 s de silencio (Kokoro ~0,3 s al inicio y ~0,45 s al final, más 0,45 s del pipeline). Nuevo `"ritmo": "continuo"` en los planes (V13); V14 (cierre diegético) queda anotada.
+- Lecturas: Metricool sigue en null para YouTube; conteo público cold case 01 EN 1 vista a ~72 h, Jingle Bells 41 a 48 h.
+- Short del 3-nov: #62 partituras clásicas, historia del estreno de la Novena (Viena 1824, Beethoven sordo, Unger lo da vuelta) con ritmo continuo: 40,9 s contra ~47 s con el ritmo viejo. Control: Jingle Bells. Hechos de Wikipedia; grabado de Offterdinger (dominio público). Metricool post 414317939.
+- Se eligió piano porque es lo único que YouTube está repartiendo; una prueba sobre cold case con 0-1 vistas no mide nada.
+- Wikimedia Commons limita las descargas (429): sale una cada pocos minutos. Espera a una persona: nada.
