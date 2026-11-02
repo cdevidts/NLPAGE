@@ -84,10 +84,6 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 - Prueba: misma historia, primera frase con fecha (en letras en `dice`), edad, nombre y lugar del expediente vs. la pregunta del V0. Métrica: retención y vistas 48 h. Compite con V10 (contradicción): probar V12 primero, tiene más evidencia.
 - G-015 (Gemini, 2026-11-01, sin verificar) suma: la primera prueba visual con rótulo entre 0:02 y 0:08, y el gancho más rápido (188-196 palabras/min).
 
-## Registro de lecturas
-| Fecha | Short | Lectura | Vistas | Retención | Coment./1k | Shares/1k | Veredicto | Nota |
-|---|---|---|---|---|---|---|---|---|
-
 ### V13. Voz continua (huecos de ~0,2 s) gana a escenas con ~1,1 s de silencio
 - Evidencia: Gemini G-016 (2-nov, auditoría de uFgGEGATfA0): seis silencios de ~1 s, 147 palabras/min efectivas contra ~172 de MrBallen (G-015). **Verificado por nosotros** (2-nov): Kokoro deja ~0,3 s al inicio y ~0,45 s al final de cada frase, y el pipeline suma 0,15 + 0,3 s: ~1,1 s entre escenas.
 - Prueba: `"ritmo": "continuo"` en el plan (recorta la voz y deja ~0,2 s entre escenas); todo lo demás igual a un control ya publicado. Métrica: retención y vistas 48 h.
@@ -96,3 +92,8 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 ### V14. Cierre diegético gana a la tarjeta de producto
 - Evidencia: Gemini G-016 (sin verificar): la tarjeta final muda de 7,5 s saca a la gente; propone seguir en el expediente hasta el final (sello "FICTIONAL CASE FILE · PRINTABLE GAME", voz "...print the case file from SheetSmithChile on Etsy and tell us who killed <nombre>", corte en seco en el nombre, subtítulos hasta el final). Cumple la regla de decir ficción y dónde está el juego.
 - Prueba: mismo formato, cierre diegético contra la tarjeta. Necesita cambiar la escena de cierre de `Short` (todavía no existe). Variante de V5.
+
+## Registro de lecturas
+| Fecha | Short | Lectura | Vistas | Retención | Coment./1k | Shares/1k | Veredicto | Nota |
+|---|---|---|---|---|---|---|---|---|
+
