@@ -19,12 +19,14 @@ import {revisar} from './watch';
 import type {Escena, ShortProps, SfxRef} from '../src/lib/types';
 
 const FPS = 30;
-const VOZ_DESDE = 0.15;
-const COLA = 0.3;
 
 const planArchivo = arg('plan');
 if (!planArchivo) throw new Error('Uso: npm run short -- --plan plans/<slug>.json');
 const plan = leerPlan(planArchivo);
+// Con ritmo "continuo" (V13) la voz se recorta y el hueco entre escenas baja de ~1,1 s a ~0,2 s.
+const continuo = plan.ritmo === 'continuo';
+const VOZ_DESDE = continuo ? 0.05 : 0.15;
+const COLA = continuo ? 0.12 : 0.3;
 
 // --- 1. Compuerta ------------------------------------------------------------
 
@@ -72,7 +74,16 @@ for (const [i, texto] of lineas.entries()) {
     voces.push({seg: 0, palabras: []});
     continue;
   }
-  const wav = await voz(texto, plan.idioma, plan.voz, plan.velocidad ?? 1, plan.vozEstilo);
+  let wav = await voz(texto, plan.idioma, plan.voz, plan.velocidad ?? 1, plan.vozEstilo);
+  if (continuo) {
+    // Kokoro deja ~0,3 s antes y ~0,45 s después de cada frase: se quitan (silencio bajo -40 dB).
+    const recortado = wav.replace(/\.wav$/, '.continuo.wav');
+    if (!fs.existsSync(recortado)) {
+      const quita = 'silenceremove=start_periods=1:start_threshold=-40dB:start_silence=0.03';
+      sh('ffmpeg', ['-y', '-v', 'error', '-i', wav, '-af', `${quita},areverse,${quita},areverse`, recortado], {silencio: true});
+    }
+    wav = recortado;
+  }
   const destino = path.join(dirVoz, `${String(i + 1).padStart(2, '0')}.wav`);
   fs.copyFileSync(wav, destino);
   const pal = palabras(wav, plan.idioma, texto);

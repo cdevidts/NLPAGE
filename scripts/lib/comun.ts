@@ -59,6 +59,9 @@ export type Plan = {
   /** Solo voces gemini: cómo se dice, p. ej. "narrador de true crime, grave, pausado". */
   vozEstilo?: string;
   velocidad?: number;
+  /** "continuo": recorta el silencio que la voz trae al inicio y al final de cada
+   * escena y deja ~0,2 s entre escenas (V13; con el default quedan ~1,1 s). */
+  ritmo?: 'continuo';
   /** `incompetech`: título del catálogo de Kevin MacLeod. `archivo`: audio propio
    * (p. ej. la pista de práctica del producto), ruta en public/. */
   musica?: {incompetech?: string; archivo?: string; volumen?: number; desde?: number} | 'ninguna';
