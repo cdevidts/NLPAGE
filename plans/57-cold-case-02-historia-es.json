@@ -1,0 +1,166 @@
+{
+  "slug": "57-cold-case-02-historia-es",
+  "producto": "57-cold-case-02",
+  "idioma": "es",
+  "tema": "coldcase",
+  "voz": "es_MX-claude-high",
+  "velocidad": 1.08,
+  "musica": {
+    "incompetech": "Constance",
+    "volumen": 0.24,
+    "desde": 0
+  },
+  "notas": "Prueba V15 (español contra inglés): misma historia, documentos (versión ES del expediente, mismas páginas), gancho fecha + edad + nombre + lugar, música y cierre que 57-cold-case-02-historia-en (control). Voz y velocidad como 56-cold-case-01-historia-es. Hechos del Doc 01 (carta de Navarro), Doc 02, Doc 04 y Doc 32; nada de la solución ni del sobre A. Números en letras para Piper. El gancho ES deja la edad y el lugar para la escena 2: en español los números en letras pasan el máximo de 12 palabras.",
+  "escenas": [
+    {
+      "dice": "Mil novecientos ochenta y nueve. Elsa Brandvold sale a la tormenta.",
+      "texto": "Greyhorn, *1989*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:1",
+        "foco": {
+          "x": 0.5,
+          "y": 0.62,
+          "zoom": 1.9
+        }
+      }
+    },
+    {
+      "dice": "Tiene cincuenta y cuatro años, y es la noche de la gala en su propio hotel de esquí, en la montaña Greyhorn. Nunca vuelve.",
+      "texto": "*Nunca* volvió",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:29",
+        "foco": {
+          "x": 0.3,
+          "y": 0.2,
+          "zoom": 2.0
+        }
+      }
+    },
+    {
+      "dice": "A la mañana siguiente la encuentran en el fondo de un barranco, nueve metros bajo la pasarela que lleva a su chalet.",
+      "texto": "*9* metros abajo",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:9",
+        "foco": {
+          "x": 0.45,
+          "y": 0.6,
+          "zoom": 1.8
+        }
+      }
+    },
+    {
+      "dice": "El sheriff lo declara un accidente. Pasarela helada, pantuflas, una copa de más.",
+      "texto": "¿Un *accidente*?",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:7",
+        "foco": {
+          "x": 0.3,
+          "y": 0.9,
+          "zoom": 2.4
+        }
+      }
+    },
+    {
+      "dice": "Treinta y siete años después, la montaña devuelve tres cosas. Un rollo de fotos que nadie reveló.",
+      "texto": "Rollo *sin revelar*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:40",
+        "foco": {
+          "x": 0.5,
+          "y": 0.3,
+          "zoom": 1.6
+        }
+      }
+    },
+    {
+      "dice": "Su libreta verde, saliendo de la nieve derretida.",
+      "texto": "La *libreta*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:35",
+        "foco": {
+          "x": 0.75,
+          "y": 0.82,
+          "zoom": 2.4
+        }
+      }
+    },
+    {
+      "dice": "Y su caja fuerte. Nadie la ha podido abrir.",
+      "texto": "Caja *cerrada*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:47",
+        "foco": {
+          "x": 0.5,
+          "y": 0.3,
+          "zoom": 1.7
+        }
+      }
+    },
+    {
+      "dice": "Cinco personas del hotel tenían motivos para quererla muerta.",
+      "texto": "*5* sospechosos",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:5",
+        "foco": {
+          "x": 0.5,
+          "y": 0.45,
+          "zoom": 1.25
+        }
+      }
+    },
+    {
+      "dice": "Una de ellas lo hizo.",
+      "texto": "*Una* lo hizo",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:1",
+        "foco": {
+          "x": 0.5,
+          "y": 0.45,
+          "zoom": 1.35
+        }
+      }
+    }
+  ],
+  "cierre": {
+    "dice": "Este caso es ficción. Pero lo puedes resolver tú. Lo encuentras en nuestra tienda de Etsy.",
+    "titulo": "¿Lo resuelves?",
+    "sub": "Caso Archivado N.º 02 · La Nieve Recuerda",
+    "linea": "SheetSmithChile en Etsy",
+    "src": "pag:es:1"
+  },
+  "youtube": {
+    "titulo": "Caso archivado: salió a la tormenta de nieve y nunca volvió",
+    "descripcion": "Juego de misterio imprimible, en español: https://www.etsy.com/listing/4605211787\nLos links de la tienda (Etsy y Gumroad) están en el canal: toca el nombre del canal.\n\n28 de enero de 1989. Elsa Brandvold, de 54 años, dueña del Greyhorn Lodge, sale a una tormenta de nieve la noche de la gala del Carnaval de Invierno. A la mañana siguiente la encuentran en el fondo del barranco Hollow, 9 metros bajo la pasarela que lleva a su chalet. El sheriff lo declara un accidente. Treinta y siete años después, la montaña devuelve un rollo de fotos sin revelar, su libreta verde y una caja fuerte que nadie ha podido abrir.\n\nEl caso es ficción: es el Caso Archivado N.º 02, La Nieve Recuerda, un juego de misterio para imprimir. Tienes el expediente completo (38 documentos de evidencia y un sobre sellado) y descubres quién la mató, cómo y por qué. De 1 a 6 jugadores, unas 2 a 3 horas, sin anfitrión. Incluye la versión en español y en inglés. SheetSmithChile en Etsy.\n\n#casoarchivado #truecrime #misterio #shorts",
+    "tags": [
+      "juego de misterio imprimible",
+      "caso archivado",
+      "caso sin resolver",
+      "true crime",
+      "misterio",
+      "juego de detectives",
+      "juego de misterio",
+      "resuelve el caso",
+      "noche de juegos",
+      "misterio en la nieve"
+    ]
+  },
+  "experimento": {
+    "hipotesis": "V15",
+    "variable": "idioma",
+    "variante": "español (voz Piper es_MX), mismo video que el EN",
+    "control": "57-cold-case-02-historia-en",
+    "formato": "historia",
+    "gancho_tipo": "fecha-edad-nombre",
+    "espera": "1,5x o más las vistas a 48 h del control EN (38 a ~8 h); segunda de tres pruebas de V15",
+    "listing_id": 4605211787
+  }
+}

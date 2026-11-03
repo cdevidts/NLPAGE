@@ -22,6 +22,12 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 - Lectura: 48 h y 7 días de cada uno. Primer resumen 2026-11-08.
 - 2026-11-01, lectura 48 h: Metricool todavía da null en todas las métricas de YouTube (quedan pendientes). Conteo público de la página de YouTube: Cold Case 01 EN (uFgGEGATfA0) **0 vistas a 48 h**; piano Jingle Bells (zrc6EDVDS0A) **40 vistas a ~22 h**. Los dos son públicos, aptos para todo público y reproducibles: el de cold case no recibió reparto inicial. Hipótesis por revisar (sin probar): YouTube reparte menos el true crime a un canal nuevo, o el conteo público de Shorts va atrasado.
 - 2026-11-02: Metricool sigue en null (también para el Cold Case ES, _BUAF1B1JXI). Conteo público: Cold Case 01 EN 1 vista a ~72 h; Jingle Bells 41 a 48 h. El piano es el que reparte: el Short del 3-nov (V13) va sobre piano para que la prueba tenga números.
+- 2026-11-03 00:24 Chile (captura de Cris del canal, confirmada con la página pública a las 00:30): **Caso archivado ES (_BUAF1B1JXI) 672 vistas y 4 likes a ~35 h**; Jingle Bells 41; The Snow Remembers (V12, 2-nov) 38 a ~8 h; Cold Case 01 EN 1. Metricool sigue en null. El ES es el mismo guion, los mismos documentos, la misma música y el mismo cierre que el EN: cambian el idioma, la voz (Piper es_MX) y el día. Abre V15.
+
+### V15. El mismo Short en español gana al inglés (abierta 2026-11-03, prioridad 1)
+- Evidencia: par limpio V0. Cold Case 01 ES 672 vistas a ~35 h contra 1 vista del EN a 72 h; mismo video salvo idioma, voz y día de publicación. Un solo par: puede ser azar del reparto inicial, el país del canal (Chile) o menos competencia en true crime en español.
+- Prueba: el caso 02 (The Snow Remembers) en español, con el mismo guion, documentos, gancho (fecha + edad + nombre + lugar), música y cierre que el EN del 2-nov (control, 38 vistas a ~8 h). Si el ES vuelve a ganar por 1,5x o más, se confirma con 2 de 3 en la tercera (caso 03 ES contra EN, o piano ES contra EN).
+- Si se confirma: todos los Shorts salen primero en español, y el inglés pasa a ser la prueba.
 
 ### V1. Cold case: el reto interactivo gana a la historia narrada
 - Evidencia: outliers de participación ("If you laugh you lose", "Guess the Animal",

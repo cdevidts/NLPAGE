@@ -40,13 +40,33 @@ def en_letras(n):
     return str(n)
 
 
+VEINTI = 'veinte veintiuno veintidós veintitrés veinticuatro veinticinco veintiséis veintisiete veintiocho veintinueve'.split()
+DECENAS_ES = 'treinta cuarenta cincuenta sesenta setenta ochenta noventa'.split()
+CIENTOS = 'ciento doscientos trescientos cuatrocientos quinientos seiscientos setecientos ochocientos novecientos'.split()
+
+
+def es_letras(n):
+    """Español sin espacios, como queda el guion tras norm: 54 -> cincuentaycuatro, 1989 -> milnovecientosochentaynueve."""
+    if n <= 20:
+        return NUM[n]
+    if n < 30:
+        return VEINTI[n - 20]
+    if n < 100:
+        return DECENAS_ES[n // 10 - 3] + ('y' + NUM[n % 10] if n % 10 else '')
+    if n < 1000:
+        return 'cien' if n == 100 else CIENTOS[n // 100 - 1] + (es_letras(n % 100) if n % 100 else '')
+    if n < 10000:
+        return ('mil' if n < 2000 else NUM[n // 1000] + 'mil') + (es_letras(n % 1000) if n % 1000 else '')
+    return str(n)
+
+
 # Whisper escribe "1 a 6" o "1989" donde el guion dice "uno a seis" o "nineteen eighty-nine": se comparan en letras.
 def norm(s):
     w = re.sub(r'[^\w]', '', s.lower())
     if not w.isdigit():
         return w
     n = int(w)
-    return en_letras(n) if idioma == 'en' else (NUM[n] if n <= 20 else w)
+    return en_letras(n) if idioma == 'en' else es_letras(n)
 
 
 guion = texto.split()
