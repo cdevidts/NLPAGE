@@ -175,3 +175,11 @@
 - Short del 3-nov: #62 partituras clásicas, historia del estreno de la Novena (Viena 1824, Beethoven sordo, Unger lo da vuelta) con ritmo continuo: 40,9 s contra ~47 s con el ritmo viejo. Control: Jingle Bells. Hechos de Wikipedia; grabado de Offterdinger (dominio público). Metricool post 414317939.
 - Se eligió piano porque es lo único que YouTube está repartiendo; una prueba sobre cold case con 0-1 vistas no mide nada.
 - Wikimedia Commons limita las descargas (429): sale una cada pocos minutos. Espera a una persona: nada.
+
+## 2026-11-03 · El Short en español ganó: V15
+
+- Captura de Cris (3-nov 00:24 Chile), confirmada en la página pública: Caso Archivado ES 672 vistas y 4 likes a ~35 h; el mismo video en inglés, 1 vista. Jingle Bells 41, The Snow Remembers EN 38 a ~8 h. Metricool sigue en null para YouTube.
+- Nueva V15 (español gana a inglés), prioridad 1. Short del 4-nov: el caso 02 en español, mismo video que el EN del 2-nov (control). El gancho ES deja edad y lugar para la escena 2 porque los números en letras pasan las 12 palabras. Metricool post 414802164.
+- La compuerta de voz ahora pasa números y años en español a letras.
+- Descartado por ahora: rehacer el Beethoven (3-nov) en español; sale como está y se compara después.
+- Espera a una persona: nada.
