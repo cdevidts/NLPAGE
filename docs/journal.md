@@ -200,3 +200,7 @@
 - Llegó G-021 de Gemini (piano contra Cold Case 01 EN). Verifiqué su hallazgo concreto: a los 15,5 s del Short de piano había un frame vacío, porque la imagen nueva entraba con opacidad 0 justo después de un corte seco. En `src/components/Visual.tsx` las imágenes y portadas ahora entran desde 0,55; revisé con `remotion still` los frames 464-466 y la imagen ya se ve desde el primero. Vale desde el próximo render; los Shorts ya programados (3 y 4-nov) quedan como están.
 - Su hipótesis de "muestra semilla por entidad en el título" la anoté como rival de V15, pero el ES del caso 01 (mismo título traducido, mismo nombre ficticio) la debilita.
 - Las otras ideas (una página distinta por escena, cierre de ~3,5 s) van al próximo Short de piano. Las pausas largas ya las prueba V13.
+
+## 2026-11-03 (turno diario) · Solo medir
+- El 4-nov ya tiene Short (caso 02 ES, post 414802164), así que hoy no se hizo otro. Lecturas públicas: Caso archivado ES 676 (se frenó después de las ~35 h), caso 02 EN 38 a ~25 h (igual que a ~8 h), Jingle Bells 41, Cold Case 01 EN 1. Metricool sigue en null.
+- Cada Short recibe un solo empujón en sus primeras horas. Mañana, con el caso 02 ES, se compara ese empujón contra los 38 del EN.
