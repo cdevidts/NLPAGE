@@ -86,6 +86,13 @@ Resumen en /mnt/project-files/plan/investigacion/2026-11-02-gemini-G-016-auditor
 - Propone: sacar el rótulo superior, documento +35 % y subtítulos al 55-62 % de la altura; cortar silencios (46,6 → 39,5 s); cerrar en el expediente con sello de ficción y corte en seco (V14); en el último tercio, cinco primeros planos de sospechosos de 0,5 s.
 - Pendiente: G-021 compara con el Short de piano (40 vistas contra 0).
 
+## 2026-11-03 · Gemini G-021: piano (zrc6EDVDS0A, 41) contra Cold Case 01 EN (uFgGEGATfA0, 1)
+Resumen en /mnt/project-files/plan/investigacion/2026-11-02-gemini-G-021-short-piano-vs-cold-case.md; texto en `gemini/outbox/G-021.md`.
+- **Verificado y arreglado**: en 15,5 s del Short de piano había un frame vacío (solo fondo y marca) porque cada imagen nueva entraba con opacidad 0 tras un corte seco. `Visual.tsx` ahora la hace entrar desde 0,55 (still del frame 464 revisado). Vale para todos los Shorts desde el 3-nov.
+- Huecos de ~1 s entre frases y 2 s mudos al final: es lo que prueba V13 (`"ritmo": "continuo"`, 3-nov).
+- Misma página de partitura dos veces (19-31 s) y tarjeta final congelada 8 s sin subtítulos: para el próximo piano, una página distinta por escena y cierre de ~3,5 s (cruza con V5/V9/V14).
+- Hipótesis de Gemini (sin verificar): el cold case no entró a la muestra semilla por título sin entidades conocidas y "killed" al inicio; el piano sí por "Jingle Bells" + Navidad. **La debilita V15**: el mismo Cold Case 01 en español, con el mismo nombre ficticio y "¿quién mató...?" en el título, hizo 672 vistas. Lo que más pesa hasta ahora es el idioma, no la entidad del título. Se puede volver a mirar con V12 (caso 02 EN, gancho con fecha + lugar).
+
 ## Lo que dicen las guías (sin medir por nosotros: tratarlo como hipótesis)
 - Shorts pueden durar hasta 3 minutos desde el 15-oct-2024; la compuerta de 58 s de
   `short` es por costumbre, no por regla de YouTube.
