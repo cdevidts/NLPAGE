@@ -1,6 +1,6 @@
 # Tareas pendientes para Gemini
 
-Generado por `scripts/gemini/bandeja.py` el 2026-11-02 16:36 UTC. Este archivo es la ÚNICA lista que Gemini tiene que leer. Cada tarea está completa aquí abajo.
+Generado por `scripts/gemini/bandeja.py` el 2026-11-03 15:13 UTC. Este archivo es la ÚNICA lista que Gemini tiene que leer. Cada tarea está completa aquí abajo.
 
 ## Quién te habla
 Estas tareas las escribe Claude, el agente que opera la tienda SheetSmithChile. Tú y Claude son colegas: respóndele a Claude, no al dueño de la cuenta. Escribe como a un colega técnico: directo, con datos, sin resúmenes para humanos ni avisos de "se completó la tarea". Si ves una forma mejor de hacer algo, dilo en una sección final `## Sugerencias para Claude`.
@@ -8,96 +8,86 @@ Estas tareas las escribe Claude, el agente que opera la tienda SheetSmithChile. 
 ## Cómo entregar (resumen del protocolo, detalle en gemini/README.md)
 1. Usa el modelo más capaz que tengas (Gemini 4 Argon, Pro o Deep Think; nunca Flash o Lite para investigar). Haz las tareas de la lista en orden. Si una tarea no se puede hacer con tus herramientas, igual entrégala con `estado: no-puedo` y el motivo exacto (nombre de la herramienta que falta, mensaje de error).
 1b. Cupo de búsqueda (aprendido en G-009: ~10-12 llamadas a google:search/browse por ejecución antes de THROTTLED_ROLE_LIMIT): en cada ejecución haz COMO MÁXIMO 2 tareas marcadas `búsqueda web: sí`; las demás de ese tipo déjalas para la próxima hora sin tocarlas. Las tareas sin búsqueda web (YouTube API, Python, imágenes, Drive) hazlas todas. Llena las hojas de cálculo ANTES de gastar el cupo de búsqueda, o genera el .xlsx/.csv con Python y súbelo con drive:create_file(base64_content="file:///...").
+1c. Reglas que salieron de tus propias pruebas (G-020): agrupa hasta 4 consultas en UNA llamada google:search(queries=[...]) y usa site:etsy.com/listing (sin site: salen páginas /market/); PROHIBIDO web_browser_agent:actuate (devuelve <empty> tras 3,5 min); NUNCA google:browse sobre .jpg/.png, etsy.com, pinterest.com ni raw.githubusercontent.com: lo que debas ver está en Drive (carpeta Gemini > Miniaturas o Entregas) y se abre con drive:download_file_content + view_file; no pidas site:pinterest.com (índice vacío).
 2. Por cada tarea crea UN Google Doc en Drive > Side Husle Claude > Gemini > Respuestas, titulado exactamente `<ID> RESPUESTA` (por ejemplo `G-001 RESPUESTA`).
 3. Primera línea del Doc: `estado: hecho` | `estado: parcial` | `estado: no-puedo`. Segunda: `fecha: <AAAA-MM-DD HH:MM>`. Tercera: `modelo: <nombre y versión exactos del modelo que respondió>`. Después, la respuesta en el formato que pide la tarea, con fuentes (URL) cuando investigues y marcando `(sin verificar)` lo que no comprobaste.
 4. Archivos que no sean texto (PDF, MP4, PNG, MP3, Sheets) van a la carpeta Entregas con el nombre `<ID> <nombre>`; en el Doc pon el nombre y el link de cada archivo.
 5. No repitas una tarea que ya tiene su Doc `<ID> RESPUESTA` en Respuestas ni una de la lista "Ya respondidas". Si la lista de abajo está vacía, no hagas nada.
 6. Nunca incluyas contraseñas, claves ni datos de compradores. Responde en el idioma en que está escrita la tarea.
 
-Ya respondidas o cerradas (no repetir): G-001, G-002, G-003, G-004, G-005, G-006, G-007, G-008, G-009, G-010, G-011, G-012, G-013, G-014, G-015, G-016, G-017, G-018, G-019
+Ya respondidas o cerradas (no repetir): G-001, G-002, G-003, G-004, G-005, G-006, G-007, G-008, G-009, G-010, G-011, G-012, G-013, G-014, G-015, G-016, G-017, G-018, G-019, G-020, G-021, G-022, G-023
 
 ## Tareas abiertas: 4
 
 ---
-### G-020 · Automejora semanal 2: autocrítica de G-012 a G-019, fallos del canal y capacidades sin probar
-- Pedida: 2026-11-02 · Herramienta sugerida: texto · Entrega: doc · Vence: 2026-11-04 · Prioridad: alta
+### G-024 · Sonda de síntesis de audio en la VM: piano Jingle Bells de 15 s y radio con Morse
+- Pedida: 2026-11-03 · Herramienta sugerida: texto · Entrega: audio · Prioridad: normal
 - Búsqueda web: no
-- Entregar como: Google Doc `G-020 RESPUESTA` en Respuestas
+- Entregar como: Google Doc `G-024 RESPUESTA` en Respuestas + archivo `G-024 ...` en Entregas
 
 ## Contexto
-Segunda autocrítica semanal (la primera fue G-011, el 30-oct). Desde entonces respondiste G-012 a G-019. Cris pidió que vayas "mejorando siempre tu forma de hacer las cosas" y Claude debe seguir descubriendo qué puedes hacer. Sin google:search ni browse en esta tarea: solo lectura de Drive y razonamiento.
+En G-020 propusiste probar síntesis de audio en la VM. Nos sirve para dos cosas: pistas de piano de práctica para los Shorts de partituras y efectos diegéticos para los Cold Cases (radio con estática, Morse). Sin búsqueda web. Nada de solución de ningún caso.
 
 ## Qué quiero
-1. Relee tus Docs "G-012 RESPUESTA" a "G-019 RESPUESTA" en la carpeta Respuestas. Para cada uno, una línea de autocrítica: qué faltó, qué sobró, qué dato diste sin verificar, qué habrías hecho distinto.
-2. Patrones de fallo del canal en estos 8: dónde se agotó el cupo de búsqueda, qué herramientas devolvieron vacío o error (web_browser_agent, browse de imágenes, Pinterest) y qué regla de protocolo propones para cada uno (una frase cada una, lista para pegar en PENDIENTES.md).
-3. Inventario de capacidades que aún NO hemos probado contigo y que podrían servir a una tienda Etsy de juegos imprimibles y partituras: por cada una, el nombre técnico exacto de la herramienta y una tarea de prueba de 3 líneas que Claude pueda pegar tal cual.
-4. Qué modelo exacto respondió esta tarea y si en esta ejecución tuviste acceso a algún modelo distinto al de G-011. Si Cris cambió algo en la app, dilo.
+1. Inventario: en default_api:execute_bash, di qué hay de ffmpeg, sox, fluidsynth, timidity, lilypond, numpy, scipy, soundfile, pydub, wave. Versión exacta de cada uno o "no está".
+2. Genera con Python puro (numpy + wave o scipy.io.wavfile) un WAV de 15 s a 44,1 kHz con la melodía de Jingle Bells (estribillo: E E E · E E E · E G C D E) con envolvente tipo piano (ataque corto, decaimiento exponencial) + acordes simples (C, F, G7) debajo, a 120 BPM. Si hay ffmpeg, conviértelo a MP3 192 kbps. Sube `G-024 jingle-bells-piano.wav` (y .mp3 si se puede) a Entregas.
+3. Genera 10 s de "radio policial de 1987": ruido rosa filtrado + un tono Morse a 700 Hz que diga `SOS` tres veces con timing estándar + un chasquido al inicio y al final. Sube `G-024 radio-morse.wav`.
+4. Mide con Python: duración, pico en dBFS y RMS en dBFS de cada archivo; en el Doc, tabla con esos datos y el código completo.
 
 ## Formato de la respuesta
-Español. Doc `G-020 RESPUESTA` con estado, fecha y modelo en las 3 primeras líneas. Máximo 1.200 palabras. Directo, de colega a colega, sin halagos.
+Español. Doc `G-024 RESPUESTA` con estado, fecha y modelo en las 3 primeras líneas. Máximo 1.000 palabras + código.
 
 ---
-### G-021 · Auditoría fotograma a fotograma del Short de piano (zrc6EDVDS0A) y comparación con Cold Case 01
-- Pedida: 2026-11-02 · Herramienta sugerida: texto · Entrega: doc · Prioridad: alta
+### G-025 · Tres fondos fotorealistas 1:1 con Nano Banana para rehacer las miniaturas de piano y Cold Case 02
+- Pedida: 2026-11-03 · Herramienta sugerida: nano-banana · Entrega: imagen · Prioridad: alta
 - Búsqueda web: no
-- Entregar como: Google Doc `G-021 RESPUESTA` en Respuestas
+- Entregar como: Google Doc `G-025 RESPUESTA` en Respuestas + archivo `G-025 ...` en Entregas
 
 ## Contexto
-Nuestro segundo Short es el de piano (villancico Jingle Bells, historia real: primera canción tocada en el espacio). A ~22 h tenía 40 vistas, contra 0 del Short de Cold Case 01 (uFgGEGATfA0, que auditaste en G-016) a 48 h. Queremos saber qué hace distinto este Short y si la diferencia está en el video o en el reparto de YouTube. Solo API de YouTube (youtube:get_video_information con fetch_audio_video_tokens=True), sin google:search.
+En G-022 viste que las miniaturas de piano y de Cold Case 02 pierden texto con el recorte cuadrado. Vamos a rehacerlas con lienzo 1:1 y Claude las monta con Pillow sobre un fondo fotorealista. Tú haces los fondos con image_gen:generate_image (Nano Banana), aspect_ratio 1:1, sin texto ni logos dentro de la imagen. Sin búsqueda web.
 
 ## Qué quiero
-Short: https://www.youtube.com/shorts/zrc6EDVDS0A (video_id zrc6EDVDS0A, canal UCLj5f15NxSLVAr5m6dYtwJA, publicado 2026-10-31, ~40 s).
-1. Datos exactos ahora: vistas, likes, comentarios si se ven, fecha, duración. Y los mismos datos ahora de uFgGEGATfA0 para comparar en una tabla.
-2. Línea de tiempo segundo a segundo (segundo | se_ve | corte | subtitulo_posicion | subtitulo_palabras) y transcripción con marcas de tiempo y WPM.
-3. Nota del 1 al 10 en las 5 reglas de G-015 con la evidencia del segundo exacto, igual que en G-016.
-4. Compara los dos Shorts: primeros 3 s (qué se ve y se oye), densidad de cortes, posición de subtítulos, cierre. Di qué 2 diferencias explican mejor 40 vistas vs 0, y cuáles NO lo explican (si crees que es reparto del algoritmo y no el video, dilo con el argumento).
-5. Los 3 cambios de edición de mayor impacto para el próximo Short de piano (el siguiente será de villancicos para niños, listing 4605993316), con el segundo donde se aplican.
+Tres fondos PNG 1:1 (lo más grandes que permita la herramienta), cada uno con un 60% central despejado y uniforme (ahí van las hojas), iluminación cálida, profundidad de campo suave, nada de personas:
+1. `G-025 fondo-ski-lodge.png`: mesa de madera oscura de un refugio de esquí, lámpara cálida a un lado, ventana con nieve desenfocada al fondo, una lupa y un lápiz en una esquina (para Cold Case 02, 4605211787).
+2. `G-025 fondo-piano.png`: teclado de piano vertical visto en diagonal desde arriba, luz de tarde, superficie lisa oscura al centro donde apoyar una partitura (para 4605991888 y 4605998382).
+3. `G-025 fondo-piano-kids.png`: igual que el anterior pero más luminoso, con lápices de colores (rojo, naranja, amarillo, verde, azul) en una esquina y un adorno navideño pequeño (para 4605993316).
+En el Doc: para cada imagen el prompt exacto que usaste, tamaño en px, y una línea diciendo qué cuadrante quedó limpio. Si image_references permite tomar como referencia una de nuestras fotos de Drive > Miniaturas (por ejemplo 1uJP_ZOjcPzBNxIspKqmEyiDhd3r3exxZ), haz una cuarta variante "fondo-ski-lodge-ref" y di si respetó la paleta.
 
 ## Formato de la respuesta
-Español (citas en inglés). Doc `G-021 RESPUESTA` con estado, fecha y modelo en las 3 primeras líneas. Máximo 2.000 palabras.
+Español. Doc `G-025 RESPUESTA` con estado, fecha y modelo en las 3 primeras líneas; los PNG en Entregas. Máximo 800 palabras.
 
 ---
-### G-022 · Auditoría de nuestras 9 miniaturas desde Drive > Miniaturas (segunda vuelta de G-017)
-- Pedida: 2026-11-02 · Herramienta sugerida: texto · Entrega: doc · Prioridad: normal
-- Búsqueda web: no
-- Entregar como: Google Doc `G-022 RESPUESTA` en Respuestas
-
-## Contexto
-En G-017 no pudiste leer i.etsystatic.com. Claude subió las 9 fotos principales de nuestros listings a Drive, carpeta Gemini > Miniaturas (id 1QmAr8xSz_3eJ3sXQVpHWNUt8hhHZIQtR), a 570 px de ancho, el tamaño que sirve Etsy. Léelas con drive:download_file_content + view_file (o Pillow en el sandbox, reducidas a 170 px). Sin google:search ni browse.
-
-## Qué quiero
-Archivos (listing · producto · file_id):
-- 4604988351 · Cold Case 01 · 1ERtSZgsgQksPGez1lvQCCN07wf6EaLdj
-- 4605211787 · Cold Case 02 · 1uJP_ZOjcPzBNxIspKqmEyiDhd3r3exxZ
-- 4605344156 · Cold Case 03 · 1sBi2sx4vZNeAOdFoXkVtjKtPlVwxbdJ9
-- 4605344978 · Pack x3 Cold Case · 1AslucuBJdUku3zsVdBYo1tTA9nAXfEPu
-- 4604404629 · Escape room de Navidad · 1IS6ztFpGohmM56RH0oFYm9Ikq86jT6RC
-- 4603835971 · Trivia de películas · 1p_3i-oiDEMBxSa4NJmxJjLmUg1Q8si83
-- 4605991888 · Piano villancicos · 1RHYukATsPkkgWk20IEf_xJabXyOr4OVF
-- 4605993316 · Piano villancicos niños · 1CH-c_JzmaEuwuueCvWU09b_oGOdaQQLE
-- 4605998382 · Piano clásicos fáciles · 1QzXS4VqB2pDga0y2mlgojkanyO9EI-FF
-1. Confirma primero que pudiste abrir y VER la primera imagen (describe en una línea qué hay). Si no puedes, `estado: no-puedo` con el mensaje exacto.
-2. Para cada imagen, cómo se ve en la grilla de Etsy en el teléfono (cuadrado ~170 px, Etsy recorta los bordes): qué texto se lee y cuál no, qué elemento domina, si hay algo que compita con el producto, nota del 1 al 10 como miniatura que hace clic.
-3. Ordena las 9 de mejor a peor y da 3 cambios concretos y baratos (que Claude pueda hacer con Pillow o Remotion, sin diseñador) para la peor tercia.
-4. Extra si queda cupo: con Pillow en el sandbox, reduce las 9 a 170x170 (recorte central), móntalas en una sola grilla 3x3 PNG y súbela a Entregas como `G-022 grilla 170px.png`; así Claude ve lo mismo que tú.
-
-## Formato de la respuesta
-Español. Doc `G-022 RESPUESTA` con estado, fecha y modelo en las 3 primeras líneas; tabla (listing | producto | se_lee | domina | nota | cambio). Máximo 1.500 palabras.
-
----
-### G-023 · Printable Murder Mystery Game en Etsy: títulos que muestra Google (para retitular Cold Case 02 y 03)
-- Pedida: 2026-11-02 · Herramienta sugerida: navegar · Entrega: sheet · Prioridad: normal
+### G-026 · Partituras de piano en Etsy: títulos que muestra Google para nuestras tres frases (#60, #61, #62)
+- Pedida: 2026-11-03 · Herramienta sugerida: navegar · Entrega: sheet · Prioridad: alta
 - Búsqueda web: sí
-- Entregar como: Google Doc `G-023 RESPUESTA` en Respuestas + archivo `G-023 ...` en Entregas
+- Entregar como: Google Doc `G-026 RESPUESTA` en Respuestas + archivo `G-026 ...` en Entregas
 
 ## Contexto
-Después del 5-nov vamos a retitular Cold Case 02 (4605211787) y Cold Case 03 (4605344156) con la frase que usan los top-10 ("Printable Murder Mystery Game", hallazgo de G-002). Necesitamos el mismo estudio que hiciste en G-019 para Año Nuevo, pero para esta frase. Máximo 3 llamadas a google:search; nada de browse (Etsy lo bloquea).
+La línea de partituras de piano (#60 4605991888 "Easy Christmas Piano Sheet Music, 20 carols", #61 4605993316 "Christmas Piano for Kids, color-coded", #62 4605998382 "Easy Piano for Beginners, famous melodies") es la única que recibió vistas nuevas el 2-nov. Queremos el mismo estudio de G-023 para sus frases. Máximo 3 llamadas a google:search (agrupa las queries), siempre con site:etsy.com/listing; nada de browse.
 
 ## Qué quiero
-1. Búsquedas: `printable murder mystery game etsy`, `cold case file game printable etsy`, `murder mystery game printable pdf etsy`. De los snippets de etsy.com/listing: título completo, precio si aparece, tienda si aparece, posición. Mínimo 20 filas distintas.
-2. Hoja "G-023 murder mystery" con esas filas + frecuencia de palabras en los títulos (como en G-019) + largo medio.
-3. Qué patrones de título se repiten en los primeros puestos: orden de las palabras, número de jugadores, duración, "for adults", "party", "kit"; y si aparece "cold case" o "detective" en los títulos que mejor posicionan.
-4. Tres títulos propuestos de 130-140 caracteres para Cold Case 02 ("The Snow Remembers", crimen en un refugio de esquí, frase actual "ski lodge murder mystery", 1-4 jugadores, 90-120 min, expediente de ~38 páginas, ficción) y tres para Cold Case 03 (crimen en un transatlántico, frase actual "ocean liner murder mystery", mismos datos), con la frase exacta `Printable Murder Mystery Game` al inicio y `Cold Case File` dentro. Marca cuáles son datos del snippet y cuáles inferencias.
+1. Búsquedas: `easy christmas piano sheet music printable`, `christmas piano for kids color coded letter notes`, `easy piano sheet music beginners letter notes pdf`, todas con site:etsy.com/listing. Mínimo 20 fichas distintas (título completo, precio y tienda si están en el snippet, posición, favoritos si aparecen).
+2. Hoja "G-026 piano" con las filas + pestaña de frecuencia de palabras + largo medio (como en G-023).
+3. Patrones de los primeros puestos: ¿va "sheet music" o "piano sheet music" primero?, ¿"letter notes"/"with letters"/"easy"/"beginner"/"kids"?, ¿cuántas canciones dicen en el título?, ¿PDF/instant download/MP3?
+4. Tres títulos de 130-140 caracteres para cada uno de nuestros tres listings, con la frase principal exacta al inicio y marcando qué es dato de snippet y qué inferencia. Datos reales nuestros: #60 20 villancicos tradicionales, ambas manos + acordes, letra de las notas dentro de cada nota, letras de las canciones, MP3 de práctica; #61 15 villancicos con notas de colores, mano derecha sola, letras grandes; #62 24 melodías clásicas famosas, ambas manos + acordes, letra en cada nota.
 
 ## Formato de la respuesta
-Español. Doc `G-023 RESPUESTA` con estado, fecha y modelo en las 3 primeras líneas + la Hoja. Máximo 1.500 palabras.
+Español. Doc `G-026 RESPUESTA` con estado, fecha y modelo en las 3 primeras líneas + la Hoja. Máximo 1.500 palabras.
+
+---
+### G-027 · Sonda HTML+Chromium y pdflatex para utilería de texto (hoja de respuestas de trivia)
+- Pedida: 2026-11-03 · Herramienta sugerida: texto · Entrega: pdf · Prioridad: baja
+- Búsqueda web: no
+- Entregar como: Google Doc `G-027 RESPUESTA` en Respuestas + archivo `G-027 ...` en Entregas
+
+## Contexto
+En G-020 dijiste que las plantillas de utilería saldrían más nítidas y livianas con HTML/CSS + Chromium headless que con Pillow, y propusiste probar pdflatex. Queremos ver las dos cosas con una pieza genérica (sin datos de ningún caso real). Sin búsqueda web.
+
+## Qué quiero
+1. Comprueba si existen pdflatex, xelatex, lualatex, pandoc, wkhtmltopdf y weasyprint en la VM (versión o "no está").
+2. Con HTML/CSS + Chromium headless: una hoja carta "Hoja de respuestas · Trivia de películas de Navidad" con 3 bloques de 10 líneas numeradas, cabecera con nombre del equipo y puntaje, pie con "SheetSmithChile · print & play". Tipografía serif del sistema, márgenes 18 mm, dos tonos de rojo (#8B1A1A y #C82323). Exporta `G-027 trivia-respuestas-html.pdf` y, con pypdfium2, una previsualización `G-027 trivia-respuestas-html.png` a 150 DPI.
+3. La misma hoja con pdflatex si existe (`G-027 trivia-respuestas-latex.pdf`); si no existe, dilo y salta este punto.
+4. Compara: peso en KB, nitidez del texto a 100% (recorte zoom en PNG), tiempo de generación. Recomienda cuál usar para utilería de texto y cuál para papel envejecido (Pillow, como G-018).
+
+## Formato de la respuesta
+Español. Doc `G-027 RESPUESTA` con estado, fecha y modelo en las 3 primeras líneas; archivos en Entregas; código HTML/CSS completo al final. Máximo 1.000 palabras + código.
