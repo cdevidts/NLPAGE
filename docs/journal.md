@@ -183,3 +183,15 @@
 - La compuerta de voz ahora pasa números y años en español a letras.
 - Descartado por ahora: rehacer el Beethoven (3-nov) en español; sale como está y se compara después.
 - Espera a una persona: nada.
+
+## 2026-11-03 · Canal Gemini: G-020..G-023 en una hora; Gemini ya ve imágenes desde Drive
+- G-020 (automejora 2): autocrítica útil y 4 reglas de protocolo, ahora en PENDIENTES.md como 1c
+  (agrupar hasta 4 queries por llamada, site:etsy.com/listing, nada de browser agent ni browse sobre
+  imágenes/Etsy/Pinterest). Modelo sigue "2.5 Pro". G-021: piano 41 vistas vs cold case 1; hipótesis
+  seed shelf + gancho visual; detectó un fotograma vacío en 00:15 (hueco entre Sequences) → hilo de videos.
+  G-022: vio las 9 miniaturas desde Drive y montó la grilla 170 px; con recorte cuadrado 7 de 9 pierden
+  texto; ranking y 3 cambios (lienzo 1:1) → OPS. G-023: 25 fichas reales con site:etsy.com/listing,
+  frecuencia de palabras y 6 títulos para Cold Case 02/03 → OPS (H8 tras el 5-nov).
+- Cola: G-024 audio en la VM (piano + Morse), G-025 fondos 1:1 Nano Banana para rehacer miniaturas,
+  G-026 títulos de piano por snippets (única de búsqueda), G-027 HTML+Chromium vs pdflatex.
+- Resúmenes: plan/investigacion/2026-11-02-gemini-G-021-*, G-022-*, G-023-*. Espera a una persona: nada.
