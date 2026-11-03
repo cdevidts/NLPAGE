@@ -195,3 +195,8 @@
 - Cola: G-024 audio en la VM (piano + Morse), G-025 fondos 1:1 Nano Banana para rehacer miniaturas,
   G-026 títulos de piano por snippets (única de búsqueda), G-027 HTML+Chromium vs pdflatex.
 - Resúmenes: plan/investigacion/2026-11-02-gemini-G-021-*, G-022-*, G-023-*. Espera a una persona: nada.
+
+## 2026-11-03 (tarde) · G-021: frame vacío arreglado
+- Llegó G-021 de Gemini (piano contra Cold Case 01 EN). Verifiqué su hallazgo concreto: a los 15,5 s del Short de piano había un frame vacío, porque la imagen nueva entraba con opacidad 0 justo después de un corte seco. En `src/components/Visual.tsx` las imágenes y portadas ahora entran desde 0,55; revisé con `remotion still` los frames 464-466 y la imagen ya se ve desde el primero. Vale desde el próximo render; los Shorts ya programados (3 y 4-nov) quedan como están.
+- Su hipótesis de "muestra semilla por entidad en el título" la anoté como rival de V15, pero el ES del caso 01 (mismo título traducido, mismo nombre ficticio) la debilita.
+- Las otras ideas (una página distinta por escena, cierre de ~3,5 s) van al próximo Short de piano. Las pausas largas ya las prueba V13.

@@ -28,6 +28,7 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 - Evidencia: par limpio V0. Cold Case 01 ES 672 vistas a ~35 h contra 1 vista del EN a 72 h; mismo video salvo idioma, voz y día de publicación. Un solo par: puede ser azar del reparto inicial, el país del canal (Chile) o menos competencia en true crime en español.
 - Prueba: el caso 02 (The Snow Remembers) en español, con el mismo guion, documentos, gancho (fecha + edad + nombre + lugar), música y cierre que el EN del 2-nov (control, 38 vistas a ~8 h). Si el ES vuelve a ganar por 1,5x o más, se confirma con 2 de 3 en la tercera (caso 03 ES contra EN, o piano ES contra EN).
 - Si se confirma: todos los Shorts salen primero en español, y el inglés pasa a ser la prueba.
+- Hipótesis rival (G-021, según Gemini, sin verificar): el cold case EN no recibió muestra semilla por título sin entidades conocidas y "killed" al inicio. V15 la debilita: el ES tiene el mismo nombre ficticio y "¿quién mató...?" y sacó 672. Si el caso 02 EN (fecha + lugar en el gancho) sube y el ES no, revisar.
 
 ### V1. Cold case: el reto interactivo gana a la historia narrada
 - Evidencia: outliers de participación ("If you laugh you lose", "Guess the Animal",

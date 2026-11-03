@@ -73,7 +73,8 @@ export const VisualEscena: React.FC<{visual: Visual; tema: Tema; total: number}>
             overflow: 'hidden',
             boxShadow: sombra,
             transform: `rotateX(${interpolate(m, [0, 1], [28, 0])}deg) translateY(${interpolate(m, [0, 1], [260, 0])}px) scale(${interpolate(e, [0, 1], [0.75, 1])})`,
-            opacity: interpolate(m, [0, 0.25], [0, 1], clamp),
+            // Nunca arranca transparente: un frame vacío entre escenas se nota (G-021, verificado en el Short de piano a los 15,5 s).
+            opacity: interpolate(m, [0, 0.2], [0.55, 1], clamp),
           }}
         >
           <div style={{transform: camara(frame, total, foco), transformOrigin: 'center'}}>
