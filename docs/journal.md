@@ -216,3 +216,10 @@
 - Cola nueva: G-028 títulos de escape room de Navidad (búsqueda, alta), G-029 diez Shorts de true crime en
   español por fotogramas (búsqueda, para el hilo de videos), G-030 plantilla HTML de recorte de prensa 1987 +
   script de envejecido (sin texto de casos). Espera a una persona: nada.
+
+## 2026-11-04 (turno diario) · Beethoven en español para el 5-nov
+- Lecturas: caso 02 EN 38 a 48 h; Beethoven EN 25 a ~22 h; Metricool sigue en null.
+- Short del 5-nov: Beethoven en español (`plans/62-piano-clasicos-historia-es.json`). Es la tercera prueba de V15: misma historia, imagen, música propia y ritmo continuo que el EN, con voz Piper es_MX y el libro Do Re Mi. Va programado en Metricool (post 416793981).
+- Piper leía "Beethoven" de forma que whisper oía "Bambé Tobén". Agregué `"pronuncia"` al plan: cambia lo que lee la voz ("Bitóven") sin tocar el subtítulo, una palabra por una palabra. Después de eso whisper oyó "van Beethoven".
+- copy_check.py marca errores de Etsy (tags de 20 caracteres, frase al inicio, frase repetida con la ficha). Para YouTube no aplican; el título sigue la regla de la skill: gancho con la frase principal ES dentro.
+- El mp4 pesa 53 MB, más que los anteriores. GitHub avisa desde 50 MB y rechaza desde 100 MB. Si sigue creciendo, bajar el bitrate del render.

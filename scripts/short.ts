@@ -74,7 +74,13 @@ for (const [i, texto] of lineas.entries()) {
     voces.push({seg: 0, palabras: []});
     continue;
   }
-  let wav = await voz(texto, plan.idioma, plan.voz, plan.velocidad ?? 1, plan.vozEstilo);
+  // "pronuncia" cambia lo que lee la voz, no lo que dice el subtítulo (una palabra por otra).
+  const leido = Object.entries(plan.pronuncia ?? {}).reduce((t, [a, b]) => t.replace(new RegExp(`(?<![\\p{L}])${a}(?![\\p{L}])`, 'gu'), b), texto);
+  if (leido.split(/\s+/).length !== texto.split(/\s+/).length) {
+    console.log(`❌ voz ${i + 1}: "pronuncia" tiene que cambiar una palabra por una palabra`);
+    process.exit(1);
+  }
+  let wav = await voz(leido, plan.idioma, plan.voz, plan.velocidad ?? 1, plan.vozEstilo);
   if (continuo) {
     // Kokoro deja ~0,3 s antes y ~0,45 s después de cada frase: se quitan (silencio bajo -40 dB).
     const recortado = wav.replace(/\.wav$/, '.continuo.wav');
@@ -86,7 +92,9 @@ for (const [i, texto] of lineas.entries()) {
   }
   const destino = path.join(dirVoz, `${String(i + 1).padStart(2, '0')}.wav`);
   fs.copyFileSync(wav, destino);
-  const pal = palabras(wav, plan.idioma, texto);
+  const pal = palabras(wav, plan.idioma, leido);
+  const originales = texto.split(/\s+/);
+  if (leido !== texto) pal.palabras = pal.palabras.map((p, j) => ({...p, w: originales[j] ?? p.w}));
   const seg = Number(sh('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', wav], {silencio: true}));
   console.log(`  voz ${i + 1}: ${seg.toFixed(2)} s, whisper oye ${pal.coinciden}/${pal.total} palabras, ${(pal.similitud * 100).toFixed(0)} % de las letras`);
   if (pal.similitud < 0.8) {

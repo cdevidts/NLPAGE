@@ -93,6 +93,11 @@ Resumen en /mnt/project-files/plan/investigacion/2026-11-02-gemini-G-021-short-p
 - Misma página de partitura dos veces (19-31 s) y tarjeta final congelada 8 s sin subtítulos: para el próximo piano, una página distinta por escena y cierre de ~3,5 s (cruza con V5/V9/V14).
 - Hipótesis de Gemini (sin verificar): el cold case no entró a la muestra semilla por título sin entidades conocidas y "killed" al inicio; el piano sí por "Jingle Bells" + Navidad. **La debilita V15**: el mismo Cold Case 01 en español, con el mismo nombre ficticio y "¿quién mató...?" en el título, hizo 672 vistas. Lo que más pesa hasta ahora es el idioma, no la entidad del título. Se puede volver a mirar con V12 (caso 02 EN, gancho con fecha + lugar).
 
+## 2026-11-04 · Gemini G-024: audio sintetizado (SIN ESCUCHAR)
+Resumen en /mnt/project-files/plan/investigacion/2026-11-04-gemini-G-024-audio-sintetizado-en-la-vm.md; código en `gemini/outbox/G-024.md`.
+- Gemini sintetiza piano aditivo y SFX con numpy/scipy/ffmpeg: "jingle-bells-piano.mp3" (15 s) y "radio-morse.wav" (10 s, radio policial de 1987 con SOS) en Drive > Gemini > Entregas. Hay que escucharlos antes de usarlos.
+- El mismo código corre en nuestro contenedor. Sirve para audio propio sin Content ID: una melodía del libro para Shorts de piano cuando no haya MP3 del producto, o SFX diegéticos para cold cases (radio, máquina de escribir). Suena a piano simple, no real: no reemplaza los MP3 de práctica del producto.
+
 ## Lo que dicen las guías (sin medir por nosotros: tratarlo como hipótesis)
 - Shorts pueden durar hasta 3 minutos desde el 15-oct-2024; la compuerta de 58 s de
   `short` es por costumbre, no por regla de YouTube.

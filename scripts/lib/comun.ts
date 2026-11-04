@@ -62,6 +62,8 @@ export type Plan = {
   /** "continuo": recorta el silencio que la voz trae al inicio y al final de cada
    * escena y deja ~0,2 s entre escenas (V13; con el default quedan ~1,1 s). */
   ritmo?: 'continuo';
+  /** Cómo debe leer la voz una palabra que pronuncia mal, sin cambiar el subtítulo: {"Beethoven": "Bitóven"}. Una palabra por una palabra. */
+  pronuncia?: Record<string, string>;
   /** `incompetech`: título del catálogo de Kevin MacLeod. `archivo`: audio propio
    * (p. ej. la pista de práctica del producto), ruta en public/. */
   musica?: {incompetech?: string; archivo?: string; volumen?: number; desde?: number} | 'ninguna';
