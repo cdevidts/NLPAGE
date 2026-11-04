@@ -40,16 +40,20 @@ cada hora y es "prácticamente ilimitada" (no usa la API).
 | 2026-11-02 | G-021 | Comparar dos Shorts nuestros por API (vistas exactas + fotogramas) | SÍ: 41 vs 1 vistas; hipótesis seed shelf + gancho visual; detectó un fotograma vacío en 00:15 (bug de Remotion) | Cada Short nuevo se compara con el anterior |
 | 2026-11-02 | G-022 | Ver imágenes subidas a Drive (view_file) + Pillow para montar grilla 170 px | SÍ: vio las 9, montó `G-022 grilla 170px.png` en Entregas, auditoría con ranking | Imágenes para Gemini: siempre por Drive (Zapier Upload File) |
 | 2026-11-02 | G-023 | 3 búsquedas agrupadas con site:etsy.com/listing + Sheet de 2 pestañas | SÍ: 25 fichas reales, frecuencia de palabras, 6 títulos | Patrón de tarea para cualquier frase SEO: 3 queries, site:etsy.com/listing, Sheet primero |
+| 2026-11-03 | G-024 | Síntesis de audio en la VM (numpy/scipy/ffmpeg) y subida de WAV/MP3 | SÍ: 3 archivos (piano aditivo 15 s, MP3 192k, radio+Morse 10 s) con pico/RMS medidos; NO hay sox/fluidsynth/lilypond (sin soundfonts) | SFX y pistas sintéticas gratis; el código corre igual en nuestro contenedor |
+| 2026-11-03 | G-025 | Nano Banana 1:1 con zona central limpia + `image_references` desde Drive | SÍ 4 PNG 1024×1024 (máximo 1:1); `image_references` NO acepta file_id de Drive (solo adjuntos del turno o imágenes propias); rodeo: medir paleta con NumPy y pasar hex en el prompt | Fondos para miniaturas; "edita nuestra portada" no se pide |
+| 2026-11-03 | G-026 | Patrón G-023 aplicado a piano: 1 llamada con 3 queries + site:etsy.com/listing + Sheet | SÍ: 24 fichas, frecuencias, 9 títulos marcando snippet vs inferencia | Patrón consolidado: 1 tarea de búsqueda ⇒ 20+ fichas |
+| 2026-11-03 | G-027 | pdflatex/lualatex/weasyprint/Chromium CDP + pypdfium2 en la VM | SÍ: pdflatex y lualatex existen; Chromium solo vía CDP (CLI falla); PDF vectorial de 43 KB vs 54 KB LaTeX vs 255–380 KB Pillow | Utilería de texto: HTML+Chromium; papel viejo: HTML→300 DPI→Pillow |
 
 ## Pendiente de probar
-Síntesis de audio en la VM (G-024); edición de imagen con `image_references` (portada existente);
 Slides; lectura de PDFs de Drive (nuestros expedientes, nunca las soluciones); traducción de listings
 DE/FR/IT/NL/PT con revisión de SEO; Gmail SOLO para correos de Pinterest/Metricool con métricas (los de
-Etsy traen datos de compradores: no); Calendar y Keep no hacen falta.
+Etsy traen datos de compradores: no); google_finance (sin uso claro); Calendar y Keep no hacen falta.
+Probado el 3-nov: audio en la VM (G-024 sí), image_references (G-025: no desde Drive), LaTeX (G-027 sí).
 
 ## Reglas que salieron de las pruebas
 - Cada tarea lleva IDs directos: video_id/URL de Shorts, file_id de Drive, URL del listing.
 - Máximo 2 tareas de búsqueda web por ejecución (encabezado 1b). Las de YouTube API, Python e imágenes no gastan ese cupo.
 - Cifras de Etsy que vengan de snippets son `(sin verificar)` hasta mirarlas por el puente.
 - NO existen para Gemini: Pinterest (índice lo excluye), navegador autónomo, Veo, Audio Overview, elegir modelo.
-- SÍ y barato (sin cupo): YouTube por URL con fotogramas, Python→PDF/PNG/xlsx/pptx subidos a Entregas, imágenes Nano Banana, Docs/Sheets.
+- SÍ y barato (sin cupo): YouTube por URL con fotogramas, Python→PDF/PNG/xlsx/pptx/WAV/MP3 subidos a Entregas, PDF vectorial por HTML+Chromium o pdflatex, imágenes Nano Banana 1024 px (sin referencia a fotos de Drive), Docs/Sheets.

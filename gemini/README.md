@@ -23,7 +23,7 @@ Pro de Cris (Deep Research, Veo, Nano Banana, NotebookLM, Canvas, navegación), 
 | Leer la URL raw de GitHub | **No** ("restricciones de acceso del sandbox"); leyó el espejo `GEMINI-PENDIENTES` de Drive | El espejo en Drive es OBLIGATORIO tras cada cambio de PENDIENTES.md |
 | Búsqueda y navegación web (Google Search, Browse, navegador autónomo) | Sí | `herramienta: navegar` o `deep-research` (lo hace con búsqueda estructurada; marca `parcial`) |
 | Deep Research (la herramienta con ese nombre) | No | Pedir "investiga con búsqueda web y cita fuentes"; G-002 y G-003 salieron así en ~3 min |
-| Imágenes (Nano Banana / Imagen 3; 1:1, 4:3, 3:4, 16:9, 9:16) | **Sí** (G-010: 2 PNG 1200x896 en Entregas, con SynthID) | `herramienta: nano-banana`, `entrega: imagen` en Entregas |
+| Imágenes (Nano Banana / Imagen 3; 1:1, 4:3, 3:4, 16:9, 9:16) | **Sí** (G-010: 2 PNG 1200x896; G-025: 1:1 sale a 1024x1024, con SynthID). `image_references` **no** toma fotos de Drive (G-025): solo imágenes del mismo turno | `herramienta: nano-banana`, `entrega: imagen` en Entregas |
 | Video (Veo) | **No** (G-004) | No pedir video; para B-roll usar `gemini.py video --pago` (API) o fotos |
 | Google Docs, Sheets, PDF, presentaciones en Drive | Sí (Docs G-001; Sheets G-006 y G-008; Slides y PDF declarados) | `entrega: doc`, `sheet`, `pdf`, `slides` |
 | YouTube: datos y transcripción de un video por URL/video_id (`youtube:get_video_information`) | **Sí** (G-006): vistas, likes, fecha, duración, transcripción, fotogramas por segundo | Pasar SIEMPRE la URL o el video_id; sin él no encuentra Shorts recientes (G-007) |
@@ -32,7 +32,7 @@ Pro de Cris (Deep Research, Veo, Nano Banana, NotebookLM, Canvas, navegación), 
 | Ver imágenes (fotos de listings, capturas) | **Sí desde Drive** (G-022: `view_file` + Pillow; grilla 3x3 en Entregas). **No** por URL (G-017: browse solo texto, sandbox sin internet) | Subirlas a Drive > Gemini > Miniaturas (1QmAr8xSz_3eJ3sXQVpHWNUt8hhHZIQtR) con Zapier "Google Drive: Upload File" desde la URL pública (full-res; no pegar base64 por chat: se corrompe) y pedir `drive:download_file_content` + `view_file` (G-022) |
 | Pinterest | **No** (G-009, G-012: el índice de google:search excluye pinterest.com y browse lo bloquea) | Auditar pines desde nuestro entorno; a Gemini pedirle páginas de destino |
 | Navegador autónomo (`web_browser_agent`) | **No** en tareas programadas (G-013: timeout `<empty>`) | No pedirlo |
-| Python en sandbox → PDF/PNG/xlsx/pptx subidos como binario | **Sí** (G-014: Pillow, pypdf, Chromium headless, openpyxl, python-pptx; sin reportlab ni internet) | `entrega: pdf`/`imagen`, texto exacto en la tarea; utilería de juegos en serie |
+| Python en sandbox → PDF/PNG/xlsx/pptx/WAV/MP3 subidos como binario | **Sí** (G-014: Pillow, pypdf, Chromium headless por CDP, openpyxl, python-pptx; G-024: numpy/scipy/ffmpeg para audio; G-027: pdflatex y lualatex, weasyprint como módulo; sin reportlab, sox, fluidsynth ni internet) | `entrega: pdf`/`imagen`, texto exacto en la tarea; utilería de juegos en serie |
 | YouTube fotograma a fotograma | **Sí** (G-015: 180 frames + transcripción) | Auditorías de ritmo por URL |
 | Cupo de búsqueda web | ~10-12 llamadas a google:search/browse por ejecución (G-009); G-023 hizo 3 búsquedas agrupadas y 25 fichas | Máximo 2 tareas `navegar`/`deep-research` por hora; hasta 4 queries por llamada y `site:etsy.com/listing` (reglas 1b y 1c de PENDIENTES.md) |
 | Elegir el modelo | **No** desde dentro (G-011); se autodeclara "Gemini 2.5 Pro" | Solo Cris, en la app, si la Tarea tiene selector |

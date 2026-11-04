@@ -204,3 +204,15 @@
 ## 2026-11-03 (turno diario) · Solo medir
 - El 4-nov ya tiene Short (caso 02 ES, post 414802164), así que hoy no se hizo otro. Lecturas públicas: Caso archivado ES 676 (se frenó después de las ~35 h), caso 02 EN 38 a ~25 h (igual que a ~8 h), Jingle Bells 41, Cold Case 01 EN 1. Metricool sigue en null.
 - Cada Short recibe un solo empujón en sus primeras horas. Mañana, con el caso 02 ES, se compara ese empujón contra los 38 del EN.
+
+## 2026-11-04 · Canal Gemini: G-024..G-027 hechas; audio, fondos 1:1, títulos de piano y PDF vectorial
+- Las 4 llegaron en ~25 min (12:53–13:17 del 3-nov), todas "hecho", modelo declarado 2.5 Pro. G-024: la VM
+  sintetiza audio (numpy/scipy/ffmpeg; sin soundfonts) y subió piano 15 s + radio con Morse; G-025: 4 fondos
+  1:1 a 1024 px con zona central limpia declarada; `image_references` no toma fotos de Drive (rodeo: hex de la
+  paleta en el prompt); G-026: 24 fichas de piano por snippets y 9 títulos → OPS tras el 5-nov; G-027: pdflatex
+  y Chromium por CDP; recomienda HTML+Chromium para texto y HTML→300 DPI→Pillow para papel viejo.
+- Nada de lo entregado se ha mirado ni escuchado desde acá (bajar binarios por el conector es caro): quien lo
+  use lo baja de Drive y lo revisa. Resúmenes: plan/investigacion/2026-11-04-gemini-G-024..G-027-*.
+- Cola nueva: G-028 títulos de escape room de Navidad (búsqueda, alta), G-029 diez Shorts de true crime en
+  español por fotogramas (búsqueda, para el hilo de videos), G-030 plantilla HTML de recorte de prensa 1987 +
+  script de envejecido (sin texto de casos). Espera a una persona: nada.
