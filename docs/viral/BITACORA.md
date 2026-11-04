@@ -24,11 +24,13 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 - 2026-11-02: Metricool sigue en null (también para el Cold Case ES, _BUAF1B1JXI). Conteo público: Cold Case 01 EN 1 vista a ~72 h; Jingle Bells 41 a 48 h. El piano es el que reparte: el Short del 3-nov (V13) va sobre piano para que la prueba tenga números.
 - 2026-11-03 00:24 Chile (captura de Cris del canal, confirmada con la página pública a las 00:30): **Caso archivado ES (_BUAF1B1JXI) 672 vistas y 4 likes a ~35 h**; Jingle Bells 41; The Snow Remembers (V12, 2-nov) 38 a ~8 h; Cold Case 01 EN 1. Metricool sigue en null. El ES es el mismo guion, los mismos documentos, la misma música y el mismo cierre que el EN: cambian el idioma, la voz (Piper es_MX) y el día. Abre V15.
 - 2026-11-03 14:10 Chile (conteo público; Metricool sigue en null): Caso archivado ES 676 a ~46 h (672 a ~35 h: se frenó); The Snow Remembers EN (EO-UvYWLfXA) 38 a ~25 h, igual que a ~8 h; Jingle Bells 41; Cold Case 01 EN 1. Patrón: cada Short recibe un solo empujón en las primeras ~12-24 h y después se queda quieto. Lo que se compara es ese empujón.
+- 2026-11-04 14:10 Chile (conteo público; Metricool null): caso 02 EN 38 a 48 h (lectura V12/V15 cerrada con conteo público); Beethoven EN (V13, mpTOod1Sxp0) 25 a ~22 h; Caso archivado ES 676; Jingle Bells 41.
 
 ### V15. El mismo Short en español gana al inglés (abierta 2026-11-03, prioridad 1)
 - Evidencia: par limpio V0. Cold Case 01 ES 672 vistas a ~35 h contra 1 vista del EN a 72 h; mismo video salvo idioma, voz y día de publicación. Un solo par: puede ser azar del reparto inicial, el país del canal (Chile) o menos competencia en true crime en español.
 - Prueba: el caso 02 (The Snow Remembers) en español, con el mismo guion, documentos, gancho (fecha + edad + nombre + lugar), música y cierre que el EN del 2-nov (control, 38 vistas a ~8 h). Si el ES vuelve a ganar por 1,5x o más, se confirma con 2 de 3 en la tercera (caso 03 ES contra EN, o piano ES contra EN).
 - Si se confirma: todos los Shorts salen primero en español, y el inglés pasa a ser la prueba.
+- Pruebas en curso: caso 02 ES (4-nov, post 414802164) contra caso 02 EN (38 a 48 h); Beethoven ES (5-nov, post 416793981) contra Beethoven EN (25 a ~22 h). Se leen el 6 y el 7-nov.
 - Hipótesis rival (G-021, según Gemini, sin verificar): el cold case EN no recibió muestra semilla por título sin entidades conocidas y "killed" al inicio. V15 la debilita: el ES tiene el mismo nombre ficticio y "¿quién mató...?" y sacó 672. Si el caso 02 EN (fecha + lugar en el gancho) sube y el ES no, revisar.
 
 ### V1. Cold case: el reto interactivo gana a la historia narrada
