@@ -1,0 +1,144 @@
+{
+  "slug": "62-piano-clasicos-historia-es",
+  "producto": "62-piano-clasicos-principiantes",
+  "idioma": "es",
+  "tema": "piano",
+  "voz": "es_MX-claude-high",
+  "velocidad": 1.08,
+  "ritmo": "continuo",
+  "pronuncia": {
+    "Beethoven": "Bitóven"
+  },
+  "musica": {
+    "archivo": "assets/music/propia/62-ode-to-joy.mp3",
+    "volumen": 0.32,
+    "desde": 0
+  },
+  "notas": "Prueba V15 (español contra inglés), tercera de tres: misma historia, imagen, focos, música propia, ritmo continuo y tipo de cierre que 62-piano-clasicos-historia-en (control, 3-nov). Cambian el idioma, la voz (Piper es_MX, como los otros Shorts ES) y las páginas: el libro en español (PDF 2, notas Do Re Mi) en vez del inglés. Hechos de Wikipedia 'Symphony No. 9 (Beethoven)' (2-nov-2026), los mismos del control: estreno en Viena el 7-may-1824; Beethoven casi completamente sordo; Umlauf pidió a músicos y cantantes ignorarlo; marcaba el tempo para una orquesta que no podía oír; al final (los testimonios difieren) seguía dirigiendo y la contralto Caroline Unger lo hizo girar para ver al público aplaudiendo; el coro final (Oda a la alegría) es el Himno de Europa (1972). Imagen: grabado de Carl Offterdinger, dominio público (public/assets/media/wikimedia/CREDITOS.md). Números en letras para Piper.",
+  "escenas": [
+    {
+      "dice": "Viena, mil ochocientos veinticuatro. Un compositor casi sordo estrena su última sinfonía.",
+      "texto": "Viena, *1824*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/wikimedia/The_Premiere_of_Symphony_No._9.jpg",
+        "foco": {
+          "x": 0.52,
+          "y": 0.45,
+          "zoom": 1.3
+        }
+      }
+    },
+    {
+      "dice": "Ludwig van Beethoven ya casi no oye nada. Igual se para junto al escenario y marca el compás de una orquesta que no puede oír.",
+      "texto": "*No oye*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/wikimedia/The_Premiere_of_Symphony_No._9.jpg",
+        "foco": {
+          "x": 0.53,
+          "y": 0.42,
+          "zoom": 2.3
+        }
+      }
+    },
+    {
+      "dice": "A los músicos les dijeron que no lo siguieran y que miraran al otro director.",
+      "texto": "*No lo sigan*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/wikimedia/The_Premiere_of_Symphony_No._9.jpg",
+        "foco": {
+          "x": 0.82,
+          "y": 0.42,
+          "zoom": 2.2
+        }
+      }
+    },
+    {
+      "dice": "Al final, según cuentan, él sigue dirigiendo. Una cantante tiene que hacerlo girar,",
+      "texto": "Sigue *dirigiendo*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/wikimedia/The_Premiere_of_Symphony_No._9.jpg",
+        "foco": {
+          "x": 0.55,
+          "y": 0.5,
+          "zoom": 1.7
+        }
+      }
+    },
+    {
+      "dice": "y solo entonces ve al público aplaudiendo.",
+      "texto": "Los *aplausos*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/wikimedia/The_Premiere_of_Symphony_No._9.jpg",
+        "foco": {
+          "x": 0.5,
+          "y": 0.15,
+          "zoom": 2.0
+        }
+      }
+    },
+    {
+      "dice": "El final de esa sinfonía es el Himno a la alegría. Hoy es el himno de Europa.",
+      "texto": "Himno de *Europa*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:2:4",
+        "foco": {
+          "x": 0.5,
+          "y": 0.1,
+          "zoom": 2.6
+        }
+      }
+    },
+    {
+      "dice": "¿Quieres tocarlo esta semana? Cada nota lleva su nombre adentro, así que solo buscas la tecla.",
+      "texto": "*Do Re Mi* adentro",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:2:4",
+        "foco": {
+          "x": 0.35,
+          "y": 0.3,
+          "zoom": 2.6
+        }
+      }
+    }
+  ],
+  "cierre": {
+    "dice": "El Himno a la alegría y veintitrés canciones fáciles más, con el nombre de cada nota. Lo encuentras en nuestra tienda de Etsy.",
+    "titulo": "Tócalo esta semana",
+    "sub": "24 canciones fáciles · Do Re Mi · MP3",
+    "linea": "SheetSmithChile en Etsy",
+    "src": "pag:2:1"
+  },
+  "youtube": {
+    "titulo": "Beethoven no oía los aplausos | partituras piano fáciles con notas",
+    "descripcion": "Partituras piano fáciles con notas, en español: https://www.etsy.com/listing/4605998382\nLos links de la tienda (Etsy y Gumroad) están en el canal: toca el nombre del canal.\n\nViena, 7 de mayo de 1824. Ludwig van Beethoven, casi completamente sordo, está junto al escenario en el estreno de su Novena Sinfonía y marca el compás de una orquesta que no puede oír. A los músicos les habían dicho que siguieran al otro director. Al final (los relatos no coinciden en el momento exacto) él sigue dirigiendo, y la contralto Caroline Unger lo hace girar para que vea al público aplaudiendo. El final de la sinfonía, el Himno a la alegría, es el himno de Europa desde 1972.\n\nNuestro libro trae el Himno a la alegría y 23 canciones clásicas y populares más, con el nombre de cada nota (Do, Re, Mi) escrito dentro de la nota, y un MP3 de práctica para cada canción. La música de este video es ese MP3. PDF para imprimir, carta o A4, con la versión en inglés incluida. SheetSmithChile en Etsy.\n\nImagen: El estreno de la Novena Sinfonía, grabado de Carl Offterdinger (dominio público, Wikimedia Commons).\n\n#beethoven #himnoalaalegria #piano #shorts",
+    "tags": [
+      "partituras piano fáciles con notas",
+      "himno a la alegría piano fácil",
+      "himno a la alegría",
+      "beethoven",
+      "partituras para piano con notas",
+      "notas do re mi piano",
+      "piano para principiantes",
+      "piano fácil",
+      "novena sinfonía beethoven",
+      "historia de la música"
+    ]
+  },
+  "experimento": {
+    "hipotesis": "V15",
+    "variable": "idioma",
+    "variante": "español (voz Piper es_MX, libro Do Re Mi), mismo video que el EN",
+    "control": "62-piano-clasicos-historia-en",
+    "formato": "historia",
+    "gancho_tipo": "dato-imposible",
+    "espera": "1,5x o más las vistas a 48 h del control EN (25 a ~25 h); tercera de tres pruebas de V15",
+    "listing_id": 4605998382
+  }
+}
