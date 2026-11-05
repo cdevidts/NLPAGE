@@ -232,5 +232,8 @@
   download_file_content y probados acá (Playwright 3 s + Pillow 4 s): `gemini/codigo/G-030/`.
 - Desde el 4-nov 17:34 UTC las respuestas declaran "Argon / Gemini 3.1 Pro" (autodeclarado).
 - Cola nueva: G-031 títulos de trivia navideña (búsqueda), G-032 desglose segundo a segundo de los dos
-  Shorts ganadores (YouTube por id), G-033 certificado de detective bilingüe en HTML (sin texto de casos).
+  Shorts ganadores (YouTube por id), G-033 certificado de detective bilingüe en HTML (sin texto de casos),
+  y G-034 (prioridad alta, pedida por el hilo de videos a las 15:21 UTC): auditoría por segundo de nuestros
+  tres Shorts (_BUAF1B1JXI 676 vistas vs uFgGEGATfA0 1 vs EO-UvYWLfXA 38), solo evidencia del video, más
+  un cierre de 45 s sin CTA hablado con "ficción" en pantalla. PR #28 fusionado (squash) con todo esto.
 - Espera a una persona: nada.
