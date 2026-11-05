@@ -25,12 +25,14 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 - 2026-11-03 00:24 Chile (captura de Cris del canal, confirmada con la página pública a las 00:30): **Caso archivado ES (_BUAF1B1JXI) 672 vistas y 4 likes a ~35 h**; Jingle Bells 41; The Snow Remembers (V12, 2-nov) 38 a ~8 h; Cold Case 01 EN 1. Metricool sigue en null. El ES es el mismo guion, los mismos documentos, la misma música y el mismo cierre que el EN: cambian el idioma, la voz (Piper es_MX) y el día. Abre V15.
 - 2026-11-03 14:10 Chile (conteo público; Metricool sigue en null): Caso archivado ES 676 a ~46 h (672 a ~35 h: se frenó); The Snow Remembers EN (EO-UvYWLfXA) 38 a ~25 h, igual que a ~8 h; Jingle Bells 41; Cold Case 01 EN 1. Patrón: cada Short recibe un solo empujón en las primeras ~12-24 h y después se queda quieto. Lo que se compara es ese empujón.
 - 2026-11-04 14:10 Chile (conteo público; Metricool null): caso 02 EN 38 a 48 h (lectura V12/V15 cerrada con conteo público); Beethoven EN (V13, mpTOod1Sxp0) 25 a ~22 h; Caso archivado ES 676; Jingle Bells 41.
+- 2026-11-05 14:10 Chile (conteo público; Metricool null): Beethoven EN (V13) 26 a 48 h, contra 41 del control Jingle Bells; caso 02 ES (V15, 7CZBpp1r4kU) 7 a ~25 h, contra 38 del caso 02 EN a la misma edad; Caso archivado ES 676.
 
 ### V15. El mismo Short en español gana al inglés (abierta 2026-11-03, prioridad 1)
 - Evidencia: par limpio V0. Cold Case 01 ES 672 vistas a ~35 h contra 1 vista del EN a 72 h; mismo video salvo idioma, voz y día de publicación. Un solo par: puede ser azar del reparto inicial, el país del canal (Chile) o menos competencia en true crime en español.
 - Prueba: el caso 02 (The Snow Remembers) en español, con el mismo guion, documentos, gancho (fecha + edad + nombre + lugar), música y cierre que el EN del 2-nov (control, 38 vistas a ~8 h). Si el ES vuelve a ganar por 1,5x o más, se confirma con 2 de 3 en la tercera (caso 03 ES contra EN, o piano ES contra EN).
 - Si se confirma: todos los Shorts salen primero en español, y el inglés pasa a ser la prueba.
 - Pruebas en curso: caso 02 ES (4-nov, post 414802164) contra caso 02 EN (38 a 48 h); Beethoven ES (5-nov, post 416793981) contra Beethoven EN (25 a ~22 h). Se leen el 6 y el 7-nov.
+- 2026-11-05: la primera señal va en contra de V15. El caso 02 ES lleva 7 vistas a ~25 h; el EN tenía 38 a la misma edad. Se lee el 6-nov a 48 h. Si se confirma, V15 queda 1 a 1 y el 672 del caso 01 ES pudo ser un reparto de suerte. Beethoven ES quedó en cola sin publicar (Metricool sin cupo), así que el desempate espera a Zapier.
 - Hipótesis rival (G-021, según Gemini, sin verificar): el cold case EN no recibió muestra semilla por título sin entidades conocidas y "killed" al inicio. V15 la debilita: el ES tiene el mismo nombre ficticio y "¿quién mató...?" y sacó 672. Si el caso 02 EN (fecha + lugar en el gancho) sube y el ES no, revisar.
 
 ### V1. Cold case: el reto interactivo gana a la historia narrada
@@ -99,6 +101,7 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 - Evidencia: Gemini G-016 (2-nov, auditoría de uFgGEGATfA0): seis silencios de ~1 s, 147 palabras/min efectivas contra ~172 de MrBallen (G-015). **Verificado por nosotros** (2-nov): Kokoro deja ~0,3 s al inicio y ~0,45 s al final de cada frase, y el pipeline suma 0,15 + 0,3 s: ~1,1 s entre escenas.
 - Prueba: `"ritmo": "continuo"` en el plan (recorta la voz y deja ~0,2 s entre escenas); todo lo demás igual a un control ya publicado. Métrica: retención y vistas 48 h.
 - Si gana, pasa a ser el default del pipeline.
+- 2026-11-05: primera lectura PIERDE (26 contra 41 a 48 h), pero con confusor: otra pieza y fuera de Navidad. No se descarta con una sola prueba. El Beethoven ES (en cola) también usa ritmo continuo, así que no la separa. Hace falta un par limpio: la misma pieza con y sin ritmo continuo.
 
 ### V14. Cierre diegético gana a la tarjeta de producto
 - Evidencia: Gemini G-016 (sin verificar): la tarjeta final muda de 7,5 s saca a la gente; propone seguir en el expediente hasta el final (sello "FICTIONAL CASE FILE · PRINTABLE GAME", voz "...print the case file from SheetSmithChile on Etsy and tell us who killed <nombre>", corte en seco en el nombre, subtítulos hasta el final). Cumple la regla de decir ficción y dónde está el juego.
