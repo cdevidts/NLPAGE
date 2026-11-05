@@ -246,3 +246,8 @@
 - YouTube todavía no está conectado en Zapier y Metricool no tiene cupo, así que no hubo Short nuevo. Beethoven ES sigue primero en `docs/viral/COLA.md`.
 - V13: Beethoven EN 26 a 48 h contra 41 del control. Por regla es PIERDE, pero hay confusor (otra pieza, sin Navidad).
 - V15: la primera señal va en contra. Caso 02 ES 7 a ~25 h, contra 38 del EN. Se lee mañana a 48 h.
+
+## 2026-11-05 (tarde) · Primer Short por Zapier
+- Cris conectó YouTube en Zapier. Beethoven ES salió a las 17:21 Chile (6TOTGMLBNLc) con `upload_video`, usando la URL raw fija del commit como archivo. Fue más tarde que las 16:00 de los anteriores: es un confusor menor que queda anotado en shorts.csv.
+- Zapier no tiene el campo de "contenido alterado o sintético" que mandaba Metricool. La voz es TTS sobre un grabado, no una persona realista, así que no aplica.
+- Desde ahora el turno diario sube el Short al terminar (~14:30 Chile) en vez de programarlo a las 16:00.
