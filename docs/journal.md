@@ -223,3 +223,14 @@
 - Piper leía "Beethoven" de forma que whisper oía "Bambé Tobén". Agregué `"pronuncia"` al plan: cambia lo que lee la voz ("Bitóven") sin tocar el subtítulo, una palabra por una palabra. Después de eso whisper oyó "van Beethoven".
 - copy_check.py marca errores de Etsy (tags de 20 caracteres, frase al inicio, frase repetida con la ficha). Para YouTube no aplican; el título sigue la regla de la skill: gancho con la frase principal ES dentro.
 - El mp4 pesa 53 MB, más que los anteriores. GitHub avisa desde 50 MB y rechaza desde 100 MB. Si sigue creciendo, bajar el bitrate del render.
+
+## 2026-11-05 · Canal Gemini: G-028..G-030; el modelo ya se declara Argon; el recorte de prensa corre acá
+- G-028 (escape room de Navidad): el Doc llegó vacío pero la Hoja trae 31 fichas, frecuencias y 3 títulos
+  de 133 car. → OPS (es de temporada; nadie del mercado dice "bilingüe"). G-029: 14 Shorts de true crime
+  en español por fotogramas; los ganadores no tienen CTA comercial, subtítulo de una palabra gigante arriba,
+  15–62 s → hilo de videos. G-030: plantilla HTML de recorte 1987 + envejecer.py; bajados con
+  download_file_content y probados acá (Playwright 3 s + Pillow 4 s): `gemini/codigo/G-030/`.
+- Desde el 4-nov 17:34 UTC las respuestas declaran "Argon / Gemini 3.1 Pro" (autodeclarado).
+- Cola nueva: G-031 títulos de trivia navideña (búsqueda), G-032 desglose segundo a segundo de los dos
+  Shorts ganadores (YouTube por id), G-033 certificado de detective bilingüe en HTML (sin texto de casos).
+- Espera a una persona: nada.
