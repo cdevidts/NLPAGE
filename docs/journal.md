@@ -228,3 +228,16 @@
 - El hilo de canales avisó, y lo comprobé en getScheduledPosts, que el plan gratis de Metricool trae 20 publicaciones por mes. Desde el 4-nov 20:45 todo falla con "account limit". El caso 02 ES alcanzó a salir (7CZBpp1r4kU); el Beethoven ES del 5-nov va a fallar.
 - Ruta nueva: Zapier YouTube. Hoy no tiene conexión y Cris tiene que conectarla una vez; ese pedido lo hace canales. Hasta entonces el turno diario solo mide y deja a lo más un Short en `docs/viral/COLA.md`. El prompt del turno ya está actualizado.
 - G-029 (true crime en español) pasó a patrones.md y a V14. Pedí a Gemini G-034, la auditoría del Caso archivado ES contra los EN.
+## 2026-11-05 · Canal Gemini: G-028..G-030; el modelo ya se declara Argon; el recorte de prensa corre acá
+- G-028 (escape room de Navidad): el Doc llegó vacío pero la Hoja trae 31 fichas, frecuencias y 3 títulos
+  de 133 car. → OPS (es de temporada; nadie del mercado dice "bilingüe"). G-029: 14 Shorts de true crime
+  en español por fotogramas; los ganadores no tienen CTA comercial, subtítulo de una palabra gigante arriba,
+  15–62 s → hilo de videos. G-030: plantilla HTML de recorte 1987 + envejecer.py; bajados con
+  download_file_content y probados acá (Playwright 3 s + Pillow 4 s): `gemini/codigo/G-030/`.
+- Desde el 4-nov 17:34 UTC las respuestas declaran "Argon / Gemini 3.1 Pro" (autodeclarado).
+- Cola nueva: G-031 títulos de trivia navideña (búsqueda), G-032 desglose segundo a segundo de los dos
+  Shorts ganadores (YouTube por id), G-033 certificado de detective bilingüe en HTML (sin texto de casos),
+  y G-034 (prioridad alta, pedida por el hilo de videos a las 15:21 UTC): auditoría por segundo de nuestros
+  tres Shorts (_BUAF1B1JXI 676 vistas vs uFgGEGATfA0 1 vs EO-UvYWLfXA 38), solo evidencia del video, más
+  un cierre de 45 s sin CTA hablado con "ficción" en pantalla. PR #28 fusionado (squash) con todo esto.
+- Espera a una persona: nada.
