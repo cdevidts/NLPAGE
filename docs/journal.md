@@ -241,3 +241,8 @@
   tres Shorts (_BUAF1B1JXI 676 vistas vs uFgGEGATfA0 1 vs EO-UvYWLfXA 38), solo evidencia del video, más
   un cierre de 45 s sin CTA hablado con "ficción" en pantalla. PR #28 fusionado (squash) con todo esto.
 - Espera a una persona: nada.
+
+## 2026-11-05 (turno diario) · Solo medir
+- YouTube todavía no está conectado en Zapier y Metricool no tiene cupo, así que no hubo Short nuevo. Beethoven ES sigue primero en `docs/viral/COLA.md`.
+- V13: Beethoven EN 26 a 48 h contra 41 del control. Por regla es PIERDE, pero hay confusor (otra pieza, sin Navidad).
+- V15: la primera señal va en contra. Caso 02 ES 7 a ~25 h, contra 38 del EN. Se lee mañana a 48 h.
