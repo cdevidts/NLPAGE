@@ -103,6 +103,7 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 ### V14. Cierre diegético gana a la tarjeta de producto
 - Evidencia: Gemini G-016 (sin verificar): la tarjeta final muda de 7,5 s saca a la gente; propone seguir en el expediente hasta el final (sello "FICTIONAL CASE FILE · PRINTABLE GAME", voz "...print the case file from SheetSmithChile on Etsy and tell us who killed <nombre>", corte en seco en el nombre, subtítulos hasta el final). Cumple la regla de decir ficción y dónde está el juego.
 - Prueba: mismo formato, cierre diegético contra la tarjeta. Necesita cambiar la escena de cierre de `Short` (todavía no existe). Variante de V5.
+- Más evidencia (G-029, 5-nov, según Gemini, sin verificar): en 14 Shorts de true crime en español, 10 no tienen CTA comercial, incluidos los 4 más vistos (12,1 M, 7,4 M, 6,3 M y 3,5 M); cortan en la última sílaba o cierran con una pregunta abierta. Solo los canales de 1-2 mil vistas piden suscripción. Variante a probar: la voz cierra con la pregunta del caso, y "ficción · SheetSmithChile en Etsy" queda solo como texto fijo chico en pantalla, sin decirlo. La regla de decir que es ficción se cumple con el texto. Sube en prioridad después de V15.
 
 ## Registro de lecturas
 | Fecha | Short | Lectura | Vistas | Retención | Coment./1k | Shares/1k | Veredicto | Nota |
