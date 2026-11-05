@@ -98,6 +98,15 @@ Resumen en /mnt/project-files/plan/investigacion/2026-11-04-gemini-G-024-audio-s
 - Gemini sintetiza piano aditivo y SFX con numpy/scipy/ffmpeg: "jingle-bells-piano.mp3" (15 s) y "radio-morse.wav" (10 s, radio policial de 1987 con SOS) en Drive > Gemini > Entregas. Hay que escucharlos antes de usarlos.
 - El mismo código corre en nuestro contenedor. Sirve para audio propio sin Content ID: una melodía del libro para Shorts de piano cuando no haya MP3 del producto, o SFX diegéticos para cold cases (radio, máquina de escribir). Suena a piano simple, no real: no reemplaza los MP3 de práctica del producto.
 
+## 2026-11-05 · Gemini G-029: 14 Shorts de true crime en español (SIN VERIFICAR)
+Resumen en /mnt/project-files/plan/investigacion/2026-11-05-gemini-G-029-shorts-true-crime-espanol.md; texto en `gemini/outbox/G-029.md`; hoja "G-029 shorts es" en Drive.
+- Final: 10 de 14, incluidos los 4 más vistos, sin CTA comercial. Cortan en seco o cierran con una pregunta abierta. → V14/V5.
+- Subtítulo (A-PErrtdak8, 12,1 M, 29 s): una palabra gigante, arriba al centro, blanca con borde negro, a la altura de los ojos. 5 cortes en 10 s, sin intro ni despedida. → V11 y una posible prueba de subtítulos.
+- Títulos ganadores que no nombran el caso: "El misterio que nunca se reveló", "Un misterio sin resolver…".
+- 4 de los 9 más vistos no tienen voz: cartel fijo arriba y música en bucle. Es un formato barato que todavía no probamos.
+- Duración de los ganadores: 15-62 s. Los de 78-180 s con voz documental se quedan en 1-2 mil vistas. Esto choca con V4 (MrBallen en inglés, 152-180 s); en español, quedarse bajo 60 s.
+- Pendiente: G-032 (vence 7-nov), desglose segundo a segundo de A-PErrtdak8 y WSKC_FPj_zw, más un esqueleto de 45 s.
+
 ## Lo que dicen las guías (sin medir por nosotros: tratarlo como hipótesis)
 - Shorts pueden durar hasta 3 minutos desde el 15-oct-2024; la compuerta de 58 s de
   `short` es por costumbre, no por regla de YouTube.
