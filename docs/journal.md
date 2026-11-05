@@ -223,3 +223,8 @@
 - Piper leía "Beethoven" de forma que whisper oía "Bambé Tobén". Agregué `"pronuncia"` al plan: cambia lo que lee la voz ("Bitóven") sin tocar el subtítulo, una palabra por una palabra. Después de eso whisper oyó "van Beethoven".
 - copy_check.py marca errores de Etsy (tags de 20 caracteres, frase al inicio, frase repetida con la ficha). Para YouTube no aplican; el título sigue la regla de la skill: gancho con la frase principal ES dentro.
 - El mp4 pesa 53 MB, más que los anteriores. GitHub avisa desde 50 MB y rechaza desde 100 MB. Si sigue creciendo, bajar el bitrate del render.
+
+## 2026-11-05 · Metricool sin cupo
+- El hilo de canales avisó, y lo comprobé en getScheduledPosts, que el plan gratis de Metricool trae 20 publicaciones por mes. Desde el 4-nov 20:45 todo falla con "account limit". El caso 02 ES alcanzó a salir (7CZBpp1r4kU); el Beethoven ES del 5-nov va a fallar.
+- Ruta nueva: Zapier YouTube. Hoy no tiene conexión y Cris tiene que conectarla una vez; ese pedido lo hace canales. Hasta entonces el turno diario solo mide y deja a lo más un Short en `docs/viral/COLA.md`. El prompt del turno ya está actualizado.
+- G-029 (true crime en español) pasó a patrones.md y a V14. Pedí a Gemini G-034, la auditoría del Caso archivado ES contra los EN.
