@@ -251,3 +251,6 @@
 - Cris conectó YouTube en Zapier. Beethoven ES salió a las 17:21 Chile (6TOTGMLBNLc) con `upload_video`, usando la URL raw fija del commit como archivo. Fue más tarde que las 16:00 de los anteriores: es un confusor menor que queda anotado en shorts.csv.
 - Zapier no tiene el campo de "contenido alterado o sintético" que mandaba Metricool. La voz es TTS sobre un grabado, no una persona realista, así que no aplica.
 - Desde ahora el turno diario sube el Short al terminar (~14:30 Chile) en vez de programarlo a las 16:00.
+
+## 2026-11-05 (noche) · V15 confirmada
+- Captura de Cris a las 20:25 Chile: Beethoven ES 148 vistas en ~3 h, contra 26 del EN a 48 h. Con eso V15 queda en 2 de 3 (caso 01 gana, caso 02 pierde, Beethoven gana) y se confirma. Los Shorts salen en español por defecto. El confusor es que el ES se subió por Zapier, con idioma es y aviso a suscriptores.
