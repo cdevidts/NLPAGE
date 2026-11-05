@@ -108,6 +108,16 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 - Prueba: mismo formato, cierre diegético contra la tarjeta. Necesita cambiar la escena de cierre de `Short` (todavía no existe). Variante de V5.
 - Más evidencia (G-029, 5-nov, según Gemini, sin verificar): en 14 Shorts de true crime en español, 10 no tienen CTA comercial, incluidos los 4 más vistos (12,1 M, 7,4 M, 6,3 M y 3,5 M); cortan en la última sílaba o cierran con una pregunta abierta. Solo los canales de 1-2 mil vistas piden suscripción. Variante a probar: la voz cierra con la pregunta del caso, y "ficción · SheetSmithChile en Etsy" queda solo como texto fijo chico en pantalla, sin decirlo. La regla de decir que es ficción se cumple con el texto. Sube en prioridad después de V15.
 
+### V16. Un video que cambia rápido y con material variado gana a una imagen fija con zoom (pedido por Cris, 5-nov)
+- Origen: Cris (5-nov, 20:24 Chile) pidió que el dinamismo, la calidad y la variación rápida de lo que se ve sean criterios a probar. Hoy cada escena es una imagen o página con movimiento de cámara; Beethoven usa el mismo grabado en 5 escenas seguidas.
+- Evidencia: G-029 (5-nov, según Gemini, sin verificar): el Short de 12,1 M tiene 5 cortes en 10 s. G-021: la misma página dos veces y una tarjeta quieta de 8 s se ven como puntos débiles. V11 prueba solo la frecuencia de cortes; V16 prueba la variedad del material.
+- Prueba: el mismo guion y la misma voz, pero con 2-3 recursos distintos por escena (detalles del documento, íconos animados, Lottie, fotos de archivo de Wikimedia o SourceSplash, texto cinético) contra un recurso por escena. Una variable a la vez: primero la variedad con el mismo ritmo de cortes.
+
+### V17. La voz IA (modelo y calidad del sonido) cambia la retención (pedido por Cris, 5-nov)
+- Origen: Cris (5-nov) pidió probar la voz IA, tanto el sonido como el modelo, en cualquier idioma.
+- Hoy: Kokoro af_heart en EN y Piper es_MX-claude-high en ES; la de Piper suena más robótica y lee mal los nombres extranjeros. Alternativas gratis: Gemini TTS (gemini.py, voces Charon y otras, con estilo), otras voces de Kokoro y Piper, y un procesado del sonido (EQ, compresión, un poco de reverb de sala).
+- Prueba: el mismo video con otra voz como única variable. Primero en ES, Piper contra Gemini TTS, porque es donde más se nota. Métrica: retención a 48 h y vistas contra su par.
+
 ## Registro de lecturas
 | Fecha | Short | Lectura | Vistas | Retención | Coment./1k | Shares/1k | Veredicto | Nota |
 |---|---|---|---|---|---|---|---|---|
