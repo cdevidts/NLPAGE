@@ -254,3 +254,11 @@
 
 ## 2026-11-05 (noche) · V15 confirmada
 - Captura de Cris a las 20:25 Chile: Beethoven ES 148 vistas en ~3 h, contra 26 del EN a 48 h. Con eso V15 queda en 2 de 3 (caso 01 gana, caso 02 pierde, Beethoven gana) y se confirma. Los Shorts salen en español por defecto. El confusor es que el ES se subió por Zapier, con idioma es y aviso a suscriptores.
+
+## 2026-11-05 21:15 Chile: ¿sesgo latinoamericano? y sticker de producto (preguntas de Cris)
+- YouTube Analytics se puede leer por Zapier (GET crudo a youtubeanalytics v2 con la conexión YouTube de Cris). Receta en la skill shorts-viral-loop. Reemplaza a Metricool para YouTube, que devuelve vacío.
+- País: solo el caso 01 ES tiene filas (Bolivia 119, Argentina 69 de 686). Los EN no tienen ninguna. Canal "SheetsmithChile", de 2020, sin país, sin descripción, 0 suscriptores. Idioma declarado correcto en los 7 videos. El listing del caso 01 siguió en 2 vistas. V15 queda confirmada para vistas y no para ventas; abrí V18 (el público ES no llega a Etsy).
+- Retención (Analytics, 28-oct a 5-nov): Beethoven EN 41 % (la mejor), caso 01 ES 25 %, villancicos EN 26 %, caso 02 EN 19 %. Beethoven ES va en 215 vistas y 12 likes a ~3,5 h (sin Analytics aún).
+- Sticker de producto (YouTube Shopping): pide estar en el Programa de Socios (el canal tiene 0 suscriptores) y una tienda de Shopify, Fourthwall, Spreadshop u otra compatible. Etsy y Gumroad no lo son, y el programa de afiliados no incluye Chile. La API de YouTube no etiqueta productos y Make tampoco. Queda para cuando el canal entre al programa.
+- Descarté poner el país del canal en EE. UU.: tiene que ser el real (impuestos y pagos).
+- Pendiente: el canal no tiene descripción; escribirla con la skill SEO en un turno próximo.
