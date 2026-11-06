@@ -21,6 +21,9 @@ El tope del mes está en docs/gemini/config.json; subirlo requiere el OK de Cris
         Video SOLO con ficha (skill .claude/skills/video-ia-prompteo): nada de prompts sueltos.
 
 Cada llamada pagada queda en docs/gemini/gasto.csv con su costo estimado.
+
+Claves: GEMINI_API_KEY_FREE (proyecto sin facturación) para todo lo gratis; GEMINI_API_KEY (con
+facturación) solo para imagen y video pagados. Si falta la gratis, todo usa GEMINI_API_KEY.
 """
 import argparse, base64, csv, datetime, json, os, ssl, sys, time, urllib.error, urllib.request, wave
 
@@ -48,8 +51,16 @@ def config():
     return c
 
 
+# Dos claves (Cris, 2026-11-06): GEMINI_API_KEY_FREE es de un proyecto SIN facturación (texto, voz,
+# revisiones y YouTube quedan gratis); GEMINI_API_KEY tiene facturación y se usa solo para imagen y video
+# pagados. Sin la clave gratis, todo cae en GEMINI_API_KEY (y lo gratis se cobra a tarifa de pago).
+PAGADO = False
+
+
 def clave():
-    k = os.environ.get('GEMINI_API_KEY') or os.environ.get('GOOGLE_API_KEY')
+    libre = os.environ.get('GEMINI_API_KEY_FREE')
+    pago = os.environ.get('GEMINI_API_KEY') or os.environ.get('GOOGLE_API_KEY')
+    k = pago if PAGADO else (libre or pago)
     if not k:
         sys.exit('Falta GEMINI_API_KEY en el entorno. Cris la crea en https://aistudio.google.com/apikey '
                  'y la agrega en la configuración del entorno (ver docs/gemini/README.md).')
@@ -218,6 +229,8 @@ def cmd_estado(args):
         if not token:
             break
     print(f'Clave OK: {len(modelos)} modelos visibles.')
+    print(f'  gratis: {"GEMINI_API_KEY_FREE" if os.environ.get("GEMINI_API_KEY_FREE") else "FALTA GEMINI_API_KEY_FREE: lo gratis se cobra en la clave con facturación"}'
+          f' · pagado: {"GEMINI_API_KEY" if os.environ.get("GEMINI_API_KEY") else "falta GEMINI_API_KEY"}')
     for uso in ('texto', 'voz', 'imagen', 'video'):
         print(f'  {uso:6} {c[uso]:32} {"disponible" if c[uso] in modelos else "NO aparece en la lista"}')
     print('  prueba de texto:', texto('Responde solo: ok')[:40])
@@ -274,6 +287,8 @@ def cmd_dialogo(args):
 
 
 def cmd_imagen(args):
+    global PAGADO
+    PAGADO = True
     modelo = args.modelo or config()['imagen']
     usd = PRECIO.get(modelo, 0.15)
     autorizar(args, modelo, usd)
@@ -402,6 +417,8 @@ def cmd_video(args):
     if not args.salida:
         sys.exit('Falta --salida.')
     autorizar(args, modelo, usd)
+    global PAGADO
+    PAGADO = True
     entrada = prompt
     imagen = args.imagen or f.get('imagen')
     if imagen:
