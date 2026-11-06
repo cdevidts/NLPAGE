@@ -349,7 +349,7 @@ def prompt_de_ficha(f):
     # la continuidad la dice la ficha; "detalle" reemplaza la frase de época (p. ej. tomas en el presente).
     lineas.append('Consider micro-detail, lighting continuity and timing; every shot must keep the continuity described '
                   'above and the same camera package. '
-                  + (f.get('detalle') or 'Include plenty of appropriate period-correct background detail so it feels real.'))
+                  + (f.get('detalle') or f.get('detalle_fondo') or 'Include plenty of appropriate period-correct background detail so it feels real.'))
     lineas.append('Do not: ' + '; '.join(f['evitar']) + '.')
     return '\n'.join(lineas)
 
