@@ -104,7 +104,15 @@ def interaccion(modelo, entrada, formato=None, extra=None):
     if formato:
         cuerpo['response_format'] = formato
     cuerpo.update(extra or {})
-    return llamar('POST', 'interactions', cuerpo)
+    # Tier 1 de pago: TTS tiene tope de 10 pedidos por minuto (429 del 6-nov con un Short de 16 líneas).
+    for intento in range(6):
+        try:
+            return llamar('POST', 'interactions', cuerpo)
+        except Ocupado as e:
+            if '429' not in str(e) or intento == 5:
+                raise
+            print(f'{e} -> espero {10 * (intento + 1)} s', file=sys.stderr)
+            time.sleep(10 * (intento + 1))
 
 
 def texto(prompt, modelo=None):
@@ -340,9 +348,11 @@ def prompt_de_ficha(f):
     else:
         lineas.append('No on-screen text, no captions, no subtitles, no watermark, no logos.')
     lineas.append(f'Sound design: {f["audio"]}')
-    fondo = f.get('detalle_fondo') or 'Include plenty of background detail that is correct for the time period of the scene so it feels real.'
-    lineas.append('Consider micro-detail, lighting continuity and timing; every shot must look like the same place, '
-                  'the same moment and the same camera package. ' + fondo)
+    # "Mismo lugar y momento" contradecía las fichas con tomas en sitios u horas distintas (revisión 6-nov):
+    # la continuidad la dice la ficha; "detalle" (o "detalle_fondo") reemplaza la frase de época.
+    lineas.append('Consider micro-detail, lighting continuity and timing; every shot must keep the continuity described '
+                  'above and the same camera package. '
+                  + (f.get('detalle') or f.get('detalle_fondo') or 'Include plenty of appropriate period-correct background detail so it feels real.'))
     # Sin doble negación ("Do not: no music" confunde al modelo, revisión 2026-11-06).
     import re
     evitar = [re.sub(r'^(no|not|without)\s+', '', e.strip(), flags=re.I) for e in f['evitar']]

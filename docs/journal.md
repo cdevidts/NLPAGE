@@ -302,3 +302,12 @@
 - Lecturas: 8-nov (48 h) y 13-nov (7 días), contra el Beethoven ES (296 vistas, 15 likes y 1 comentario a ~15 h).
 - 11:25 Chile: canales advirtió que "paró una guerra" exagera (la tregua fue local y de pocos días). Corregí la descripción en YouTube por la API (videos.update vía Zapier, mismo título) y en el plan: "la tregua fue local y duró poco, pero en varios tramos del frente...". El título queda como gancho; el cuerpo dice el alcance. Para los próximos: el gancho puede ser fuerte, pero el guion o la descripción tienen que decir el alcance real.
 - 08:52 Chile: video de listing del #64 Claude Memory Kit (Etsy 4611164570), pedido del hilo de producto. Las fotos son 4:3 y con texto propio, así que tapaban el título del loop; agregué `"alto"` al loop (690 px para fotos 4:3, centradas). Subido con swap_video.py: borró el provisorio (204) y subió el nuevo (201, video_id 852473017). El Short de la historia del kit queda para un turno próximo.
+
+## 2026-11-06 (noche) — Short multifacético del caso 02 ES (pedido de Cris)
+- Cris (22:27 UTC): mezclar Remotion con video IA (personas, escenas tensas, personajes), CTA que invite a comentar hecho para el producto, y la voz Piper "es muy mala".
+- Voz: probé 6 voces Gemini TTS contra Piper con la misma frase; whisper oyó a Piper "tormenta de Miebe", "plena cala"; Sulafat y Algieba al 100 %. Voz ES por defecto: `gemini:Sulafat`, velocidad 1.15. gemini.py reintenta los 429 (tope de 10 pedidos por minuto del TTS en el nivel pagado).
+- Nuevo visual `"tipo": "video"` (Visual.tsx): tramo desde-hasta de un clip a pantalla completa, 0,6x-1,3x, congela el último fotograma si falta.
+- 3 clips IA míos con ficha (deshielo; sobrino, gerente, antorchas; rival, teleférico, pasarela), revisados con --revisar hasta "SIN PROBLEMAS", los 3 usables a la primera. Más 3 del hilo de Google Flow (sospechosos, gala, hallazgo). Nos cruzamos y los dos pagamos tomas: acordado que este hilo pide las tomas de los Shorts. Gasto de noviembre US$5,18 de US$9.
+- gemini.py: la frase fija "same place, same moment" chocaba con fichas de varios sitios; ahora remite a la continuidad de la ficha y el campo `detalle` reemplaza la frase de época.
+- CTA: los cinco sospechosos numerados, cada cara con su número y nombre, y "deja su número en los comentarios".
+- Render 49,5 s, -14,0 LUFS, pico -1,4 dBTP. Se mide como V16 (paquete) contra el caso 02 ES del 4-nov.

@@ -16,6 +16,9 @@ export type Visual =
   | {tipo: 'pagina'; src: string; foco?: Foco; etiqueta?: string}
   | {tipo: 'abanico'; srcs: string[]}
   | {tipo: 'imagen'; src: string; foco?: Foco; llenar?: boolean | 'pantalla'}
+  /** Toma de video (p. ej. IA) a pantalla completa: se usa el tramo desde-hasta (s) del archivo,
+   * acelerado o frenado para que calce con la escena (0,6x-1,3x); si aún falta, se congela el último fotograma. */
+  | {tipo: 'video'; src: string; desde?: number; hasta: number; escala?: number; volumen?: number}
   | {tipo: 'numero'; valor: string; sub?: string}
   | {tipo: 'cierre'; src: string; titulo: string; sub?: string; linea: string};
 

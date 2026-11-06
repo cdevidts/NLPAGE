@@ -5,3 +5,6 @@ fecha,tipo,modelo,usd,salida,prompt
 2026-11-06T22:34:06,video,gemini-omni-1.2-flash,0.560,public/ia/57-caso02-es-3-gala.mp4,ficha docs/video-ia/fichas/57-caso02-es-3-gala.json
 2026-11-06T22:34:09,video,gemini-omni-1.2-flash,0.560,public/ia/57-caso02-es-5-hoy.mp4,ficha docs/video-ia/fichas/57-caso02-es-5-hoy.json
 2026-11-06T22:34:15,video,gemini-omni-1.2-flash,0.560,public/ia/57-caso02-es-4-hallazgo.mp4,ficha docs/video-ia/fichas/57-caso02-es-4-hallazgo.json
+2026-11-06T22:36:19,video,gemini-omni-1.2-flash,0.560,public/ia/57-caso02-es-3.mp4,ficha docs/video-ia/fichas/57-caso02-es-3.json
+2026-11-06T22:36:23,video,gemini-omni-1.2-flash,0.560,public/ia/57-caso02-es-2.mp4,ficha docs/video-ia/fichas/57-caso02-es-2.json
+2026-11-06T22:46:53,video,gemini-omni-1.2-flash,0.560,public/ia/57-caso02-es-4.mp4,ficha docs/video-ia/fichas/57-caso02-es-4.json

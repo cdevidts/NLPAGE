@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, Easing, Img, interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Easing, Freeze, Img, interpolate, OffthreadVideo, useCurrentFrame, useVideoConfig} from 'remotion';
 import {clamp, pop, recurso, suave} from '../lib/anim';
 import {TEXTO, type Tema} from '../lib/temas';
 import type {Foco, Visual} from '../lib/types';
@@ -60,6 +60,36 @@ export const VisualEscena: React.FC<{visual: Visual; tema: Tema; total: number}>
     alignItems: 'center',
     justifyContent: 'center',
   };
+
+  if (visual.tipo === 'video') {
+    // Toma de video a pantalla completa, con el mismo degradé que "llenar: pantalla" para titular y subtítulo.
+    const desde = visual.desde ?? 0;
+    const tramo = Math.max(0.1, visual.hasta - desde);
+    const rate = Math.min(1.3, Math.max(0.6, tramo / (total / fps)));
+    const ultimo = Math.floor((tramo / rate) * fps) - 2;
+    const escala = (visual.escala ?? 1) * interpolate(frame, [0, total], [1, 1.05], {...clamp, easing: Easing.inOut(Easing.quad)});
+    return (
+      <AbsoluteFill style={{overflow: 'hidden', backgroundColor: '#000'}}>
+        <AbsoluteFill style={{transform: `scale(${escala})`}}>
+          <Freeze frame={Math.min(frame, ultimo)}>
+            <OffthreadVideo
+              src={recurso(visual.src)}
+              trimBefore={Math.round(desde * fps)}
+              playbackRate={rate}
+              muted={!visual.volumen}
+              volume={visual.volumen ?? 0}
+              style={{width: '100%', height: '100%', objectFit: 'cover'}}
+            />
+          </Freeze>
+        </AbsoluteFill>
+        <AbsoluteFill
+          style={{
+            background: 'linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 62%, rgba(0,0,0,0.8) 100%)',
+          }}
+        />
+      </AbsoluteFill>
+    );
+  }
 
   if (visual.tipo === 'portada' || visual.tipo === 'imagen') {
     // Entra inclinada en 3D y se endereza; después la cámara busca el foco.
