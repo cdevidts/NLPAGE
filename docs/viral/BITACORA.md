@@ -133,6 +133,8 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 - Prueba: el mismo guion recortado a ~32 s con velocidad de voz más alta, contra el largo. Variantes que esperan su turno (una por vez): subtítulo de una palabra arriba al centro; cierre sin CTA hablado (V14).
 
 ## Registro de lecturas
+
+- 2026-11-06 14:10 Chile (YouTube Data/Analytics por Zapier; Analytics con ~2 días de atraso): caso 01 EN 7 d = 2 vistas, retención 17 % (PIERDE, cerrado). Caso 02 ES 48 h = 7 vistas, 0 likes (PIERDE contra EN 38, cerrado). Retención a la fecha: Beethoven EN 41 %, villancicos EN 26 %, caso 01 ES 25 %, caso 02 EN 19 %. En vivo: Beethoven ES 302 vistas, 15 likes, 1 comentario (~45 h); Tregua ES (V16) 121 vistas y 14 likes a ~6 h, 11,6 likes por cada 100 vistas, el mejor del canal.
 | Fecha | Short | Lectura | Vistas | Retención | Coment./1k | Shares/1k | Veredicto | Nota |
 |---|---|---|---|---|---|---|---|---|
 
