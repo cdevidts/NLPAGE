@@ -121,7 +121,12 @@ Ver `docs/viral/BITACORA.md`. Si se acaban: correr `competencia.py`, mirar los o
   pedidos: G-006 (15 Shorts más vistos de MrBallen y Cold Case Detective con ganchos
   transcritos) y G-007 (crítica de nuestro canal). Todo lo de Gemini entra como hipótesis
   "según Gemini, sin verificar", nunca como regla.
-- Métricas propias: solo Metricool. YouTube Analytics API pediría OAuth de Cris: no hace falta.
+- Métricas propias: **YouTube Analytics por Zapier** (desde 2026-11-05; Metricool devuelve vacío para YouTube).
+  `execute_zapier_read_action` con selected_api `YouTubeV4CLIAPI`, tool_name `youtube_make_api_get_request`,
+  url `https://youtubeanalytics.googleapis.com/v2/reports`, querystring `ids=channel==MINE`, `startDate`,
+  `endDate`, `metrics=views,averageViewPercentage,averageViewDuration,likes,shares,subscribersGained`,
+  `dimensions=video` (o `country`, `insightTrafficSourceType`, con `filters=video==<id>`). Datos con 24-48 h
+  de atraso; el país solo aparece sobre el umbral de privacidad. Conteo en vivo: `https://www.googleapis.com/youtube/v3/videos?part=statistics&id=...` por el mismo tool.
 - Skills ajenas revisadas (2026-10-30): `viral-video-master` (josiahsiegel/claude-plugin-marketplace)
   trae cifras sin fuente (p. ej. "55 s da 3x vistas"); se tomaron solo las ideas
   cualitativas (bucle, serie, CTA de comentario) y quedaron como hipótesis, no como reglas.
