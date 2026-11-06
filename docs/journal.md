@@ -287,3 +287,4 @@
 - Whisper oye "Celca de Hibres" en vez de "cerca de Ypres" y "de si" en vez de "de Etsy"; en el audio se entiende. La compuerta pasó en las 7 voces.
 - Agregué `visual` a las variables de experimento.py. Abrí V19 (30-35 s y voz más rápida) con la auditoría por la API de Gemini del hilo Gemini.
 - Lecturas: 8-nov (48 h) y 13-nov (7 días), contra el Beethoven ES (296 vistas, 15 likes y 1 comentario a ~15 h).
+- 11:25 Chile: canales advirtió que "paró una guerra" exagera (la tregua fue local y de pocos días). Corregí la descripción en YouTube por la API (videos.update vía Zapier, mismo título) y en el plan: "la tregua fue local y duró poco, pero en varios tramos del frente...". El título queda como gancho; el cuerpo dice el alcance. Para los próximos: el gancho puede ser fuerte, pero el guion o la descripción tienen que decir el alcance real.
