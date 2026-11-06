@@ -279,3 +279,11 @@
 - Sticker de producto (YouTube Shopping): pide estar en el Programa de Socios (el canal tiene 0 suscriptores) y una tienda de Shopify, Fourthwall, Spreadshop u otra compatible. Etsy y Gumroad no lo son, y el programa de afiliados no incluye Chile. La API de YouTube no etiqueta productos y Make tampoco. Queda para cuando el canal entre al programa.
 - Descarté poner el país del canal en EE. UU.: tiene que ser el real (impuestos y pagos).
 - Pendiente: el canal no tiene descripción; escribirla con la skill SEO en un turno próximo.
+
+## 2026-11-06 08:15 Chile · Short de la tregua de Navidad (V16), en la hora libre que dio Cris
+- Short ES 60-piano-villancicos-historia-es publicado por Zapier: https://youtube.com/shorts/oRX2V9bh0rw (46,9 s, -14,0 LUFS, pico -2,0 dBTP). Historia real de Noche de paz en la tregua de 1914; el libro de villancicos solo en el cierre.
+- V16: seis recursos distintos (4 fotos de archivo de dominio público y 2 cortes de la página de Noche de paz) y fotos a escenario completo con la opción nueva `"llenar": true` de Visual.tsx. El primer render dejaba las fotos horizontales como franjas de ~560 px; con `llenar` ocupan los 900 px del escenario.
+- Wikimedia respondió 429 a todo (API, REST y upload). Openverse con `license=pdm,cc0` trajo fotos de Flickr Commons que sí se bajan. Créditos en public/assets/media/archivo/CREDITOS.md. Descarté la foto del partido de fútbol (no está claro que sea de 1914) y una de soldados alemanes con casco de 1916.
+- Whisper oye "Celca de Hibres" en vez de "cerca de Ypres" y "de si" en vez de "de Etsy"; en el audio se entiende. La compuerta pasó en las 7 voces.
+- Agregué `visual` a las variables de experimento.py. Abrí V19 (30-35 s y voz más rápida) con la auditoría por la API de Gemini del hilo Gemini.
+- Lecturas: 8-nov (48 h) y 13-nov (7 días), contra el Beethoven ES (296 vistas, 15 likes y 1 comentario a ~15 h).

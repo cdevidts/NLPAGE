@@ -21,7 +21,7 @@ ETSY = Path("/mnt/project-files/plan/metricas/serie/etsy.csv")
 BRAND = "6078519"
 # Orden fijo: `medir` lee las filas de Metricool en este orden.
 METRICAS = ["YTVP01", "YTVP04", "YTVP06", "YTVP08", "YTVP09", "YTVP11", "YTVP12", "YTVP17"]
-VARIABLES = {"formato", "gancho", "duracion", "final", "titulo", "serie", "idioma", "cta", "voz", "musica", "hora", "tema"}
+VARIABLES = {"formato", "gancho", "duracion", "final", "titulo", "serie", "idioma", "cta", "voz", "musica", "hora", "tema", "visual"}
 FORMATOS = {"historia", "reto", "tutorial", "pov", "confesion", "lista", "antes-despues"}
 GANCHOS = {"pregunta", "dato-imposible", "in-medias-res", "contradiccion", "reto", "confesion", "pov",
            "superlativo", "injusticia", "fecha-edad-nombre"}

@@ -58,7 +58,7 @@ semana), una corrida de `competencia.py --nicho <el de la semana>` y copiar a
   "listing_id": 4605991888
 }
 ```
-- `variable`: formato, gancho, duracion, final, titulo, serie, idioma, cta, voz, musica, hora.
+- `variable`: formato, gancho, duracion, final, titulo, serie, idioma, cta, voz, musica, hora, tema, visual.
 - `formato`: historia, reto, tutorial, pov, confesion, lista, antes-despues.
 - `gancho_tipo`: pregunta, dato-imposible, in-medias-res, contradiccion, reto, confesion, pov, superlativo, injusticia.
 - `control`: el slug contra el que se compara, o `linea-base`.

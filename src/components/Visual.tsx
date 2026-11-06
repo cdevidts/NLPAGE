@@ -64,11 +64,14 @@ export const VisualEscena: React.FC<{visual: Visual; tema: Tema; total: number}>
   if (visual.tipo === 'portada' || visual.tipo === 'imagen') {
     // Entra inclinada en 3D y se endereza; después la cámara busca el foco.
     const foco = visual.tipo === 'imagen' ? visual.foco : undefined;
+    // "llenar": la foto ocupa todo el escenario (recorte cover centrado en el foco) en vez de una franja.
+    const llenar = visual.tipo === 'imagen' && visual.llenar;
     return (
       <div style={{...centro, perspective: 1600}}>
         <div
           style={{
             width: 1000,
+            height: llenar ? ESCENARIO.alto : undefined,
             borderRadius: 18,
             overflow: 'hidden',
             boxShadow: sombra,
@@ -77,8 +80,15 @@ export const VisualEscena: React.FC<{visual: Visual; tema: Tema; total: number}>
             opacity: interpolate(m, [0, 0.2], [0.55, 1], clamp),
           }}
         >
-          <div style={{transform: camara(frame, total, foco), transformOrigin: 'center'}}>
-            <Img src={recurso(visual.src)} style={{width: '100%', display: 'block'}} />
+          <div style={{transform: camara(frame, total, foco), transformOrigin: 'center', height: llenar ? '100%' : undefined}}>
+            <Img
+              src={recurso(visual.src)}
+              style={
+                llenar
+                  ? {width: '100%', height: '100%', objectFit: 'cover', objectPosition: `${(foco?.x ?? 0.5) * 100}% ${(foco?.y ?? 0.5) * 100}%`, display: 'block'}
+                  : {width: '100%', display: 'block'}
+              }
+            />
           </div>
         </div>
       </div>

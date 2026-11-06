@@ -115,6 +115,7 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 - Origen: Cris (5-nov, 20:24 Chile) pidió que el dinamismo, la calidad y la variación rápida de lo que se ve sean criterios a probar. Hoy cada escena es una imagen o página con movimiento de cámara; Beethoven usa el mismo grabado en 5 escenas seguidas.
 - Evidencia: G-029 (5-nov, según Gemini, sin verificar): el Short de 12,1 M tiene 5 cortes en 10 s. G-021: la misma página dos veces y una tarjeta quieta de 8 s se ven como puntos débiles. V11 prueba solo la frecuencia de cortes; V16 prueba la variedad del material.
 - Prueba: el mismo guion y la misma voz, pero con 2-3 recursos distintos por escena (detalles del documento, íconos animados, Lottie, fotos de archivo de Wikimedia o SourceSplash, texto cinético) contra un recurso por escena. Una variable a la vez: primero la variedad con el mismo ritmo de cortes.
+- 2026-11-06, primera prueba: 60-piano-villancicos-historia-es (tregua de Navidad de 1914 y Noche de paz). Seis escenas con seis recursos distintos (4 fotos de archivo de dominio público, 2 cortes de la página) y fotos a escenario completo (`"llenar": true`, nuevo en Visual.tsx; antes la foto horizontal quedaba como una franja de ~560 px en un cuadro de 1920). Control: Beethoven ES (un grabado en 5 escenas, en franja). Confusor: otra pieza y otro día.
 
 ### V17. La voz IA (modelo y calidad del sonido) cambia la retención (pedido por Cris, 5-nov)
 - Origen: Cris (5-nov) pidió probar la voz IA, tanto el sonido como el modelo, en cualquier idioma.
@@ -125,6 +126,10 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 - Evidencia: caso 01 ES 686 vistas, país visible solo Bolivia (119) y Argentina (69); su listing de Etsy pasó de 2 a 2 vistas. Etsy vende en dólares y su comprador está en EE. UU.
 - Prueba: en cada Short, vistas del listing 72 h antes y 72 h después (ya está en la tabla de métricas) y país de las vistas por YouTube Analytics. Si los ES siguen sin mover el listing, el Short ES queda para crecer el canal (suscriptores, hacia YPP) y el comprador de EE. UU. se busca por pines de video EN en Pinterest y por un EN de vez en cuando.
 - Se lee: con 3 Shorts ES más (cada uno con su lectura de 72 h de Etsy).
+
+### V19. Más corto y más rápido: 30-35 s, voz a 3 o más palabras por segundo (abierta 2026-11-06)
+- Evidencia: auditoría con la API de Gemini (6-nov, según Gemini, sin verificar; plan/investigacion/2026-11-06-gemini-api-youtube-auditoria-shorts.md): el Short de true crime de 12,1 M dura 28 s, habla a 3,4 palabras/s y tiene 14 cortes (5 en los primeros 10 s); los nuestros duran 46-54 s a 2,3 palabras/s. En los nuestros el abandono cae donde entra el cierre comercial (s 41 / s 47).
+- Prueba: el mismo guion recortado a ~32 s con velocidad de voz más alta, contra el largo. Variantes que esperan su turno (una por vez): subtítulo de una palabra arriba al centro; cierre sin CTA hablado (V14).
 
 ## Registro de lecturas
 | Fecha | Short | Lectura | Vistas | Retención | Coment./1k | Shares/1k | Veredicto | Nota |
