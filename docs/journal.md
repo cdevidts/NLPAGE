@@ -224,10 +224,27 @@
 - copy_check.py marca errores de Etsy (tags de 20 caracteres, frase al inicio, frase repetida con la ficha). Para YouTube no aplican; el título sigue la regla de la skill: gancho con la frase principal ES dentro.
 - El mp4 pesa 53 MB, más que los anteriores. GitHub avisa desde 50 MB y rechaza desde 100 MB. Si sigue creciendo, bajar el bitrate del render.
 
+## 2026-11-06 · API de Gemini: Argon e imágenes son pagados; YouTube por fotogramas gratis y al instante
+
+- Cris dio una hora libre (10:59-12:00 UTC) y pidió probar la API (GEMINI_API_KEY) en vez del canal por
+  Drive, sin agregar facturación. Leído ai.google.dev/gemini-api/docs/pricing: `gemini-4-argon`,
+  `gemini-3.1-pro-preview` y TODOS los modelos de imagen (Nano Banana 2 Lite/2.1/Pro, 2.5 Flash Image)
+  tienen "Free Tier: Not available". No se llamó a ninguno (countTokens no gasta y no distingue tier).
+  Los US$10/mes de AI Pro exigen activar Cloud Billing con tarjeta: no se toca.
+- Lo que sí es gratis y nuevo: `gemini.py youtube <id>` (generateContent con file_data de YouTube).
+  3.6 Flash audita un Short de 46 s en 24-42 s con tabla por segundo, cortes, palabras/s y punto de
+  abandono. Hecho con los 3 Shorts nuestros y el competidor de 12,1 M: docs/viral/2026-11-06-gemini-api-
+  youtube-auditoria-shorts.md (copia en plan/investigacion/). 3.8 Flash dio 503 (alta demanda) y
+  2.5 Pro ya no existe para cuentas nuevas (404): la cadena de respaldo sigue valiendo.
+- Reparto de roles desde hoy: app de Gemini (canal por Drive, cada hora) para Argon, Nano Banana, búsqueda
+  web y entregas en Drive; API para ver videos de YouTube al instante, texto y voz.
+- Espera a una persona: nada.
+
 ## 2026-11-05 · Metricool sin cupo
 - El hilo de canales avisó, y lo comprobé en getScheduledPosts, que el plan gratis de Metricool trae 20 publicaciones por mes. Desde el 4-nov 20:45 todo falla con "account limit". El caso 02 ES alcanzó a salir (7CZBpp1r4kU); el Beethoven ES del 5-nov va a fallar.
 - Ruta nueva: Zapier YouTube. Hoy no tiene conexión y Cris tiene que conectarla una vez; ese pedido lo hace canales. Hasta entonces el turno diario solo mide y deja a lo más un Short en `docs/viral/COLA.md`. El prompt del turno ya está actualizado.
 - G-029 (true crime en español) pasó a patrones.md y a V14. Pedí a Gemini G-034, la auditoría del Caso archivado ES contra los EN.
+
 ## 2026-11-05 · Canal Gemini: G-028..G-030; el modelo ya se declara Argon; el recorte de prensa corre acá
 - G-028 (escape room de Navidad): el Doc llegó vacío pero la Hoja trae 31 fichas, frecuencias y 3 títulos
   de 133 car. → OPS (es de temporada; nadie del mercado dice "bilingüe"). G-029: 14 Shorts de true crime
