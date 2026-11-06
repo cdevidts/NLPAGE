@@ -1,3 +1,7 @@
 fecha,tipo,modelo,usd,salida,prompt
 2026-11-06T22:07:00,video,gemini-omni-1.2-flash,0.700,out/ia/caso02-lodge-noche.mp4,"Cinematic vertical shot, slow push-in toward an isolated wooden ski lodge in the Alps at night during a snowstorm, 1980s"
 2026-11-06T22:15:54,video,gemini-omni-1.2-flash,0.560,public/ia/57-caso02-es-1.mp4,ficha docs/video-ia/fichas/57-caso02-es-1.json
+2026-11-06T22:34:04,video,gemini-omni-1.2-flash,0.560,public/ia/57-caso02-es-2-sospechosos.mp4,ficha docs/video-ia/fichas/57-caso02-es-2-sospechosos.json
+2026-11-06T22:34:06,video,gemini-omni-1.2-flash,0.560,public/ia/57-caso02-es-3-gala.mp4,ficha docs/video-ia/fichas/57-caso02-es-3-gala.json
+2026-11-06T22:34:09,video,gemini-omni-1.2-flash,0.560,public/ia/57-caso02-es-5-hoy.mp4,ficha docs/video-ia/fichas/57-caso02-es-5-hoy.json
+2026-11-06T22:34:15,video,gemini-omni-1.2-flash,0.560,public/ia/57-caso02-es-4-hallazgo.mp4,ficha docs/video-ia/fichas/57-caso02-es-4-hallazgo.json

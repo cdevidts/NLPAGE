@@ -84,9 +84,17 @@ handheld drift; velocidad), `sujeto` y `accion` (concretos, 4+ palabras, algo qu
   el gancho de un Short (primeros 1,5 s), la primera toma debe ser la más fuerte.
 - **Pensar el corte en Remotion**: cada toma debe poder usarse sola. El último fotograma de
   la toma 3 debe ser limpio (sin movimiento brusco) para cortar o congelar.
-- **Que no huela a IA** (regla de Cris): sin caras en primer plano, sin manos haciendo cosas
-  finas, sin texto generado, sin gente reconocible ni menores. Mejor lugares, objetos,
-  clima, luces, documentos de época sin letras legibles.
+- **Personas y personajes** (Cris, 6-nov 22:27: "prueba personas, escenas tensas, personajes"):
+  se permiten y hay que probarlos. Para que no huela a IA: luz dramática con una fuente clara,
+  expresiones contenidas (mirar, girar la cabeza, quedarse quieto), nada de manos haciendo
+  cosas finas (escribir, abrir cierres, tocarse la cara), nada de bocas hablando, piel con
+  textura natural. Siempre en `evitar`: "no distorted faces or hands, no extra fingers". Nunca
+  gente real reconocible ni menores. En la tira se revisa cara por cara.
+- **Secuencia rápida**: la guía oficial permite cortes cada 0,5-2 s. Una rueda de 5 caras de
+  1,6 s cada una es válida si todas comparten luz, encuadre y fondo (el cambio de persona es el
+  corte, no un salto). Hasta 6 tomas por clip.
+- **Texto físico en la escena** (una hora en una libreta, un sello de fecha): se define en
+  `texto_en_pantalla` y debe ser algo que ya está escrito, nunca escribiéndose.
 - **Época correcta**: decir el año y pedir detalle de época ("period-correct 1989"); negar lo
   moderno que suele colarse (celulares, autos modernos, LED).
 - **Audio**: solo ambiente. Nada de música ni voces: se pisan con la voz y la música del Short.
@@ -119,4 +127,11 @@ imagen de referencia Nano Banana 2 Lite ~US$0.034. Todo queda en `docs/gemini/ga
   adornos navideños). Defecto que quedó: "shot on 35mm film" dibujó esquinas redondeadas en
   la toma 1 -> agregar a `evitar`: "no rounded frame corners, no film gate border, no vignette
   frame". Duración: `response_format.duration` va como texto ("8s"), 3s a 15s.
+- 2026-11-06, tanda de personajes (fichas 57-caso02-es-2 a 5, 4 x US$0.56): las 4 salieron
+  usables a la primera tras 3 rondas de `--revisar`. Funciona: rueda de 5 caras a 1,6 s con la
+  misma luz (sin morphing), multitud de gala de época, primer plano emotivo, texto físico
+  corto ("07:40", sello "'89 1 28") que sale legible. Falla menor: "unlit torch" salió encendida
+  (el modelo asocia antorcha con fuego: si importa, cambiar el objeto). La revisión pide cada
+  vez más matices: después de la 3.ª ronda se cierra y se paga. Los negativos se escriben sin
+  "no" delante (gemini.py los arma como "Avoid all of the following: ...").
 
