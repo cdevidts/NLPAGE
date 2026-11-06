@@ -54,4 +54,6 @@ export type LoopProps = {
   sub: string;
   frases: string[];
   marca: string;
+  /** Alto de cada hoja en px (1100 por defecto). Las fotos 4:3 del listing usan ~690 para no tapar el texto. */
+  alto?: number;
 };
