@@ -1,0 +1,62 @@
+{
+  "aspecto": "9:16",
+  "resolucion": "720p",
+  "duracion": 8,
+  "short": "plans/57-cold-case-02-ia-es.json",
+  "momento": "escenas 9-10 (~s 30-35): 'Cuatro, la vieja rival.' / 'Cinco, el prometido que se fue temprano.'; y escena 3 (~s 8-12): 'Al amanecer la encuentran en un barranco. El sheriff dice: accidente.' (toma 3)",
+  "fuente": "Expediente ES p. 5: 4 Vivian Shaw, 55, escritora, ex esquiadora, rival de Elsa desde 1956, escribe una biografía de Elsa que Elsa intentaba frenar, reservó una habitación para la gala; 5 Gregor Wilde, 44, arquitecto, prometido, se fue temprano de la gala en el último teleférico de la noche; víctima hallada en el barranco Hollow bajo la pasarela que lleva a su chalet; Doc 04: muerte declarada accidental. 28-ene-1989, tormenta.",
+  "objetivo": "Cerrar la ronda de sospechosos con dos personajes y dejar una imagen fría del lugar del hecho: que el 'accidente' no convenza.",
+  "estilo": "Cinematic true-crime documentary re-creation set on the night of January 28, 1989 at a mountain ski hotel in the American West, period-correct 1989 clothing and props, shot on 35mm film",
+  "lugar": "Greyhorn Lodge in a snowstorm: a guest room with a frosted window, the mountain cable car station beside the hotel, and the narrow wooden footbridge walkway with a railing that crosses over Hollow ravine to the owner's chalet",
+  "luz": "Night; warm tungsten 2700K practicals are the key indoors (a bedside lamp, the lit cable car cabin); cold blue 6000K ambient snow light as fill outdoors; high contrast and deep shadows; faces stay half in shadow",
+  "paleta": "amber tungsten, deep navy blue, desaturated white snow",
+  "lente": "50mm lens for shot 1, 35mm lens for shot 2, 28mm lens low to the ground for shot 3, shallow depth of field in shot 1, fine 35mm film grain, slight halation around light sources",
+  "continuidad": "Same blizzard as the other clips; shots 1 and 2 at night, shot 3 a few hours later before dawn; snow always falls diagonally from left to right; warm interior light versus cold exterior light; faces never fully lit and never in close-up",
+  "tomas": [
+    {
+      "desde": 0,
+      "hasta": 2.7,
+      "plano": "medium shot from the side",
+      "camara": "slow push-in",
+      "sujeto": "a woman in her mid-fifties with short grey hair and a 1980s wool cardigan, sitting at a manual typewriter on a small desk by a frosted hotel window at night",
+      "accion": "she sits still at the typewriter with her hands resting near the keys, then slowly turns her head from the page toward the frosted window and the dark blizzard, her face half in shadow",
+      "foco": "sharp on the vintage typewriter and the desk, the woman slightly soft",
+      "luz": "a warm bedside lamp from the right is the key, cold storm light through the window as rim"
+    },
+    {
+      "desde": 2.7,
+      "hasta": 5.4,
+      "plano": "extreme wide shot",
+      "camara": "locked-off static camera",
+      "sujeto": "a single lit 1980s cable car cabin with one male silhouette standing inside",
+      "accion": "the cabin glides away from the dark mountain station along its cable and disappears into the blizzard",
+      "foco": "deep focus, the cabin sharp"
+    },
+    {
+      "desde": 5.4,
+      "hasta": 8,
+      "plano": "low-angle shot at walkway level",
+      "camara": "slow push-in along the walkway",
+      "sujeto": "a narrow empty wooden footbridge walkway with a wooden railing, covered in ice and fresh snow, crossing over a dark ravine toward a small chalet with one lit window in the distance",
+      "accion": "wind blows loose snow across the icy planks while an old lantern on the railing swings slightly",
+      "foco": "sharp on the icy planks in the foreground, chalet softly blurred",
+      "luz": "the swinging lantern and the far chalet window are the only warm lights; pre-dawn deep blue 6000K ambient"
+    }
+  ],
+  "audio": "Ambient only: faint wind against the window pane in shot 1, blizzard wind and a humming cable in shot 2, howling wind and creaking planks in shot 3. No music, no dialogue, no voices.",
+  "evitar": [
+    "no faces in close-up or fully lit from the front",
+    "no extra people beyond those described",
+    "no person, body or footprints on the walkway in shot 3",
+    "no readable text on the typed page",
+    "no Christmas decorations",
+    "no on-screen text, signs, labels or readable words",
+    "no modern objects, smartphones, modern cars or LED lights",
+    "no rounded frame corners, no film gate border, no vignette frame",
+    "no music",
+    "no extra shots or transitions beyond the three described",
+    "no blood or gore"
+  ],
+  "notas": "Revisión 1 (6-nov): sacar la hoja lentamente en 2,7 s era acción fina de manos e imposible a ese ritmo -> manos quietas y un giro de cabeza hacia la ventana. Revisión 2: el audio de papel deslizándose pedía mover la hoja -> viento en la ventana.",
+  "resultado": "USABLE (2026-11-06, US$0.56, tardó ~11 min): 3 tomas en 2,7 y 5,4 s. Escritora en la máquina girando hacia la ventana, teleférico iluminado en la ventisca, pasarela helada con farol hacia el chalet. Defecto: marcas tipo huellas tenues en la nieve de la pasarela pese al negativo."
+}

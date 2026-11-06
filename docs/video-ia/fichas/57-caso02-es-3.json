@@ -1,0 +1,61 @@
+{
+  "aspecto": "9:16",
+  "resolucion": "720p",
+  "duracion": 8,
+  "short": "plans/57-cold-case-02-ia-es.json",
+  "momento": "escenas 6-8 (~s 22-30): 'Uno, el sobrino heredero.' / 'Dos, la gerente, con auditores encima.' / 'Tres, el instructor de la antorcha.'",
+  "fuente": "Expediente ES p. 5 (Personas de interés): 1 Paul Brandvold, 28, sobrino, heredaría la cuarta parte del hotel; 2 Harriet Lindahl, 47, gerente desde 1979, lleva la oficina y la contabilidad, en enero Elsa contrató auditores externos; 3 Dane Mercer, 31, director de la escuela de esquí, encabezó el descenso de antorchas de los instructores en la gala. Fecha: 28-ene-1989, noche de la gala, tormenta.",
+  "objetivo": "Presentar a tres sospechosos como personajes con un gesto que inquieta cada uno, sin mostrar sus caras de frente: el espectador empieza a elegir culpable.",
+  "estilo": "Cinematic true-crime documentary re-creation set on the night of January 28, 1989 at a mountain ski hotel in the American West, period-correct 1989 clothing and props, shot on 35mm film",
+  "lugar": "Greyhorn Lodge, a 1980s timber-and-stone mountain ski hotel during its Winter Carnival gala night in a snowstorm: a wood-paneled bar, a small back office, and the ski slope outside",
+  "luz": "Night; warm tungsten 2700K practical lights are the key indoors (bar pendant lamps, a green banker's desk lamp); outdoors the burning red flares are the only key light against cold blue 6000K ambient snow light; high contrast, deep shadows; faces stay half in shadow",
+  "paleta": "amber tungsten, deep navy shadow, flare red",
+  "lente": "50mm lens for shots 1 and 2, 35mm lens for shot 3, shallow depth of field, fine 35mm film grain, slight halation around light sources",
+  "continuidad": "Same night, same storm and same hotel; every person wears period-correct 1989 clothing; faces are never fully lit and never in close-up; light is high-contrast and directional in every shot, from the right side of frame in shots 1 and 2",
+  "tomas": [
+    {
+      "desde": 0,
+      "hasta": 2.7,
+      "plano": "medium shot from behind, over the shoulder",
+      "camara": "slow push-in toward his shoulder",
+      "sujeto": "a young man in his late twenties with short dark hair, wearing a 1989 Nordic-pattern ski sweater, standing alone at the wooden hotel bar holding a champagne flute",
+      "accion": "he slowly turns his head to the side in profile and glances back over his shoulder toward the camera's direction, his face half in shadow",
+      "foco": "sharp on his profile and shoulder, the bar lights softly blurred"
+    },
+    {
+      "desde": 2.7,
+      "hasta": 5.4,
+      "plano": "medium close-up across a desk",
+      "camara": "locked-off static camera",
+      "sujeto": "a woman in her late forties with glasses and a dark 1980s blazer, seated at a cluttered desk in a small wood-paneled hotel office at night under a green banker's desk lamp",
+      "accion": "she quickly closes a thick leather ledger book and lifts her eyes toward an off-screen door, her face lit from the right by the lamp and partly in shadow",
+      "foco": "sharp on the leather ledger and the desk lamp, her hands soft and partly hidden behind the ledger",
+      "luz": "the green banker's desk lamp is the only light source, low and from the right"
+    },
+    {
+      "desde": 5.4,
+      "hasta": 8,
+      "plano": "wide shot of a snowy ski slope at night",
+      "camara": "slow lateral dolly from right to left following the skiers",
+      "sujeto": "a line of ski instructors in 1980s ski suits, hats and goggles descending a snowy slope at night, each holding a burning red road flare high, the lead skier closest to camera",
+      "accion": "the skiers glide down in a single file through falling snow, the flares trailing red smoke",
+      "foco": "sharp on the lead skier, the line behind falling softly out of focus",
+      "luz": "the red flares are the only key light, cold blue snow ambient as fill"
+    }
+  ],
+  "audio": "Ambient only: muffled party murmur and clinking glass in shot 1, a quiet clock ticking in shot 2, wind and skis on snow with hissing flares in shot 3. No music, no dialogue, no intelligible voices.",
+  "evitar": [
+    "no faces in close-up or fully lit from the front",
+    "no extra people beyond those described",
+    "no hands doing fine detailed tasks",
+    "no Christmas decorations",
+    "no on-screen text, signs, labels or readable words",
+    "no modern objects, smartphones, modern cars or LED lights",
+    "no rounded frame corners, no film gate border, no vignette frame",
+    "no music",
+    "no extra shots or transitions beyond the three described",
+    "no blood or gore"
+  ],
+  "notas": "Revisión 1 (6-nov): foco en manos chocaba con 'no hands doing fine tasks' -> foco en el libro y la lámpara; luz 'desde abajo' chocaba con la clave desde la derecha -> desde la derecha. La frase fija 'mismo lugar y momento' chocaba con 3 sitios distintos -> gemini.py ahora remite a la continuidad de la ficha. Revisión 2: dos planos medios seguidos -> toma 2 a plano medio corto; clave 'siempre desde la derecha' chocaba con las bengalas -> solo en tomas 1 y 2.",
+  "resultado": "USABLE (2026-11-06, US$0.56): 3 tomas en 2,7 y 5,4 s. Sobrino en el bar girando de perfil, gerente cerrando el libro bajo la lámpara verde, línea de instructores con bengalas. Sin texto ni manos deformes visibles."
+}

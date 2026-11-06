@@ -1,0 +1,57 @@
+{
+  "short": "Short del caso 02 ES 'La Nieve Recuerda' (guion G-036 del 7-nov; plan plans/57-cold-case-02-historia-es.json)",
+  "duracion": 8,
+  "aspecto": "9:16",
+  "resolucion": "720p",
+  "notas": "Revisión 1: banda de baile quitada; negativos de caras agregados. Primer plano de Elsa se mantiene: Cris pidió personajes (6-nov). Revisión 2: sin aplausos con copas en la mano; una sola acción para Elsa. Revisión 3: negativos sin doble negación (gemini.py), viñeta negada, fondo/guantes/música según el caso. Cerrada: lo que queda son matices.",
+  "resultado": "USABLE (US$0.56): fila de antorchas bajando hacia el hotel, invitados de gala de 1989 en los ventanales, Elsa con vestido plateado se gira a la sombra; cortes ~3 s y ~5,5 s. Caras naturales.",
+  "momento": "Medio del Short: 'Esa noche era la gala del Carnaval de Invierno. Los instructores bajaron la montaña con antorchas. Elsa miraba desde la ventana.'",
+  "fuente": "Expediente ES p. 1-4: gala del Carnaval de Invierno, sábado 28-ene-1989, Greyhorn Lodge; Dane Mercer encabezó el descenso de antorchas de los instructores; Ray Kessler fotografió la gala; Elsa Brandvold, 54, dueña del hotel, campeona de descenso de 1956.",
+  "objetivo": "Mostrar la última noche de Elsa como una fiesta hermosa con algo inquietante debajo.",
+  "estilo": "Cinematic true-crime documentary re-creation, shot on 35mm film",
+  "lugar": "Greyhorn Lodge, a three-story 1980s timber-and-stone mountain hotel on a dark snowy ski slope in the American West, during a Winter Carnival gala in January 1989",
+  "luz": "Night; orange firelight from a line of ski torches on the slope; warm tungsten 2700K chandeliers inside the lodge; cold blue moonlight on snow; occasional white camera flash bursts",
+  "paleta": "deep navy blue, torch orange, champagne gold",
+  "lente": "35mm lens for the wide shot, 50mm for the crowd, 85mm for the close-up, fine film grain, slight halation around flames",
+  "continuidad": "Same night, same light snowfall, the torch line visible through the lodge windows in shots 2 and 3, 1989 evening wear on everyone",
+  "tomas": [
+    {
+      "desde": 0,
+      "hasta": 3,
+      "plano": "extreme wide shot of the dark ski slope above the lodge",
+      "camara": "slow tilt down following the torches",
+      "sujeto": "a long zigzag line of ski instructors carrying burning torches",
+      "accion": "ski down the dark mountain in single file toward the glowing lodge",
+      "foco": "deep focus"
+    },
+    {
+      "desde": 3,
+      "hasta": 5.5,
+      "plano": "medium shot inside the lodge's grand hall at the tall windows",
+      "camara": "slow lateral dolly along the crowd",
+      "sujeto": "gala guests in 1989 tuxedos and sequined evening gowns holding champagne glasses",
+      "accion": "watch the torches outside, glasses held still, while a camera flash bursts once",
+      "foco": "focus on the guests, windows softly blurred"
+    },
+    {
+      "desde": 5.5,
+      "hasta": 8,
+      "plano": "close-up",
+      "camara": "locked-off static camera",
+      "sujeto": "an elegant 54-year-old woman with silver-blond hair in a silver evening gown standing apart by a window",
+      "accion": "slowly turns her face away from the window into shadow with a solemn, serious expression",
+      "foco": "her face sharp, torches blurred behind her"
+    }
+  ],
+  "audio": "Ambient only: muffled applause, wind against the windows, one camera shutter click. No music, no dialogue, no singing.",
+  "evitar": [
+    "no music",
+    "no distorted faces or hands, no extra fingers",
+    "no children",
+    "no on-screen text, signs or readable words",
+    "no modern objects, phones, cars or LED lights",
+    "no rounded frame corners, no film gate border, no vignette frame",
+    "no blood or gore",
+    "no extra shots or transitions beyond the ones described"
+  ]
+}

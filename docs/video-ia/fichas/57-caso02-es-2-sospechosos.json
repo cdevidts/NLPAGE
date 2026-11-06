@@ -1,0 +1,78 @@
+{
+  "short": "Short del caso 02 ES 'La Nieve Recuerda' (guion G-036 del 7-nov; plan plans/57-cold-case-02-historia-es.json)",
+  "duracion": 8,
+  "aspecto": "9:16",
+  "resolucion": "720p",
+  "notas": "Revisión 1: tambor quitado (música); manos finas quitadas. Descartado con razón: 'no caras' y '5 personas en 8 s' -> Cris pidió personajes (6-nov 22:27) y la guía oficial permite cortes cada 0,5 s; mismo encuadre a propósito (rueda de sospechosos). Revisión 2: antorcha apagada (una sola luz en la rueda); libro contable -> carpeta lisa sin letras. Revisión 3: negativos sin doble negación (gemini.py), viñeta negada, fondo/guantes/música según el caso. Cerrada: lo que queda son matices.",
+  "resultado": "USABLE (US$0.56): las 5 caras en sus 5 tiempos, misma luz y fondo, sin deformaciones visibles en la tira. Defecto: la antorcha del instructor salió encendida aunque se pidió apagada (no molesta). Para el CTA de comentar quién fue: poner nombre y edad de cada uno en Remotion sobre cada cara.",
+  "momento": "Cierre del Short (pregunta para comentar): 'Cinco personas tenían un motivo. ¿Quién crees que fue?' Una cara por nombre.",
+  "fuente": "Expediente ES Doc. 02 'Personas de interés' (edades en 1989): Paul Brandvold 28, sobrino, tienda de deportes; Harriet Lindahl 47, gerente del hotel; Dane Mercer 31, director de la escuela de esquí, encabezó el descenso de antorchas; Vivian Shaw 55, escritora y ex esquiadora rival; Gregor Wilde 44, arquitecto, prometido, se fue en el último teleférico.",
+  "objetivo": "Que el espectador elija un sospechoso y lo escriba en los comentarios: cada cara debe sugerir un motivo distinto sin acusar a nadie.",
+  "estilo": "Cinematic true-crime documentary re-creation, shot on 35mm film, portrait lineup in the style of a 1980s crime documentary",
+  "lugar": "Inside Greyhorn Lodge, a 1980s timber-and-stone mountain hotel in the American West, on the night of a Winter Carnival gala in January 1989",
+  "luz": "Night interior; each person lit by a single warm tungsten 3000K key light from the side, cold blue window light as rim from behind, dark background, high contrast, same lighting setup for every portrait",
+  "paleta": "deep navy blue, warm amber skin light, black shadows",
+  "lente": "85mm portrait lens, very shallow depth of field, fine film grain",
+  "continuidad": "Same lighting setup, same framing height and same dark lodge background in all five portraits; each person looks into the lens; snow visible softly through a window behind each one; every cut is a clean hard cut to a different person",
+  "tomas": [
+    {
+      "desde": 0,
+      "hasta": 1.6,
+      "plano": "medium close-up portrait, chest up",
+      "camara": "very slow push-in",
+      "sujeto": "a 28-year-old man with messy brown hair in a 1980s ski sweater",
+      "accion": "slowly raises his eyes to the lens with a guarded look",
+      "foco": "eyes sharp"
+    },
+    {
+      "desde": 1.6,
+      "hasta": 3.2,
+      "plano": "medium close-up portrait",
+      "camara": "very slow push-in",
+      "sujeto": "a 47-year-old woman hotel manager with a neat grey-streaked bun and a dark wool blazer",
+      "accion": "stands still holding a plain unlabelled dark binder against her chest and stares into the lens",
+      "foco": "eyes sharp"
+    },
+    {
+      "desde": 3.2,
+      "hasta": 4.8,
+      "plano": "medium close-up portrait",
+      "camara": "very slow push-in",
+      "sujeto": "a 31-year-old ski instructor in a red 1980s instructor jacket holding an unlit wooden torch over his shoulder",
+      "accion": "slowly turns his head toward the lens with a steady, unreadable look",
+      "foco": "eyes sharp"
+    },
+    {
+      "desde": 4.8,
+      "hasta": 6.4,
+      "plano": "medium close-up portrait",
+      "camara": "very slow push-in",
+      "sujeto": "a 55-year-old elegant woman writer with short silver hair and reading glasses",
+      "accion": "lifts her chin slightly and gives the lens a cold look",
+      "foco": "eyes sharp"
+    },
+    {
+      "desde": 6.4,
+      "hasta": 8,
+      "plano": "medium close-up portrait",
+      "camara": "very slow push-in",
+      "sujeto": "a 44-year-old man architect in a camel overcoat with snow on his shoulders",
+      "accion": "stands by a dark window and slowly turns his head to look into the lens",
+      "foco": "eyes sharp"
+    }
+  ],
+  "audio": "Ambient only: low wind outside and the creak of timber. No music, no drums, no dialogue, no voices.",
+  "evitar": [
+    "no distorted faces or hands, no extra fingers",
+    "no morphing or blending between people",
+    "no extra people in the background",
+    "no smiling",
+    "no children",
+    "no on-screen text, signs or readable words",
+    "no modern objects, phones, cars or LED lights",
+    "no rounded frame corners, no film gate border, no vignette frame",
+    "no blood or gore",
+    "no extra shots or transitions beyond the ones described"
+  ],
+  "detalle_fondo": "Keep the background dark, out of focus and subtle, with period-correct 1980s timber and stone textures."
+}

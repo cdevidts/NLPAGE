@@ -1,0 +1,58 @@
+{
+  "aspecto": "9:16",
+  "resolucion": "720p",
+  "duracion": 8,
+  "short": "plans/57-cold-case-02-ia-es.json",
+  "momento": "escena 4 (~s 13-20): 'Treinta y siete años después, la nieve devuelve un rollo de fotos, su libreta verde y su caja fuerte.'",
+  "fuente": "Expediente ES, carta de la Det. Navarro (Doc 01, p. 1-2): en 2026, 37 años después, el deshielo en el barranco Hollow devuelve un rollo de fotos sin revelar, la libreta verde de Elsa y su caja fuerte; p. 5: barranco bajo la pasarela que lleva a su chalet.",
+  "objetivo": "Que la montaña 'habla': el deshielo saca a la luz pruebas enterradas 37 años, y el espectador quiere saber qué contienen.",
+  "estilo": "Cinematic true-crime documentary re-creation, present day spring 2026, natural daylight, shot on a modern digital cinema camera",
+  "lugar": "The rocky bottom of Hollow ravine on a pine-covered mountainside in the American mountain West, below an old weathered wooden footbridge walkway, during the spring thaw: patches of old grey granular snow, wet dark rocks, small streams of meltwater",
+  "luz": "Overcast cold daylight, soft diffuse 6500K skylight from above as key, no direct sun, low contrast with deep wet blacks in the rocks",
+  "paleta": "slate grey, wet black rock, muted moss green",
+  "lente": "24mm lens for the wide shot, 100mm macro lens for the inserts, shallow depth of field in shots 2 and 3, clean digital image with subtle grain",
+  "continuidad": "Same ravine, same overcast thaw, same wet grey snow and meltwater in all three shots; water always trickles downhill from left to right",
+  "tomas": [
+    {
+      "desde": 0,
+      "hasta": 2.5,
+      "plano": "wide shot looking up the ravine",
+      "camara": "slow push-in along the meltwater stream",
+      "sujeto": "the bottom of the ravine with the weathered wooden footbridge high above against the grey sky",
+      "accion": "meltwater trickles between rocks and old snow while drops fall from the footbridge",
+      "foco": "deep focus, footbridge and ravine floor both sharp"
+    },
+    {
+      "desde": 2.5,
+      "hasta": 5,
+      "plano": "extreme close-up insert at ground level",
+      "camara": "very slow lateral slide from left to right",
+      "sujeto": "a small black 35mm film canister and a closed dark green cloth-covered notebook with a plain cover, half-buried in wet granular snow",
+      "accion": "meltwater runs around both objects and a drop of water lands on the notebook cover",
+      "foco": "sharp on the film canister, notebook slightly soft behind"
+    },
+    {
+      "desde": 5,
+      "hasta": 8,
+      "plano": "medium close-up shot",
+      "camara": "slow descending tilt from the snow down to the object",
+      "sujeto": "a small old dented grey steel floor safe with a round dial, lying tilted and half-buried in melting snow between rocks",
+      "accion": "water drips steadily from its edge while a chunk of snow slides off its top",
+      "foco": "sharp on the safe dial, background rocks soft"
+    }
+  ],
+  "audio": "Ambient only: dripping meltwater, a small stream trickling, distant wind in pines. No music, no dialogue, no voices.",
+  "evitar": [
+    "no people, no human figures, no hands",
+    "no on-screen text, signs, labels or readable words",
+    "no modern objects, smartphones, modern cars or LED lights",
+    "no rounded frame corners, no film gate border, no vignette frame",
+    "no music",
+    "no extra shots or transitions beyond the three described",
+    "no blood or gore",
+    "no logos or brand names on the safe or canister"
+  ],
+  "notas": "Revisión 1 (6-nov): la frase fija 'period-correct' chocaba con una toma en el presente -> campo 'detalle' nuevo en la ficha (gemini.py lo usa en vez de la frase de época).",
+  "resultado": "USABLE (2026-11-06, US$0.56): 3 tomas en 2,5 y 5 s. Barranco con pasarela, rollo y libreta verde, caja fuerte con nieve que cae. Defecto menor: la libreta ya asoma en la toma 1.",
+  "detalle": "Include realistic natural background detail appropriate for a spring thaw so it feels real."
+}
