@@ -300,16 +300,16 @@ def validar_ficha(f):
     if not 3 <= dur <= 10:
         mal.append('duracion fuera de 3-10 s')
     tomas = f['tomas']
-    if not 1 <= len(tomas) <= 4:
-        mal.append('entre 1 y 4 tomas (3 es lo normal en 8 s)')
+    if not 1 <= len(tomas) <= 6:
+        mal.append('entre 1 y 6 tomas (3 es lo normal en 8 s; 5-6 solo en secuencia rápida)')
     t0 = 0.0
     for i, t in enumerate(tomas, 1):
         mal += [f'toma {i}: falta "{c}"' for c in CAMPOS_TOMA if t.get(c) in (None, '')]
         if t.get('desde') is not None and abs(float(t['desde']) - t0) > 0.01:
             mal.append(f'toma {i}: empieza en {t["desde"]} s y debía empezar en {t0:g} s (sin huecos)')
         if t.get('hasta') is not None:
-            if float(t['hasta']) - float(t.get('desde') or 0) < 1.5:
-                mal.append(f'toma {i}: menos de 1,5 s no se lee')
+            if float(t['hasta']) - float(t.get('desde') or 0) < 1.2:
+                mal.append(f'toma {i}: menos de 1,2 s no se lee')
             t0 = float(t['hasta'])
         for c in ('sujeto', 'accion'):
             if len(str(t.get(c, '')).split()) < 4:
@@ -342,15 +342,22 @@ def prompt_de_ficha(f):
         luz = f' Lighting in this shot: {t["luz"].rstrip(". ")}.' if t.get('luz') else ''
         lineas.append(f'[{float(t["desde"]):g}-{float(t["hasta"]):g}s] Shot {i}: {t["plano"]}, {t["camara"]}. '
                       f'Subject: {t["sujeto"].rstrip(". ")}. Action: {t["accion"].rstrip(". ")}. Focus: {t["foco"].rstrip(". ")}.{luz}')
-    texto = f.get('texto_en_pantalla') or 'No on-screen text, no captions, no subtitles, no watermark, no logos.'
-    lineas.append(f'Text: {texto}')
+    if f.get('texto_en_pantalla'):
+        lineas.append(f'Writing that physically exists in the scene: {f["texto_en_pantalla"]} '
+                      'No overlay captions, titles, subtitles, watermark or logos.')
+    else:
+        lineas.append('No on-screen text, no captions, no subtitles, no watermark, no logos.')
     lineas.append(f'Sound design: {f["audio"]}')
     # "Mismo lugar y momento" contradecía las fichas con tomas en sitios u horas distintas (revisión 6-nov):
-    # la continuidad la dice la ficha; "detalle" reemplaza la frase de época (p. ej. tomas en el presente).
+    # la continuidad la dice la ficha; "detalle" (o "detalle_fondo") reemplaza la frase de época.
     lineas.append('Consider micro-detail, lighting continuity and timing; every shot must keep the continuity described '
                   'above and the same camera package. '
                   + (f.get('detalle') or f.get('detalle_fondo') or 'Include plenty of appropriate period-correct background detail so it feels real.'))
-    lineas.append('Do not: ' + '; '.join(f['evitar']) + '.')
+    # Sin doble negación ("Do not: no music" confunde al modelo, revisión 2026-11-06).
+    import re
+    evitar = [re.sub(r'^(no|not|without)\s+', '', e.strip(), flags=re.I) for e in f['evitar']]
+    evitar = [re.sub(r',\s*no\s+', ', ', e, flags=re.I) for e in evitar]
+    lineas.append('Avoid all of the following: ' + '; '.join(evitar) + '.')
     return '\n'.join(lineas)
 
 

@@ -1,0 +1,58 @@
+{
+  "short": "Short del caso 02 ES 'La Nieve Recuerda' (guion G-036 del 7-nov; plan plans/57-cold-case-02-historia-es.json)",
+  "duracion": 8,
+  "aspecto": "9:16",
+  "resolucion": "720p",
+  "notas": "Revisión 1: continuidad aclarada, foco fijo en toma 3, frase de época genérica en gemini.py. Cara de la detective se mantiene (Cris pidió personajes). Revisión 2: polo sin logos; fondo explícitamente de 2026. Revisión 3: negativos sin doble negación (gemini.py), viñeta negada, fondo/guantes/música según el caso. Cerrada: lo que queda son matices.",
+  "resultado": "USABLE (US$0.56): manos con guantes abren la caja, detective de unos cuarenta reparte fotos de 1989, inserto con sello naranja '89 1 28' legible. Una de las fotos trae un arbolito con luces (detalle navideño menor).",
+  "momento": "Apertura del caso hoy: 'Treinta y siete años después, la Unidad de Casos Archivados abrió de nuevo la caja.'",
+  "fuente": "Expediente ES p. 1 y carta Doc. 01: caso LCSO-89-0128 reabierto por la Unidad de Casos Archivados de la Oficina del Sheriff del condado de Larch el 9-oct-2026 (Det. Inés Navarro); en julio llegó un rollo de película nunca revelado del fotógrafo de la gala, cuya cámara imprimía día y hora en cada fotograma.",
+  "objetivo": "Contraste presente-pasado: el caso viejo vuelve a la mesa y el espectador siente que puede resolverlo.",
+  "estilo": "Modern cinematic crime drama, digital cinema look, present day 2026",
+  "lugar": "A small present-day cold case office of a rural county sheriff in the American West, metal shelves of archive boxes, a wooden desk under a green banker's lamp",
+  "luz": "Night; a single warm green-shaded banker's lamp as key from the left, cool monitor-free blue window light from the right as fill, dust visible in the lamp beam, high contrast",
+  "paleta": "dark teal, warm lamp amber, aged paper beige",
+  "lente": "50mm lens, shallow depth of field, clean digital image with very light grain",
+  "continuidad": "Same desk, same lamp and same lighting in all three shots; the same detective in shots 1 and 2; the same cardboard archive box in shots 1 and 2",
+  "tomas": [
+    {
+      "desde": 0,
+      "hasta": 2.5,
+      "plano": "top-down close-up",
+      "camara": "locked-off static camera",
+      "sujeto": "two hands in black nitrile gloves on a dusty cardboard archive box",
+      "accion": "lift the lid off the box and dust floats up into the lamp light",
+      "foco": "focus on the lid"
+    },
+    {
+      "desde": 2.5,
+      "hasta": 5.5,
+      "plano": "medium shot across the desk",
+      "camara": "slow push-in",
+      "sujeto": "a focused Latina woman detective in her forties with dark hair tied back and a plain navy polo shirt without logos or text",
+      "accion": "wearing the same black nitrile gloves, spreads old 1989 photographs across the desk and stops on one",
+      "foco": "focus on her face, photos softly blurred"
+    },
+    {
+      "desde": 5.5,
+      "hasta": 8,
+      "plano": "extreme close-up insert",
+      "camara": "slow slide over the photos",
+      "sujeto": "faded 1980s color prints of a snowy mountain gala with a small orange date stamp in the corner",
+      "accion": "the camera glides across the prints as the lamp light catches the orange date stamps",
+      "foco": "sharp focus on the orange date stamp throughout the shot"
+    }
+  ],
+  "texto_en_pantalla": "Only the small orange camera date stamp '89 1 28' in the corner of the photographs; no other text, captions, labels or logos.",
+  "audio": "Ambient only: lamp hum, paper rustle, cardboard lid scrape, distant wind. No dialogue, no music.",
+  "evitar": [
+    "no distorted faces or hands, no extra fingers",
+    "no computer screens or phones",
+    "no children",
+    "no blood or gore",
+    "no rounded frame corners, no film gate border, no vignette frame",
+    "no extra shots or transitions beyond the ones described",
+    "no readable text except the date stamp"
+  ],
+  "detalle_fondo": "Include realistic background details of a present-day 2026 office; only the photographs on the desk are from 1989."
+}
