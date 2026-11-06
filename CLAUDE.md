@@ -44,6 +44,12 @@ npm run loop  -- --plan plans/<slug>.json      # video 4:3 mudo para el listing 
 9. Publicar: YouTube vía el conector Metricool (canal conectado el 30-oct; receta en la skill).
    El video de Etsy se sube por el puente de etsy-bridge (op `multipart`, campo `video`).
 
+## Video con IA (pagado)
+
+Cada toma con IA (`scripts/gemini/gemini.py video`, Gemini Omni Flash, plata de Cris) pasa por la skill
+`.claude/skills/video-ia-prompteo`: ficha en `docs/video-ia/fichas/`, `--ensayo`, `--revisar` y checklist
+antes de `--pago`; 3 tomas por clip de 8 s. Nada al azar (Cris, 6-nov).
+
 ## Canal con la app de Gemini (cuenta Google AI Pro de Cris)
 
 Para Deep Research, Veo, Nano Banana o NotebookLM, que la API gratis no da: skill
