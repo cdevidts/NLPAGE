@@ -1,0 +1,24 @@
+{
+  "short": "plans/<slug>.json",
+  "momento": "s X-Y del Short: '<frase que suena>'",
+  "fuente": "<archivo y página del expediente o del listing>",
+  "objetivo": "<qué debe sentir el espectador>",
+  "duracion": 8,
+  "aspecto": "9:16",
+  "resolucion": "720p",
+  "estilo": "<género visual, época, soporte>",
+  "lugar": "<sitio exacto con detalles físicos>",
+  "luz": "<fuentes, dirección, temperatura, contraste>",
+  "paleta": "<2-3 colores>",
+  "lente": "<focal, profundidad de campo, textura>",
+  "continuidad": "<lo que se mantiene entre tomas>",
+  "tomas": [
+    {"desde": 0, "hasta": 2.5, "plano": "", "camara": "", "sujeto": "", "accion": "", "foco": ""},
+    {"desde": 2.5, "hasta": 5.5, "plano": "", "camara": "", "sujeto": "", "accion": "", "foco": ""},
+    {"desde": 5.5, "hasta": 8, "plano": "", "camara": "", "sujeto": "", "accion": "", "foco": ""}
+  ],
+  "audio": "<solo ambiente; no music, no dialogue>",
+  "evitar": ["no people", "no on-screen text", "no modern objects", "no rounded frame corners, no film gate border"],
+  "notas": "",
+  "resultado": ""
+}

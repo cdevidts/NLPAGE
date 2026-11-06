@@ -15,7 +15,10 @@ Pagado (imagen, video): solo con --pago y si el tope del mes en docs/gemini/conf
 Nivel pagado activo desde 2026-11-06 (Cris ligó la facturación; saldo prepagado + créditos de AI Pro).
 El tope del mes está en docs/gemini/config.json; subirlo requiere el OK de Cris.
     python3 -I scripts/gemini/gemini.py imagen --prompt "..." --salida x.jpg [--aspecto 4:3] --pago
-    python3 -I scripts/gemini/gemini.py video --prompt "..." --salida x.mp4 [--aspecto 9:16] [--imagen ref.jpg] --pago
+    python3 -I scripts/gemini/gemini.py video --ficha docs/video-ia/fichas/x.json --ensayo     # arma y revisa el prompt, no gasta
+    python3 -I scripts/gemini/gemini.py video --ficha docs/video-ia/fichas/x.json --revisar    # segunda opinión de un modelo de texto
+    python3 -I scripts/gemini/gemini.py video --ficha docs/video-ia/fichas/x.json --salida x.mp4 --pago
+        Video SOLO con ficha (skill .claude/skills/video-ia-prompteo): nada de prompts sueltos.
 
 Cada llamada pagada queda en docs/gemini/gasto.csv con su costo estimado.
 """
@@ -35,7 +38,6 @@ PRECIO = {
     'gemini-omni-1.1-flash': 0.10,         # por segundo de video 720p (desde 3-dic-2026 se enruta a 1.2)
     'gemini-omni-1.2-flash': 0.07,         # por segundo de video 720p (360p ~0.023)
 }
-SEG_VIDEO = 10  # la doc no fija la duración; se cobra el peor caso al tope
 
 
 def config():
@@ -276,22 +278,129 @@ def cmd_imagen(args):
     print(args.salida)
 
 
+CAMPOS_FICHA = ('short', 'momento', 'fuente', 'objetivo', 'duracion', 'estilo', 'lugar', 'luz', 'paleta', 'lente',
+                'continuidad', 'tomas', 'audio', 'evitar')
+CAMPOS_TOMA = ('desde', 'hasta', 'plano', 'camara', 'sujeto', 'accion', 'foco')
+
+
+def validar_ficha(f):
+    """Una ficha incompleta no se paga (skill video-ia-prompteo). Devuelve la lista de problemas."""
+    mal = [f'falta "{c}"' for c in CAMPOS_FICHA if not f.get(c)]
+    if mal:
+        return mal
+    dur = float(f['duracion'])
+    if not 3 <= dur <= 10:
+        mal.append('duracion fuera de 3-10 s')
+    tomas = f['tomas']
+    if not 1 <= len(tomas) <= 4:
+        mal.append('entre 1 y 4 tomas (3 es lo normal en 8 s)')
+    t0 = 0.0
+    for i, t in enumerate(tomas, 1):
+        mal += [f'toma {i}: falta "{c}"' for c in CAMPOS_TOMA if t.get(c) in (None, '')]
+        if t.get('desde') is not None and abs(float(t['desde']) - t0) > 0.01:
+            mal.append(f'toma {i}: empieza en {t["desde"]} s y debía empezar en {t0:g} s (sin huecos)')
+        if t.get('hasta') is not None:
+            if float(t['hasta']) - float(t.get('desde') or 0) < 1.5:
+                mal.append(f'toma {i}: menos de 1,5 s no se lee')
+            t0 = float(t['hasta'])
+        for c in ('sujeto', 'accion'):
+            if len(str(t.get(c, '')).split()) < 4:
+                mal.append(f'toma {i}: "{c}" demasiado vago (mínimo 4 palabras concretas)')
+    if tomas and abs(t0 - dur) > 0.01:
+        mal.append(f'las tomas terminan en {t0:g} s y la duración es {dur:g} s')
+    for c in ('luz', 'lugar', 'continuidad'):
+        if len(str(f.get(c, '')).split()) < 6:
+            mal.append(f'"{c}" demasiado vago (mínimo 6 palabras)')
+    if not isinstance(f['evitar'], list) or len(f['evitar']) < 3:
+        mal.append('"evitar" debe ser una lista de al menos 3 negativos')
+    return mal
+
+
+def prompt_de_ficha(f):
+    """Prompt en inglés según la guía oficial de Omni Flash (aistudio.google.com/docs/omni#prompt-guide)."""
+    dur, tomas = float(f['duracion']), f['tomas']
+    cortes = ', '.join(f'{t["hasta"]:g}s' for t in tomas[:-1])
+    if len(tomas) == 1:
+        estructura = f'A single continuous {dur:g}-second shot. No scene cuts.'
+    else:
+        articulo = 'An' if str(int(dur)).startswith('8') or int(dur) in (11, 18) else 'A'
+        estructura = (f'{articulo} {dur:g}-second sequence of exactly {len(tomas)} shots with hard cuts at {cortes}. '
+                      'No other cuts, no transitions, no extra shots.')
+    lineas = [f'{f["estilo"]}. {estructura}',
+              f'Location: {f["lugar"]}.',
+              f'Lighting: {f["luz"]}. Color palette: {f["paleta"]}. Lens and texture: {f["lente"]}.',
+              f'Continuity across every shot: {f["continuidad"]}.']
+    for i, t in enumerate(tomas, 1):
+        luz = f' Lighting in this shot: {t["luz"].rstrip(". ")}.' if t.get('luz') else ''
+        lineas.append(f'[{float(t["desde"]):g}-{float(t["hasta"]):g}s] Shot {i}: {t["plano"]}, {t["camara"]}. '
+                      f'Subject: {t["sujeto"].rstrip(". ")}. Action: {t["accion"].rstrip(". ")}. Focus: {t["foco"].rstrip(". ")}.{luz}')
+    texto = f.get('texto_en_pantalla') or 'No on-screen text, no captions, no subtitles, no watermark, no logos.'
+    lineas.append(f'Text: {texto}')
+    lineas.append(f'Sound design: {f["audio"]}')
+    lineas.append('Consider micro-detail, lighting continuity and timing; every shot must look like the same place, '
+                  'the same moment and the same camera package. Include plenty of appropriate period-correct '
+                  'background detail so it feels real.')
+    lineas.append('Do not: ' + '; '.join(f['evitar']) + '.')
+    return '\n'.join(lineas)
+
+
+def cargar_ficha(ruta):
+    f = json.load(open(ruta, encoding='utf8'))
+    mal = validar_ficha(f)
+    if mal:
+        sys.exit('Ficha incompleta, no se genera nada:\n  - ' + '\n  - '.join(mal))
+    return f
+
+
+def tira(salida):
+    """Hoja de fotogramas (2 por segundo) para revisar la toma completa antes de usarla."""
+    import subprocess
+    hoja = os.path.splitext(salida)[0] + '.tira.jpg'
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', salida, '-vf', 'fps=2,scale=180:-1,tile=10x2',
+                    '-frames:v', '1', hoja], check=False)
+    return hoja
+
+
 def cmd_video(args):
-    modelo = args.modelo or config()['video']
-    usd = PRECIO.get(modelo, 0.5) * SEG_VIDEO
+    if not args.ficha:
+        sys.exit('El video con IA solo se genera con --ficha (skill .claude/skills/video-ia-prompteo).')
+    f = cargar_ficha(args.ficha)
+    modelo = args.modelo or f.get('modelo') or config()['video']
+    dur = float(f['duracion'])
+    usd = PRECIO.get(modelo, 0.5) * dur
+    prompt = prompt_de_ficha(f)
+    if args.ensayo or args.revisar:
+        print(prompt)
+        print(f'\n~US${usd:.2f} ({modelo}, {dur:g} s). Gastado este mes: US${gastado_mes():.2f} de US${float(config()["tope_mes_usd"]):.2f}.')
+        if args.revisar:
+            guia = open(os.path.join(RAIZ, '.claude', 'skills', 'video-ia-prompteo', 'SKILL.md'), encoding='utf8').read()
+            print('\n--- Revisión ---\n' + texto(
+                'Eres director de fotografía y revisas un prompt para Gemini Omni Flash antes de pagarlo. '
+                'Compáralo con la guía y con la ficha. Enumera SOLO problemas concretos que arruinarían la toma '
+                '(ambigüedad, contradicciones, cosas imposibles en el tiempo dado, datos que contradicen la ficha, '
+                'riesgos de que el modelo meta texto, gente o cortes no pedidos) y la corrección exacta. '
+                'Si no hay problemas, responde "SIN PROBLEMAS".\n\nGUÍA:\n' + guia +
+                '\n\nFICHA:\n' + json.dumps(f, ensure_ascii=False, indent=1) + '\n\nPROMPT:\n' + prompt))
+        return
+    if not args.salida:
+        sys.exit('Falta --salida.')
     autorizar(args, modelo, usd)
-    entrada = args.prompt
-    if args.imagen:
-        mime = 'image/png' if args.imagen.lower().endswith('.png') else 'image/jpeg'
-        entrada = [{'type': 'image', 'data': base64.b64encode(open(args.imagen, 'rb').read()).decode(), 'mime_type': mime},
-                   {'type': 'text', 'text': args.prompt}]
+    entrada = prompt
+    imagen = args.imagen or f.get('imagen')
+    if imagen:
+        mime = 'image/png' if imagen.lower().endswith('.png') else 'image/jpeg'
+        entrada = [{'type': 'image', 'data': base64.b64encode(open(imagen, 'rb').read()).decode(), 'mime_type': mime},
+                   {'type': 'text', 'text': prompt}]
     # delivery 'uri' exige store=true (error 400 del 2026-11-06).
-    r = interaccion(modelo, entrada, {'type': 'video', 'aspect_ratio': args.aspecto, 'resolution': args.resolucion,
+    r = interaccion(modelo, entrada, {'type': 'video', 'aspect_ratio': f.get('aspecto', '9:16'),
+                                      'resolution': f.get('resolucion', '720p'), 'duration': f'{int(round(dur))}s',
                                       'delivery': 'uri'}, {'store': True})
     os.makedirs(os.path.dirname(os.path.abspath(args.salida)), exist_ok=True)
     open(args.salida, 'wb').write(binario(r, 'video'))
-    anotar('video', modelo, usd, args.salida, args.prompt)
+    open(os.path.splitext(args.salida)[0] + '.prompt.txt', 'w', encoding='utf8').write(prompt + '\n')
+    anotar('video', modelo, usd, args.salida, f'ficha {args.ficha}')
     print(args.salida)
+    print(tira(args.salida))
 
 
 def main():
@@ -307,9 +416,9 @@ def main():
     i = sub.add_parser('imagen'); i.add_argument('--prompt', required=True); i.add_argument('--salida', required=True)
     i.add_argument('--aspecto', default='4:3'); i.add_argument('--tamano', default='1K'); i.add_argument('--modelo')
     i.add_argument('--pago', action='store_true')
-    vi = sub.add_parser('video'); vi.add_argument('--prompt', required=True); vi.add_argument('--salida', required=True)
-    vi.add_argument('--aspecto', default='9:16'); vi.add_argument('--resolucion', default='720p'); vi.add_argument('--imagen')
+    vi = sub.add_parser('video'); vi.add_argument('--ficha'); vi.add_argument('--salida'); vi.add_argument('--imagen')
     vi.add_argument('--modelo'); vi.add_argument('--pago', action='store_true')
+    vi.add_argument('--ensayo', action='store_true'); vi.add_argument('--revisar', action='store_true')
     a = p.parse_args()
     try:
         globals()[f'cmd_{a.cmd}'](a)

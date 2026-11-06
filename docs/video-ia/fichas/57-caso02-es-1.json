@@ -1,0 +1,57 @@
+{
+  "short": "Short del caso 02 ES (guion G-036 llega el 7-nov; plan plans/57-cold-case-02-historia-es.json)",
+  "momento": "s 0-8 del Short, el gancho: 'Veintiocho de enero de mil novecientos ochenta y nueve. Tormenta de nieve en el monte Greyhorn. Esa noche, la dueña del hotel no llegó a la mañana.'",
+  "fuente": "Caso-Archivado-La-Nieve-Recuerda ES p. 1-2: Greyhorn Lodge, monte Greyhorn, condado de Larch (oficina del sheriff), sábado 28-ene-1989, hotel de montaña, tormenta de nieve, noche de la gala del Carnaval de Invierno, dictamen 'muerte accidental'.",
+  "objetivo": "Aislamiento y amenaza: un hotel de lujo atrapado en una tormenta la noche de una fiesta, y algo que quedó a medias.",
+  "duracion": 8,
+  "aspecto": "9:16",
+  "resolucion": "720p",
+  "estilo": "Cinematic true-crime documentary re-creation set in January 1989 in the American mountain West, shot on 35mm film",
+  "lugar": "Greyhorn Lodge, a large three-story 1980s timber-and-stone mountain hotel with a steep snow-covered roof and rows of tall windows, alone on a pine-covered mountainside in Larch County",
+  "luz": "Night during a heavy blizzard; warm tungsten 2700K practical light from the hotel windows and a fireplace is the key light; cold blue 6000K ambient moonlight diffused by falling snow is the fill; high contrast, deep shadows, no light sources that do not exist in the scene",
+  "paleta": "deep navy blue, amber window glow, desaturated white snow",
+  "lente": "35mm lens for wide shots and 85mm lens for close shots, shallow depth of field in shots 2 and 3, fine 35mm film grain, slight halation around light sources",
+  "continuidad": "The same blizzard, the same night and the same hotel in all three shots; snow always falls diagonally from left to right; warm interior light versus cold exterior light in every shot",
+  "tomas": [
+    {
+      "desde": 0,
+      "hasta": 2.5,
+      "plano": "extreme wide establishing shot from a high angle",
+      "camara": "slow descending crane move toward the hotel",
+      "sujeto": "the whole Greyhorn Lodge with every window glowing amber",
+      "accion": "sits alone on the mountainside while thick snow sweeps across the frame and the pine trees bend in the wind",
+      "foco": "deep focus, the hotel sharp"
+    },
+    {
+      "desde": 2.5,
+      "hasta": 5.5,
+      "plano": "medium shot inside the hotel's empty grand hall",
+      "camara": "slow lateral dolly from left to right at table height",
+      "sujeto": "a long banquet table after a Winter Carnival gala, with half-empty champagne glasses, burned-down candles, paper party streamers and scattered confetti",
+      "accion": "candle flames flicker in a draft while snow hits the tall windows behind the table",
+      "foco": "shallow focus on the champagne glasses, the windows soft behind",
+      "luz": "amber firelight from a large stone fireplace off screen right, candles as practicals"
+    },
+    {
+      "desde": 5.5,
+      "hasta": 8,
+      "plano": "close-up insert from outside the hotel",
+      "camara": "locked-off static camera",
+      "sujeto": "a single frosted upstairs window of the hotel at night",
+      "accion": "thick falling snow drifts past the window ledge in real time while the warm light behind the glass flickers once",
+      "foco": "sharp focus on the frosted window, snowflakes in the foreground softly blurred"
+    }
+  ],
+  "audio": "Ambient only: howling blizzard wind, creaking timber, faint crackle of a fireplace in shot 2. No music, no dialogue, no voices, no extra sound effects.",
+  "evitar": [
+    "no people or human figures anywhere",
+    "no faces",
+    "no on-screen text, signs or readable words",
+    "no modern objects, cars, phones or LED lights",
+    "no Christmas decorations",
+    "no blood or gore",
+    "no extra shots or transitions beyond the three described"
+  ],
+  "notas": "Revisión 1 (2026-11-06): 'snow piles up' en 2,5 s era imposible sin time-lapse -> cambiado a nieve que cae en tiempo real; sujeto y acción se pegaban sin puntuación -> arreglado en gemini.py (Subject:/Action:). Revisión 2: rack focus + doble parpadeo en 2,5 s era demasiado -> foco fijo y un parpadeo; 'paper snowflake decorations' arriesga adornos navideños -> serpentinas y confeti.",
+  "resultado": "USABLE (2026-11-06, US$0.56, 48 s): 3 tomas con cortes en 2,5 s y 5,5 s como se pidió. Toma 1 hotel en ventisca, toma 2 mesa de gala con copas y velas, toma 3 ventana escarchada. Defecto: la toma 1 trae esquinas redondeadas (borde de película) -> en Remotion escalar 104%. La escarcha de la toma 3 parece copos recortados; aceptable."
+}
