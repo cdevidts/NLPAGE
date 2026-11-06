@@ -240,6 +240,11 @@
   web y entregas en Drive; API para ver videos de YouTube al instante, texto y voz.
 - Espera a una persona: nada.
 
+## 2026-11-05 · Metricool sin cupo
+- El hilo de canales avisó, y lo comprobé en getScheduledPosts, que el plan gratis de Metricool trae 20 publicaciones por mes. Desde el 4-nov 20:45 todo falla con "account limit". El caso 02 ES alcanzó a salir (7CZBpp1r4kU); el Beethoven ES del 5-nov va a fallar.
+- Ruta nueva: Zapier YouTube. Hoy no tiene conexión y Cris tiene que conectarla una vez; ese pedido lo hace canales. Hasta entonces el turno diario solo mide y deja a lo más un Short en `docs/viral/COLA.md`. El prompt del turno ya está actualizado.
+- G-029 (true crime en español) pasó a patrones.md y a V14. Pedí a Gemini G-034, la auditoría del Caso archivado ES contra los EN.
+
 ## 2026-11-05 · Canal Gemini: G-028..G-030; el modelo ya se declara Argon; el recorte de prensa corre acá
 - G-028 (escape room de Navidad): el Doc llegó vacío pero la Hoja trae 31 fichas, frecuencias y 3 títulos
   de 133 car. → OPS (es de temporada; nadie del mercado dice "bilingüe"). G-029: 14 Shorts de true crime
@@ -253,3 +258,24 @@
   tres Shorts (_BUAF1B1JXI 676 vistas vs uFgGEGATfA0 1 vs EO-UvYWLfXA 38), solo evidencia del video, más
   un cierre de 45 s sin CTA hablado con "ficción" en pantalla. PR #28 fusionado (squash) con todo esto.
 - Espera a una persona: nada.
+
+## 2026-11-05 (turno diario) · Solo medir
+- YouTube todavía no está conectado en Zapier y Metricool no tiene cupo, así que no hubo Short nuevo. Beethoven ES sigue primero en `docs/viral/COLA.md`.
+- V13: Beethoven EN 26 a 48 h contra 41 del control. Por regla es PIERDE, pero hay confusor (otra pieza, sin Navidad).
+- V15: la primera señal va en contra. Caso 02 ES 7 a ~25 h, contra 38 del EN. Se lee mañana a 48 h.
+
+## 2026-11-05 (tarde) · Primer Short por Zapier
+- Cris conectó YouTube en Zapier. Beethoven ES salió a las 17:21 Chile (6TOTGMLBNLc) con `upload_video`, usando la URL raw fija del commit como archivo. Fue más tarde que las 16:00 de los anteriores: es un confusor menor que queda anotado en shorts.csv.
+- Zapier no tiene el campo de "contenido alterado o sintético" que mandaba Metricool. La voz es TTS sobre un grabado, no una persona realista, así que no aplica.
+- Desde ahora el turno diario sube el Short al terminar (~14:30 Chile) en vez de programarlo a las 16:00.
+
+## 2026-11-05 (noche) · V15 confirmada
+- Captura de Cris a las 20:25 Chile: Beethoven ES 148 vistas en ~3 h, contra 26 del EN a 48 h. Con eso V15 queda en 2 de 3 (caso 01 gana, caso 02 pierde, Beethoven gana) y se confirma. Los Shorts salen en español por defecto. El confusor es que el ES se subió por Zapier, con idioma es y aviso a suscriptores.
+
+## 2026-11-05 21:15 Chile: ¿sesgo latinoamericano? y sticker de producto (preguntas de Cris)
+- YouTube Analytics se puede leer por Zapier (GET crudo a youtubeanalytics v2 con la conexión YouTube de Cris). Receta en la skill shorts-viral-loop. Reemplaza a Metricool para YouTube, que devuelve vacío.
+- País: solo el caso 01 ES tiene filas (Bolivia 119, Argentina 69 de 686). Los EN no tienen ninguna. Canal "SheetsmithChile", de 2020, sin país, sin descripción, 0 suscriptores. Idioma declarado correcto en los 7 videos. El listing del caso 01 siguió en 2 vistas. V15 queda confirmada para vistas y no para ventas; abrí V18 (el público ES no llega a Etsy).
+- Retención (Analytics, 28-oct a 5-nov): Beethoven EN 41 % (la mejor), caso 01 ES 25 %, villancicos EN 26 %, caso 02 EN 19 %. Beethoven ES va en 215 vistas y 12 likes a ~3,5 h (sin Analytics aún).
+- Sticker de producto (YouTube Shopping): pide estar en el Programa de Socios (el canal tiene 0 suscriptores) y una tienda de Shopify, Fourthwall, Spreadshop u otra compatible. Etsy y Gumroad no lo son, y el programa de afiliados no incluye Chile. La API de YouTube no etiqueta productos y Make tampoco. Queda para cuando el canal entre al programa.
+- Descarté poner el país del canal en EE. UU.: tiene que ser el real (impuestos y pagos).
+- Pendiente: el canal no tiene descripción; escribirla con la skill SEO en un turno próximo.
