@@ -48,12 +48,16 @@ cada hora y es "prácticamente ilimitada" (no usa la API).
 | 2026-11-04 | G-029 | Buscar Shorts por site:youtube.com/shorts + analizar 14 por fotogramas y transcripción | SÍ: 14 Shorts de 14 canales con vistas/fecha de la API, lectura de primeros 3 s, cortes, subtítulos, CTA; el Doc se cortó al final (límite de largo) | Para muestras: pedir la Hoja primero y el Doc corto; dejar los ganchos al principio |
 | 2026-11-04 | G-030 | Entregar CÓDIGO (.html y .py) como archivos a Entregas + demo | SÍ: subió .py y .html como archivos (mime text/x-python, text/x-handlebars-template); el código corrió acá sin cambios (verificado 5-nov). El Doc pegó una versión con un bug que el archivo no tiene | Pedir siempre el archivo, no el código pegado; leerlo con download_file_content (read_file_content pierde la indentación) |
 | 2026-11-04 | — | Modelo declarado | Desde las 17:34 UTC del 4-nov las respuestas declaran "Argon / Gemini 3.1 Pro" (antes "Gemini 2.5 Pro"): Cris habría cambiado el modelo de la Tarea. Autodeclarado, sin verificar | Seguir exigiendo `modelo:`; comparar calidad G-029/G-030 vs anteriores en la automejora del lunes |
+| 2026-11-05 | G-031..G-034 | Cuatro tareas en un lote (1 búsqueda web + 2 YouTube + 1 código) | SÍ: las 4 respondidas en 50 min (16:56-17:47 UTC), Docs con texto y Hojas completas; modelo "Argon / Gemini 3.1 Pro" | Un lote de 4 con 1 sola búsqueda web cabe en una ejecución |
+| 2026-11-05 | G-034 | Oír errores de pronunciación de un TTS en español por video_id | SÍ (sin verificar): listó 5 palabras mal pronunciadas con su segundo ("parecina" s 12, "policiga" s 16...) | Auditoría de TTS por Gemini antes de publicar cada Short; comprobar con whisper |
+| 2026-11-05 | G-033 | HTML + PDF vectorial + PNG 300 DPI + script Pillow como archivos | SÍ: html (8 KB), pdf (69 KB), 2 png 3296×2550, sello.py; el html corrió acá sin cambios (verificado 6-nov). Subió además copias como Google Docs (ruido) | Ignorar las copias en Doc; usar los archivos binarios/código |
+| 2026-11-06 | API | Comparación API gratis vs app: ver YouTube por fotogramas | La API (3.6 Flash, `gemini.py youtube`) da el mismo tipo de tabla por segundo en ~30 s, US$0; la app (Argon) añade más detalle (errores de TTS, diferencias finas) pero tarda hasta 1 h | YouTube urgente → API; análisis fino o con Argon → app. Argon e imágenes solo por la app (en la API son pagados) |
 
 ## Pendiente de probar
 Slides; lectura de PDFs de Drive (nuestros expedientes, nunca las soluciones); traducción de listings
 DE/FR/IT/NL/PT con revisión de SEO; Gmail SOLO para correos de Pinterest/Metricool con métricas (los de
 Etsy traen datos de compradores: no); google_finance (sin uso claro); Calendar y Keep no hacen falta.
-Probado el 3-nov: audio en la VM (G-024 sí), image_references (G-025: no desde Drive), LaTeX (G-027 sí).
+Probado el 3-nov: audio en la VM (G-024 sí), image_references (G-025: no desde Drive), LaTeX (G-027 sí). En cola el 6-nov: traducción DE/FR/IT/PT (G-038).
 
 ## Reglas que salieron de las pruebas
 - Cada tarea lleva IDs directos: video_id/URL de Shorts, file_id de Drive, URL del listing.
