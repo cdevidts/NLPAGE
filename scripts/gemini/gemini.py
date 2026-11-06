@@ -8,6 +8,8 @@ Gratis (free tier de la API):
     python3 -I scripts/gemini/gemini.py texto "pregunta"            # o "-" para leer de stdin
     python3 -I scripts/gemini/gemini.py voz --texto "..." --salida x.wav [--voz Charon] [--estilo "..."]
     python3 -I scripts/gemini/gemini.py dialogo guion.json --salida x.wav   # 2 voces, tipo podcast
+    python3 -I scripts/gemini/gemini.py youtube _BUAF1B1JXI --prompt "..." [--salida x.md]   # ve el video por fotogramas
+        (gratis, ~30 s por Short; id o URL de YouTube; --archivo prompt.md en vez de --prompt)
 
 Pagado (imagen, video): solo con --pago y si el tope del mes en docs/gemini/config.json alcanza.
 El tope parte en 0: se sube cuando Cris activa los créditos de Google AI Pro y da el OK.
@@ -114,6 +116,26 @@ def texto(prompt, modelo=None):
     sys.exit('Todos los modelos de texto están saturados; reintentar más tarde.')
 
 
+def youtube(video, prompt, modelo=None, temperatura=0.2):
+    """Mira un video público de YouTube (fotogramas 1/s + audio) y responde al prompt. Gratis en el free tier.
+    Probado 2026-11-06: 3.6 Flash analiza un Short de 46 s en ~25-30 s (4,3 k tokens de video)."""
+    url = video if video.startswith('http') else f'https://www.youtube.com/watch?v={video}'
+    cuerpo = {'contents': [{'parts': [{'file_data': {'file_uri': url}}, {'text': prompt}]}],
+              'generationConfig': {'temperature': temperatura}}
+    c = config()
+    modelos = [modelo] if modelo else [c['texto'], *c.get('texto_respaldo', [])]
+    for m in modelos:
+        try:
+            r = llamar('POST', f'models/{m}:generateContent', cuerpo, timeout=400)
+            out = ''.join(b.get('text', '') for b in bloques(r) if b.get('type') == 'text').strip()
+            uso = r.get('usageMetadata', {})
+            print(f'{m}: {uso.get("totalTokenCount", "?")} tokens', file=sys.stderr)
+            return out
+        except Ocupado as e:
+            print(f'{m}: {e}', file=sys.stderr)
+    sys.exit('Todos los modelos están saturados; reintentar más tarde.')
+
+
 def binario(resp, tipo):
     for b in bloques(resp):
         if b.get('type') == tipo and b.get('data'):
@@ -197,6 +219,19 @@ def cmd_texto(args):
     print(texto(prompt, args.modelo))
 
 
+def cmd_youtube(args):
+    prompt = open(args.archivo, encoding='utf8').read() if args.archivo else args.prompt
+    if not prompt:
+        sys.exit('Falta --prompt o --archivo.')
+    out = youtube(args.video, prompt, args.modelo)
+    if args.salida:
+        os.makedirs(os.path.dirname(os.path.abspath(args.salida)) or '.', exist_ok=True)
+        open(args.salida, 'w', encoding='utf8').write(out + '\n')
+        print(args.salida)
+    else:
+        print(out)
+
+
 def cmd_voz(args):
     meta = {'type': 'speech_metadata'}
     if args.estilo:
@@ -261,6 +296,8 @@ def main():
     sub = p.add_subparsers(dest='cmd', required=True)
     sub.add_parser('estado')
     t = sub.add_parser('texto'); t.add_argument('prompt'); t.add_argument('--modelo'); t.add_argument('--sistema')
+    y = sub.add_parser('youtube'); y.add_argument('video'); y.add_argument('--prompt'); y.add_argument('--archivo')
+    y.add_argument('--salida'); y.add_argument('--modelo')
     v = sub.add_parser('voz'); v.add_argument('--texto', required=True); v.add_argument('--salida', required=True)
     v.add_argument('--voz', default='Charon'); v.add_argument('--estilo'); v.add_argument('--modelo')
     d = sub.add_parser('dialogo'); d.add_argument('guion'); d.add_argument('--salida', required=True); d.add_argument('--modelo')

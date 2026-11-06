@@ -9,7 +9,9 @@ Google AI Pro desde Claude.
 |---|---|---|---|
 | Gemini texto (3.6 Flash por defecto; respaldo 3.8 Flash y 3.5 Flash-Lite) | Sí | API key de AI Studio, `gemini.py texto` | Gratis (free tier, con límite diario por proyecto) |
 | Gemini TTS (3.8 Flash TTS, 130+ idiomas, 30 voces, estilo por turno, 2 voces) | Sí | `gemini.py voz` / `dialogo`, o `"voz": "gemini:Charon"` en un plan | Gratis (free tier) |
-| Imágenes (Nano Banana 2 Lite, 2.1, Pro) | Sí | `gemini.py imagen --pago` | Pagado: ~US$0,034 por imagen 1K |
+| Ver videos de YouTube por fotogramas (1/s) + audio, por id | Sí | `gemini.py youtube <id> --prompt ...` | Gratis (free tier); un Short de 46 s = ~4,3 k tokens, ~30 s de respuesta (probado 2026-11-06) |
+| Gemini 4 Argon / 3.1 Pro Preview por API | No en el free tier (leído en ai.google.dev/gemini-api/docs/pricing el 2026-11-06) | Solo con facturación: Argon US$2 entrada / US$10 salida por millón hasta el 30-nov, el doble desde diciembre | Pagado; en la app de Gemini (canal por Drive) Argon sí entra en el plan AI Pro |
+| Imágenes (Nano Banana 2 Lite, 2.1, Pro) | Sí | `gemini.py imagen --pago` | Pagado: ~US$0,034 por imagen 1K; ningún modelo de imagen tiene free tier (2026-11-06) |
 | Video (Gemini Omni Flash; Veo 3.1 preview se apagó el 22-oct-2026) | Sí | `gemini.py video --pago` | Pagado: ~US$0,10 por segundo 720p |
 | Música (Lyria 3.5) | Sí, no implementado | — | Pagado: US$0,04-0,08 por canción |
 | Créditos de Google AI Pro | Sí, si Cris los activa | US$10/mes de Google Cloud, se aplican primero a la API | Gratis mientras no se pasen; piden facturación activa con tarjeta |
