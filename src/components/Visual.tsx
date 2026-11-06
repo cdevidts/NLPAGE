@@ -1,5 +1,5 @@
 import React from 'react';
-import {Easing, Img, interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Easing, Img, interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
 import {clamp, pop, recurso, suave} from '../lib/anim';
 import {TEXTO, type Tema} from '../lib/temas';
 import type {Foco, Visual} from '../lib/types';
@@ -66,6 +66,30 @@ export const VisualEscena: React.FC<{visual: Visual; tema: Tema; total: number}>
     const foco = visual.tipo === 'imagen' ? visual.foco : undefined;
     // "llenar": la foto ocupa todo el escenario (recorte cover centrado en el foco) en vez de una franja.
     const llenar = visual.tipo === 'imagen' && visual.llenar;
+    if (llenar === 'pantalla') {
+      // La foto ocupa todo el 9:16, con degradé oscuro arriba y abajo para que se lean titular y subtítulo.
+      const pos = `${(foco?.x ?? 0.5) * 100}% ${(foco?.y ?? 0.5) * 100}%`;
+      return (
+        <AbsoluteFill style={{overflow: 'hidden', backgroundColor: '#000'}}>
+          <AbsoluteFill
+            style={{
+              transform: `scale(${interpolate(m, [0, 1], [1.12, 1])})`,
+              opacity: interpolate(m, [0, 0.2], [0.55, 1], clamp),
+            }}
+          >
+            <AbsoluteFill style={{transform: camara(frame, total, foco), transformOrigin: 'center'}}>
+              <Img src={recurso(visual.src)} style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: pos}} />
+            </AbsoluteFill>
+          </AbsoluteFill>
+          <AbsoluteFill
+            style={{
+              background:
+                'linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 62%, rgba(0,0,0,0.8) 100%)',
+            }}
+          />
+        </AbsoluteFill>
+      );
+    }
     return (
       <div style={{...centro, perspective: 1600}}>
         <div

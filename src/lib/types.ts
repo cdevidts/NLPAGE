@@ -15,7 +15,7 @@ export type Visual =
   | {tipo: 'portada'; src: string}
   | {tipo: 'pagina'; src: string; foco?: Foco; etiqueta?: string}
   | {tipo: 'abanico'; srcs: string[]}
-  | {tipo: 'imagen'; src: string; foco?: Foco; llenar?: boolean}
+  | {tipo: 'imagen'; src: string; foco?: Foco; llenar?: boolean | 'pantalla'}
   | {tipo: 'numero'; valor: string; sub?: string}
   | {tipo: 'cierre'; src: string; titulo: string; sub?: string; linea: string};
 
