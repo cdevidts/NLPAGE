@@ -103,11 +103,14 @@ Cortes secos entre escenas con whoosh grave. Nada de lenguaje de presentación: 
 barras de progreso, sin chips numerados, sin disolvencias largas.
 
 ### Sonido
-- Voz: Kokoro `af_heart` (EN, la de mejor nota) y Piper `es_MX-claude-high` (ES).
-  Opción Gemini TTS (gratis, pide `GEMINI_API_KEY`): `"voz": "gemini:Charon"` y
-  `"vozEstilo": "narrador de true crime, grave"` en el plan. Probarla como variable de un
-  experimento del loop viral, no de golpe en todos. Detalle en `docs/gemini/README.md`.
+- Voz: Kokoro `af_heart` (EN, la de mejor nota). **ES: Gemini TTS `"voz": "gemini:Sulafat"`**
+  con `"vozEstilo": "Narradora de true crime en español latinoamericano neutro, voz cálida y
+  cercana, ritmo ágil, tensión contenida, sin exagerar"` y velocidad 1,15 (Cris, 6-nov: Piper
+  "es muy mala"; whisper oía a Piper "tormenta de Miebe" y a Sulafat al 100 %). Piper
+  `es_MX-claude-high` queda solo de respaldo si la API falla. Muestras en out/voces/.
   Velocidad 1,05-1,08. **Números y años en letras** en `dice`. Si la voz lee mal un nombre propio (Piper ES: "Beethoven"), usa `"pronuncia": {"Beethoven": "Bitóven"}` en el plan: cambia lo que lee la voz y deja el subtítulo como está (una palabra por una palabra). Mira en GUION.md qué oyó whisper.
+- Video (tomas IA u otras): `"visual": {"tipo": "video", "src": "ia/<archivo>.mp4", "desde": 2.5, "hasta": 5.5}` va a pantalla completa con degradé; usa el tramo desde-hasta, acelerado o frenado entre 0,6x y 1,3x para calzar con la escena, y congela el último fotograma si falta. Corta cada clip de 3 tomas en escenas de una toma: un corte por frase. Las tomas se piden con la skill `video-ia-prompteo` (las pide este hilo de videos, dentro del tope del mes).
+- CTA para comentar (Cris, 6-nov): antes del cierre, una pregunta hecha para el producto que se conteste con un toque. Juegos de misterio: los sospechosos numerados en pantalla y "deja su número en los comentarios". No copiar fórmulas de otros canales.
 - Fotos horizontales (archivo, Wikimedia): `"visual": {"tipo": "imagen", "src": ..., "llenar": true, "foco": {...}}` las pone a escenario completo (recorte cover en el foco). Sin `llenar` quedan como franja chica en el cuadro vertical. `"llenar": "pantalla"` la pone en todo el 9:16 con degradé para titular y subtítulo (se ve mucho más de cine; la auditoría de Gemini del 6-nov lo pidió como cambio de mayor impacto). Úsalo solo con fotos de 1080 px de ancho o más en vertical o con mucho alto: una horizontal de 1400 px queda ampliada 2x y se ve blanda. Ver V16 en la bitácora viral. Si Wikimedia da 429, Openverse (api.openverse.org, `license=pdm,cc0`) trae lo de Flickr Commons con descarga directa.
 - Música: cama que baja al 30 % cuando hay voz (automático). Para piano, la pista de
   práctica del propio producto (`musica.archivo`): el video suena a lo que se compra.

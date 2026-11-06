@@ -1,0 +1,249 @@
+{
+  "slug": "57-cold-case-02-ia-es",
+  "producto": "57-cold-case-02",
+  "idioma": "es",
+  "tema": "coldcase",
+  "voz": "gemini:Sulafat",
+  "vozEstilo": "Narradora de true crime en español latinoamericano neutro, voz cálida y cercana, ritmo ágil, tensión contenida, sin exagerar",
+  "velocidad": 1.15,
+  "ritmo": "continuo",
+  "musica": {
+    "incompetech": "Constance",
+    "volumen": 0.22,
+    "desde": 0
+  },
+  "notas": "Prueba V16 paquete (Cris, 6-nov 22:27 UTC: mezclar Remotion con video IA, personas y escenas tensas, CTA que invite a comentar, voz mejor que Piper). Misma historia y producto que 57-cold-case-02-historia-es (control, 7 vistas a 48 h, voz Piper, solo páginas). Cambia: 7 clips IA de 8 s (fichas docs/video-ia/fichas/57-caso02-es-*.json; 4 del hilo de Google Flow: sospechosos, gala, hallazgo, hoy) alternados con páginas del expediente en Remotion, voz Gemini TTS Sulafat, los cinco sospechosos con número y CTA de comentar el número antes del cierre. Hechos: expediente ES p. 1-2 (fecha, lugar, gala), p. 5 (Personas de interés: sobrino heredaría la cuarta parte; gerente y auditores externos en enero; instructor encabezó el descenso de antorchas; Vivian Shaw rival desde 1956; prometido se fue temprano en el último teleférico), Doc 04 (accidente), carta de Navarro (37 años, rollo, libreta verde, caja fuerte). Nada de la solución ni del sobre.",
+  "escenas": [
+    {
+      "dice": "Mil novecientos ochenta y nueve. Tormenta en la montaña Greyhorn.",
+      "texto": "*1989*, Greyhorn",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-1.mp4",
+        "desde": 0,
+        "hasta": 2.5,
+        "escala": 1.06
+      }
+    },
+    {
+      "dice": "Esa noche hay gala en su hotel.",
+      "texto": "Noche de *gala*",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-3-gala.mp4",
+        "desde": 0,
+        "hasta": 3
+      }
+    },
+    {
+      "dice": "Elsa Brandvold, la dueña, sale a la nieve.",
+      "texto": "Elsa, *54 años*",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-3-gala.mp4",
+        "desde": 5.5,
+        "hasta": 8
+      }
+    },
+    {
+      "dice": "Nunca vuelve.",
+      "texto": "Nunca *vuelve*",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-4.mp4",
+        "desde": 5.4,
+        "hasta": 8
+      }
+    },
+    {
+      "dice": "Al amanecer la encuentran en el barranco, bajo la pasarela de su chalet.",
+      "texto": "Al *amanecer*",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-4-hallazgo.mp4",
+        "desde": 0,
+        "hasta": 5.5
+      }
+    },
+    {
+      "dice": "El sheriff dice: accidente.",
+      "texto": "¿*Accidente*?",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:7",
+        "foco": {
+          "x": 0.5,
+          "y": 0.3,
+          "zoom": 1.8
+        }
+      }
+    },
+    {
+      "dice": "Treinta y siete años después, la nieve devuelve un rollo de fotos y su libreta verde.",
+      "texto": "*37 años* después",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-2.mp4",
+        "desde": 0,
+        "hasta": 5
+      }
+    },
+    {
+      "dice": "Y su caja fuerte, que nadie ha podido abrir.",
+      "texto": "La caja *fuerte*",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-2.mp4",
+        "desde": 5,
+        "hasta": 8
+      }
+    },
+    {
+      "dice": "Cinco personas tenían un motivo.",
+      "texto": "*Cinco* sospechosos",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:5",
+        "foco": {
+          "x": 0.3,
+          "y": 0.55,
+          "zoom": 1.6
+        }
+      }
+    },
+    {
+      "dice": "Uno, el sobrino heredero.",
+      "texto": "*1* El sobrino",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-3.mp4",
+        "desde": 0,
+        "hasta": 2.7
+      }
+    },
+    {
+      "dice": "Dos, la gerente, con auditores encima.",
+      "texto": "*2* La gerente",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-3.mp4",
+        "desde": 2.7,
+        "hasta": 5.4
+      }
+    },
+    {
+      "dice": "Tres, el instructor de la antorcha.",
+      "texto": "*3* El instructor",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-3.mp4",
+        "desde": 5.4,
+        "hasta": 8
+      }
+    },
+    {
+      "dice": "Cuatro, la vieja rival.",
+      "texto": "*4* La rival",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-4.mp4",
+        "desde": 0,
+        "hasta": 2.7
+      }
+    },
+    {
+      "dice": "Cinco, el prometido que se fue temprano.",
+      "texto": "*5* El prometido",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-4.mp4",
+        "desde": 2.7,
+        "hasta": 5.4
+      }
+    },
+    {
+      "dice": "Cinco caras.",
+      "texto": "*1* Paul",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-2-sospechosos.mp4",
+        "desde": 0,
+        "hasta": 1.6
+      }
+    },
+    {
+      "dice": "Un culpable.",
+      "texto": "*2* Harriet",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-2-sospechosos.mp4",
+        "desde": 1.6,
+        "hasta": 3.2
+      }
+    },
+    {
+      "dice": "¿Quién fue?",
+      "texto": "*3* Dane",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-2-sospechosos.mp4",
+        "desde": 3.2,
+        "hasta": 4.8
+      }
+    },
+    {
+      "dice": "Elige uno.",
+      "texto": "*4* Vivian",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-2-sospechosos.mp4",
+        "desde": 4.8,
+        "hasta": 6.4
+      }
+    },
+    {
+      "dice": "Deja su número en los comentarios.",
+      "texto": "*5* Gregor",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-2-sospechosos.mp4",
+        "desde": 6.4,
+        "hasta": 8
+      },
+      "pausa": 0.8
+    }
+  ],
+  "cierre": {
+    "dice": "El caso es ficción. El expediente completo está en nuestra tienda de Etsy.",
+    "titulo": "¿Lo resuelves?",
+    "sub": "Caso Archivado N.º 02 · La Nieve Recuerda",
+    "linea": "SheetSmithChile en Etsy",
+    "src": "pag:es:1"
+  },
+  "youtube": {
+    "titulo": "Cinco sospechosos, un culpable: ¿quién fue? | juego de misterio imprimible",
+    "descripcion": "¿Quién fue? Deja el número del sospechoso en los comentarios.\n\nJuego de misterio imprimible, en español: https://www.etsy.com/listing/4605211787\nLos links de la tienda (Etsy y Gumroad) están en el canal: toca el nombre del canal.\n\n28 de enero de 1989. Elsa Brandvold, de 54 años, dueña del Greyhorn Lodge, sale a una tormenta de nieve la noche de la gala del Carnaval de Invierno. Al amanecer la encuentran en el barranco Hollow, bajo la pasarela que lleva a su chalet. El sheriff lo declara un accidente. Treinta y siete años después, el deshielo devuelve un rollo de fotos sin revelar, su libreta verde y una caja fuerte que nadie ha podido abrir.\n\nLos sospechosos: 1 el sobrino, que heredaría parte del hotel. 2 la gerente, justo cuando Elsa contrató auditores. 3 el director de la escuela de esquí, que encabezó el descenso de antorchas. 4 la escritora que fue su rival desde 1956. 5 el prometido, que se fue temprano en el último teleférico.\n\nEl caso es ficción y las escenas son recreaciones hechas con IA. Es el Caso Archivado N.º 02, La Nieve Recuerda, un juego de misterio para imprimir: el expediente completo (38 documentos de evidencia y un sobre sellado) para descubrir quién la mató, cómo y por qué. De 1 a 6 jugadores, unas 2 a 3 horas, sin anfitrión. Incluye la versión en español y en inglés. SheetSmithChile en Etsy.\n\n#casoarchivado #truecrime #misterio #shorts",
+    "tags": [
+      "juego de misterio imprimible",
+      "caso archivado",
+      "caso sin resolver",
+      "true crime",
+      "misterio",
+      "juego de detectives",
+      "juego de misterio",
+      "resuelve el caso",
+      "noche de juegos",
+      "misterio en la nieve"
+    ]
+  },
+  "experimento": {
+    "hipotesis": "V16",
+    "variable": "visual",
+    "variante": "paquete multifacético: 7 clips IA (tomas con personas: Elsa, sheriff, sospechosos) alternados con páginas del expediente en Remotion, voz Gemini TTS, CTA de comentar el número del sospechoso",
+    "control": "57-cold-case-02-historia-es",
+    "formato": "historia",
+    "gancho_tipo": "fecha-lugar",
+    "espera": "3x o más las vistas a 48 h del control (7) y retención 1,2x; si no, se para el gasto en video IA. Confusores: voz y CTA cambian a la vez (paquete pedido por Cris), y la historia ya salió una vez",
+    "listing_id": 4605211787
+  }
+}
