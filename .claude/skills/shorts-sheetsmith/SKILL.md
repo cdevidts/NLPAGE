@@ -108,6 +108,7 @@ barras de progreso, sin chips numerados, sin disolvencias largas.
   `"vozEstilo": "narrador de true crime, grave"` en el plan. Probarla como variable de un
   experimento del loop viral, no de golpe en todos. Detalle en `docs/gemini/README.md`.
   Velocidad 1,05-1,08. **Números y años en letras** en `dice`. Si la voz lee mal un nombre propio (Piper ES: "Beethoven"), usa `"pronuncia": {"Beethoven": "Bitóven"}` en el plan: cambia lo que lee la voz y deja el subtítulo como está (una palabra por una palabra). Mira en GUION.md qué oyó whisper.
+- Fotos horizontales (archivo, Wikimedia): `"visual": {"tipo": "imagen", "src": ..., "llenar": true, "foco": {...}}` las pone a escenario completo (recorte cover en el foco). Sin `llenar` quedan como franja chica en el cuadro vertical. Ver V16 en la bitácora viral. Si Wikimedia da 429, Openverse (api.openverse.org, `license=pdm,cc0`) trae lo de Flickr Commons con descarga directa.
 - Música: cama que baja al 30 % cuando hay voz (automático). Para piano, la pista de
   práctica del propio producto (`musica.archivo`): el video suena a lo que se compra.
   Para lo demás, `npm run musica -- --buscar "mysterious suspense"` y elegir por ánimo.

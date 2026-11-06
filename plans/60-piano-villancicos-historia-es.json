@@ -1,0 +1,135 @@
+{
+  "slug": "60-piano-villancicos-historia-es",
+  "producto": "60-piano-villancicos",
+  "idioma": "es",
+  "tema": "piano",
+  "voz": "es_MX-claude-high",
+  "velocidad": 1.08,
+  "ritmo": "continuo",
+  "pronuncia": {
+    "Ypres": "Ípres"
+  },
+  "musica": {
+    "archivo": "assets/music/propia/60-noche-de-paz.mp3",
+    "volumen": 0.32,
+    "desde": 0
+  },
+  "notas": "Prueba V16 (variedad visual): fotos a escenario completo (\"llenar\": true, nuevo en Visual.tsx) y cada escena con un recurso distinto, ninguno repetido (trinchera, página, foto de la tregua, caras, caja de regalo, página de notas), contra el Beethoven ES (62-piano-clasicos-historia-es, 5-nov), que repite el mismo grabado en 5 escenas. Mismo formato historia, voz Piper es_MX, ritmo continuo, música propia del producto y cierre con tarjeta. Hechos (Britannica 'Christmas Truce' y relatos de soldados reunidos por The Week, 6-nov-2026): Nochebuena de 1914, cerca de Ypres (Bélgica), los alemanes pusieron velas y árboles en sus trincheras y cantaron villancicos, sobre todo Stille Nacht; los británicos respondieron con los suyos; al día siguiente salieron a la tierra de nadie y cambiaron comida y tabaco; participaron unos cien mil soldados; los mandos dieron órdenes para que no se repitiera. Imágenes (Openverse, marca de dominio público, bajadas de Flickr el 6-nov): foto de la tregua de 1914 en tierra de nadie; foto de la London Rifle Brigade con sajones del 104/106, Navidad 1914 (IWM Q 11745, recortada sin el diseño ni los logos de la lámina que la traía); trinchera inundada en Flandes de The War of the Nations (1919); caja de regalo de la princesa María, Navidad 1914. Créditos en public/assets/media/archivo/CREDITOS.md. Noche de paz es la página 6 del PDF 2 (español). Números en letras para Piper.",
+  "escenas": [
+    {
+      "dice": "Nochebuena de mil novecientos catorce. Entre dos trincheras, alguien empieza a cantar.",
+      "texto": "Nochebuena, *1914*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/archivo/trinchera-inundada-flandes.jpg",
+        "foco": {
+          "x": 0.45,
+          "y": 0.55,
+          "zoom": 1.15
+        },
+        "llenar": true
+      }
+    },
+    {
+      "dice": "Es cerca de Ypres, en Bélgica. Los alemanes ponen velas en sus trincheras y cantan Noche de paz.",
+      "texto": "*Noche de paz*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:2:6",
+        "foco": {
+          "x": 0.5,
+          "y": 0.1,
+          "zoom": 2.6
+        }
+      }
+    },
+    {
+      "dice": "Los británicos responden con sus villancicos. Al otro día salen a la tierra de nadie, sin armas, y se dan la mano.",
+      "texto": "Sin *armas*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/archivo/tregua-1914-tierra-de-nadie.jpg",
+        "foco": {
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.2
+        },
+        "llenar": true
+      }
+    },
+    {
+      "dice": "Se regalan comida y tabaco, y se sacan fotos juntos. Esta es una de ellas.",
+      "texto": "Enemigos, *juntos*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/archivo/tregua-1914-caras.jpg",
+        "foco": {
+          "x": 0.6,
+          "y": 0.45,
+          "zoom": 1.25
+        },
+        "llenar": true
+      }
+    },
+    {
+      "dice": "Unos cien mil soldados dejaron de pelear por Navidad. Después, los mandos dieron órdenes para que no se repitiera.",
+      "texto": "*Cien mil* soldados",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/archivo/caja-navidad-1914.jpg",
+        "foco": {
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.15
+        },
+        "llenar": true
+      }
+    },
+    {
+      "dice": "¿Quieres tocar la canción que paró una guerra? Cada nota lleva su nombre adentro, así que solo buscas la tecla.",
+      "texto": "*Do Re Mi* adentro",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:2:6",
+        "foco": {
+          "x": 0.35,
+          "y": 0.3,
+          "zoom": 2.6
+        }
+      }
+    }
+  ],
+  "cierre": {
+    "dice": "Noche de paz y diecinueve villancicos fáciles más, con el nombre de cada nota. Lo encuentras en nuestra tienda de Etsy.",
+    "titulo": "Tócalo esta Navidad",
+    "sub": "20 villancicos fáciles · Do Re Mi · MP3",
+    "linea": "SheetSmithChile en Etsy",
+    "src": "pag:2:1"
+  },
+  "youtube": {
+    "titulo": "La canción que paró una guerra | villancicos para piano fáciles",
+    "descripcion": "Villancicos para piano fáciles, con el nombre de cada nota: https://www.etsy.com/listing/4605991888\nLos links de la tienda (Etsy y Gumroad) están en el canal: toca el nombre del canal.\n\nNochebuena de 1914, cerca de Ypres, en Bélgica. Los soldados alemanes pusieron velas en sus trincheras y cantaron Noche de paz (Stille Nacht). Los británicos respondieron con sus villancicos. Al día siguiente salieron a la tierra de nadie, sin armas, se dieron la mano y cambiaron comida y tabaco. Unos cien mil soldados pararon la guerra por Navidad, y después los mandos dieron órdenes para que no se repitiera.\n\nNuestro libro trae Noche de paz y 19 villancicos fáciles más, con el nombre de cada nota (Do, Re, Mi) escrito dentro de la nota, y un MP3 de práctica para cada uno. La música de este video es ese MP3. PDF para imprimir, carta o A4. SheetSmithChile en Etsy.\n\nFotos: tregua de Navidad de 1914 y trincheras de Flandes, archivo de dominio público (Imperial War Museum; The War of the Nations, 1919).\n\n#nochedepaz #villancicos #piano #shorts",
+    "tags": [
+      "villancicos para piano fáciles",
+      "noche de paz piano fácil",
+      "noche de paz",
+      "tregua de navidad 1914",
+      "villancicos piano con notas",
+      "partituras navidad piano",
+      "notas do re mi piano",
+      "piano para principiantes",
+      "historia de la navidad",
+      "primera guerra mundial"
+    ]
+  },
+  "experimento": {
+    "hipotesis": "V16",
+    "variable": "visual",
+    "variante": "un recurso distinto por escena (6 recursos, ninguno repetido) y fotos a escenario completo (llenar) en vez de franja",
+    "control": "62-piano-clasicos-historia-es",
+    "formato": "historia",
+    "gancho_tipo": "dato-imposible",
+    "espera": "1,5x o más las vistas a 48 h del Beethoven ES, o retención (averageViewPercentage) 1,2x o más; confusor: otra pieza y otra fecha",
+    "listing_id": 4605991888
+  }
+}
