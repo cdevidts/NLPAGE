@@ -107,7 +107,8 @@ barras de progreso, sin chips numerados, sin disolvencias largas.
   con `"vozEstilo": "Narradora de true crime en español latinoamericano neutro, voz cálida y
   cercana, ritmo ágil, tensión contenida, sin exagerar"` y velocidad 1,15 (Cris, 6-nov: Piper
   "es muy mala"; whisper oía a Piper "tormenta de Miebe" y a Sulafat al 100 %). Piper
-  `es_MX-claude-high` queda solo de respaldo si la API falla. Muestras en out/voces/.
+  `es_MX-claude-high` queda solo de respaldo si la API falla. V17 (Cris, 6-nov 23:15): Sulafat (mujer)
+  contra `gemini:Algieba` (hombre, "Narrador de true crime ... voz grave y cercana ..."), alternadas por pares. Muestras en out/voces/.
   Velocidad 1,05-1,08. **Números y años en letras** en `dice`. Si la voz lee mal un nombre propio (Piper ES: "Beethoven"), usa `"pronuncia": {"Beethoven": "Bitóven"}` en el plan: cambia lo que lee la voz y deja el subtítulo como está (una palabra por una palabra). Mira en GUION.md qué oyó whisper.
 - Video (tomas IA u otras): `"visual": {"tipo": "video", "src": "ia/<archivo>.mp4", "desde": 2.5, "hasta": 5.5}` va a pantalla completa con degradé; usa el tramo desde-hasta, acelerado o frenado entre 0,6x y 1,3x para calzar con la escena, y congela el último fotograma si falta. Corta cada clip de 3 tomas en escenas de una toma: un corte por frase. Las tomas se piden con la skill `video-ia-prompteo` (las pide este hilo de videos, dentro del tope del mes).
 - CTA para comentar (Cris, 6-nov): antes del cierre, una pregunta hecha para el producto que se conteste con un toque. Juegos de misterio: los sospechosos numerados en pantalla y "deja su número en los comentarios". No copiar fórmulas de otros canales.
