@@ -70,7 +70,7 @@ export type Plan = {
   escenas: PlanEscena[];
   cierre: {dice?: string; titulo: string; sub?: string; linea: string; src: string};
   youtube: {titulo: string; descripcion: string; tags: string[]};
-  loop?: {paginas: string[]; titulo: string; sub: string; frases: string[]};
+  loop?: {paginas: string[]; titulo: string; sub: string; frases: string[]; alto?: number};
   notas?: string;
 };
 

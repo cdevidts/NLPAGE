@@ -12,7 +12,7 @@ import type {LoopProps} from './lib/types';
  * derecha el nombre y tres frases que rotan. El último frame es igual al
  * primero: el bucle no salta.
  */
-export const EtsyLoop: React.FC<LoopProps> = ({tema: temaId, paginas, titulo, sub, frases, marca}) => {
+export const EtsyLoop: React.FC<LoopProps> = ({tema: temaId, paginas, titulo, sub, frases, marca, alto}) => {
   const frame = useCurrentFrame();
   const {durationInFrames, fps} = useVideoConfig();
   const tema = TEMAS[temaId];
@@ -22,7 +22,9 @@ export const EtsyLoop: React.FC<LoopProps> = ({tema: temaId, paginas, titulo, su
   const u = (frame - actual * L) / L;
   // La hoja de arriba se va en el último 30 % de su turno.
   const sale = interpolate(u, [0.7, 1], [0, 1], {...clamp, easing: Easing.inOut(Easing.cubic)});
-  const ALTO = 1100;
+  const ALTO = alto ?? 1100;
+  // Una hoja baja (foto 4:3) se centra en la altura del cuadro.
+  const TOP = 150 + (1100 - ALTO) / 2;
 
   const capas = [3, 2, 1, 0].map((prof) => {
     const idx = (actual + prof) % n;
@@ -36,7 +38,7 @@ export const EtsyLoop: React.FC<LoopProps> = ({tema: temaId, paginas, titulo, su
         style={{
           position: 'absolute',
           left: 90 + base.dx + fuera * 1100,
-          top: 150 + base.dy - fuera * 60,
+          top: TOP + base.dy - fuera * 60,
           transform: `rotate(${base.rot + fuera * 24}deg) scale(${base.esc})`,
           transformOrigin: '50% 60%',
           opacity: prof === 3 ? interpolate(sale, [0, 1], [0, 1]) : 1,

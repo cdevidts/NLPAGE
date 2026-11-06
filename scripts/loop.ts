@@ -24,6 +24,7 @@ const props: LoopProps = {
   titulo: plan.loop.titulo,
   sub: plan.loop.sub,
   frases: plan.loop.frases,
+  alto: plan.loop.alto,
   marca: 'SheetSmithChile',
 };
 fs.mkdirSync('out', {recursive: true});

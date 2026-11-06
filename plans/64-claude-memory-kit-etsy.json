@@ -1,0 +1,23 @@
+{
+  "slug": "64-claude-memory-kit-etsy",
+  "producto": "64-claude-memory-kit",
+  "idioma": "en",
+  "tema": "sheets",
+  "notas": "Solo video de listing (npm run loop). Reemplaza el video provisorio de 4 fotos quietas (pedido del hilo de producto, 6-nov). Las 4 fotos del listing traen capturas de terminal reales (VERIFY.md).",
+  "loop": {
+    "paginas": [
+      "foto:01",
+      "foto:02",
+      "foto:03",
+      "foto:04"
+    ],
+    "titulo": "Claude Memory Kit",
+    "sub": "Claude remembers between sessions",
+    "frases": [
+      "Picks up where it left off",
+      "4 skills + hook",
+      "English + Spanish"
+    ],
+    "alto": 690
+  }
+}
