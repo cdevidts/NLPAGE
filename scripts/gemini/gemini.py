@@ -12,7 +12,8 @@ Gratis (free tier de la API):
         (gratis, ~30 s por Short; id o URL de YouTube; --archivo prompt.md en vez de --prompt)
 
 Pagado (imagen, video): solo con --pago y si el tope del mes en docs/gemini/config.json alcanza.
-El tope parte en 0: se sube cuando Cris activa los créditos de Google AI Pro y da el OK.
+Nivel pagado activo desde 2026-11-06 (Cris ligó la facturación; saldo prepagado + créditos de AI Pro).
+El tope del mes está en docs/gemini/config.json; subirlo requiere el OK de Cris.
     python3 -I scripts/gemini/gemini.py imagen --prompt "..." --salida x.jpg [--aspecto 4:3] --pago
     python3 -I scripts/gemini/gemini.py video --prompt "..." --salida x.mp4 [--aspecto 9:16] [--imagen ref.jpg] --pago
 
@@ -25,13 +26,14 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 CONFIG = os.path.join(RAIZ, 'docs', 'gemini', 'config.json')
 GASTO = os.path.join(RAIZ, 'docs', 'gemini', 'gasto.csv')
 
-# Precios estimados (ai.google.dev/gemini-api/docs/pricing, leído 2026-10-30). Solo para el tope.
+# Precios estimados (aistudio.google.com/docs/pricing, releídos 2026-11-06). Solo para el tope.
 PRECIO = {
     'gemini-3.1-flash-lite-image': 0.034,  # por imagen 1K
     'gemini-nano-banana-2.1': 0.050,       # por imagen 2K
     'gemini-3.1-flash-image': 0.067,       # por imagen 1K
     'gemini-3-pro-image': 0.134,
-    'gemini-omni-1.1-flash': 0.10,         # por segundo de video 720p
+    'gemini-omni-1.1-flash': 0.10,         # por segundo de video 720p (desde 3-dic-2026 se enruta a 1.2)
+    'gemini-omni-1.2-flash': 0.07,         # por segundo de video 720p (360p ~0.023)
 }
 SEG_VIDEO = 10  # la doc no fija la duración; se cobra el peor caso al tope
 
@@ -283,8 +285,9 @@ def cmd_video(args):
         mime = 'image/png' if args.imagen.lower().endswith('.png') else 'image/jpeg'
         entrada = [{'type': 'image', 'data': base64.b64encode(open(args.imagen, 'rb').read()).decode(), 'mime_type': mime},
                    {'type': 'text', 'text': args.prompt}]
+    # delivery 'uri' exige store=true (error 400 del 2026-11-06).
     r = interaccion(modelo, entrada, {'type': 'video', 'aspect_ratio': args.aspecto, 'resolution': args.resolucion,
-                                      'delivery': 'uri'})
+                                      'delivery': 'uri'}, {'store': True})
     os.makedirs(os.path.dirname(os.path.abspath(args.salida)), exist_ok=True)
     open(args.salida, 'wb').write(binario(r, 'video'))
     anotar('video', modelo, usd, args.salida, args.prompt)
