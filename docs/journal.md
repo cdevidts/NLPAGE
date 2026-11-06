@@ -224,6 +224,19 @@
 - copy_check.py marca errores de Etsy (tags de 20 caracteres, frase al inicio, frase repetida con la ficha). Para YouTube no aplican; el título sigue la regla de la skill: gancho con la frase principal ES dentro.
 - El mp4 pesa 53 MB, más que los anteriores. GitHub avisa desde 50 MB y rechaza desde 100 MB. Si sigue creciendo, bajar el bitrate del render.
 
+## 2026-11-06 · Canal Gemini: G-031..G-034 en 50 min; certificado verificado; cola G-035..G-038
+
+- Las 4 tareas del 5-nov llegaron entre 16:56 y 17:47 UTC con "Argon / Gemini 3.1 Pro" y Docs con texto.
+  G-031 (35 fichas de trivia, 3 títulos de 134-139 car.) → OPS. G-032 (desglose por segundo de los dos
+  Shorts ganadores + esqueleto de 45 s) y G-034 (auditoría de nuestros 3 Shorts: 5 errores de TTS en el
+  caso 01 ES, cierre comercial en s 40/39/47, croquis fijo 8 s, propuesta de últimos 8 s sin CTA) → hilo
+  de videos. G-033 certificado de detective: html + sello.py bajados a `gemini/codigo/G-033/` y probados
+  acá (Playwright 3 s, sello 2 s; demo ES en el README); rótulos fijos de cabecera en inglés → traducir.
+- Cola: G-035 bingo navideño (búsqueda + 4 ilustraciones de prueba estilo libro infantil años 60, para
+  saber si "huelen a IA"), G-036 guion 45/30 s del caso 02 con hechos públicos, G-037 auditoría de
+  pronunciación del TTS con reescrituras para "pronuncia", G-038 sonda de traducción DE/FR/IT/PT-BR.
+- Espera a una persona: nada.
+
 ## 2026-11-06 · API de Gemini: Argon e imágenes son pagados; YouTube por fotogramas gratis y al instante
 
 - Cris dio una hora libre (10:59-12:00 UTC) y pidió probar la API (GEMINI_API_KEY) en vez del canal por
