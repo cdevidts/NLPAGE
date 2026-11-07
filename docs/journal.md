@@ -311,3 +311,12 @@
 - gemini.py: la frase fija "same place, same moment" chocaba con fichas de varios sitios; ahora remite a la continuidad de la ficha y el campo `detalle` reemplaza la frase de época.
 - CTA: los cinco sospechosos numerados, cada cara con su número y nombre, y "deja su número en los comentarios".
 - Render 49,5 s, -14,0 LUFS, pico -1,4 dBTP. Se mide como V16 (paquete) contra el caso 02 ES del 4-nov.
+
+## 2026-11-07 · Canal Gemini, turno diario
+
+- Recogidas G-035..G-038 (las 4 respondidas entre 15:47 y 16:18 UTC del 6-nov, 30 min después de espejar; modelo "Argon / Gemini 3.1 Pro"). Resúmenes en /mnt/project-files/plan/investigacion/2026-11-07-gemini-G-03*.md.
+- G-035: 34 fichas de bingo navideño (estándar 50 cartones, 0 de 34 con emojis, precio mediano US$3,48, "calling cards" como cierre) + 4 ilustraciones Nano Banana de 3 tintas planas y un pipeline Pillow para que parezcan impresas. Las PNG están en Entregas; el enlace público de Drive no se baja por curl desde el contenedor (devuelve HTML), así que OPS las mira desde Drive. Repartido a OPS.
+- G-036: guion ES de 45 s y 30 s para el caso 02 con hechos públicos del Short EN, pausa sin voz al estilo A-PErrtdak8 y cierre sin CTA hablado; título «Caso archivado 1989: ¿accidente bajo el puente helado?». Repartido al hilo de videos.
+- G-037: auditoría de pronunciación de los 3 Shorts (6 incomprensibles en el caso 01 ES de Piper: hiatos -ía/-ío con consonante parásita y "lo hizo" → "lizó"; Kokoro EN limpio) + 30 palabras con reescritura. Piper ya está descartada (Cris, 6-nov), así que vale como regla general de "números en letras y revisar hiatos" y como lista para probar en Gemini TTS. La VM de Gemini no tiene motor TTS.
+- G-038: certificado de detective en DE/FR/IT/PT-BR con terminología policial de 1987 (Urkunde, Dossier d'instruction, Fascicolo d'indagine, Inquérito Policial) y 3 keywords por idioma sin verificar; dos deslices (IT "dei facts", sello FR "affaire classée"). Repartido al hilo de misterio.
+- Cola nueva (4, 2 de búsqueda): G-039 keywords DE/FR en SERP y títulos para el Cold Case 01 (OPS), G-040 auditoría por fotogramas de cah0eRHnqTU con voz Sulafat y clips IA contra 7CZBpp1r4kU (video, alta), G-041 tendencias de la semana en Shorts ES de true crime y cuánto IA usan (video), G-042 auditoría del DE/FR del listing 4604988351 + ficha IT y NL (OPS).

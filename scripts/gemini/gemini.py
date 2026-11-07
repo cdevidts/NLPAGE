@@ -55,10 +55,26 @@ def config():
 # revisiones y YouTube quedan gratis); GEMINI_API_KEY tiene facturación y se usa solo para imagen y video
 # pagados. Sin la clave gratis, todo cae en GEMINI_API_KEY (y lo gratis se cobra a tarifa de pago).
 PAGADO = False
+# Si la clave gratis no está en el entorno, se lee de este archivo fuera de git (carpeta compartida del
+# proyecto; Cris lo autorizó el 2026-11-07). Nunca se copia al repo.
+SECRETOS = os.environ.get('GEMINI_SECRETOS', '/mnt/project-files/.secretos/gemini.env')
+
+
+def clave_libre():
+    if os.environ.get('GEMINI_API_KEY_FREE'):
+        return os.environ['GEMINI_API_KEY_FREE']
+    try:
+        for linea in open(SECRETOS, encoding='utf-8'):
+            nombre, _, valor = linea.strip().partition('=')
+            if nombre == 'GEMINI_API_KEY_FREE' and valor:
+                return valor.strip().strip('"\'')
+    except OSError:
+        pass
+    return None
 
 
 def clave():
-    libre = os.environ.get('GEMINI_API_KEY_FREE')
+    libre = clave_libre()
     pago = os.environ.get('GEMINI_API_KEY') or os.environ.get('GOOGLE_API_KEY')
     k = pago if PAGADO else (libre or pago)
     if not k:
@@ -229,7 +245,7 @@ def cmd_estado(args):
         if not token:
             break
     print(f'Clave OK: {len(modelos)} modelos visibles.')
-    print(f'  gratis: {"GEMINI_API_KEY_FREE" if os.environ.get("GEMINI_API_KEY_FREE") else "FALTA GEMINI_API_KEY_FREE: lo gratis se cobra en la clave con facturación"}'
+    print(f'  gratis: {"GEMINI_API_KEY_FREE" + ("" if os.environ.get("GEMINI_API_KEY_FREE") else " (archivo .secretos)") if clave_libre() else "FALTA GEMINI_API_KEY_FREE: lo gratis se cobra en la clave con facturación"}'
           f' · pagado: {"GEMINI_API_KEY" if os.environ.get("GEMINI_API_KEY") else "falta GEMINI_API_KEY"}')
     for uso in ('texto', 'voz', 'imagen', 'video'):
         print(f'  {uso:6} {c[uso]:32} {"disponible" if c[uso] in modelos else "NO aparece en la lista"}')

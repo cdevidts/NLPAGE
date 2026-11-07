@@ -52,12 +52,16 @@ cada hora y es "prácticamente ilimitada" (no usa la API).
 | 2026-11-05 | G-034 | Oír errores de pronunciación de un TTS en español por video_id | SÍ (sin verificar): listó 5 palabras mal pronunciadas con su segundo ("parecina" s 12, "policiga" s 16...) | Auditoría de TTS por Gemini antes de publicar cada Short; comprobar con whisper |
 | 2026-11-05 | G-033 | HTML + PDF vectorial + PNG 300 DPI + script Pillow como archivos | SÍ: html (8 KB), pdf (69 KB), 2 png 3296×2550, sello.py; el html corrió acá sin cambios (verificado 6-nov). Subió además copias como Google Docs (ruido) | Ignorar las copias en Doc; usar los archivos binarios/código |
 | 2026-11-06 | API | Comparación API gratis vs app: ver YouTube por fotogramas | La API (3.6 Flash, `gemini.py youtube`) da el mismo tipo de tabla por segundo en ~30 s, US$0; la app (Argon) añade más detalle (errores de TTS, diferencias finas) pero tarda hasta 1 h | YouTube urgente → API; análisis fino o con Argon → app. Argon e imágenes solo por la app (en la API son pagados) |
+| 2026-11-06 | G-035..G-038 | Lote de 4 (1 búsqueda + 1 YouTube + 2 texto/Python) | SÍ: las 4 en 30 min (15:47-16:18 UTC) tras espejar a las 15:20; Docs completos y 4 Hojas; modelo "Argon / Gemini 3.1 Pro" en las 4 | El lote de 4 es el tamaño cómodo del turno diario |
+| 2026-11-06 | G-035 | 4 ilustraciones Nano Banana con prompt de 3 tintas planas (estilo libro infantil 1960) | SÍ (sin ver aún en el contenedor: el enlace público de Drive devuelve HTML de aviso, no el PNG; solo se ven por el conector). Da además el pipeline Pillow (umbral 242, paleta fija, desregistro 1 px) | Las imágenes de Entregas se revisan desde Drive (OPS) o se bajan por el conector, no por curl |
+| 2026-11-06 | G-037 | Sintetizar voz (WAV) en la VM | NO: sin piper/espeak/festival/flite ni pip/apt; lo de G-024 fue síntesis instrumental con NumPy | Las pruebas de TTS se hacen acá (Piper, Kokoro, Gemini TTS por la API) |
+| 2026-11-06 | G-038 | Traducción DE/FR/IT/PT-BR con terminología de época y keywords por idioma | SÍ en 5 campos cortos; declara que valida longitudes de listing (140/20/1500) con Python en la VM. Keywords "conocimiento propio (sin verificar)". Deslices: "dei facts" en IT, sello FR "affaire classée" que él mismo desaconseja | Sonda con un listing real (DE/FR del #56) en G-042 |
 
 ## Pendiente de probar
 Slides; lectura de PDFs de Drive (nuestros expedientes, nunca las soluciones); traducción de listings
 DE/FR/IT/NL/PT con revisión de SEO; Gmail SOLO para correos de Pinterest/Metricool con métricas (los de
 Etsy traen datos de compradores: no); google_finance (sin uso claro); Calendar y Keep no hacen falta.
-Probado el 3-nov: audio en la VM (G-024 sí), image_references (G-025: no desde Drive), LaTeX (G-027 sí). En cola el 6-nov: traducción DE/FR/IT/PT (G-038).
+Probado el 3-nov: audio en la VM (G-024 sí), image_references (G-025: no desde Drive), LaTeX (G-027 sí). Probado el 6-nov: traducción DE/FR/IT/PT (G-038 sí, 5 campos); auditoría de un listing DE/FR real en cola (G-042).
 
 ## Reglas que salieron de las pruebas
 - Cada tarea lleva IDs directos: video_id/URL de Shorts, file_id de Drive, URL del listing.
