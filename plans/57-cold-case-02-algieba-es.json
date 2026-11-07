@@ -1,0 +1,230 @@
+{
+  "slug": "57-cold-case-02-algieba-es",
+  "producto": "57-cold-case-02",
+  "idioma": "es",
+  "tema": "coldcase",
+  "voz": "gemini:Algieba",
+  "vozEstilo": "Narrador de true crime en español latinoamericano neutro, voz grave y cercana, ritmo ágil, tensión contenida, sin exagerar",
+  "velocidad": 1.15,
+  "ritmo": "continuo",
+  "musica": {
+    "incompetech": "Constance",
+    "volumen": 0.22,
+    "desde": 0
+  },
+  "notas": "Par 1 de V17 (Cris, 6-nov 23:15 UTC: Sulafat o Algieba). Mismo paquete que 57-cold-case-02-ia-es (cah0eRHnqTU, Sulafat): mismas tomas IA ya pagadas (cero gasto nuevo, gasto congelado hasta el 8-nov), páginas del expediente, sospechosos numerados con nombre y CTA de comentar el número. Cambia la voz (Algieba). Confusores: gancho distinto (G-036 A1, 'nueve metros bajo su propio puente', el hallazgo primero), entra la toma 'hoy' (caso reabierto) y los sospechosos se nombran una sola vez. Hechos: expediente ES p. 1-2 (fecha, lugar, gala, 54 años), p. 5 (Personas de interés), Doc 04 (accidente: pasarela helada, pantuflas, una copa de más; ya dicho en 57-cold-case-02-historia-es), carta de Navarro (reabierto a los 37 años, rollo, libreta verde, caja fuerte), Doc 06 (9 m, ya en la descripción del Short EN). Nada de la solución ni del sobre.",
+  "escenas": [
+    {
+      "dice": "La encontraron nueve metros bajo su propio puente.",
+      "texto": "*9 metros* abajo",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-4-hallazgo.mp4",
+        "desde": 0,
+        "hasta": 3
+      }
+    },
+    {
+      "dice": "Mil novecientos ochenta y nueve. Tormenta en la montaña Greyhorn.",
+      "texto": "*1989*, Greyhorn",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-1.mp4",
+        "desde": 0,
+        "hasta": 2.5,
+        "escala": 1.06
+      }
+    },
+    {
+      "dice": "Esa noche hay gala en su hotel.",
+      "texto": "Noche de *gala*",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-1.mp4",
+        "desde": 2.5,
+        "hasta": 5.5,
+        "escala": 1.06
+      }
+    },
+    {
+      "dice": "Elsa Brandvold, la dueña, tiene cincuenta y cuatro años.",
+      "texto": "Elsa, *54 años*",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-3-gala.mp4",
+        "desde": 5.5,
+        "hasta": 8
+      }
+    },
+    {
+      "dice": "Sale sola a la nieve y no vuelve.",
+      "texto": "No *vuelve*",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-4.mp4",
+        "desde": 5.4,
+        "hasta": 8
+      }
+    },
+    {
+      "dice": "Al amanecer, el sheriff dice: accidente.",
+      "texto": "¿*Accidente*?",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-4-hallazgo.mp4",
+        "desde": 3,
+        "hasta": 5.5
+      }
+    },
+    {
+      "dice": "Pasarela helada, pantuflas y una copa de más.",
+      "texto": "*Pantuflas*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:7",
+        "foco": {
+          "x": 0.5,
+          "y": 0.3,
+          "zoom": 1.8
+        }
+      }
+    },
+    {
+      "dice": "Treinta y siete años después, el caso se reabre.",
+      "texto": "*37 años* después",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-5-hoy.mp4",
+        "desde": 0,
+        "hasta": 5.5
+      }
+    },
+    {
+      "dice": "Aparecen un rollo de fotos sin revelar y su libreta verde.",
+      "texto": "Un *rollo* sin revelar",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-2.mp4",
+        "desde": 2.5,
+        "hasta": 5
+      }
+    },
+    {
+      "dice": "Y su caja fuerte, que nadie ha podido abrir.",
+      "texto": "La caja *fuerte*",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-2.mp4",
+        "desde": 5,
+        "hasta": 8
+      }
+    },
+    {
+      "dice": "Cinco personas del hotel tenían un motivo.",
+      "texto": "*Cinco* sospechosos",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-5-hoy.mp4",
+        "desde": 5.5,
+        "hasta": 8
+      }
+    },
+    {
+      "dice": "Uno, Paul, el sobrino que iba a heredar.",
+      "texto": "*1* Paul, el sobrino",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-2-sospechosos.mp4",
+        "desde": 0,
+        "hasta": 1.6
+      }
+    },
+    {
+      "dice": "Dos, Harriet, la gerente, con auditores encima.",
+      "texto": "*2* Harriet, la gerente",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-2-sospechosos.mp4",
+        "desde": 1.6,
+        "hasta": 3.2
+      }
+    },
+    {
+      "dice": "Tres, Dane, el instructor que guió las antorchas.",
+      "texto": "*3* Dane, el instructor",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-2-sospechosos.mp4",
+        "desde": 3.2,
+        "hasta": 4.8
+      }
+    },
+    {
+      "dice": "Cuatro, Vivian, su rival desde mil novecientos cincuenta y seis.",
+      "texto": "*4* Vivian, la rival",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-2-sospechosos.mp4",
+        "desde": 4.8,
+        "hasta": 6.4
+      }
+    },
+    {
+      "dice": "Cinco, Gregor, el prometido que se fue temprano.",
+      "texto": "*5* Gregor, el prometido",
+      "visual": {
+        "tipo": "video",
+        "src": "ia/57-caso02-es-2-sospechosos.mp4",
+        "desde": 6.4,
+        "hasta": 8
+      }
+    },
+    {
+      "dice": "¿Cuál de los cinco? Escribe su número en los comentarios.",
+      "texto": "¿*1, 2, 3, 4* o *5*?",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:5",
+        "foco": {
+          "x": 0.3,
+          "y": 0.55,
+          "zoom": 1.6
+        }
+      },
+      "pausa": 0.8
+    }
+  ],
+  "cierre": {
+    "dice": "El caso es ficción. El expediente completo está en nuestra tienda de Etsy.",
+    "titulo": "¿Lo resuelves?",
+    "sub": "Caso Archivado N.º 02 · La Nieve Recuerda",
+    "linea": "SheetSmithChile en Etsy",
+    "src": "pag:es:1"
+  },
+  "youtube": {
+    "titulo": "Nueve metros bajo su propio puente: ¿quién fue? | juego de misterio imprimible",
+    "descripcion": "¿Quién fue? Deja el número del sospechoso en los comentarios.\n\nJuego de misterio imprimible, en español: https://www.etsy.com/listing/4605211787\nLos links de la tienda (Etsy y Gumroad) están en el canal: toca el nombre del canal.\n\n28 de enero de 1989. Elsa Brandvold, de 54 años, dueña del Greyhorn Lodge, sale a una tormenta de nieve la noche de la gala del Carnaval de Invierno. Al amanecer la encuentran en el barranco Hollow, 9 metros bajo la pasarela que lleva a su chalet. El sheriff lo declara un accidente: pasarela helada, pantuflas y una copa de más. Treinta y siete años después el caso se reabre, y aparecen un rollo de fotos sin revelar, su libreta verde y una caja fuerte que nadie ha podido abrir.\n\nLos sospechosos: 1 Paul, el sobrino, que heredaría parte del hotel. 2 Harriet, la gerente, justo cuando Elsa contrató auditores. 3 Dane, el director de la escuela de esquí, que encabezó el descenso de antorchas. 4 Vivian, la escritora que fue su rival desde 1956. 5 Gregor, el prometido, que se fue temprano en el último teleférico.\n\nEl caso es ficción y las escenas son recreaciones hechas con IA. Es el Caso Archivado N.º 02, La Nieve Recuerda, un juego de misterio para imprimir: el expediente completo (38 documentos de evidencia y un sobre sellado) para descubrir quién la mató, cómo y por qué. De 1 a 6 jugadores, unas 2 a 3 horas, sin anfitrión. Incluye la versión en español y en inglés. SheetSmithChile en Etsy.\n\n#casoarchivado #truecrime #misterio #shorts",
+    "tags": [
+      "juego de misterio imprimible",
+      "caso archivado",
+      "caso sin resolver",
+      "true crime",
+      "misterio",
+      "juego de detectives",
+      "juego de misterio",
+      "resuelve el caso",
+      "noche de juegos",
+      "misterio en la nieve"
+    ]
+  },
+  "experimento": {
+    "hipotesis": "V17",
+    "variable": "voz",
+    "variante": "voz Gemini TTS Algieba (hombre) en vez de Sulafat (mujer), mismo paquete multifacético con tomas IA ya pagadas",
+    "control": "57-cold-case-02-ia-es",
+    "formato": "historia",
+    "gancho_tipo": "dato-imposible",
+    "espera": "retención (averageViewPercentage) a 48 h igual o mayor que la de cah0eRHnqTU; se decide con 2 pares o más en la misma dirección. Confusores: gancho distinto y la misma historia sale por cuarta vez en el canal",
+    "listing_id": 4605211787
+  }
+}
