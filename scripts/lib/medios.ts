@@ -11,6 +11,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import {spawnSync} from 'node:child_process';
 import {bajar, duracion, hash, sh} from './comun';
 import type {Palabra, SfxRef} from '../../src/lib/types';
 
@@ -23,9 +24,12 @@ let kokoro: unknown = null;
 export const VOZ_DEFAULT = {en: 'af_heart', es: 'es_MX-claude-high'} as const;
 
 /** Genera (o reusa) la voz de una línea. Devuelve el wav en .cache/voz/. */
+const rutaVoz = (texto: string, v: string, velocidad: number, estilo?: string) =>
+  path.join(CACHE, 'voz', `${hash(`${v}|${velocidad}|${estilo ? `${estilo}|` : ''}${texto}`)}.wav`);
+
 export const voz = async (texto: string, idioma: 'en' | 'es', nombre?: string, velocidad = 1, estilo?: string) => {
   const v = nombre ?? VOZ_DEFAULT[idioma];
-  const destino = path.join(CACHE, 'voz', `${hash(`${v}|${velocidad}|${estilo ? `${estilo}|` : ''}${texto}`)}.wav`);
+  const destino = rutaVoz(texto, v, velocidad, estilo);
   if (fs.existsSync(destino)) return destino;
   fs.mkdirSync(path.dirname(destino), {recursive: true});
   if (v.startsWith('gemini:')) {
@@ -42,6 +46,51 @@ export const voz = async (texto: string, idioma: 'en' | 'es', nombre?: string, v
     sh('python3', ['-I', 'scripts/tts/piper.py', path.join(CACHE, 'piper', `${v}.onnx`), destino, String(velocidad), texto], {silencio: true});
   }
   return destino;
+};
+
+/**
+ * Gemini TTS, free tier: 10 pedidos de voz POR DÍA (7-nov) y un Short pide ~18 líneas.
+ * Las líneas que faltan en la caché se piden juntas en UN pedido (un párrafo por línea),
+ * se cortan a mitad del silencio entre la última palabra de una línea y la primera de la
+ * siguiente (tiempos de whisper) y cada trozo queda en la caché como si se hubiera pedido
+ * solo: después voz() lo reusa y short.ts revisa cada línea con whisper como siempre.
+ */
+export const vozLoteGemini = (textos: string[], idioma: 'en' | 'es', nombre: string, velocidad = 1, estilo?: string) => {
+  const faltan = [...new Set(textos.filter((t) => t && !fs.existsSync(rutaVoz(t, nombre, velocidad, estilo))))];
+  if (faltan.length < 2) return 0;
+  fs.mkdirSync(path.join(CACHE, 'voz'), {recursive: true});
+  const crudo = path.join(CACHE, 'voz', `lote-${hash(`${nombre}|${estilo ?? ''}|${faltan.join('\n')}`)}.gemini.wav`);
+  if (!fs.existsSync(crudo)) {
+    const pausa = idioma === 'es' ? 'Haz una pausa de un segundo entre un párrafo y el siguiente.' : 'Pause for one second between paragraphs.';
+    sh('python3', ['-I', 'scripts/gemini/gemini.py', 'voz', '--voz', nombre.slice(7), '--texto', faltan.join('\n\n'), '--salida', crudo, '--estilo', estilo ? `${estilo}. ${pausa}` : pausa], {silencio: true});
+  }
+  const pal = palabras(crudo, idioma, faltan.join(' ')).palabras;
+  const total = duracion(crudo);
+  // Whisper suele estirar el final de una palabra hasta la siguiente: el corte va al centro
+  // del silencio real (silencedetect) más cercano al hueco que dice whisper.
+  const det = spawnSync('ffmpeg', ['-v', 'info', '-i', crudo, '-af', 'silencedetect=noise=-40dB:d=0.2', '-f', 'null', '-'], {encoding: 'utf8'}).stderr;
+  const ini0 = [...det.matchAll(/silence_start: ([\d.]+)/g)].map((m) => Number(m[1]));
+  const fin0 = [...det.matchAll(/silence_end: ([\d.]+)/g)].map((m) => Number(m[1]));
+  const silencios = ini0.map((a, i) => ({a, b: fin0[i] ?? total}));
+  const cortes = [0];
+  let k = 0;
+  for (const t of faltan.slice(0, -1)) {
+    k += t.split(/\s+/).length;
+    const c = (pal[k - 1].e + pal[k].s) / 2;
+    const s = silencios.filter((x) => x.b > cortes[cortes.length - 1]).sort((x, y) => Math.abs((x.a + x.b) / 2 - c) - Math.abs((y.a + y.b) / 2 - c))[0];
+    if (s && Math.abs((s.a + s.b) / 2 - c) < 1.2) cortes.push((s.a + s.b) / 2);
+    else {
+      console.log(`⚠️  voz en lote: no hay silencio cerca de ${c.toFixed(2)} s (después de "${t.slice(-30)}"); corto donde dice whisper`);
+      cortes.push(c);
+    }
+  }
+  cortes.push(total);
+  for (const [i, t] of faltan.entries()) {
+    const filtro = `atempo=${velocidad}`;
+    sh('ffmpeg', ['-y', '-v', 'error', '-ss', cortes[i].toFixed(3), '-to', cortes[i + 1].toFixed(3), '-i', crudo, '-filter:a', filtro, rutaVoz(t, nombre, velocidad, estilo)], {silencio: true});
+  }
+  console.log(`  voz en lote: ${faltan.length} líneas en un pedido a Gemini (${total.toFixed(1)} s)`);
+  return faltan.length;
 };
 
 /** Palabras del guion con el tiempo en que suenan (faster-whisper + alineación). */

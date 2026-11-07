@@ -136,7 +136,8 @@ def interaccion(modelo, entrada, formato=None, extra=None):
         try:
             return llamar('POST', 'interactions', cuerpo)
         except Ocupado as e:
-            if '429' not in str(e) or intento == 5:
+            # El tope por día (free tier: 10 voces al día) no se arregla esperando un minuto.
+            if '429' not in str(e) or 'per day' in str(e) or intento == 5:
                 raise
             print(f'{e} -> espero {10 * (intento + 1)} s', file=sys.stderr)
             time.sleep(10 * (intento + 1))

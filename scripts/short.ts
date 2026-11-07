@@ -14,7 +14,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {arg, leerPlan, resolverVisual, ruta, sh, type Plan} from './lib/comun';
-import {efecto, efectosBase, icono, musica, palabras, voz} from './lib/medios';
+import {efecto, efectosBase, icono, musica, palabras, voz, vozLoteGemini} from './lib/medios';
 import {revisar} from './watch';
 import type {Escena, ShortProps, SfxRef} from '../src/lib/types';
 
@@ -69,13 +69,15 @@ const dirVoz = path.join('public', 'voz', plan.slug);
 fs.mkdirSync(dirVoz, {recursive: true});
 const lineas = [...plan.escenas.map((e) => e.dice), plan.cierre.dice ?? ''];
 const voces: Array<{src?: string; seg: number; palabras: Escena['palabras']}> = [];
+const leer = (texto: string) => Object.entries(plan.pronuncia ?? {}).reduce((t, [a, b]) => t.replace(new RegExp(`(?<![\\p{L}])${a}(?![\\p{L}])`, 'gu'), b), texto);
+if (plan.voz?.startsWith('gemini:')) vozLoteGemini(lineas.map(leer), plan.idioma, plan.voz, plan.velocidad ?? 1, plan.vozEstilo);
 for (const [i, texto] of lineas.entries()) {
   if (!texto) {
     voces.push({seg: 0, palabras: []});
     continue;
   }
   // "pronuncia" cambia lo que lee la voz, no lo que dice el subtítulo (una palabra por otra).
-  const leido = Object.entries(plan.pronuncia ?? {}).reduce((t, [a, b]) => t.replace(new RegExp(`(?<![\\p{L}])${a}(?![\\p{L}])`, 'gu'), b), texto);
+  const leido = leer(texto);
   if (leido.split(/\s+/).length !== texto.split(/\s+/).length) {
     console.log(`❌ voz ${i + 1}: "pronuncia" tiene que cambiar una palabra por una palabra`);
     process.exit(1);
