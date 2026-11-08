@@ -7,6 +7,6 @@
   "voz": "gemini-3.8-flash-tts",
   "imagen": "gemini-3.1-flash-lite-image",
   "video": "gemini-omni-1.2-flash",
-  "tope_mes_usd": 9,
-  "nota": "tope_mes_usd = gasto pagado máximo del mes (imagen y video). Nivel pagado activo desde 2026-11-06 con OK de Cris (créditos AI Pro US$10/mes + saldo prepagado). Subirlo requiere el OK de Cris."
+  "tope_mes_usd": 0,
+  "nota": "tope_mes_usd = gasto pagado máximo del mes (imagen y video). En 0 desde 2026-11-08 20:20 UTC: Cris pidió quedarse en los límites gratuitos, así que nada se cobra a la clave con facturación. Subirlo requiere el OK explícito de Cris."
 }
