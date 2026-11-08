@@ -338,3 +338,8 @@
 ## 2026-11-08 (mañana)
 - Salió el par 1 de V17 (Algieba): gow-3CRGpYo, 51 s, -14,1 LUFS. La voz en lote funcionó: 18 líneas en un pedido gratis. Algieba a 1,25 (a 1,15 el Short duraba 64 s y hablaba a 2,66 palabras/s contra 2,93 de Sulafat); guion recortado a la longitud del control.
 - Apliqué de G-040 solo lo que no cambia la variable de la prueba: fuera la toma con artefacto. Cierre sin CTA hablado y una cara fija por sospechoso quedan para después de V17 (son V14 y la próxima ficha IA).
+
+## 2026-11-08 (turno diario, domingo)
+- V16 paquete GANA en vistas (cah0eRHnqTU 125 contra 7 a 48 h); retención pendiente; 0 comentarios pese al CTA. Se levanta el congelamiento del video IA con tope de 2 clips por Short. Tregua ES 196 contra Beethoven ES 326: no gana. Beethoven ES retiene 79,9 %.
+- Competencia piano (competencia.py, out/competencia/2026-11-08-piano/REPORTE.md, no se commitea): los outliers del nicho son lecciones cortas ("cómo...", acordes, tocar con dos manos), no historias de la pieza. Idea para V-piano: un Short que enseñe una frase de Noche de paz con las notas Do Re Mi en pantalla.
+- Short de hoy: ya salió en la mañana (gow-3CRGpYo, Algieba).
