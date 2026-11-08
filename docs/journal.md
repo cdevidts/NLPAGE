@@ -334,3 +334,7 @@
 - G-041: 14 Shorts ES de true crime de la semana; los canales 100 % IA se estancan en 500-1.700 vistas, los que crecen mezclan IA con evidencia real; fórmula de 10 líneas para 35-42 s. Al hilo de videos.
 - G-042: 20 correcciones al DE/FR del listing 4604988351 (calco FR "a arrêté le mauvais homme", DE "Cold-Case-Einheit" → Dezernat) y fichas IT/NL completas; longitudes validadas acá. Ojo: cambió "Entsperrmuster" por "Entsperrcode" (mecánica del juego, se mantiene la palabra original) y afirma sin verificar que la app de Etsy no baja PDF. A OPS con esas salvedades.
 - Cola nueva (3, 2 de búsqueda): G-043 guion por planos y prompts por clip del caso 01 para la voz Algieba con los arreglos de G-040 (video, alta), G-044 verificación IT/NL en SERP y corrección de título/tags del #56 (OPS), G-045 juegos de misterio en Gumroad: Google + Discover, precios y anzuelos (Canales). El lunes 9 toca la automejora.
+
+## 2026-11-08 (mañana)
+- Salió el par 1 de V17 (Algieba): gow-3CRGpYo, 51 s, -14,1 LUFS. La voz en lote funcionó: 18 líneas en un pedido gratis. Algieba a 1,25 (a 1,15 el Short duraba 64 s y hablaba a 2,66 palabras/s contra 2,93 de Sulafat); guion recortado a la longitud del control.
+- Apliqué de G-040 solo lo que no cambia la variable de la prueba: fuera la toma con artefacto. Cierre sin CTA hablado y una cara fija por sospechoso quedan para después de V17 (son V14 y la próxima ficha IA).

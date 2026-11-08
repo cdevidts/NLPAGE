@@ -5,14 +5,14 @@
   "tema": "coldcase",
   "voz": "gemini:Algieba",
   "vozEstilo": "Narrador de true crime en español latinoamericano neutro, voz grave y cercana, ritmo ágil, tensión contenida, sin exagerar",
-  "velocidad": 1.15,
+  "velocidad": 1.25,
   "ritmo": "continuo",
   "musica": {
     "incompetech": "Constance",
     "volumen": 0.22,
     "desde": 0
   },
-  "notas": "Par 1 de V17 (Cris, 6-nov 23:15 UTC: Sulafat o Algieba). Mismo paquete que 57-cold-case-02-ia-es (cah0eRHnqTU, Sulafat): mismas tomas IA ya pagadas (cero gasto nuevo, gasto congelado hasta el 8-nov), páginas del expediente, sospechosos numerados con nombre y CTA de comentar el número. Cambia la voz (Algieba). Confusores: gancho distinto (G-036 A1, 'nueve metros bajo su propio puente', el hallazgo primero), entra la toma 'hoy' (caso reabierto) y los sospechosos se nombran una sola vez. Hechos: expediente ES p. 1-2 (fecha, lugar, gala, 54 años), p. 5 (Personas de interés), Doc 04 (accidente: pasarela helada, pantuflas, una copa de más; ya dicho en 57-cold-case-02-historia-es), carta de Navarro (reabierto a los 37 años, rollo, libreta verde, caja fuerte), Doc 06 (9 m, ya en la descripción del Short EN). Nada de la solución ni del sobre.",
+  "notas": "Par 1 de V17 (Cris, 6-nov 23:15 UTC: Sulafat o Algieba). Mismo paquete que 57-cold-case-02-ia-es (cah0eRHnqTU, Sulafat): mismas tomas IA ya pagadas (cero gasto nuevo, gasto congelado hasta el 8-nov), páginas del expediente, sospechosos numerados con nombre y CTA de comentar el número. Cambia la voz (Algieba). Confusores: gancho distinto (G-036 A1, 'nueve metros bajo su propio puente', el hallazgo primero), entra la toma 'hoy' (caso reabierto) y los sospechosos se nombran una sola vez. Hechos: expediente ES p. 1-2 (fecha, lugar, gala, 54 años), p. 5 (Personas de interés), Doc 04 (accidente: pasarela helada, pantuflas, una copa de más; ya dicho en 57-cold-case-02-historia-es), carta de Navarro (reabierto a los 37 años, rollo, libreta verde, caja fuerte), Doc 06 (9 m, ya en la descripción del Short EN). Nada de la solución ni del sobre. G-040 (8-nov): la toma del ayudante con radio (hallazgo 3-5,5 s) trae un artefacto en la mano y el parche: se usa la libreta del sheriff (5,5-8 s). Las tomas del sobrino en el bar y de la gerente con el libro no entran (inconsistencia de personajes con las caras de los sospechosos). Algieba habla más lento que Sulafat (2,66 contra 2,93 palabras/s a 1,15): va a 1,25 y el guion se recortó a la longitud del control (~50 s), para que la voz sea la diferencia y no la duración.",
   "escenas": [
     {
       "dice": "La encontraron nueve metros bajo su propio puente.",
@@ -72,8 +72,8 @@
       "visual": {
         "tipo": "video",
         "src": "ia/57-caso02-es-4-hallazgo.mp4",
-        "desde": 3,
-        "hasta": 5.5
+        "desde": 5.5,
+        "hasta": 8
       }
     },
     {
@@ -120,7 +120,7 @@
       }
     },
     {
-      "dice": "Cinco personas del hotel tenían un motivo.",
+      "dice": "Cinco tenían un motivo.",
       "texto": "*Cinco* sospechosos",
       "visual": {
         "tipo": "video",
@@ -130,7 +130,7 @@
       }
     },
     {
-      "dice": "Uno, Paul, el sobrino que iba a heredar.",
+      "dice": "Uno, Paul, el sobrino heredero.",
       "texto": "*1* Paul, el sobrino",
       "visual": {
         "tipo": "video",
@@ -150,7 +150,7 @@
       }
     },
     {
-      "dice": "Tres, Dane, el instructor que guió las antorchas.",
+      "dice": "Tres, Dane, el de las antorchas.",
       "texto": "*3* Dane, el instructor",
       "visual": {
         "tipo": "video",
@@ -160,7 +160,7 @@
       }
     },
     {
-      "dice": "Cuatro, Vivian, su rival desde mil novecientos cincuenta y seis.",
+      "dice": "Cuatro, Vivian, su vieja rival.",
       "texto": "*4* Vivian, la rival",
       "visual": {
         "tipo": "video",
