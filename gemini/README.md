@@ -131,8 +131,13 @@ Doc) y debajo el texto tal como lo entregó Gemini. Los archivos de Entregas no 
 repo (pesan); se enlazan desde la respuesta y, si un hilo los necesita, los baja con el conector.
 
 ## Reglas de Cris para este canal (2026-10-30 17:53 UTC)
-- La tarea corre **cada hora** y "es prácticamente ilimitada": usarla bastante. La cola nunca se deja
-  vacía: mínimo 3 tareas útiles pendientes (`bandeja.py estado` avisa). Cada hilo pide lo suyo.
+- (Regla original: la tarea corre cada hora y "es prácticamente ilimitada", cola nunca vacía.) **Superada el
+  2026-11-08**: el cupo de la app se agotó tras 45 tareas en 9 días más ~24 corridas diarias de la Tarea.
+  Régimen nuevo: el espejo de Drive lleva tareas solo 2 veces por semana (lunes y jueves, turno 12:07 Chile),
+  máximo 3 por lote y solo lo que la API gratis no hace (Argon, imágenes, búsquedas, Python con archivos);
+  el resto del tiempo el espejo dice "CANAL EN PAUSA" y cada corrida horaria termina al instante. Las
+  auditorías rutinarias de YouTube van por `gemini.py youtube` (API, clave FREE). Las tareas pedidas con
+  `bandeja.py pedir` esperan en `inbox/` hasta el siguiente lote.
 - Siempre un modelo fuerte (Gemini 4 Argon / Pro / Deep Think): el encabezado de PENDIENTES.md lo
   exige y cada respuesta trae `modelo:` en la línea 3; `recibir` lo guarda en `registro.csv`. Si
   responde un modelo flojo, se vuelve a pedir diciéndolo.
@@ -146,7 +151,7 @@ repo (pesan); se enlazan desde la respuesta y, si un hilo los necesita, los baja
 ## Privacidad y límites
 - Nunca van a Gemini: claves, tokens, datos de compradores, soluciones de los juegos.
 - Google puede usar lo que la app recibe para mejorar sus productos (cuenta personal).
-- La tarea programada corre cada hora (Cris la activó el 2026-10-30 ~16:30 UTC y la pasó a cada hora a las 17:53 UTC); una tarea nueva se responde en menos de 1 h. Deep Research tiene cupo diario en AI Pro: no pedir más de 2-3 por día.
+- La tarea programada corre cada hora (Cris la activó el 2026-10-30 ~16:30 UTC y la pasó a cada hora a las 17:53 UTC); una tarea nueva se responde en menos de 1 h. Deep Research tiene cupo diario en AI Pro: no pedir más de 2-3 por día. **El uso de la app NO es ilimitado**: el 2026-11-08 Cris quedó sin cupo (45 tareas en 9 días + corridas horarias). Solo Cris puede cambiar la frecuencia de la Tarea desde su app.
 - Si una tarea lleva más de 2 días pendiente, `bandeja.py estado` lo avisa: probablemente la
   tarea programada de Gemini se pausó (Google las apaga por inactividad) y hay que decírselo a Cris.
 

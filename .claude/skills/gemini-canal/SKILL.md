@@ -20,8 +20,9 @@ de NotebookLM. No: Veo, Audio Overview, Canvas, y NO lee la URL raw de GitHub: e
   Nano Banana, hojas de cálculo o PDF armados por Gemini, cuadernos de NotebookLM, navegar
   páginas que el contenedor no puede leer (YouTube, Etsy sin API).
 - No: texto corto o voz (eso es `scripts/gemini/gemini.py`, gratis y al instante), nada con
-  datos de compradores, claves ni soluciones de los juegos, nada urgente (la tarea programada
-  corre cada hora: la respuesta llega en menos de 60 min).
+  datos de compradores, claves ni soluciones de los juegos, nada urgente (las tareas se espejan a
+  Drive solo lunes y jueves: la respuesta llega ese día, no en 1 h), ni auditorías rutinarias de
+  YouTube (eso es `gemini.py youtube`, gratis).
 
 ## Pedir
 1. Escribe la tarea en un archivo del scratchpad con tres secciones: `## Contexto`,
@@ -65,8 +66,10 @@ coordinador; Pinterest/Gumroad → Canales vía coordinador; utilería de mister
 5. Si una tarea lleva más de 2 días sin respuesta, dile a Cris en una línea que revise que la
    tarea programada de Gemini siga activa (Google las pausa por inactividad). Nada más que eso.
 
-## Cola permanente (regla de Cris, 2026-10-30: "úsalo bastante, es prácticamente ilimitado")
-Gemini corre cada hora. Nunca dejes la cola con menos de 3 tareas útiles. Fuentes de tareas que
+## Cola (desde 2026-11-08: el cupo de la app se agota; antes era "úsalo bastante")
+El cupo de AI Pro se acabó el 8-nov con 45 tareas en 9 días más la Tarea corriendo cada hora. Ahora el
+espejo de Drive lleva tareas solo lunes y jueves, máximo 3 por lote, y entre lotes dice "CANAL EN PAUSA".
+Lo pedido con `pedir` espera en `inbox/` hasta el lote siguiente. Fuentes de tareas que
 siempre sirven: YouTube (Shorts más vistos de un nicho con ganchos transcritos, métricas de nuestro
 canal, crítica de un Short), Etsy (verificar competidores en página, títulos y precios de un nicho,
 reseñas de un producto), Pinterest (pines que ganan por búsqueda), Sheets con datos tabulados,
