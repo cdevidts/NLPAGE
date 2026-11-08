@@ -343,3 +343,9 @@
 - V16 paquete GANA en vistas (cah0eRHnqTU 125 contra 7 a 48 h); retención pendiente; 0 comentarios pese al CTA. Se levanta el congelamiento del video IA con tope de 2 clips por Short. Tregua ES 196 contra Beethoven ES 326: no gana. Beethoven ES retiene 79,9 %.
 - Competencia piano (competencia.py, out/competencia/2026-11-08-piano/REPORTE.md, no se commitea): los outliers del nicho son lecciones cortas ("cómo...", acordes, tocar con dos manos), no historias de la pieza. Idea para V-piano: un Short que enseñe una frase de Noche de paz con las notas Do Re Mi en pantalla.
 - Short de hoy: ya salió en la mañana (gow-3CRGpYo, Algieba).
+
+## 2026-11-08 · Canal Gemini: cupo agotado, canal en pausa
+
+- Cris (20:22 UTC): se le acabó el uso de Gemini. Causa: 45 tareas en 9 días (11 el 30-oct, 3-4 diarias después; 18 con búsqueda web, ~10 de YouTube por fotogramas, 2 de Nano Banana) más la Tarea corriendo cada hora (~215 corridas), que gasta aunque la lista esté vacía. La regla "es prácticamente ilimitado" del 30-oct queda superada.
+- Hecho: espejo de Drive reemplazado por un Doc "CANAL EN PAUSA" (cada corrida termina al instante); G-043/G-044/G-045 retiradas del espejo (siguen en inbox/). README, skill y CAPACIDADES actualizados al régimen nuevo: lotes solo lunes y jueves, ≤3 tareas, solo lo que la API gratis no hace; auditorías de YouTube por `gemini.py youtube`. El turno de este hilo pasa de diario a lunes y jueves.
+- Espera a una persona: la frecuencia de la Tarea (cada hora) solo la cambia Cris desde su app; se lo dije como información, sin pedírselo.
