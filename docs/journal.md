@@ -325,3 +325,12 @@
 - Lecturas: Beethoven ES 326 vistas a ~45 h (gana a su par EN, 26: V15 3/3 a favor del español); villancicos EN 41 a 7 días (retención 25,8 %). cah0eRHnqTU (IA + Sulafat + CTA de comentar) 121 vistas y 5 likes a ~18 h contra 7 del control a 48 h: la decisión formal de V16 es el 8-nov.
 - Short del día: par 1 de V17 (Algieba) con las tomas IA ya pagadas, cero gasto. No salió: el free tier de Gemini TTS tiene tope de 10 voces por día y el Short pide 18. No usé la clave de pago (Cris: solo límites gratuitos). Arreglo: `vozLoteGemini` pide todas las líneas en un solo pedido y las corta por silencios; probado con un lote armado con 3 voces reales (cortes limpios, whisper 100 %). El Short queda para el 8-nov.
 - Espera a una persona: nada.
+
+## 2026-11-08 · Canal Gemini, turno diario
+
+- Recogidas G-039..G-042 (las 4 respondidas entre 15:28 y 16:16 UTC del 7-nov, 50 min después de espejar; modelo "Argon / Gemini 3.1 Pro"). Resúmenes en /mnt/project-files/plan/investigacion/2026-11-08-gemini-G-03*/G-04*.md.
+- G-039: ~40 fichas DE/FR reales; el 90 % dice "zum Ausdrucken"/"à imprimer" y "(PDF)", el idioma del producto va al final del título ("| English"); SpurlosVerschwunden domina en DE. 3 títulos y 13 tags verificados por idioma para el #56. A OPS.
+- G-040: Sulafat sin errores graves (Piper tenía 6), 2,27 pal/s; cah0eRHnqTU 121 vistas contra 7 del control. Tres artefactos de IA con segundo y dos puntos de fuga (arranque s2-4 sin gancho, cierre comercial hablado s44). 5 cambios para el par Algieba. Al hilo de videos.
+- G-041: 14 Shorts ES de true crime de la semana; los canales 100 % IA se estancan en 500-1.700 vistas, los que crecen mezclan IA con evidencia real; fórmula de 10 líneas para 35-42 s. Al hilo de videos.
+- G-042: 20 correcciones al DE/FR del listing 4604988351 (calco FR "a arrêté le mauvais homme", DE "Cold-Case-Einheit" → Dezernat) y fichas IT/NL completas; longitudes validadas acá. Ojo: cambió "Entsperrmuster" por "Entsperrcode" (mecánica del juego, se mantiene la palabra original) y afirma sin verificar que la app de Etsy no baja PDF. A OPS con esas salvedades.
+- Cola nueva (3, 2 de búsqueda): G-043 guion por planos y prompts por clip del caso 01 para la voz Algieba con los arreglos de G-040 (video, alta), G-044 verificación IT/NL en SERP y corrección de título/tags del #56 (OPS), G-045 juegos de misterio en Gumroad: Google + Discover, precios y anzuelos (Canales). El lunes 9 toca la automejora.
