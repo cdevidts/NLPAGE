@@ -146,3 +146,5 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 | Fecha | Short | Lectura | Vistas | Retención | Coment./1k | Shares/1k | Veredicto | Nota |
 |---|---|---|---|---|---|---|---|---|
 
+
+- 2026-11-09 (uFWsXm89siE): primer Short del caso 03 (Siete Campanadas), 29,8 s, 9 frases con un corte cada una, voz Sulafat, solo páginas del expediente (sin video IA nuevo por la regla de solo gratis). CTA de dos opciones: "¿Culpable o inocente? Escríbelo abajo". Control: caso 02 ES con Piper (39,9 % de retención). Confusores: otro caso, otra voz, otro CTA. Lecturas 11 y 16-nov.
