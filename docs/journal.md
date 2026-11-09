@@ -355,3 +355,8 @@
 - Sin respuestas: G-043..G-045 estuvieron en el espejo 5 h el 8-nov y Gemini no produjo nada, señal de que el cupo ya estaba agotado antes de que Cris lo notara. El espejo sigue en "CANAL EN PAUSA".
 - Decisión: no espejar nada hoy (un día después de quedarse sin cupo, y Cris querría usar Gemini él). Primer lote del régimen nuevo el jueves 12-nov con G-043, G-044 y G-045 (2 búsquedas). Si el jueves tampoco responde, se le dice a Cris una sola vez.
 - Espera a una persona: nada.
+
+## 2026-11-09 (turno diario)
+- Retención: cah0eRHnqTU 84,2 % contra 39,9 % del control: el paquete de V16 gana también en retención. Tregua ES 75,3 %, Beethoven ES 79,3 %: los ES con voz Gemini o Piper retienen 75-84 %.
+- Short del día: caso 03 ES (uFWsXm89siE), 30 s (V19), Sulafat, CTA "¿culpable o inocente?". Solo páginas: nada pagado (regla de Cris del 8-nov). La voz en lote pidió 9 líneas en un pedido.
+- Pendiente de mejora: las páginas siguen ocupando ~40 % de la pantalla; para el próximo, probar zoom más alto o recortes de página a pantalla completa.

@@ -1,0 +1,156 @@
+{
+  "slug": "58-cold-case-03-historia-es",
+  "producto": "58-cold-case-03",
+  "idioma": "es",
+  "tema": "coldcase",
+  "voz": "gemini:Sulafat",
+  "vozEstilo": "Narradora de true crime en español latinoamericano neutro, voz cálida y cercana, ritmo ágil, tensión contenida, sin exagerar",
+  "velocidad": 1.15,
+  "ritmo": "continuo",
+  "musica": {
+    "incompetech": "Constance",
+    "volumen": 0.22,
+    "desde": 0
+  },
+  "notas": "Primer Short del caso 03 (Siete Campanadas). V19: 30-35 s, un corte por frase, solo páginas del expediente (sin video IA: regla de Cris del 8-nov, solo límites gratuitos). CTA nuevo: dos opciones ('¿culpable o inocente?') en vez de cinco números, porque 'deja su número' dio 0 comentarios. Hechos: expediente ES p. 1 (víctima Iris Calloway, 52, 17-sep-1936, S.S. Celestine, cubierta de botes; veredicto de 1937 Declan Kerrigan culpable), p. 2 (estrangulada la última noche de la travesía durante el baile de disfraces del capitán; camarero condenado que murió en 1974 jurando que era inocente), Doc 01 p. 4 (capa negra 'Reina de la Noche', hallada a las 06:30 en su silla de cubierta; detenido antes del anochecer; 23 años en Doc 02; 90 años después: radiogramas del barco y un maletín cerrado). Nada de la solución, pistas ni el sobre A.",
+  "escenas": [
+    {
+      "dice": "Mil novecientos treinta y seis. Baile de disfraces en un transatlántico.",
+      "texto": "*1936*, alta mar",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:1",
+        "foco": {
+          "x": 0.3,
+          "y": 0.3,
+          "zoom": 1.7
+        }
+      }
+    },
+    {
+      "dice": "Iris Calloway, escritora de viajes, sale del baile con una capa negra.",
+      "texto": "Iris, *52 años*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:25",
+        "foco": {
+          "x": 0.3,
+          "y": 0.3,
+          "zoom": 1.8
+        }
+      }
+    },
+    {
+      "dice": "A las seis y media la encuentran en su silla de cubierta.",
+      "texto": "*06:30*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:11",
+        "foco": {
+          "x": 0.5,
+          "y": 0.3,
+          "zoom": 1.7
+        }
+      }
+    },
+    {
+      "dice": "Estrangulada.",
+      "texto": "*Estrangulada*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:9",
+        "foco": {
+          "x": 0.45,
+          "y": 0.3,
+          "zoom": 1.8
+        }
+      }
+    },
+    {
+      "dice": "Esa tarde detienen a un camarero de veintitrés años.",
+      "texto": "Un camarero, *23 años*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:34",
+        "foco": {
+          "x": 0.4,
+          "y": 0.48,
+          "zoom": 2.0
+        }
+      }
+    },
+    {
+      "dice": "Lo condenan. Muere en mil novecientos setenta y cuatro jurando que era inocente.",
+      "texto": "Murió jurando *inocencia*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:37",
+        "foco": {
+          "x": 0.35,
+          "y": 0.5,
+          "zoom": 1.9
+        }
+      }
+    },
+    {
+      "dice": "Noventa años después aparecen los radiogramas del barco y un maletín que sigue cerrado.",
+      "texto": "*90 años* después",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:38",
+        "foco": {
+          "x": 0.5,
+          "y": 0.35,
+          "zoom": 1.7
+        }
+      }
+    },
+    {
+      "dice": "¿Culpable o inocente? Escríbelo abajo.",
+      "texto": "¿*Culpable* o *inocente*?",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:es:37",
+        "foco": {
+          "x": 0.72,
+          "y": 0.62,
+          "zoom": 1.9
+        }
+      },
+      "pausa": 0.6
+    }
+  ],
+  "cierre": {
+    "dice": "El caso es ficción. Está en nuestra tienda de Etsy.",
+    "titulo": "¿Lo resuelves?",
+    "sub": "Caso Archivado N.º 03 · Siete Campanadas",
+    "linea": "SheetSmithChile en Etsy",
+    "src": "pag:es:1"
+  },
+  "youtube": {
+    "titulo": "Murió jurando que era inocente: ¿culpable o no? | juego de misterio imprimible",
+    "descripcion": "¿Culpable o inocente? Escríbelo en los comentarios.\n\nJuego de misterio imprimible, en español: https://www.etsy.com/listing/4605344156\nLos links de la tienda (Etsy y Gumroad) están en el canal: toca el nombre del canal.\n\nJueves 17 de septiembre de 1936, última noche de la travesía del S.S. Celestine. Iris Calloway, escritora de viajes de 52 años, sale del baile de disfraces del capitán con una capa negra. A las 06:30 la encuentran estrangulada en su silla de cubierta. Esa misma tarde detienen a Declan Kerrigan, un camarero de 23 años. Lo condenan en 1937 y muere en 1974 diciendo todavía que era inocente. Noventa años después aparecen las copias de los radiogramas del barco y un maletín de cuero que nunca se abrió.\n\nEl caso es ficción. Es el Caso Archivado N.º 03, Siete Campanadas, un juego de misterio para imprimir: el expediente completo (38 documentos de evidencia y un sobre sellado) para descubrir quién la mató, cómo y por qué. De 1 a 6 jugadores, unas 2 a 3 horas, sin anfitrión. Incluye la versión en español y en inglés. SheetSmithChile en Etsy.\n\n#casoarchivado #truecrime #misterio #shorts",
+    "tags": [
+      "juego de misterio imprimible",
+      "caso archivado",
+      "caso sin resolver",
+      "true crime",
+      "misterio",
+      "juego de detectives",
+      "juego de misterio",
+      "resuelve el caso",
+      "noche de juegos",
+      "misterio en un barco"
+    ]
+  },
+  "experimento": {
+    "hipotesis": "V19",
+    "variable": "duracion",
+    "variante": "30-35 s con un corte por frase (antes 46-54 s)",
+    "control": "57-cold-case-02-historia-es",
+    "formato": "historia",
+    "gancho_tipo": "fecha-edad-nombre",
+    "espera": "retención 1,2x la del control (39,9 %) y vistas a 48 h por encima de la mediana ES sin IA. Confusores: otro caso, voz Sulafat en vez de Piper, CTA de dos opciones",
+    "listing_id": 4605344156
+  }
+}
