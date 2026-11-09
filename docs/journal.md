@@ -349,3 +349,9 @@
 - Cris (20:22 UTC): se le acabó el uso de Gemini. Causa: 45 tareas en 9 días (11 el 30-oct, 3-4 diarias después; 18 con búsqueda web, ~10 de YouTube por fotogramas, 2 de Nano Banana) más la Tarea corriendo cada hora (~215 corridas), que gasta aunque la lista esté vacía. La regla "es prácticamente ilimitado" del 30-oct queda superada.
 - Hecho: espejo de Drive reemplazado por un Doc "CANAL EN PAUSA" (cada corrida termina al instante); G-043/G-044/G-045 retiradas del espejo (siguen en inbox/). README, skill y CAPACIDADES actualizados al régimen nuevo: lotes solo lunes y jueves, ≤3 tareas, solo lo que la API gratis no hace; auditorías de YouTube por `gemini.py youtube`. El turno de este hilo pasa de diario a lunes y jueves.
 - Espera a una persona: la frecuencia de la Tarea (cada hora) solo la cambia Cris desde su app; se lo dije como información, sin pedírselo.
+
+## 2026-11-09 · Canal Gemini, turno de lunes: lote 0
+
+- Sin respuestas: G-043..G-045 estuvieron en el espejo 5 h el 8-nov y Gemini no produjo nada, señal de que el cupo ya estaba agotado antes de que Cris lo notara. El espejo sigue en "CANAL EN PAUSA".
+- Decisión: no espejar nada hoy (un día después de quedarse sin cupo, y Cris querría usar Gemini él). Primer lote del régimen nuevo el jueves 12-nov con G-043, G-044 y G-045 (2 búsquedas). Si el jueves tampoco responde, se le dice a Cris una sola vez.
+- Espera a una persona: nada.
