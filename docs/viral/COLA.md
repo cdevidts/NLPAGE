@@ -4,10 +4,13 @@ Desde el 4-nov a las 20:45, Metricool no publica nada: el plan gratis trae 20 pu
 
 | # | Plan | Render (URL raw fija) | Hipótesis | Nota |
 |---|---|---|---|---|
-(vacía: el Beethoven ES salió el 5-nov a las 17:21 Chile por Zapier, 6TOTGMLBNLc)
+| 1 | plans/56-mary-celeste-real-es.json | https://raw.githubusercontent.com/cdevidts/NLPAGE/488d2af8f4fa2834cd7200f65c1bba9a5465c8a5/renders/56-mary-celeste-real-es.mp4 | V20 (real contra ficción; control uFWsXm89siE) | category_id 24, default_language es. Hecho el 10-nov; Zapier sin cupo |
 
 ## Presupuesto de Zapier (10-nov, cero cobros)
 Plan Free: 100 tareas al mes, cada llamada del MCP cuesta 2 y al llegar al tope Zapier se detiene, no cobra (help.zapier.com 8496196837261, docs.zapier.com/mcp/usage, zapier.com/pricing). La cuenta es compartida con otros hilos. Uso de este hilo: 1 `upload_video` por día y la medición junta cada 2-3 días, con un tope propio de 70 tareas al mes. Nunca subir a un plan pagado ni activar pago por tarea. Si Zapier se corta, el Short queda en esta cola y sale el 1-dic por Metricool.
+
+### Registro de llamadas a Zapier
+- 2026-11-10 17:10 UTC: dos GET (Data + Analytics) respondieron "Your Zapier account has reached its task limit for the current billing period". Cero tareas gastadas, cero cobro. La cuenta quedó sin cupo hasta que se renueve el mes (fecha no visible desde el MCP). Mientras tanto: no medir, no subir; cada turno prueba UNA subida (si falla, no gasta) y si no, deja el Short en esta cola. Si llega el 1-dic sin cupo, sale por Metricool.
 
 ## Pendientes para los próximos Shorts (6-nov)
 - G-034 (según Gemini, sin verificar) oye 5 errores de pronunciación de Piper en el caso 01 ES: "parecina" (s 12), "policiga" (s 16), "didas" (s 18), "basilo" por vacío (s 26), "lizó" por hizo (s 39). Comprobar con whisper sobre el render y, si son reales, meterlos en "pronuncia" o cambiar la palabra.
