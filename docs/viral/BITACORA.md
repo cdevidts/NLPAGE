@@ -36,6 +36,7 @@ Zapier queda para medir.
 - Control: uFWsXm89siE (caso 03, ficción, mismo largo y voz).
 - Métrica: vistas a 48 h y retención; se decide con 2 de 3.
 - Cuidados: nada inventado, nada de víctimas recientes ni familiares vivos expuestos, sin morbo gráfico.
+- 2026-11-10: primer Short V20 listo, `plans/56-mary-celeste-real-es.json` (Mary Celeste, 1872; hechos de Wikipedia EN/ES, que citan a Begg 2007 y Hicks 2004; 9 imágenes de época: Met CC0 y Commons). 37,4 s, Sulafat 1,15, CTA "¿Accidente o crimen?", cierre con el caso 01 dicho como ficción. Quedó en la cola: Zapier llegó a su tope mensual ese día. Confusores: 7 s más largo que el control (el cierre), otro producto en el cierre, día de publicación distinto. Mitos del cuento de Conan Doyle (desayuno a medio comer) fuera.
 
 ### V0. Línea base: historia narrada (true crime y "la historia detrás del villancico")
 - Los 3 primeros Shorts en formato historia (hilo de videos, 30-oct): 56 Cold Case 01 EN
