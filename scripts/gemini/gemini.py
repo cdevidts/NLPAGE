@@ -53,7 +53,7 @@ def config():
 
 # Dos claves (Cris, 2026-11-06): GEMINI_API_KEY_FREE es de un proyecto SIN facturación (texto, voz,
 # revisiones y YouTube quedan gratis); GEMINI_API_KEY tiene facturación y se usa solo para imagen y video
-# pagados. Sin la clave gratis, todo cae en GEMINI_API_KEY (y lo gratis se cobra a tarifa de pago).
+# pagados. Sin la clave gratis, gemini.py se detiene: nunca cae en la de pago (Cris, 10-nov).
 PAGADO = False
 # Si la clave gratis no está en el entorno, se lee de este archivo fuera de git (carpeta compartida del
 # proyecto; Cris lo autorizó el 2026-11-07). Nunca se copia al repo.
@@ -76,10 +76,19 @@ def clave_libre():
 def clave():
     libre = clave_libre()
     pago = os.environ.get('GEMINI_API_KEY') or os.environ.get('GOOGLE_API_KEY')
-    k = pago if PAGADO else (libre or pago)
+    # Cero cobros (Cris, 2026-11-10): sin la clave gratis NO se cae en la de pago; y la de pago solo con
+    # --pago y un tope mayor que 0 en docs/gemini/config.json (hoy 0, y subirlo pide el OK de Cris).
+    if PAGADO:
+        if float(config().get('tope_mes_usd', 0)) <= 0:
+            sys.exit('Gasto pagado bloqueado: tope_mes_usd = 0 (Cris pidió cero cobros el 10-nov).')
+        k = pago
+    else:
+        k = libre
+        if not k:
+            sys.exit('Falta la clave GRATIS (GEMINI_API_KEY_FREE o /mnt/project-files/.secretos/gemini.env). '
+                     'No se usa la clave con facturación para lo gratis.')
     if not k:
-        sys.exit('Falta GEMINI_API_KEY en el entorno. Cris la crea en https://aistudio.google.com/apikey '
-                 'y la agrega en la configuración del entorno (ver docs/gemini/README.md).')
+        sys.exit('Falta la clave de Gemini.')
     return k
 
 

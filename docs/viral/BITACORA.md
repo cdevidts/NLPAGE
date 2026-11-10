@@ -9,12 +9,33 @@ DESCARTADA (2 perdidas) por hipótesis. Skill: `.claude/skills/shorts-viral-loop
 
 ## Reglas puestas por Cris (no se prueban)
 - 2026-10-30: los Shorts no son anuncios. Historia primero; el producto y el CTA solo al final.
+- 2026-11-10 (Cris): foco total en Shorts (y Pinterest) para ir viral, y cero cobros a su tarjeta. Solo lo que es gratis de forma sostenida, verificado en más de una fuente: Gemini con la clave gratis (gemini.py ya no cae en la de pago), Zapier Free (100 tareas/mes, 2 por llamada, se corta al tope sin cobrar), Remotion, ffmpeg, whisper, música CC BY. Nada de video IA nuevo.
 - 2026-10-30: el canal tiene enlaces a la tienda de Etsy y a Gumroad en su cabecera (Cris los puso en YouTube Studio > Personalización). En Shorts el link de la descripción no es clicable, así que el CTA hablado puede decir "el link está en el canal" / "link on the channel". Probarlo contra "búscalo en Etsy" es una variable `cta`.
 
 ## Descartado
 - (nada todavía)
 
+## Plan viral (10-nov, desde la orden de Cris)
+Un Short ES por día, 30-35 s, una variable por vez. Lo que ya se sabe: el español reparte (V15), el
+paquete con video variado retiene 84 % contra 40 % (V16), el CTA de "escribe el número" no trae
+comentarios. Orden de prueba:
+1. **V20** (abajo): misterios históricos reales contra casos de ficción, para un público más amplio.
+2. **V19** con cierre diegético (V14): sin CTA hablado de tienda; la tienda va en texto fijo de 1 s.
+3. Pantalla llena: fotos de archivo con `llenar: pantalla`, zoom mayor en las páginas, reuso de las tomas IA ya pagadas de public/ia/ (cero gasto).
+4. Final en bucle (V5): la última frase empalma con la primera.
+Presupuesto de llamadas (Zapier Free, compartido entre hilos): 1 subida por día (2 tareas) y la
+medición junta cada 2-3 días (Data + Analytics en 2-3 llamadas). Tope propio: 70 tareas al mes.
+Metricool vuelve el 1-dic (20 publicaciones/mes): desde ahí YouTube puede salir por Metricool y
+Zapier queda para medir.
+
 ## Hipótesis abiertas (orden = prioridad)
+
+### V20. Un misterio histórico real gana a un caso de ficción (abierta 2026-11-10)
+- Evidencia: el caso 01 ES (ficción) sacó 686 y se frenó; los Shorts de true crime con millones de vistas cuentan casos reales (auditoría del 6-nov). Un caso real trae búsquedas y gente que ya conoce el nombre.
+- Prueba: un misterio histórico sin resolver, contado con fuentes públicas verificadas (anotadas en el plan, con enlace) y fotos de archivo de dominio público (Wikimedia Commons, Library of Congress), mismo formato V19 (30-35 s, Sulafat 1,15). El producto solo en el cierre ("si te gustan los casos sin cerrar, en SheetSmithChile hay expedientes para resolver"), dicho como ficción aparte.
+- Control: uFWsXm89siE (caso 03, ficción, mismo largo y voz).
+- Métrica: vistas a 48 h y retención; se decide con 2 de 3.
+- Cuidados: nada inventado, nada de víctimas recientes ni familiares vivos expuestos, sin morbo gráfico.
 
 ### V0. Línea base: historia narrada (true crime y "la historia detrás del villancico")
 - Los 3 primeros Shorts en formato historia (hilo de videos, 30-oct): 56 Cold Case 01 EN
