@@ -1,0 +1,178 @@
+{
+  "slug": "56-faro-flannan-real-es",
+  "producto": "56-cold-case-01",
+  "idioma": "es",
+  "tema": "coldcase",
+  "voz": "gemini:Sulafat",
+  "vozEstilo": "Narradora de true crime en español latinoamericano neutro, voz cálida y cercana, ritmo ágil, tensión contenida, sin exagerar",
+  "velocidad": 1.15,
+  "ritmo": "continuo",
+  "musica": {
+    "incompetech": "Constance",
+    "volumen": 0.22,
+    "desde": 0
+  },
+  "cierre": {
+    "dice": "Si te gustan los casos sin cerrar, en nuestra tienda de Etsy hay uno de ficción para resolver.",
+    "titulo": "¿Lo resuelves?",
+    "sub": "Caso Archivado N.º 01 · un juego de ficción",
+    "linea": "SheetSmithChile en Etsy",
+    "src": "pag:es:1"
+  },
+  "notas": "V20, segundo misterio real: los fareros de las islas Flannan (Escocia, diciembre de 1900). Fuente: https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse (leída el 11-nov; cita a Munro 1979, Nicholson 1995, Bathurst 2000, Haswell-Smith 2004 y el informe de Muirhead). Hechos usados: el vapor Archtor anota el 15-dic-1900 que la luz no funciona; el relevo (Hesperus) no pudo zarpar el 20-dic por el mal tiempo y llegó el 26-dic a mediodía; no había bandera en el mástil y nadie salió a recibirlos; el relevo Joseph Moore encontró las camas sin hacer y el reloj sin cuerda (el telegrama del capitán dice 'the clocks were stopped'); las lámparas limpias y recargadas; un juego de impermeables seguía en el faro, señal de que uno salió sin él; Muirhead concluyó que McArthur salió en mangas de camisa con lluvia fuerte; tres fareros (James Ducat, Thomas Marshall, Donald McArthur); 'no bodies were ever found'. Mitos que NO se usan: la mesa servida con comida sin tocar, la silla volcada, las anotaciones raras del diario (el artículo dice que son posteriores e inventadas). Imágenes: arte de época del Met (CC0), ninguna es el faro real (las fotos libres del faro en Commons tienen 542 px).",
+  "escenas": [
+    {
+      "dice": "Tres fareros desaparecen de una isla de Escocia.",
+      "texto": "*3* fareros",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/archivo/fl-farrer.jpg",
+        "llenar": "pantalla",
+        "foco": {
+          "x": 0.55,
+          "y": 0.35,
+          "zoom": 1.15
+        }
+      }
+    },
+    {
+      "dice": "Diciembre de mil novecientos: un barco ve que el faro está apagado.",
+      "texto": "Faro *apagado*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/archivo/fl-turner.jpg",
+        "llenar": "pantalla",
+        "foco": {
+          "x": 0.42,
+          "y": 0.4,
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "dice": "Por el temporal, el relevo llega recién el veintiséis.",
+      "texto": "*26* de diciembre",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/archivo/fl-thunder.jpg",
+        "llenar": "pantalla",
+        "foco": {
+          "x": 0.55,
+          "y": 0.45,
+          "zoom": 1.15
+        }
+      }
+    },
+    {
+      "dice": "Nadie sale a recibirlo. No hay bandera en el mástil.",
+      "texto": "Sin *bandera*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/archivo/fl-balke.jpg",
+        "llenar": "pantalla",
+        "foco": {
+          "x": 0.47,
+          "y": 0.55,
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "dice": "Adentro, las camas sin hacer y el reloj parado.",
+      "texto": "Reloj *parado*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/archivo/fl-clock1.jpg",
+        "llenar": "pantalla",
+        "foco": {
+          "x": 0.5,
+          "y": 0.33,
+          "zoom": 1.25
+        }
+      }
+    },
+    {
+      "dice": "Las lámparas están limpias y cargadas.",
+      "texto": "Todo *listo*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/archivo/fl-lantern2.jpg",
+        "llenar": "pantalla",
+        "foco": {
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.1
+        }
+      }
+    },
+    {
+      "dice": "Un impermeable sigue ahí. Uno de ellos salió sin él, bajo la lluvia.",
+      "texto": "Sin *impermeable*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/archivo/fl-perils.jpg",
+        "llenar": "pantalla",
+        "foco": {
+          "x": 0.6,
+          "y": 0.5,
+          "zoom": 1.15
+        }
+      }
+    },
+    {
+      "dice": "Nunca encontraron a ninguno.",
+      "texto": "*Nunca*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/archivo/fl-farrer.jpg",
+        "llenar": "pantalla",
+        "foco": {
+          "x": 0.6,
+          "y": 0.25,
+          "zoom": 1.6
+        }
+      }
+    },
+    {
+      "dice": "¿Una ola gigante o algo más? Escríbelo abajo.",
+      "texto": "¿*Ola gigante* o *algo más*?",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/archivo/fl-turner.jpg",
+        "llenar": "pantalla",
+        "foco": {
+          "x": 0.4,
+          "y": 0.75,
+          "zoom": 1.3
+        }
+      },
+      "pausa": 0.6
+    }
+  ],
+  "youtube": {
+    "titulo": "Tres fareros desaparecieron en 1900: el faro de Flannan | juego de misterio imprimible",
+    "descripcion": "¿Una ola gigante o algo más? Escríbelo en los comentarios.\n\nJuego de misterio imprimible, en español: https://www.etsy.com/listing/4604988351\nLos links de la tienda (Etsy y Gumroad) están en el canal: toca el nombre del canal.\n\nEl 15 de diciembre de 1900, el vapor Archtor anota que el faro de las islas Flannan, frente a Escocia, está apagado. Por el temporal, el barco del relevo llega recién el 26. Nadie sale a recibirlo y no hay bandera en el mástil. Adentro, las camas están sin hacer y el reloj, parado. Las lámparas están limpias y cargadas. Un impermeable sigue en el faro: uno de los tres salió sin él, bajo la lluvia. James Ducat, Thomas Marshall y Donald McArthur no aparecieron nunca.\n\nEs un caso real. Los hechos salen del artículo \"Flannan Isles Lighthouse\" de Wikipedia, que cita el informe oficial de 1900 y a varios autores. La mesa servida y las anotaciones raras del diario que repiten muchos videos son inventos posteriores, por eso no están aquí. Las imágenes son obras de época del Museo Metropolitano de Arte (CC0); ninguna muestra el faro real.\n\nSi te gustan los casos sin cerrar: el Caso Archivado N.º 01 es un juego de ficción para imprimir, con el expediente completo para descubrir quién lo hizo, cómo y por qué. De 1 a 6 jugadores, sin anfitrión, en español y en inglés. SheetSmithChile en Etsy.\n\n#misterio #faro #truecrime #shorts",
+    "tags": [
+      "juego de misterio imprimible",
+      "islas flannan",
+      "faro",
+      "fareros desaparecidos",
+      "misterio sin resolver",
+      "caso sin resolver",
+      "misterios reales",
+      "historia real",
+      "misterio",
+      "caso archivado"
+    ]
+  },
+  "experimento": {
+    "hipotesis": "V20",
+    "variable": "tema",
+    "variante": "segundo misterio histórico real (fareros de Flannan, 1900) en vez de un caso de ficción",
+    "control": "58-cold-case-03-historia-es",
+    "formato": "historia",
+    "gancho_tipo": "dato-imposible",
+    "espera": "vistas a 48 h 1,5x las del caso 03 (40) con retención parecida. Confusores: cierre con el caso 01, arte de época en vez de páginas, día de publicación distinto",
+    "listing_id": 4604988351
+  }
+}

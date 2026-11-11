@@ -19,3 +19,13 @@ Bajadas el 2026-11-10 del Metropolitan Museum of Art (Open Access, CC0, collecti
 - mc-storm-ship.jpg: "A Storm at Sea with a Large Ship and a Small Boat with Two Figures", 1765-1800. Met 651682, CC0.
 - mc-waterspout.jpg: "Marine: The Waterspout", Gustave Courbet, 1870. Met 436006, CC0.
 Ninguna es del Mary Celeste salvo mc-amazon.jpg: son ilustración de época, y la descripción del Short lo dice.
+
+## Faro de las islas Flannan (Short V20, 2026-11-11)
+Todas del Metropolitan Museum of Art (Open Access, CC0), bajadas el 2026-11-11 y reducidas a 2000 px de alto. Ninguna muestra el faro de Flannan: son ilustración de época, y la descripción del Short lo dice.
+- fl-farrer.jpg: "Lighthouse", Henry Farrer, 1880. Met 382738.
+- fl-turner.jpg: "Coast of Yorkshire, Near Whitby" (Liber Studiorum), J. M. W. Turner, 1811. Met 383002.
+- fl-thunder.jpg: "Effect of Thunder", según Joseph Vernet, ca. 1755-85. Met 811989.
+- fl-balke.jpg: "The North Cape by Moonlight", Peder Balke, 1848. Met 441379.
+- fl-clock1.jpg: reloj de repisa, patentado en 1849. Met 4928.
+- fl-lantern2.jpg: linterna, ca. 1825. Met 4741.
+- fl-perils.jpg: "Perils of the Sea", Winslow Homer, 1888. Met 348596.
