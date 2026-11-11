@@ -5,12 +5,14 @@ Desde el 4-nov a las 20:45, Metricool no publica nada: el plan gratis trae 20 pu
 | # | Plan | Render (URL raw fija) | Hipótesis | Nota |
 |---|---|---|---|---|
 | 1 | plans/56-mary-celeste-real-es.json | https://raw.githubusercontent.com/cdevidts/NLPAGE/488d2af8f4fa2834cd7200f65c1bba9a5465c8a5/renders/56-mary-celeste-real-es.mp4 | V20 (real contra ficción; control uFWsXm89siE) | category_id 24, default_language es. Hecho el 10-nov; Zapier sin cupo |
+| 2 | plans/56-faro-flannan-real-es.json | https://raw.githubusercontent.com/cdevidts/NLPAGE/b4e8a2f2418278aaba9487936d381ebbc8269a5d/renders/56-faro-flannan-real-es.mp4 | V20 n.º 2 (real; control uFWsXm89siE) | category_id 24, default_language es. Hecho el 11-nov |
 
 ## Presupuesto de Zapier (10-nov, cero cobros)
 Plan Free: 100 tareas al mes, cada llamada del MCP cuesta 2 y al llegar al tope Zapier se detiene, no cobra (help.zapier.com 8496196837261, docs.zapier.com/mcp/usage, zapier.com/pricing). La cuenta es compartida con otros hilos. Uso de este hilo: 1 `upload_video` por día y la medición junta cada 2-3 días, con un tope propio de 70 tareas al mes. Nunca subir a un plan pagado ni activar pago por tarea. Si Zapier se corta, el Short queda en esta cola y sale el 1-dic por Metricool.
 
 ### Registro de llamadas a Zapier
 - 2026-11-10 17:10 UTC: dos GET (Data + Analytics) respondieron "Your Zapier account has reached its task limit for the current billing period". Cero tareas gastadas, cero cobro. La cuenta quedó sin cupo hasta que se renueve el mes (fecha no visible desde el MCP). Mientras tanto: no medir, no subir; cada turno prueba UNA subida (si falla, no gasta) y si no, deja el Short en esta cola. Si llega el 1-dic sin cupo, sale por Metricool.
+- 2026-11-11 17:09 UTC: un intento de upload_video, mismo error de tope (0 tareas).
 - 2026-11-10 (búsqueda de otra vía, pedida por el coordinador): (1) Make no tiene conexión de YouTube (solo Etsy, GitHub, Pinterest; crearla exige que Cris autorice su cuenta de Google: descartado). (2) No hay token de YouTube fuera de Zapier; la clave gratis de Gemini no sirve para subir (subir exige OAuth). (3) AnythingMCP terminó su prueba el 30-oct (pagado: descartado). (4) Metricool: sin cupo de publicación hasta el 1-dic y su analítica de YouTube devuelve vacío. **Medición resuelta**: el feed RSS público del canal (https://www.youtube.com/feeds/videos.xml?channel_id=UCLj5f15NxSLVAr5m6dYtwJA) trae las vistas de los últimos 15 videos, sin cuenta, sin cupo y sin costo; la retención sigue necesitando Analytics por Zapier. **Fecha de renovación de Zapier: probablemente el 23-nov**: Zapier recibió acceso a la cuenta de Google de Cris el 23-oct a las 15:28 UTC (correo de alerta de Google), y el plan gratis se renueva el mismo día de cada mes en que se creó la cuenta (help.zapier.com, artículo de Agents, y switchlabs.dev; un blog dice día 1, sin respaldo oficial). Make también renueva el 23-nov.
 
 ## Pendientes para los próximos Shorts (6-nov)
