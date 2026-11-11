@@ -164,6 +164,8 @@ Zapier queda para medir.
 
 ## Registro de lecturas
 
+- 2026-11-11 14:10 Chile (RSS): caso 03 uFWsXm89siE (V19, 30 s) **40 vistas a 48 h**: GANA a su control (caso 02 ES con Piper, 7) pero queda bajo la mediana ES sin IA (~260) y bajo cah0eRHnqTU (125). V19 sin veredicto hasta tener retención (Zapier). Algieba gow-3CRGpYo sigue en 30. Zapier sigue sin cupo.
+
 - 2026-11-10 14:20 Chile (feed RSS público del canal, https://www.youtube.com/feeds/videos.xml?channel_id=UCLj5f15NxSLVAr5m6dYtwJA; trae las vistas de los últimos 15 videos sin cuenta ni cupo; Zapier sin cupo): Algieba gow-3CRGpYo **30 vistas a ~50 h** contra 125 de Sulafat cah0eRHnqTU a ~42 h = 0,24x, **PIERDE** el par 1 de V17 en vistas (confusores: cuarta vez que sale el caso 02, gancho distinto). Retención pendiente hasta que haya Analytics. Caso 03 uFWsXm89siE (V19) 35 a ~27 h (lectura de 48 h mañana). Totales: caso 01 ES 681, Beethoven ES 335, Tregua 200, cah0eRHnqTU 132, villancicos EN 42, caso 02 EN 39, Beethoven EN 27, caso 02 ES 8, caso 01 EN 3.
 
 - 2026-11-06 14:10 Chile (YouTube Data/Analytics por Zapier; Analytics con ~2 días de atraso): caso 01 EN 7 d = 2 vistas, retención 17 % (PIERDE, cerrado). Caso 02 ES 48 h = 7 vistas, 0 likes (PIERDE contra EN 38, cerrado). Retención a la fecha: Beethoven EN 41 %, villancicos EN 26 %, caso 01 ES 25 %, caso 02 EN 19 %. En vivo: Beethoven ES 302 vistas, 15 likes, 1 comentario (~45 h); Tregua ES (V16) 121 vistas y 14 likes a ~6 h, 11,6 likes por cada 100 vistas, el mejor del canal.
