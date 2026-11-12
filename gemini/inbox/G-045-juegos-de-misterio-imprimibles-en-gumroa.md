@@ -6,7 +6,7 @@ hilo: Canales de venta y marketing
 herramienta: navegar
 entrega: sheet
 estado: pendiente
-vence: 2026-11-10
+vence: 2026-11-13
 ---
 ## Contexto
 Además de Etsy vendemos en Gumroad (devidts.gumroad.com, 41 productos, misma línea de juegos de misterio imprimibles y plantillas). No sabemos cómo se ven nuestros productos frente a la competencia en el buscador de Gumroad (gumroad.com/discover) ni qué muestra Google de Gumroad para estas frases. Búsqueda web (cuenta como tarea de búsqueda). No entres a nuestras páginas con sesión ni compres nada.

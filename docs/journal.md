@@ -360,3 +360,10 @@
 - Retención: cah0eRHnqTU 84,2 % contra 39,9 % del control: el paquete de V16 gana también en retención. Tregua ES 75,3 %, Beethoven ES 79,3 %: los ES con voz Gemini o Piper retienen 75-84 %.
 - Short del día: caso 03 ES (uFWsXm89siE), 30 s (V19), Sulafat, CTA "¿culpable o inocente?". Solo páginas: nada pagado (regla de Cris del 8-nov). La voz en lote pidió 9 líneas en un pedido.
 - Pendiente de mejora: las páginas siguen ocupando ~40 % de la pantalla; para el próximo, probar zoom más alto o recortes de página a pantalla completa.
+
+## 2026-11-12 · Canal Gemini, jueves: primer lote del régimen nuevo
+
+- Sin respuestas nuevas (el espejo estuvo en pausa desde el 8-nov). G-043 (guion por planos para Algieba) cancelada: Algieba perdió el par 1 de V17 (30 vistas contra 125) y el hilo de videos pasó a V20 y a piano.
+- Lote espejado: G-044 (IT/NL en SERP para el #56, OPS) y G-045 (misterio imprimible en Gumroad, Canales); 2 búsquedas, vencen 13-nov. Dos tareas y no tres: nada del hilo de videos necesita la app esta semana (sus Shorts esperan a que Zapier renueve). `bandeja.py estado` ya no avisa por tener menos de 3 en cola.
+- Si el lunes 16 siguen sin respuesta, es el segundo lote fallido: se le dice a Cris una vez que el canal no responde.
+- Espera a una persona: nada.

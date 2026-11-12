@@ -6,7 +6,7 @@ hilo: Operación autónoma de la tienda
 herramienta: navegar
 entrega: sheet
 estado: pendiente
-vence: 2026-11-10
+vence: 2026-11-13
 ---
 ## Contexto
 En G-042 redactaste título, etiquetas y descripción en italiano y neerlandés para el listing 4604988351 (Cold Case 01, juego en inglés y español). Las keywords salieron de tu conocimiento, sin verificar. Esta tarea repite para IT y NL lo que hiciste en G-039 para DE y FR: verificarlas en resultados reales. Búsqueda web (cuenta como tarea de búsqueda).
