@@ -75,6 +75,7 @@ Zapier queda para medir.
 - Prueba: teclado de arriba, notas que caen con su letra, la melodía de la pista de
   práctica del libro; título = primera línea de la canción + "easy piano letter notes".
 - Control: 60 piano EN (historia de Jingle Bells).
+- 12-nov: primera prueba hecha, en español: `62-piano-oda-letras-es` (Himno a la alegría, un compás del libro por corte, 34 s, Sulafat). Control: la historia de Beethoven ES (6TOTGMLBNLc, 335 vistas). En la cola como n.º 3; sube primero cuando vuelva Zapier, porque piano es la única línea con visitas orgánicas en Etsy.
 
 ### V3. Serie en 2 partes (cliffhanger) gana a la historia completa
 - Evidencia: guías de true crime; el corte deja un bucle abierto que trae a la parte 2.
