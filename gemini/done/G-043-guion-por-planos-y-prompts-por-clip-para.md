@@ -20,3 +20,6 @@ El Short cah0eRHnqTU (caso 01, voz Sulafat, clips de IA) hizo 17 veces las vista
 
 ## Formato de la respuesta
 Español. Doc `G-043 RESPUESTA` con estado, fecha y modelo en las 3 primeras líneas; el guion por planos también en una Hoja "G-043 planos" en Entregas (columnas: plano, entra, dura, se oye, se ve, rótulo, prompt, Remotion/IA). Máximo 700 palabras en el Doc además de la tabla.
+
+
+> Cerrada sin respuesta el 2026-11-12: Superada: Algieba perdió el par 1 de V17 (30 vistas contra 125) y el hilo de videos pasó a V20 (misterios históricos) y piano; el guion por planos ya no se usará

@@ -268,7 +268,7 @@ def cmd_estado(args):
         aviso = '  <- lleva más de 2 días: ¿corrió la tarea programada de Gemini?' if dias > 2 else ''
         print(f'  {r["id"]} pendiente desde {r["pedido"]} ({dias} d): {r["titulo"]}{aviso}')
     if len(pend) < 3:
-        print('  AVISO: menos de 3 tareas en cola. Gemini corre cada hora: deja siempre trabajo útil (skill gemini-canal, "Cola permanente").')
+        print('  Nota: desde el 8-nov el cupo de la app se raciona (lotes de ≤3 tareas lunes y jueves): menos de 3 en cola está bien.')
     if pend:
         ids = ' or '.join(f"title contains '{r['id']}'" for r in pend)
         print('\nPara recoger respuestas, con el conector de Google Drive:')
