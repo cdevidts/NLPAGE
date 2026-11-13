@@ -76,6 +76,8 @@ Zapier queda para medir.
   práctica del libro; título = primera línea de la canción + "easy piano letter notes".
 - Control: 60 piano EN (historia de Jingle Bells).
 - 12-nov: primera prueba hecha, en español: `62-piano-oda-letras-es` (Himno a la alegría, un compás del libro por corte, 34 s, Sulafat). Control: la historia de Beethoven ES (6TOTGMLBNLc, 335 vistas). En la cola como n.º 3; sube primero cuando vuelva Zapier, porque piano es la única línea con visitas orgánicas en Etsy.
+- 13-nov: segunda prueba, `60-piano-jingle-letras-es` (coro de Jingle Bells del libro #60, 35 s). Control: la Tregua ES (oRX2V9bh0rw, 196 a 48 h). Cola n.º 4.
+- 13-nov, lectura a 7 días por RSS (solo vistas): Beethoven ES 336, Tregua ES 208, caso 02 con tomas IA 133, Beethoven EN 28, caso 02 ES Piper 8.
 
 ### V3. Serie en 2 partes (cliffhanger) gana a la historia completa
 - Evidencia: guías de true crime; el corte deja un bucle abierto que trae a la parte 2.

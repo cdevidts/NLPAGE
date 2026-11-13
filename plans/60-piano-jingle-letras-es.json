@@ -1,0 +1,112 @@
+{
+  "slug": "60-piano-jingle-letras-es",
+  "producto": "60-piano-villancicos",
+  "idioma": "es",
+  "tema": "piano",
+  "voz": "gemini:Sulafat",
+  "vozEstilo": "Profesora de piano cercana, español latinoamericano neutro, clara y alegre, ritmo ágil; dice cada nota con claridad, separada por una pausa breve",
+  "velocidad": 1.15,
+  "ritmo": "continuo",
+  "musica": {
+    "archivo": "assets/music/propia/60-jingle-bells.mp3",
+    "volumen": 0.3,
+    "desde": 30.4
+  },
+  "notas": "V2 n.º 2 (lección con letras contra historia), en el libro #60 de villancicos y con su control propio: la historia de la Tregua ES (60-piano-villancicos-historia-es, oRX2V9bh0rw, 208 vistas). Mismo formato que 62-piano-oda-letras-es (12-nov). Notas leídas compás por compás del libro #60 en español, canción 01 'Jingle Bells (Cascabeles)', James Lord Pierpont, 1857: el coro empieza en el último sistema de la página 4 (mano derecha Mi Mi Mi | Mi Mi Mi | Mi Sol Do Re | Mi) y sigue en el primer sistema de la página 5 (Fa Fa Fa Fa | Fa Mi Mi Mi Mi | Mi Re Re Mi | Re Sol). 'Una sola tecla': los siete primeros sonidos del coro son Mi. La mano izquierda cambia (Do, Fa, Re, Sol), por eso no se enseña. El teclado es el de la página 2 del mismo libro. Música: el MP3 de práctica del libro desde 30,4 s; el coro entra a los ~34,1 s del MP3 (estimado por la altura de las notas: el Fa Fa Fa Fa del coro cae en 42,75 s y un compás dura ~2,17 s), o sea cuando empieza la escena 2.",
+  "escenas": [
+    {
+      "dice": "El coro de Jingle Bells empieza con una sola tecla.",
+      "texto": "*Una* sola tecla",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:2:4",
+        "foco": {
+          "x": 0.5,
+          "y": 0.88,
+          "zoom": 1.7
+        }
+      }
+    },
+    {
+      "dice": "Mi, Mi, Mi. Mi, Mi, Mi.",
+      "texto": "Seis veces *Mi*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/jb-coro-1.jpg"
+      }
+    },
+    {
+      "dice": "Mi, Sol, Do, Re, Mi.",
+      "texto": "Mi Sol Do Re *Mi*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/jb-coro-2.jpg"
+      }
+    },
+    {
+      "dice": "Fa, Fa, Fa, Fa.",
+      "texto": "Fa Fa Fa *Fa*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/jb-coro-3.jpg"
+      }
+    },
+    {
+      "dice": "Fa, Mi, Mi, Mi, Mi.",
+      "texto": "Fa Mi Mi Mi *Mi*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/jb-coro-4.jpg"
+      }
+    },
+    {
+      "dice": "Mi, Re, Re, Mi. Re, Sol.",
+      "texto": "Mi Re Re Mi Re *Sol*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/jb-coro-5.jpg"
+      }
+    },
+    {
+      "dice": "¿Y el Mi? El libro trae un teclado con cada nombre.",
+      "texto": "¿Dónde está el *Mi*?",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/teclado-do-re-mi.jpg"
+      }
+    }
+  ],
+  "cierre": {
+    "dice": "Jingle Bells y diecinueve villancicos fáciles más, con el nombre de cada nota. Lo encuentras en nuestra tienda de Etsy.",
+    "titulo": "Tócalo esta Navidad",
+    "sub": "20 villancicos fáciles · Do Re Mi · MP3",
+    "linea": "SheetSmithChile en Etsy",
+    "src": "pag:2:1"
+  },
+  "youtube": {
+    "titulo": "Jingle Bells piano fácil con letras | villancicos para piano fáciles",
+    "descripcion": "¿Te salió a la primera? Cuéntame en los comentarios.\n\nVillancicos para piano fáciles, con el nombre de cada nota: https://www.etsy.com/listing/4605991888\nLos links de la tienda (Etsy y Gumroad) están en el canal: toca el nombre del canal.\n\nEl coro de Jingle Bells (Cascabeles), nota por nota, con la mano derecha:\nMi Mi Mi | Mi Mi Mi | Mi Sol Do Re | Mi\nFa Fa Fa Fa | Fa Mi Mi Mi Mi | Mi Re Re Mi | Re Sol\n\nEs la canción 01 de nuestro libro de 20 villancicos fáciles, con el nombre de cada nota (Do, Re, Mi) escrito dentro de la nota, un teclado para encontrar cada tecla y un MP3 de práctica para cada villancico. La música de este video es ese MP3. Jingle Bells es de James Lord Pierpont (1857); el arreglo fácil es nuestro. PDF para imprimir, carta o A4. SheetSmithChile en Etsy.\n\n#jinglebells #villancicos #piano #shorts",
+    "tags": [
+      "villancicos para piano fáciles",
+      "jingle bells piano fácil",
+      "jingle bells piano",
+      "cascabeles piano",
+      "piano fácil con letras",
+      "notas do re mi piano",
+      "villancicos piano",
+      "piano para principiantes",
+      "tutorial piano fácil",
+      "navidad piano"
+    ]
+  },
+  "experimento": {
+    "hipotesis": "V2",
+    "variable": "formato",
+    "variante": "lección de 30 s con las letras de las notas en pantalla (coro de Jingle Bells, un compás del libro por corte), en vez de la historia de la Tregua de 1914",
+    "control": "60-piano-villancicos-historia-es",
+    "formato": "tutorial",
+    "gancho_tipo": "dato-imposible",
+    "espera": "vistas a 48 h 1,5x o más las del control oRX2V9bh0rw (196 a 48 h) y más visitas al listing 4605991888 la semana que sale. Confusores: voz Sulafat en vez de Piper, semana más cerca de Navidad (temporada sube), se publica cuando vuelva el cupo de Zapier",
+    "listing_id": 4605991888
+  }
+}
