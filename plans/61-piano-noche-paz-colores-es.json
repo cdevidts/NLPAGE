@@ -1,0 +1,112 @@
+{
+  "slug": "61-piano-noche-paz-colores-es",
+  "producto": "61-piano-villancicos-ninos",
+  "idioma": "es",
+  "tema": "piano",
+  "voz": "gemini:Sulafat",
+  "vozEstilo": "Profesora de piano cercana y cálida, español latinoamericano neutro, le habla a una familia con niños, clara y alegre, ritmo ágil; dice cada nota con claridad",
+  "velocidad": 1.15,
+  "ritmo": "continuo",
+  "musica": {
+    "archivo": "assets/music/propia/60-noche-de-paz.mp3",
+    "volumen": 0.3,
+    "desde": 0
+  },
+  "notas": "V2 n.º 3, primer Short del libro #61 (villancicos para niños con notas de colores, listing 4605993316), el único libro de piano sin Short. Notas leídas del libro #61 en español, canción 02 'Noche de paz' (Gruber, 1818), página 6: primer sistema Sol La Sol Mi | Sol La Sol Mi | Re Re Si; segundo sistema Do Do Sol | La La Do Si La. Las cuatro primeras notas son 'No-che de paz' y se repiten en 'no-che de a-mor' (la letra está en la misma página). 'Tres notas' = Sol, La y Mi, las únicas de los dos primeros compases. Colores y teclado: página 2 del mismo libro ('cada nota tiene su propio color: puedes pegar stickers del mismo color en las teclas'; 'toca todo con la mano derecha'). Música: el MP3 de práctica de Noche de paz del libro #60, misma melodía y misma tonalidad que el #61 (comparadas las páginas 6 de los dos libros); empieza en el segundo 0 con la melodía.",
+  "escenas": [
+    {
+      "dice": "Noche de paz empieza con solo tres notas: Sol, La y Mi.",
+      "texto": "Solo *3 notas*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:2:6",
+        "foco": {
+          "x": 0.45,
+          "y": 0.26,
+          "zoom": 1.7
+        }
+      }
+    },
+    {
+      "dice": "Noche de paz: Sol, La, Sol, Mi.",
+      "texto": "Sol La Sol *Mi*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/ndp-1.jpg"
+      }
+    },
+    {
+      "dice": "Noche de amor: otra vez igual.",
+      "texto": "Otra vez *igual*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/ndp-2.jpg"
+      }
+    },
+    {
+      "dice": "Después sube: Re, Re, Si.",
+      "texto": "Re Re *Si*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/ndp-3.jpg"
+      }
+    },
+    {
+      "dice": "Y baja: Do, Do, Sol.",
+      "texto": "Do Do *Sol*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/ndp-4.jpg"
+      }
+    },
+    {
+      "dice": "Sigue: La, La, Do, Si, La.",
+      "texto": "La La Do Si *La*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/ndp-5.jpg"
+      }
+    },
+    {
+      "dice": "Cada nota tiene su color. Pega stickers iguales en las teclas y listo.",
+      "texto": "Un *color* por tecla",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/teclado-colores.jpg"
+      }
+    }
+  ],
+  "cierre": {
+    "dice": "Noche de paz y catorce villancicos más, con notas de colores para niños. Lo encuentras en nuestra tienda de Etsy.",
+    "titulo": "Tóquenla en familia",
+    "sub": "15 villancicos · notas de colores · una mano",
+    "linea": "SheetSmithChile en Etsy",
+    "src": "pag:2:1"
+  },
+  "youtube": {
+    "titulo": "Noche de paz piano fácil con letras y colores | villancicos en piano para niños",
+    "descripcion": "¿Quién la toca primero en tu casa? Cuéntame en los comentarios.\n\nVillancicos en piano para niños, con notas de colores: https://www.etsy.com/listing/4605993316\nLos links de la tienda (Etsy y Gumroad) están en el canal: toca el nombre del canal.\n\nEl comienzo de Noche de paz, nota por nota, con la mano derecha:\nNoche de paz: Sol La Sol Mi\nnoche de amor: Sol La Sol Mi\nRe Re Si | Do Do Sol | La La Do Si La\n\nCada nota del libro tiene su nombre adentro y su propio color, y el teclado del comienzo usa los mismos colores: con stickers del mismo color en las teclas, cada nota se encuentra al tiro. Son 15 villancicos para tocar con la mano derecha. Noche de paz es de Franz Xaver Gruber (1818); el arreglo fácil es nuestro. La música del video es nuestro audio de práctica de la canción. PDF para imprimir a color. SheetSmithChile en Etsy.\n\n#nochedepaz #villancicos #pianoparaniños #shorts",
+    "tags": [
+      "villancicos en piano para niños",
+      "noche de paz piano fácil",
+      "noche de paz piano",
+      "piano para niños",
+      "notas de colores piano",
+      "piano fácil con letras",
+      "villancicos para piano fáciles",
+      "piano para principiantes",
+      "tutorial piano fácil",
+      "navidad piano"
+    ]
+  },
+  "experimento": {
+    "hipotesis": "V2",
+    "variable": "formato",
+    "variante": "lección de 30 s con notas de colores para niños (Noche de paz, un compás del libro #61 por corte), en vez de la historia de la Tregua de 1914 (también Noche de paz)",
+    "control": "60-piano-villancicos-historia-es",
+    "formato": "tutorial",
+    "gancho_tipo": "dato-imposible",
+    "espera": "vistas a 48 h 1,5x o más las del control oRX2V9bh0rw (196 a 48 h) y las primeras visitas atribuibles al listing 4605993316. Confusores: otro libro (#61, niños) y otro público (padres), voz Sulafat, semana más cerca de Navidad",
+    "listing_id": 4605993316
+  }
+}
