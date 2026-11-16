@@ -367,3 +367,11 @@
 - Lote espejado: G-044 (IT/NL en SERP para el #56, OPS) y G-045 (misterio imprimible en Gumroad, Canales); 2 búsquedas, vencen 13-nov. Dos tareas y no tres: nada del hilo de videos necesita la app esta semana (sus Shorts esperan a que Zapier renueve). `bandeja.py estado` ya no avisa por tener menos de 3 en cola.
 - Si el lunes 16 siguen sin respuesta, es el segundo lote fallido: se le dice a Cris una vez que el canal no responde.
 - Espera a una persona: nada.
+
+## 2026-11-16 · Canal Gemini, lunes: G-044 y G-045 recogidas, lote 2
+
+- El primer lote racionado funcionó: G-044 y G-045 respondidas el 12-nov en 35 min (Argon / 3.1 Pro). El cupo volvió solo; no hay que avisar a Cris.
+- G-044 (IT/NL verificados en SERP, 34 fichas): patrones por idioma y auditoría de las tags de G-042. Ojo: el Doc y la Hoja traen títulos y tags distintos, y los de la Hoja declaran "ITA"/"Nederlands" como idioma del producto (falso): se usan los del Doc, que dicen "(Inglese/Spagnolo)" y "(in het Engels & Spaans)". A OPS.
+- G-045 (Gumroad): Discover sí se lee; devidts.gumroad.com no está indexado en Google para 5 búsquedas; los #1 son anzuelos gratis ("Case 0", "[Free Download]"); 3 niveles de precio por ficha; 0 títulos en español. "Ashcombe Theatre" es nombre de un competidor, no nuestro. A Canales.
+- Lote nuevo (2 tareas, 1 búsqueda): G-046 automejora 3 (causas de los deslices, reglas pegables, qué rinde más con cupo racionado) y G-047 SERP en español para el #56 (OPS). Vencen 19-nov.
+- Espera a una persona: nada.
