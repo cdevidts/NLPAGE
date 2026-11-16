@@ -375,3 +375,4 @@
 - G-045 (Gumroad): Discover sí se lee; devidts.gumroad.com no está indexado en Google para 5 búsquedas; los #1 son anzuelos gratis ("Case 0", "[Free Download]"); 3 niveles de precio por ficha; 0 títulos en español. "Ashcombe Theatre" es nombre de un competidor, no nuestro. A Canales.
 - Lote nuevo (2 tareas, 1 búsqueda): G-046 automejora 3 (causas de los deslices, reglas pegables, qué rinde más con cupo racionado) y G-047 SERP en español para el #56 (OPS). Vencen 19-nov.
 - Espera a una persona: nada.
+- (15:11 UTC) OPS: IT/NL del #56 queda archivado (las traducciones DE/FR no movieron vistas); no gastar cupo en keywords de fichas sin tráfico; lo útil es el piano (H13). Añadida G-048: SERP de partituras de villancicos para piano (títulos, nivel, letras de notas, precio, cómo describen la primera foto). El análisis de las fotos en sí no va por la app (no ve imágenes de Etsy): se hace con la API de Etsy por Make + `gemini.py` (imágenes gratis).
