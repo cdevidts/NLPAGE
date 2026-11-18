@@ -12,6 +12,8 @@ Desde el 4-nov a las 20:45, Metricool no publica nada: el plan gratis trae 20 pu
 
 Lista fuera de la cola (sale cuando haya hueco, después de las 5): `plans/62-piano-para-elisa-letras-es.json`, render 35,2 s del 17-nov; https://raw.githubusercontent.com/cdevidts/NLPAGE/1ae5a3ec7f6560fa1256b9e289c6223d34892600/renders/62-piano-para-elisa-letras-es.mp4. V2 n.º 4: primera lección que abre con los compases grandes y deja sonar la melodía del MP3 de práctica (auditoría del 16-nov). category_id 10, default_language es, listing 4605998382.
 
+Séptima, también lista: `plans/62-piano-canon-letras-es.json` (Canon de Pachelbel, #62 p.20), render 33,0 s del 18-nov; URL raw en BITACORA (18-nov). category_id 10, default_language es, listing 4605998382.
+
 ## Presupuesto de Zapier (10-nov, cero cobros)
 Plan Free: 100 tareas al mes, cada llamada del MCP cuesta 2 y al llegar al tope Zapier se detiene, no cobra (help.zapier.com 8496196837261, docs.zapier.com/mcp/usage, zapier.com/pricing). La cuenta es compartida con otros hilos. Uso de este hilo: 1 `upload_video` por día y la medición junta cada 2-3 días, con un tope propio de 70 tareas al mes. Nunca subir a un plan pagado ni activar pago por tarea. Si Zapier se corta, el Short queda en esta cola y sale el 1-dic por Metricool.
 
@@ -24,6 +26,7 @@ Plan Free: 100 tareas al mes, cada llamada del MCP cuesta 2 y al llegar al tope 
 - 2026-11-15 ~17:08 UTC: un intento de upload_video con los datos completos del Short de la Oda, mismo error de tope (0 tareas).
 - 2026-11-16 ~17:09 UTC: un intento de upload_video con los datos completos del Short de la Oda, mismo error de tope (0 tareas).
 - 2026-11-17 ~17:10 UTC: un intento de upload_video con los datos completos del Short de la Oda, mismo error de tope (0 tareas).
+- 2026-11-18 ~17:09 UTC: un intento de upload_video con los datos completos del Short de la Oda, mismo error de tope (0 tareas).
 - 2026-11-10 (búsqueda de otra vía, pedida por el coordinador): (1) Make no tiene conexión de YouTube (solo Etsy, GitHub, Pinterest; crearla exige que Cris autorice su cuenta de Google: descartado). (2) No hay token de YouTube fuera de Zapier; la clave gratis de Gemini no sirve para subir (subir exige OAuth). (3) AnythingMCP terminó su prueba el 30-oct (pagado: descartado). (4) Metricool: sin cupo de publicación hasta el 1-dic y su analítica de YouTube devuelve vacío. **Medición resuelta**: el feed RSS público del canal (https://www.youtube.com/feeds/videos.xml?channel_id=UCLj5f15NxSLVAr5m6dYtwJA) trae las vistas de los últimos 15 videos, sin cuenta, sin cupo y sin costo; la retención sigue necesitando Analytics por Zapier. **Fecha de renovación de Zapier: probablemente el 23-nov**: Zapier recibió acceso a la cuenta de Google de Cris el 23-oct a las 15:28 UTC (correo de alerta de Google), y el plan gratis se renueva el mismo día de cada mes en que se creó la cuenta (help.zapier.com, artículo de Agents, y switchlabs.dev; un blog dice día 1, sin respaldo oficial). Make también renueva el 23-nov.
 
 ## Pendientes para los próximos Shorts (6-nov)

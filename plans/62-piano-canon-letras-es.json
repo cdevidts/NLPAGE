@@ -1,0 +1,99 @@
+{
+  "slug": "62-piano-canon-letras-es",
+  "producto": "62-piano-clasicos-principiantes",
+  "idioma": "es",
+  "tema": "piano",
+  "voz": "gemini:Sulafat",
+  "vozEstilo": "Profesora de piano cercana, español latinoamericano neutro, clara y alegre, ritmo ágil; dice cada nota con claridad, separada por una pausa breve",
+  "velocidad": 1.15,
+  "ritmo": "continuo",
+  "musica": {
+    "archivo": "assets/music/propia/62-canon-in-d.mp3",
+    "volumen": 0.2,
+    "desde": 0
+  },
+  "notas": "Lección del Canon de Pachelbel del libro #62 en español, canción 17, página 20 (public/productos/62-piano-clasicos-principiantes/paginas-2/20.jpg), leída compás por compás. Mano izquierda, igual en los cuatro sistemas: Do Sol | La Mi | Fa Do | Fa Sol (ocho notas). Mano derecha, primer sistema: Mi Re | Do Si | La Sol | La Si. Tercer sistema, compases 1 y 2: Do Mi Sol Fa | Mi Do Mi Re. Recortes pc-*.jpg de esa página sin cambios en las notas: cada imagen apila dos compases, uno sobre otro, para que se vean grandes (pc-bajo-1 = compases 1 y 2 de la izquierda, pc-bajo-2 = 3 y 4, pc-md-1 y pc-md-2 = lo mismo en la derecha; pc-var-1 = compás 1 del tercer sistema; pc-var-2, el compás 2, queda en el repo sin usar). Música a 0,2: a 0,3 el pico salió en 0 dBTP. Música: 17-canon-in-d.mp3 del zip de práctica del mismo libro. Pachelbel, c. 1690, arreglo en do mayor: lo dice la página. Render del 18-nov: aun a 0,2 el pico quedó en -0,8 dBTP, así que al mp4 final se le pasó a mano un limitador (ffmpeg alimiter=limit=0.8:attack=1:release=50:level=false, audio aac 192k, video copiado): -14,1 LUFS y -1,5 dBTP. Si se vuelve a correr `short`, repetir ese paso.",
+  "escenas": [
+    {
+      "dice": "El Canon de Pachelbel repite ocho notas graves, una y otra vez.",
+      "texto": "*8 notas* que se repiten",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/pc-bajo-1.jpg"
+      }
+    },
+    {
+      "dice": "Mano izquierda: Do, Sol, La, Mi.",
+      "texto": "Do Sol La *Mi*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/pc-bajo-1.jpg"
+      }
+    },
+    {
+      "dice": "Fa, Do, Fa, Sol.",
+      "texto": "Fa Do Fa *Sol*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/pc-bajo-2.jpg"
+      }
+    },
+    {
+      "dice": "Arriba, la derecha: Mi, Re, Do, Si.",
+      "texto": "Mi Re Do *Si*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/pc-md-1.jpg"
+      }
+    },
+    {
+      "dice": "La, Sol, La, Si.",
+      "texto": "La Sol La *Si*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/pc-md-2.jpg"
+      }
+    },
+    {
+      "dice": "Luego la melodía se mueve: Do, Mi, Sol, Fa.",
+      "texto": "Do Mi Sol *Fa*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/pc-var-1.jpg"
+      }
+    }
+  ],
+  "cierre": {
+    "dice": "Es la canción diecisiete de nuestro libro. Está en nuestra tienda de Etsy.",
+    "titulo": "Tócala hoy",
+    "sub": "24 canciones fáciles · Do Re Mi · MP3",
+    "linea": "SheetSmithChile en Etsy",
+    "src": "pag:2:1"
+  },
+  "youtube": {
+    "titulo": "Canon de Pachelbel piano fácil con letras | partituras piano fáciles con notas",
+    "descripcion": "¿La reconociste desde la primera nota? Cuéntame en los comentarios.\n\nPartituras piano fáciles con notas, en español: https://www.etsy.com/listing/4605998382\nLos links de la tienda (Etsy y Gumroad) están en el canal: toca el nombre del canal.\n\nEl Canon de Pachelbel, nota por nota, en do mayor.\nMano izquierda, siempre igual: Do Sol | La Mi | Fa Do | Fa Sol\nMano derecha: Mi Re | Do Si | La Sol | La Si\nMás adelante: Do Mi Sol Fa | Mi Do Mi Re\n\nEs la canción 17 de nuestro libro de 24 canciones clásicas y populares fáciles, con el nombre de cada nota (Do, Re, Mi) escrito dentro de la nota y un MP3 de práctica para cada una. La música de este video es ese MP3. Arreglo fácil del Canon de Johann Pachelbel (c. 1690). PDF para imprimir, carta o A4, con la versión en inglés incluida. SheetSmithChile en Etsy.\n\n#piano #canondepachelbel #pianofacil #shorts",
+    "tags": [
+      "partituras piano fáciles con notas",
+      "canon de pachelbel piano fácil",
+      "canon de pachelbel piano",
+      "canon pachelbel piano para principiantes",
+      "piano fácil con letras",
+      "notas do re mi piano",
+      "partituras para piano con notas",
+      "piano para principiantes",
+      "música para bodas piano",
+      "tutorial piano fácil"
+    ]
+  },
+  "experimento": {
+    "hipotesis": "V2",
+    "variable": "formato",
+    "variante": "lección con letras, receta de Para Elisa (compases grandes desde el gancho, MP3 del libro debajo), con el gancho en el bajo que se repite",
+    "control": "62-piano-clasicos-historia-es",
+    "formato": "tutorial",
+    "gancho_tipo": "dato-imposible",
+    "espera": "vistas a 48 h 1,5x o más las del control 6TOTGMLBNLc y más visitas al listing 4605998382 la semana que sale",
+    "listing_id": 4605998382
+  }
+}
