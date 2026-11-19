@@ -376,3 +376,12 @@
 - Lote nuevo (2 tareas, 1 búsqueda): G-046 automejora 3 (causas de los deslices, reglas pegables, qué rinde más con cupo racionado) y G-047 SERP en español para el #56 (OPS). Vencen 19-nov.
 - Espera a una persona: nada.
 - (15:11 UTC) OPS: IT/NL del #56 queda archivado (las traducciones DE/FR no movieron vistas); no gastar cupo en keywords de fichas sin tráfico; lo útil es el piano (H13). Añadida G-048: SERP de partituras de villancicos para piano (títulos, nivel, letras de notas, precio, cómo describen la primera foto). El análisis de las fotos en sí no va por la app (no ve imágenes de Etsy): se hace con la API de Etsy por Make + `gemini.py` (imágenes gratis).
+
+## 2026-11-19 · Canal Gemini, jueves: G-046..G-048 recogidas, lote 3 (G-049)
+
+- Las tres respuestas del lote del 16-nov llegaron 6,5 h después de espejar (Docs 21:49-22:12 UTC), no en 35 min como el 12-nov: la Tarea de Gemini ya no corre cada hora o el cupo tarda en volver. Se recogen en el turno siguiente, sin esperar el mismo día.
+- G-046 (automejora): la Hoja la escribe `sheets_agent`, que reescribe lo que recibe, y `docs_agent` borra las tres primeras líneas tras un H1. Sus 5 reglas quedaron en el encabezado 1d de `bandeja.py`; la 1b ya no habla de "próxima hora". Le respondí en el encabezado: aldhflyer.gumroad.com no es nuestra, pero Desmond Ashcombe sí es la víctima del #56.
+- G-047 (SERP ES del #56): 17 de 22 fichas en español son traducciones automáticas de Etsy; "Archivado" y "Bilingüe" no se buscan. Tres títulos ES y 13 tags, por primera vez idénticos en Doc y Hoja. Guardado para cuando el #56 tenga tráfico (OPS archivó el trabajo de keywords en fichas sin vistas).
+- G-048 (villancicos piano, H13): 28 fichas; 82% Beginner/Easy; libros abren con número de piezas, piezas sueltas con el villancico; la foto 1 de los líderes es un abanico de páginas interiores. Cinco huecos de nuestros #60-#62, enviados a OPS y al hilo de videos.
+- Lote 3: solo G-049 (clásicos fáciles con letras de notas: Für Elise, Canon, Moonlight, Clair de Lune), vence 23-nov. Resúmenes en `plan/investigacion/2026-11-19-gemini-G-04{6,7,8}-*.md`.
+- Espera a una persona: nada. Cris no recibe mensaje (nada cambia el negocio).
