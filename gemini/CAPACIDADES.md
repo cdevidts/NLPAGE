@@ -70,12 +70,13 @@ cada hora y es "prácticamente ilimitada" (no usa la API).
 | 2026-11-16 | G-046 | Automejora: explicar la divergencia Doc/Hoja de G-044 y el "Ashcombe" de G-045 | SÍ: la Hoja la escribe sheets_agent, que reescribe el contenido; docs_agent borra las 3 primeras líneas tras un H1; "Ashcombe" salió de aldhflyer.gumroad.com (y resulta que sí es el apellido de nuestra víctima del #56). Propuso 5 reglas | Reglas en el encabezado 1d de bandeja.py; Gemini puede hacer autocrítica útil de su propio proceso |
 | 2026-11-16 | G-047 | SERP ES (site:etsy.com/listing y /es/listing) + 3 títulos y 13 tags idénticos en Doc y Hoja | SÍ: 22 fichas, 17 son traducciones automáticas; Doc y Hoja coinciden por primera vez | La regla 1d funciona; pedir siempre "idénticos en Doc y Hoja" |
 | 2026-11-16 | G-048 | SERP de villancicos para piano con descripción de la foto 1 vía alt-text y snippets | SÍ: 28 fichas, patrones por tipo (libro vs pieza), 5 huecos concretos de nuestras fichas | El alt-text de Etsy sí le llega: sirve para estudiar fotos sin ver imágenes |
+| 2026-11-19 | G-049 | Lote de 1 tarea (SERP de clásicos fáciles con letras de notas), espejado 15:19 UTC | SÍ: respondida en 40 min (Doc 15:59 UTC), 32 fichas, Doc y Hoja declarados idénticos, dos títulos de ejemplo dentro del largo pedido | El cupo vuelve rápido con lotes de 1-2 búsquedas; la demora de 6,5 h del 16-nov fue puntual. Pedir "Doc y Hoja idénticos" en cada tarea con Hoja |
 
 ## Pendiente de probar
 Slides; lectura de PDFs de Drive (nuestros expedientes, nunca las soluciones); traducción de listings
 DE/FR/IT/NL/PT con revisión de SEO; Gmail SOLO para correos de Pinterest/Metricool con métricas (los de
 Etsy traen datos de compradores: no); google_finance (sin uso claro); Calendar y Keep no hacen falta.
-Probado el 3-nov: audio en la VM (G-024 sí), image_references (G-025: no desde Drive), LaTeX (G-027 sí). Probado el 6-nov: traducción DE/FR/IT/PT (G-038 sí, 5 campos); auditoría de un listing DE/FR real (G-042 sí, 7-nov: 20 correcciones + IT/NL completos). Verificado IT/NL en SERP (G-044, 12-nov; archivado por OPS). Pendiente: oír un Short con voz Algieba (par V17, cancelado G-043); SERP de piano evergreen con letras de notas (G-049, lote 19-nov).
+Probado el 3-nov: audio en la VM (G-024 sí), image_references (G-025: no desde Drive), LaTeX (G-027 sí). Probado el 6-nov: traducción DE/FR/IT/PT (G-038 sí, 5 campos); auditoría de un listing DE/FR real (G-042 sí, 7-nov: 20 correcciones + IT/NL completos). Verificado IT/NL en SERP (G-044, 12-nov; archivado por OPS). Pendiente: oír un Short con voz Algieba (par V17, cancelado G-043); SERP de piano evergreen hecho (G-049, 19-nov). Pendiente: crítica visual de nuestras fotos 1 desde Miniaturas (G-050, lote 23-nov).
 
 ## Reglas que salieron de las pruebas
 - Cada tarea lleva IDs directos: video_id/URL de Shorts, file_id de Drive, URL del listing.

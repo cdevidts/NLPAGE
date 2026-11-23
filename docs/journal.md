@@ -385,3 +385,9 @@
 - G-048 (villancicos piano, H13): 28 fichas; 82% Beginner/Easy; libros abren con número de piezas, piezas sueltas con el villancico; la foto 1 de los líderes es un abanico de páginas interiores. Cinco huecos de nuestros #60-#62, enviados a OPS y al hilo de videos.
 - Lote 3: solo G-049 (clásicos fáciles con letras de notas: Für Elise, Canon, Moonlight, Clair de Lune), vence 23-nov. Resúmenes en `plan/investigacion/2026-11-19-gemini-G-04{6,7,8}-*.md`.
 - Espera a una persona: nada. Cris no recibe mensaje (nada cambia el negocio).
+
+## 2026-11-23 · Canal Gemini, lunes: G-049 recogida, lote 4 (G-050)
+
+- G-049 (clásicos fáciles con letras de notas) llegó 40 min después de espejar el 19-nov: 32 fichas, 47% declara "letter notes", Für Elise es la pieza con más fichas, los títulos abren con la pieza y "letter notes" va al final; colecciones 11,95-14,99 US$ (sin verificar). Resumen en `plan/investigacion/2026-11-23-gemini-G-049-piano-clasicos-letras-serp.md`; enviado a OPS (con la nota de que el #62 cuesta como pieza suelta) y al hilo de videos (Für Elise como pieza evergreen).
+- Lote 4: solo G-050, sin búsqueda web: Gemini mira nuestras tres fotos 1 de piano en Miniaturas y las critica contra los patrones de G-048/G-049, con propuesta concreta de foto por listing. Lista de canciones verificada con pdftotext antes de espejar (el #62 no trae Greensleeves: se quitó). El #61 ya tiene un abanico H13 en preparación, así que el peso va en #60 y #62.
+- Espera a una persona: nada.
