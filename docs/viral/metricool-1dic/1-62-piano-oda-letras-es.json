@@ -1,0 +1,49 @@
+{
+ "blogId": "6078519",
+ "date": "2026-12-01T16:00:00-03:00",
+ "info": {
+  "autoPublish": true,
+  "draft": false,
+  "descendants": [],
+  "firstCommentText": "",
+  "hasNotReadNotes": false,
+  "media": [
+   "https://raw.githubusercontent.com/cdevidts/NLPAGE/4e796c58f2deb863ced5a01bcb034401fc5a1958/renders/62-piano-oda-letras-es.mp4"
+  ],
+  "mediaAltText": [],
+  "providers": [
+   {
+    "network": "youtube"
+   }
+  ],
+  "publicationDate": {
+   "dateTime": "2026-12-01T16:00:00",
+   "timezone": "America/Santiago"
+  },
+  "shortener": false,
+  "smartLinkData": {
+   "ids": []
+  },
+  "text": "¿Te salió a la primera? Cuéntame en los comentarios.\n\nPartituras piano fáciles con notas, en español: https://www.etsy.com/listing/4605998382\nLos links de la tienda (Etsy y Gumroad) están en el canal: toca el nombre del canal.\n\nEl comienzo del Himno a la alegría, nota por nota.\nMano derecha: Mi Mi Fa Sol | Sol Fa Mi Re | Do Do Re Mi | Mi Re Re\nSe repite, y el último compás cambia: Re Do Do\nMano izquierda: Do y Sol.\n\nEs la canción 01 de nuestro libro de 24 canciones clásicas y populares fáciles, con el nombre de cada nota (Do, Re, Mi) escrito dentro de la nota y un MP3 de práctica para cada una. La música de este video es ese MP3. Arreglo fácil de la melodía de Ludwig van Beethoven (Sinfonía n.º 9, 1824). PDF para imprimir, carta o A4, con la versión en inglés incluida. SheetSmithChile en Etsy.\n\n#piano #himnoalaalegria #beethoven #shorts",
+  "youtubeData": {
+   "title": "Himno a la alegría piano fácil con letras | partituras piano fáciles con notas",
+   "type": "short",
+   "privacy": "public",
+   "tags": [
+    "partituras piano fáciles con notas",
+    "himno a la alegría piano fácil",
+    "himno a la alegría piano",
+    "piano fácil con letras",
+    "notas do re mi piano",
+    "partituras para piano con notas",
+    "piano para principiantes",
+    "beethoven piano fácil",
+    "tutorial piano fácil",
+    "piano fácil"
+   ],
+   "category": "MUSIC",
+   "madeForKids": false,
+   "isAiGeneratedContent": true
+  }
+ }
+}
