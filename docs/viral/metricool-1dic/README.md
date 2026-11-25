@@ -1,5 +1,7 @@
 # Plan B del 1-dic: la cola por Metricool
 
+**25-nov: Zapier volvió y la Oda ya salió por ahí (x9IfUOTkKo4).** Esta carpeta queda de respaldo: si el cupo de Zapier se vuelve a cortar, se usa el JSON del Short que toque (saltando los ya publicados) con la fecha del día.
+
 Si el 1-dic Zapier sigue sin cupo, los Shorts salen por Metricool (marca cdevidts2, blogId 6078519; el plan gratis da 20 publicaciones al mes y los pines ya salen por Make, así que el cupo es para los Shorts). Cada JSON de esta carpeta trae los argumentos listos para `createScheduledPost`: `blogId`, `date` e `info` (pasar `info` como texto JSON). Título, descripción y tags salen tal cual del bloque `youtube` de cada plan; el video es la URL raw fija del commit que ya está en COLA.md. Se generaron el 24-nov.
 
 Reglas: un Short por día a las 16:00 Chile, solo la red `youtube` (nunca `instagram`: en esa marca es de Next Layer), `isAiGeneratedContent` true porque la voz es IA. El orden alterna piano y misterio, con los villancicos antes de mediados de diciembre. Metricool no tiene borrar en el conector: programar de a uno, en el turno de las 14:07 Chile el Short de ese mismo día a las 16:00, para que, si Zapier vuelve, no quede un duplicado agendado. Si la fecha de un JSON ya pasó, cambiar `date` y `publicationDate.dateTime` al día que toque. Tras cada publicación: `experimento.py alta --post metricool`, video_id en shorts.csv (por RSS) y borrar su fila en COLA.md.
