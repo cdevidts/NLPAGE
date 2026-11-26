@@ -391,3 +391,10 @@
 - G-049 (clásicos fáciles con letras de notas) llegó 40 min después de espejar el 19-nov: 32 fichas, 47% declara "letter notes", Für Elise es la pieza con más fichas, los títulos abren con la pieza y "letter notes" va al final; colecciones 11,95-14,99 US$ (sin verificar). Resumen en `plan/investigacion/2026-11-23-gemini-G-049-piano-clasicos-letras-serp.md`; enviado a OPS (con la nota de que el #62 cuesta como pieza suelta) y al hilo de videos (Für Elise como pieza evergreen).
 - Lote 4: solo G-050, sin búsqueda web: Gemini mira nuestras tres fotos 1 de piano en Miniaturas y las critica contra los patrones de G-048/G-049, con propuesta concreta de foto por listing. Lista de canciones verificada con pdftotext antes de espejar (el #62 no trae Greensleeves: se quitó). El #61 ya tiene un abanico H13 en preparación, así que el peso va en #60 y #62.
 - Espera a una persona: nada.
+
+## 2026-11-26 · Canal Gemini, jueves: G-050 recogida, lote 5 (G-051)
+
+- G-050 (crítica de las fotos 1 de piano) llegó 36 min después de espejar el 23-nov. Diagnóstico: a 170 px solo se lee el título; la única página real está tapada en 70% por la portada; propone para las tres el mismo abanico de 3 páginas reales con la central al frente y un badge de 4-5 palabras; urge primero el #62 (Für Elise al centro, Ode to Joy y Canon in D a los lados). Resumen en `plan/investigacion/2026-11-26-gemini-G-050-fotos-1-piano-critica.md`, enviado a OPS (la subida está en pausa por cupo de Make).
+- Lección de capacidad: Gemini sirve como revisor de fotos de listing antes de subirlas (mide píxeles, simula 170 px). Anotado en CAPACIDADES.
+- Lote 5: solo G-051 (una llamada de búsqueda con 4 consultas: ¿Google indexa ya devidts.gumroad.com, la tienda de Etsy, el canal y los pines?), para Canales, vence 30-nov.
+- Espera a una persona: nada.
