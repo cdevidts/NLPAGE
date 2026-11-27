@@ -1,0 +1,109 @@
+{
+  "slug": "60-piano-carol-letras-es",
+  "producto": "60-piano-villancicos",
+  "idioma": "es",
+  "tema": "piano",
+  "voz": "gemini:Sulafat",
+  "vozEstilo": "Profesora de piano cercana, español latinoamericano neutro, clara y alegre, ritmo ágil; dice cada nota con claridad, separada por una pausa breve",
+  "velocidad": 1.15,
+  "ritmo": "continuo",
+  "musica": {
+    "archivo": "assets/music/propia/60-carol-of-the-bells.mp3",
+    "volumen": 0.3,
+    "desde": 0
+  },
+  "notas": "Lección con letras (formato ganador de la Oda, x9IfUOTkKo4: 1343 vistas a 48 h) en el libro #60, canción 17 'Carol of the Bells (Shchedryk)', Mykola Leontovych, 1916, página 22 del PDF en español (pag:2:22). Notas leídas del libro: mano derecha Do Si Do La en los compases 1 a 8 (cifrado Lam Lam Lam Lam Lam | Sol Fa Mi); mano izquierda La (compases 1-5), Sol, Fa, Mi (6, 7, 8); compases 9-10 Mi Re Mi Do (izquierda La y Sol). Recortes a 300 ppp de la página 22: carol-cb1 (compás 1 con claves), carol-cb2 (compases 2-3), carol-cb3 (compases 6-7 sobre el 8, apilados), carol-cb4 (compases 9-10). Música: el MP3 de práctica del libro (17-carol-of-the-bells.mp3, 34,2 s de música desde 0). H14 (OPS, 27-nov): los enlaces en la descripción de un Short no se pueden clicar; los del canal sí. Por eso el cierre dice y muestra 'toca el nombre del canal' en vez de 'en nuestra tienda de Etsy'.",
+  "escenas": [
+    {
+      "dice": "Carol of the Bells son cuatro notas que se repiten.",
+      "texto": "Solo *4 notas*",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:2:22",
+        "foco": {
+          "x": 0.5,
+          "y": 0.25,
+          "zoom": 1.6
+        }
+      }
+    },
+    {
+      "dice": "Do, Si, Do, La.",
+      "texto": "Do Si Do *La*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/carol-cb1.jpg"
+      }
+    },
+    {
+      "dice": "Otra vez: Do, Si, Do, La. Y otra vez.",
+      "texto": "Se *repite*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/carol-cb2.jpg"
+      }
+    },
+    {
+      "dice": "Mientras, la izquierda baja: Sol, Fa, Mi.",
+      "texto": "Izquierda: Sol Fa *Mi*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/carol-cb3.jpg"
+      }
+    },
+    {
+      "dice": "Después cambian: Mi, Re, Mi, Do.",
+      "texto": "Mi Re Mi *Do*",
+      "visual": {
+        "tipo": "imagen",
+        "src": "assets/media/piano/carol-cb4.jpg"
+      }
+    },
+    {
+      "dice": "Cada nota trae su nombre adentro. ¿Te sale a la primera?",
+      "texto": "¿Te sale *a la primera*?",
+      "visual": {
+        "tipo": "pagina",
+        "src": "pag:2:22",
+        "foco": {
+          "x": 0.3,
+          "y": 0.25,
+          "zoom": 2.6
+        }
+      }
+    }
+  ],
+  "cierre": {
+    "dice": "Carol of the Bells y diecinueve villancicos fáciles más, de SheetSmithChile en Etsy. Para verlos, toca el nombre del canal.",
+    "titulo": "Tócalo esta Navidad",
+    "sub": "20 villancicos fáciles · Do Re Mi · MP3",
+    "linea": "Partituras: toca el nombre del canal",
+    "src": "pag:2:1"
+  },
+  "youtube": {
+    "titulo": "Carol of the Bells piano fácil con letras | villancicos para piano fáciles",
+    "descripcion": "¿Te salió a la primera? Cuéntame en los comentarios.\n\nVillancicos para piano fáciles, con el nombre de cada nota: toca el nombre del canal y entra a \"Tienda Etsy\" (los enlaces de la descripción de un Short no se pueden abrir).\n\nCarol of the Bells, nota por nota:\nMano derecha: Do Si Do La, ocho veces seguidas\nMano izquierda: La (cinco compases), Sol, Fa, Mi\nDespués: Mi Re Mi Do | Mi Re Mi Do\n\nEs la canción 17 de nuestro libro de 20 villancicos fáciles, con el nombre de cada nota (Do, Re, Mi) escrito dentro de la nota, un teclado para encontrar cada tecla y un MP3 de práctica para cada villancico. La música de este video es ese MP3. Carol of the Bells es \"Shchedryk\", de Mykola Leontovych (Ucrania, 1916); el arreglo fácil es nuestro. PDF para imprimir, carta o A4. SheetSmithChile en Etsy: https://www.etsy.com/listing/4605991888\n\n#carolofthebells #villancicos #piano #shorts",
+    "tags": [
+      "villancicos para piano fáciles",
+      "carol of the bells piano fácil",
+      "carol of the bells piano",
+      "shchedryk piano",
+      "piano fácil con letras",
+      "notas do re mi piano",
+      "villancicos piano",
+      "piano para principiantes",
+      "tutorial piano fácil",
+      "navidad piano"
+    ]
+  },
+  "experimento": {
+    "hipotesis": "V21",
+    "variable": "cta",
+    "variante": "el cierre dice y muestra 'toca el nombre del canal' (el enlace del canal sí se puede clicar) en vez de 'en nuestra tienda de Etsy'; la descripción explica dónde está el enlace",
+    "control": "60-piano-jingle-letras-es",
+    "formato": "tutorial",
+    "gancho_tipo": "reto",
+    "espera": "más vistas del listing 4605991888 en las 72 h después de subir que las que dio Jingle Bells (Ls0cwHUWtog, 27-nov) en sus 72 h, con vistas del Short parecidas. Confusores: otra canción (Carol of the Bells está de moda en diciembre), una semana más cerca de Navidad",
+    "listing_id": 4605991888
+  }
+}
